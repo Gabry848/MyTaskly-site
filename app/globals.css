@@ -121,62 +121,64 @@ html.light * {
   transition: background-color 0.5s ease, color 0.5s ease, border-color 0.5s ease, fill 0.5s ease, stroke 0.5s ease;
 }
 
-.apple-button {
-  @apply px-4 py-2 sm:px-6 sm:py-3 rounded-full bg-primary text-primary-foreground font-semibold transition-all duration-300 ease-in-out hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-50 text-sm sm:text-base;
-}
+@layer components {
+  .apple-button {
+    @apply px-4 py-2 sm:px-6 sm:py-3 rounded-full bg-primary text-primary-foreground font-semibold transition-all duration-300 ease-in-out hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-50 text-sm sm:text-base;
+  }
 
-.section-title {
-  @apply text-2xl sm:text-3xl md:text-4xl font-bold mb-6 sm:mb-8 text-center text-foreground;
-}
+  .section-title {
+    @apply text-2xl sm:text-3xl md:text-4xl font-bold mb-6 sm:mb-8 text-center text-foreground;
+  }
 
-.text-gradient {
-  @apply bg-clip-text text-transparent;
-  background-image: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--accent)));
-}
+  .text-gradient {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--accent)));
+  }
 
-.hover-lift {
-  @apply transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-lg;
-}
+  .hover-lift {
+    @apply transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-lg;
+  }
 
-/* Stili migliorati per i bottoni primari */
-.btn-primary-custom {
-  @apply bg-primary text-primary-foreground hover:bg-primary/90 transition-colors;
-  box-shadow: 0 2px 10px rgba(var(--primary) / 0.3);
-}
+  /* Stili migliorati per i bottoni primari */
+  .btn-primary-custom {
+    @apply bg-primary text-primary-foreground hover:bg-primary/90 transition-colors;
+    box-shadow: 0 2px 10px rgba(var(--primary) / 0.3);
+  }
 
-/* Stili per elementi con accento */
-.accent-element {
-  @apply bg-accent text-accent-foreground;
-  box-shadow: 0 2px 8px rgba(var(--accent) / 0.25);
-}
+  /* Stili per elementi con accento */
+  .accent-element {
+    @apply bg-accent text-accent-foreground;
+    box-shadow: 0 2px 8px rgba(var(--accent) / 0.25);
+  }
 
-/* Classe di transizione per cambio tema fluido */
-.theme-transition,
-.theme-transition *,
-.theme-transition *:before,
-.theme-transition *:after {
-  transition: all 0.5s ease-in-out !important;
-  transition-delay: 0 !important;
-}
+  /* Classe di transizione per cambio tema fluido */
+  .theme-transition,
+  .theme-transition *,
+  .theme-transition *:before,
+  .theme-transition *:after {
+    transition: all 0.5s ease-in-out !important;
+    transition-delay: 0 !important;
+  }
 
-/* Miglioramenti per elementi interattivi */
-.interactive-element {
-  @apply transition-all duration-300;
-}
-.interactive-element:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
+  /* Miglioramenti per elementi interattivi */
+  .interactive-element {
+    @apply transition-all duration-300;
+  }
+  .interactive-element:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
 
-/* Effetto hover migliorato per i bottoni */
-.apple-button:hover {
-  @apply bg-primary/90;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 15px rgba(var(--primary) / 0.4);
-}
+  /* Effetto hover migliorato per i bottoni */
+  .apple-button:hover {
+    @apply bg-primary/90;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(var(--primary) / 0.4);
+  }
 
-/* Stile per elementi con accento */
-.feature-icon,
-.cta-highlight {
-  @apply transition-all duration-300;
+  /* Stile per elementi con accento */
+  .feature-icon,
+  .cta-highlight {
+    @apply transition-all duration-300;
+  }
 }
