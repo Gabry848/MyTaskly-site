@@ -18,11 +18,6 @@ export default function Hero() {
             transition={{ duration: 0.8 }}
           >
             <span className="text-gradient">{t("hero.title")}</span>
-            <img
-              src="/images/taskly-app.png"
-              alt="Mytaskly App Interface"
-              className="w-12 h-12 sm:w-16 sm:h-16 rounded-lg shadow-lg hidden sm:block"
-            />
           </motion.h1>
           <motion.p
             className="mt-4 sm:mt-6 text-base sm:text-lg leading-7 sm:leading-8 text-muted-foreground"
@@ -41,7 +36,7 @@ export default function Hero() {
             <Link href="/download" className="apple-button btn-primary-custom cta-highlight">
               {t("hero.cta.download")}
             </Link>
-            <a href="#features" className="text-sm font-semibold leading-6 text-foreground interactive-element">
+            <a href="/features" className="text-sm font-semibold leading-6 text-foreground interactive-element">
               {t("hero.cta.features")} <span aria-hidden="true">→</span>
             </a>
           </motion.div>
@@ -54,13 +49,15 @@ export default function Hero() {
         >
           <div className="relative">
             <video
+            controls
               autoPlay
               loop
-              muted
+              // muted
               playsInline
+              preload="auto"
               className="w-full max-w-[300px] sm:max-w-[400px] md:max-w-[500px] mx-auto rounded-2xl shadow-xl ring-1 ring-gray-900/10 object-cover"
             >
-              <source src="/videos/IB3RSEQ3BTG3GDG4.mp4" type="video/mp4" />
+              <source src="/video/presentation.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           </div>

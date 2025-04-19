@@ -13,10 +13,10 @@ export default function Footer() {
           {[
             { key: "nav.features", href: "/features" },
             { key: "nav.pricing", href: "/pricing" },
-            { key: "nav.download", href: "#download" },
-            { key: "nav.support", href: "#support" },
-            { key: "nav.privacy", href: "#privacy" },
-            { key: "nav.terms", href: "#terms" },
+            { key: "nav.download", href: "/download" },
+            { key: "nav.support", href: "/contact" },
+            { key: "nav.privacy", href: "/privacy" },
+            { key: "nav.terms", href: "/terms" },
           ].map((item) => (
             <div key={item.key} className="pb-6">
               <Link href={item.href} className="text-sm leading-6 text-secondary-foreground hover:text-foreground">

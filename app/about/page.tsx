@@ -17,24 +17,6 @@ export default function AboutPage() {
       bio: t("about.team.member1.bio"),
       image: "/placeholder.svg?height=300&width=300",
     },
-    {
-      name: t("about.team.member2.name"),
-      role: t("about.team.member2.role"),
-      bio: t("about.team.member2.bio"),
-      image: "/placeholder.svg?height=300&width=300",
-    },
-    {
-      name: t("about.team.member3.name"),
-      role: t("about.team.member3.role"),
-      bio: t("about.team.member3.bio"),
-      image: "/placeholder.svg?height=300&width=300",
-    },
-    {
-      name: t("about.team.member4.name"),
-      role: t("about.team.member4.role"),
-      bio: t("about.team.member4.bio"),
-      image: "/placeholder.svg?height=300&width=300",
-    },
   ]
 
   return (
@@ -167,9 +149,9 @@ export default function AboutPage() {
             </div>
           </ScrollAnimationWrapper>
 
-          <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-4">
-            {teamMembers.map((member, index) => (
-              <ScrollAnimationWrapper key={member.name} delay={index * 0.1}>
+          <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-y-16 lg:mx-0 lg:max-w-none">
+            {teamMembers.map((member) => (
+              <ScrollAnimationWrapper key={member.name}>
                 <div className="group hover-lift">
                   <div className="relative h-56 w-full overflow-hidden rounded-2xl">
                     <Image
@@ -190,7 +172,7 @@ export default function AboutPage() {
       </div>
 
       {/* Join Us Section */}
-      <div className="py-16 sm:py-24 bg-gradient-to-b from-background to-primary/5">
+      {/* <div className="py-16 sm:py-24 bg-gradient-to-b from-background to-primary/5">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <ScrollAnimationWrapper>
             <div className="mx-auto max-w-2xl text-center">
@@ -209,7 +191,7 @@ export default function AboutPage() {
             </div>
           </ScrollAnimationWrapper>
         </div>
-      </div>
+      </div> */}
     </div>
   )
 }

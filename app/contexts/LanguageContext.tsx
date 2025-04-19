@@ -34,9 +34,9 @@ const translations: Record<Language, Record<string, string>> = {
     // Hero
     "hero.title": "Mytaskly",
     "hero.subtitle":
-      "The elegant todo list app that helps you organize your life with minimal effort. Simple, beautiful, and effective.",
-    "hero.cta.download": "Download Now",
-    "hero.cta.features": "See Features",
+      "The elegant todo list app crafted by a solo developer — launching soon. Stay tuned!",
+    "hero.cta.download": "Join the Waitlist",
+    "hero.cta.features": "See Upcoming Features",
 
     // Organize Your Life
     "organize.title": "Organize Your Life",
@@ -93,7 +93,7 @@ const translations: Record<Language, Record<string, string>> = {
     "timeline.concept.title": "Mytaskly Concept",
     "timeline.concept.description": "The idea for a minimalist, user-friendly todo app was born.",
     "timeline.concept.details":
-      "Our founder, frustrated with overly complex productivity apps, sketched the first designs for Mytaskly on a napkin during lunch. The vision: simplicity without sacrificing functionality.",
+      "Built from the ground up in a small home office by a single developer, Mytaskly is gearing up for its launch. Get ready!",
     "timeline.beta.title": "Beta Launch",
     "timeline.beta.description": "First version released to a select group of productivity enthusiasts.",
     "timeline.beta.details":
@@ -116,21 +116,6 @@ const translations: Record<Language, Record<string, string>> = {
       "Mytaskly became a global productivity tool with localization in major languages and users across 150 countries.",
 
     // Contact Form
-    "contact.title": "Get Support",
-    "contact.subtitle": "Have questions or feedback? Our team is here to help you get the most out of Mytaskly.",
-    "contact.name": "Name",
-    "contact.email": "Email",
-    "contact.phone": "Phone Number",
-    "contact.appVersion": "App Version",
-    "contact.message": "Message",
-    "contact.sending": "Sending...",
-    "contact.send": "Send Message",
-    "contact.placeholder.name": "John Doe",
-    "contact.placeholder.email": "john@example.com",
-    "contact.placeholder.phone": "+1 (555) 000-0000",
-    "contact.placeholder.appVersion": "e.g., Mytaskly 2.4.1",
-    "contact.placeholder.message": "Tell us about your issue...",
-    "contact.success": "Thank you for your message. We'll get back to you soon!",
 
     // Newsletter
     "newsletter.title": "Stay Updated",
@@ -452,7 +437,7 @@ const translations: Record<Language, Record<string, string>> = {
     "contact.cta.link": "View pricing plans",
 
     // Footer
-    "footer.copyright": "© 2024 Mytaskly. All rights reserved.",
+    "footer.copyright": "© 2025 Mytaskly. All rights reserved.",
 
     // Common
     "common.learnMore": "Learn more",
@@ -479,30 +464,24 @@ const translations: Record<Language, Record<string, string>> = {
     "about.story.title": "Our Story",
     "about.story.description":
       "Mytaskly was born from our founder's frustration with existing productivity apps - too complex, too cluttered, or simply not beautiful enough to use daily.",
-    "about.story.idea.title": "The Idea (2021)",
-    "about.story.description":
-      "It all started with a sketch on a napkin during a lunch break. Marco Rossi, frustrated with existing productivity apps, envisioned an app that combined simplicity, beauty, and power.",
+    "about.story.idea.title": "The Idea",
+    "about.story.idea.description":
+      "It all started as a simple sketch in a notebook. One developer’s vision: a minimalist todo app to declutter life.",
     "about.story.team.title": "The Team (2022)",
-    "about.story.description":
-      "Marco assembled a team of designers, developers, and productivity enthusiasts who shared the same vision: to create the ultimate task management app that people would love using every day.",
+    "about.story.team.description": "Marco assembled a team of designers, developers, and productivity enthusiasts who shared the same vision: to create the ultimate task management app that people would love using every day.",
     "about.story.today.title": "Today",
-    "about.story.description":
-      "Mytaskly has grown to become one of the most loved productivity apps, with users in over 150 countries. We continue to innovate and improve, always keeping our original design philosophy.",
+    "about.story.today.description": "Mytaskly has grown to become one of the most loved productivity apps, with users in over 150 countries. We continue to innovate and improve, always keeping our original design philosophy.",
     "about.mission.title": "Our Mission",
     "about.mission.description":
       "At Mytaskly, we believe technology should simplify life, not complicate it. Our mission is to create tools that help people organize their lives with minimal effort and maximum joy.",
     "about.mission.userCentric.title": "User-Centered Design",
-    "about.mission.description":
-      "Every feature, every pixel, every interaction in Mytaskly is designed with the user experience in mind. We believe software should be a joy to use.",
+    "about.mission.userCentric.description": "Every feature, every pixel, every interaction in Mytaskly is designed with the user experience in mind. We believe software should be a joy to use.",
     "about.mission.simplicity.title": "Simplicity with Power",
-    "about.mission.simplicity.description":
-      "We reject the notion that powerful apps must be complex. Mytaskly offers advanced features in an intuitive interface that never slows you down.",
+    "about.mission.simplicity.description": "We reject the notion that powerful apps must be complex. Mytaskly offers advanced features in an intuitive interface that never slows you down.",
     "about.mission.accessibility.title": "Accessibility for All",
-    "about.mission.description":
-      "We believe great productivity tools should be accessible to everyone. We continuously work to make Mytaskly usable by people with diverse abilities.",
+    "about.mission.accessibility.description": "We believe great productivity tools should be accessible to everyone. We continuously work to make Mytaskly usable by people with diverse abilities.",
     "about.mission.innovation.title": "Continuous Innovation",
-    "about.mission.description":
-      "We never settle for the status quo. Our team is constantly looking for ways to improve Mytaskly, incorporating new technologies and ideas.",
+    "about.mission.innovation.description": "We never settle for the status quo. Our team is constantly looking for ways to improve Mytaskly, incorporating new technologies and ideas.",
     "about.team.title": "Our Team",
     "about.team.description":
       "We're a diverse group of designers, developers, and productivity enthusiasts united by the mission to create the world's best task management app.",
@@ -527,6 +506,48 @@ const translations: Record<Language, Record<string, string>> = {
       "We're always looking for talented people who are passionate about productivity and design. If you enjoy creating products people love to use, we might be the right place for you.",
     "about.joinUs.openPositions": "View Open Positions",
     "about.joinUs.contactUs": "Contact Us",
+
+    // Blog
+    "blog.section.title": "From Our Blog",
+    "blog.card.readMore": "Read More",
+    "blog.posts.welcome.title": "Welcome to the Mytaskly Blog",
+    "blog.posts.welcome.description": "Tips, news, and insights to help you stay productive.",
+    "blog.posts.tips.title": "5 Productivity Tips You Need to Know",
+    "blog.posts.tips.description": "Boost your efficiency with these simple techniques.",
+    "blog.posts.design.title": "Our Design Philosophy",
+    "blog.posts.design.description": "How we crafted Mytaskly’s minimal and functional interface.",
+    "blog.page.title": "Blog",
+    "blog.page.description": "Explore articles, tips, and updates from the Mytaskly team.",
+
+    // Features Blog Contents
+    "features.blog.author": "Marco Rossi",
+    "features.blog.readTime": "5 min read",
+    "features.blog.tocTitle": "Table of Contents",
+    "features.blog.taskManagement.section1.title": "Introduction to Task Management",
+    "features.blog.taskManagement.section1.p1": "Task management is the heart of every productive routine. In Mytaskly you can create, organize, and complete tasks with ease.",
+    "features.blog.taskManagement.section1.p2": "Use rich formatting, attachments, and subtasks to break down complex projects into manageable steps.",
+    "features.blog.taskManagement.section1.p3": "Thanks to drag & drop and quick gestures, adapting the order of your tasks is more intuitive than ever.",
+    "features.blog.taskManagement.section2.title": "Main Features",
+    "features.blog.taskManagement.section2.p1": "Smart lists that automatically group today's, tomorrow's, and completed tasks.",
+    "features.blog.taskManagement.section2.p2": "Customizable reminders to never miss an important deadline.",
+    "features.blog.taskManagement.section2.p3": "Real-time synchronization across all devices, from mobile to desktop.",
+    "features.blog.taskManagement.section3.title": "Best Practices and Tips",
+    "features.blog.taskManagement.section3.p1": "Plan your day the night before to start with mental clarity.",
+    "features.blog.taskManagement.section3.p2": "Limit your daily list to 5 key tasks to maintain focus.",
+    "features.blog.taskManagement.section3.p3": "Review completed tasks weekly to celebrate progress and identify improvement opportunities.",
+
+    "features.blog.smartLists.section1.title": "Introduction to Smart Lists",
+    "features.blog.smartLists.section1.p1": "Smart Lists automatically organize your tasks based on due date, priority, and tags.",
+    "features.blog.smartLists.section1.p2": "Access Today, Coming Up, and Completed views with a single click.",
+    "features.blog.smartLists.section1.p3": "Customize rules to create lists tailored to specific projects.",
+    "features.blog.smartLists.section2.title": "Configuration and Use",
+    "features.blog.smartLists.section2.p1": "Create tags and filters to segment tasks right after creating them.",
+    "features.blog.smartLists.section2.p2": "Set advanced filter parameters to highlight urgent tasks.",
+    "features.blog.smartLists.section2.p3": "Save custom views to quickly return to priority tasks.",
+    "features.blog.smartLists.section3.title": "Benefits of Smart Lists",
+    "features.blog.smartLists.section3.p1": "Time-saving: you no longer need to manually move tasks.",
+    "features.blog.smartLists.section3.p2": "Greater clarity: see immediately what requires attention in the short term.",
+    "features.blog.smartLists.section3.p3": "Flexibility: modify rules at any time based on your workflow needs.",
   },
   it: {
     // Header
@@ -541,9 +562,9 @@ const translations: Record<Language, Record<string, string>> = {
     // Hero
     "hero.title": "Mytaskly",
     "hero.subtitle":
-      "L'elegante app per liste di cose da fare che ti aiuta a organizzare la tua vita con il minimo sforzo. Semplice, bella ed efficace.",
-    "hero.cta.download": "Scarica Ora",
-    "hero.cta.features": "Vedi Funzionalità",
+      "L'elegante app per liste di cose da fare creata da uno sviluppatore solitario — in arrivo. Resta sintonizzato!",
+    "hero.cta.download": "Iscriviti alla Lista d'Attesa",
+    "hero.cta.features": "Vedi Funzionalità Future",
 
     // Organize Your Life
     "organize.title": "Organizza la Tua Vita",
@@ -603,7 +624,7 @@ const translations: Record<Language, Record<string, string>> = {
     "timeline.concept.title": "Concetto Mytaskly",
     "timeline.concept.description": "L'idea di un'app todo minimalista e facile da usare è nata.",
     "timeline.concept.details":
-      "Il nostro fondatore, frustrato dalle app di produttività troppo complesse, ha abbozzato i primi design per Mytaskly su un tovagliolo durante il pranzo. La visione: semplicità senza sacrificare la funzionalità.",
+      "Costruita da un singolo sviluppatore nel suo piccolo ufficio domestico, Mytaskly si prepara al lancio. Preparati!",
     "timeline.beta.title": "Lancio Beta",
     "timeline.beta.description": "Prima versione rilasciata a un gruppo selezionato di appassionati di produttività.",
     "timeline.beta.details":
@@ -626,21 +647,6 @@ const translations: Record<Language, Record<string, string>> = {
       "Mytaskly è diventato uno strumento di produttività globale con localizzazione nelle principali lingue e utenti in 150 paesi.",
 
     // Contact Form
-    "contact.title": "Ottieni Supporto",
-    "contact.subtitle": "Hai domande o feedback? Il nostro team è qui per aiutarti a ottenere il massimo da Mytaskly.",
-    "contact.name": "Nome",
-    "contact.email": "Email",
-    "contact.phone": "Numero di Telefono",
-    "contact.appVersion": "Versione App",
-    "contact.message": "Messaggio",
-    "contact.sending": "Invio in corso...",
-    "contact.send": "Invia Messaggio",
-    "contact.placeholder.name": "Mario Rossi",
-    "contact.placeholder.email": "mario@esempio.com",
-    "contact.placeholder.phone": "+39 123 456 7890",
-    "contact.placeholder.appVersion": "es., Mytaskly 2.4.1",
-    "contact.placeholder.message": "Raccontaci il tuo problema...",
-    "contact.success": "Grazie per il tuo messaggio. Ti risponderemo al più presto!",
 
     // Newsletter
     "newsletter.title": "Resta Aggiornato",
@@ -944,7 +950,7 @@ const translations: Record<Language, Record<string, string>> = {
     "contact.validation.messageRequired": "Il messaggio deve contenere almeno 10 caratteri.",
 
     "contact.toast.success": "Messaggio Inviato!",
-    "contact.toast.successMessage": "Grazie per averci contattato. Ti risponderemo il prima possibile.",
+    "contact.toast.successMessage": "Grazie per averci contattato. Ti risponderemo al prima possibile.",
 
     "contact.info.title": "Informazioni di Contatto",
     "contact.info.description":
@@ -979,7 +985,7 @@ const translations: Record<Language, Record<string, string>> = {
     "contact.cta.link": "Visualizza i piani tariffari",
 
     // Footer
-    "footer.copyright": "© 2024 Mytaskly. Tutti i diritti riservati.",
+    "footer.copyright": "© 2025 Mytaskly. Tutti i diritti riservati.",
 
     // Common
     "common.learnMore": "Scopri di più",
@@ -999,29 +1005,24 @@ const translations: Record<Language, Record<string, string>> = {
     "about.story.description":
       "Mytaskly è nato dalla frustrazione del nostro fondatore con le app di produttività esistenti - troppo complesse, troppo ingombranti, o semplicemente non abbastanza belle da usare quotidianamente.",
     "about.story.idea.title": "L'Idea (2021)",
-    "about.story.description":
-      "Tutto è iniziato con uno schizzo su un tovagliolo durante una pausa pranzo. Marco Rossi, frustrato dalle app di produttività esistenti, ha immaginato un'app che combinasse semplicità, bellezza e potenza.",
+    "about.story.idea.description":
+      "È cominciato come uno schizzo in un taccuino. La visione di un unico sviluppatore: un'app todo minimalista per portare ordine nella vita.",
     "about.story.team.title": "Il Team (2022)",
-    "about.story.description":
-      "Marco ha riunito un team di designer, sviluppatori e esperti di produttività appassionati della stessa visione: creare l'app di gestione attività definitiva che le persone avrebbero amato usare ogni giorno.",
+    "about.story.team.description": "Marco ha assemblato un team di designer, sviluppatori e appassionati di produttività che condividevano la stessa visione: creare l'app di gestione attività definitiva che le persone avrebbero amato usare ogni giorno.",
     "about.story.today.title": "Oggi",
-    "about.story.description":
-      "Mytaskly è cresciuta fino a diventare una delle app di produttività più amate, con utenti in oltre 150 paesi. Continuiamo a innovare e migliorare, mantenendo sempre la nostra filosofia di design originale.",
+    "about.story.today.description": "Mytaskly è diventata una delle app di produttività più amate, con utenti in oltre 150 paesi. Continuiamo a innovare e migliorare, mantenendo sempre la nostra filosofia di design originale.",
     "about.mission.title": "La Nostra Missione",
     "about.mission.description":
       "In Mytaskly, crediamo che la tecnologia dovrebbe semplificare la vita, non complicarla. La nostra missione è creare strumenti che aiutino le persone a organizzare la propria vita con il minimo sforzo e il massimo piacere.",
     "about.mission.userCentric.title": "Design Centrato sull'Utente",
-    "about.mission.description":
-      "Ogni funzionalità, ogni pixel, ogni interazione in Mytaskly è progettata pensando all'esperienza dell'utente. Crediamo che il software dovrebbe essere una gioia da usare.",
+    "about.mission.userCentric.description": "Ogni funzionalità, ogni pixel, ogni interazione in Mytaskly è progettata pensando all'esperienza dell'utente. Crediamo che il software dovrebbe essere una gioia da usare.",
     "about.mission.simplicity.title": "Semplicità con Potenza",
     "about.mission.simplicity.description":
       "Rifiutiamo l'idea che le app potenti debbano essere complesse. Mytaskly offre funzionalità avanzate in un'interfaccia intuitiva che non ti rallenta mai.",
     "about.mission.accessibility.title": "Accessibilità per Tutti",
-    "about.mission.description":
-      "Crediamo che strumenti di produttività eccellenti dovrebbero essere accessibili a tutti. Lavoriamo costantemente per rendere Mytaskly utilizzabile da persone con diverse abilità.",
+    "about.mission.accessibility.description": "Crediamo che ottimi strumenti di produttività debbano essere accessibili a tutti. Lavoriamo costantemente per rendere Mytaskly utilizzabile da persone con abilità diverse.",
     "about.mission.innovation.title": "Innovazione Continua",
-    "about.mission.description":
-      "Non ci accontentiamo mai dello status quo. Il nostro team è costantemente alla ricerca di modi per migliorare Mytaskly, incorporando nuove tecnologie e idee.",
+    "about.mission.innovation.description": "Non ci accontentiamo mai dello status quo. Siamo costantemente alla ricerca di modi per migliorare Mytaskly, incorporando nuove tecnologie e idee.",
     "about.team.title": "Il Nostro Team",
     "about.team.description":
       "Siamo un gruppo diversificato di designer, sviluppatori e appassionati di produttività uniti dalla missione di creare la migliore app di gestione attività al mondo.",
@@ -1046,6 +1047,48 @@ const translations: Record<Language, Record<string, string>> = {
       "Stiamo sempre cercando persone di talento appassionate di produttività e design. Se ti piace creare prodotti che le persone amano usare, potremmo essere il posto giusto per te.",
     "about.joinUs.openPositions": "Vedi Posizioni Aperte",
     "about.joinUs.contactUs": "Contattaci",
+
+    // Blog
+    "blog.section.title": "Dal Nostro Blog",
+    "blog.card.readMore": "Leggi di più",
+    "blog.posts.welcome.title": "Benvenuti nel Blog di Mytaskly",
+    "blog.posts.welcome.description": "Suggerimenti, novità e approfondimenti per aiutarti a rimanere produttivo.",
+    "blog.posts.tips.title": "5 Consigli di Produttività da Conoscere",
+    "blog.posts.tips.description": "Aumenta la tua efficienza con queste semplici tecniche.",
+    "blog.posts.design.title": "La Nostra Filosofia di Design",
+    "blog.posts.design.description": "Come abbiamo creato l'interfaccia minimalista e funzionale di Mytaskly.",
+    "blog.page.title": "Blog",
+    "blog.page.description": "Esplora articoli, suggerimenti e aggiornamenti dal team di Mytaskly.",
+
+    // Features Blog Contents - Italian
+    "features.blog.author": "Marco Rossi",
+    "features.blog.readTime": "5 min di lettura",
+    "features.blog.tocTitle": "Indice dei contenuti",
+    "features.blog.taskManagement.section1.title": "Introduzione alla Gestione delle Attività",
+    "features.blog.taskManagement.section1.p1": "La gestione delle attività è il cuore di ogni routine produttiva. In Mytaskly puoi creare, organizzare e completare task con semplicità.",
+    "features.blog.taskManagement.section1.p2": "Usa formattazione ricca, allegati e sotto-attività per scomporre progetti complessi in passi gestibili.",
+    "features.blog.taskManagement.section1.p3": "Grazie al drag&drop e alle gesture rapide, adattare l'ordine delle tue task è più intuitivo che mai.",
+    "features.blog.taskManagement.section2.title": "Funzionalità Principali",
+    "features.blog.taskManagement.section2.p1": "Liste intelligenti che raggruppano automaticamente le attività di oggi, domani e completate.",
+    "features.blog.taskManagement.section2.p2": "Promemoria personalizzabili per non perdere mai una scadenza importante.",
+    "features.blog.taskManagement.section2.p3": "Sincronizzazione in tempo reale su tutti i dispositivi, dal mobile al desktop.",
+    "features.blog.taskManagement.section3.title": "Best Practice e Suggerimenti",
+    "features.blog.taskManagement.section3.p1": "Pianifica la tua giornata la sera prima per iniziare con chiarezza mentale.",
+    "features.blog.taskManagement.section3.p2": "Limita la lista giornaliera a 5 task chiave per mantenere il focus.",
+    "features.blog.taskManagement.section3.p3": "Rivedi settimanalmente i task completati per celebrare i progressi e identificare opportunità di miglioramento.",
+
+    "features.blog.smartLists.section1.title": "Introduzione alle Smart Lists",
+    "features.blog.smartLists.section1.p1": "Le Smart Lists organizzano automaticamente le tue attività in base a scadenza, priorità e tag.",
+    "features.blog.smartLists.section1.p2": "Accedi alle viste Oggi, In Arrivo e Concluse con un solo click.",
+    "features.blog.smartLists.section1.p3": "Personalizza le regole per creare liste su misura per progetti specifici.",
+    "features.blog.smartLists.section2.title": "Configurazione e Uso",
+    "features.blog.smartLists.section2.p1": "Crea tag e filtri per segmentare le attività subito dopo la loro creazione.",
+    "features.blog.smartLists.section2.p2": "Imposta parametri di filtro avanzati per evidenziare task urgentissimi.",
+    "features.blog.smartLists.section2.p3": "Salva viste personalizzate per ritornare rapidamente alle attività prioritarie.",
+    "features.blog.smartLists.section3.title": "Vantaggi delle Smart Lists",
+    "features.blog.smartLists.section3.p1": "Risparmio di tempo: non devi più spostare manualmente le attività.",
+    "features.blog.smartLists.section3.p2": "Maggiore chiarezza: vedi subito cosa richiede attenzione nel breve termine.",
+    "features.blog.smartLists.section3.p3": "Flessibilità: modifica le regole in qualsiasi momento in base alle esigenze del tuo workflow.",
   },
 }
 

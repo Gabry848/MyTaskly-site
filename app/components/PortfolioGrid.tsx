@@ -3,6 +3,7 @@
 import { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import Image from "next/image"
+import Link from "next/link"
 import ScrollAnimationWrapper from "./ScrollAnimationWrapper"
 import { useLanguage } from "@/app/contexts/LanguageContext"
 
@@ -12,6 +13,7 @@ export default function PortfolioGrid() {
   const projects = [
     {
       id: 1,
+      slug: 'taskManagement',
       title: t("portfolio.taskManagement.title"),
       description: t("portfolio.taskManagement.description"),
       imageUrl: "/placeholder.svg?height=600&width=800",
@@ -19,6 +21,7 @@ export default function PortfolioGrid() {
     },
     {
       id: 2,
+      slug: 'smartLists',
       title: t("portfolio.smartLists.title"),
       description: t("portfolio.smartLists.description"),
       imageUrl: "/placeholder.svg?height=800&width=600",
@@ -26,6 +29,7 @@ export default function PortfolioGrid() {
     },
     {
       id: 3,
+      slug: 'calendar',
       title: t("portfolio.calendar.title"),
       description: t("portfolio.calendar.description"),
       imageUrl: "/placeholder.svg?height=600&width=800",
@@ -33,6 +37,7 @@ export default function PortfolioGrid() {
     },
     {
       id: 4,
+      slug: 'themes',
       title: t("portfolio.themes.title"),
       description: t("portfolio.themes.description"),
       imageUrl: "/placeholder.svg?height=800&width=600",
@@ -40,6 +45,7 @@ export default function PortfolioGrid() {
     },
     {
       id: 5,
+      slug: 'progress',
       title: t("portfolio.progress.title"),
       description: t("portfolio.progress.description"),
       imageUrl: "/placeholder.svg?height=600&width=800",
@@ -47,6 +53,7 @@ export default function PortfolioGrid() {
     },
     {
       id: 6,
+      slug: 'collaboration',
       title: t("portfolio.collaboration.title"),
       description: t("portfolio.collaboration.description"),
       imageUrl: "/placeholder.svg?height=800&width=600",
@@ -118,7 +125,7 @@ export default function PortfolioGrid() {
                   <div className="p-6">
                     <div className="text-sm font-medium text-primary mb-1">{project.category}</div>
                     <h3 className="text-xl font-semibold text-foreground mb-2">{project.title}</h3>
-                    <a href="#" className="text-primary hover:underline inline-flex items-center">
+                    <Link href={`/features/${project.slug}`} className="text-primary hover:underline inline-flex items-center">
                       {t("common.learnMore")}
                       <svg
                         className="w-4 h-4 ml-2"
@@ -134,7 +141,7 @@ export default function PortfolioGrid() {
                           d="M14 5l7 7m0 0l-7 7m7-7H3"
                         />
                       </svg>
-                    </a>
+                    </Link>
                   </div>
                 </motion.div>
               </ScrollAnimationWrapper>

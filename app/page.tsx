@@ -29,7 +29,7 @@ export default function Home() {
         <Testimonials />
       </div>
       <div id="download">
-        <ContactForm />
+        {/* <ContactForm /> */}
         <NewsletterSubscribe />
       </div>
     </>
