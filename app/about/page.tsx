@@ -143,30 +143,30 @@ export default function AboutPage() {
       <div className="py-16 sm:py-24">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <ScrollAnimationWrapper>
-            <div className="mx-auto max-w-2xl lg:mx-0">
-              <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">{t("about.team.title")}</h2>
-              <p className="mt-6 text-lg leading-8 text-muted-foreground">{t("about.team.description")}</p>
-            </div>
+        <div className="mx-auto max-w-2xl lg:mx-0">
+          <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">{t("about.team.title")}</h2>
+          <p className="mt-6 text-lg leading-8 text-muted-foreground">{t("about.team.description")}</p>
+        </div>
           </ScrollAnimationWrapper>
 
           <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-y-16 lg:mx-0 lg:max-w-none">
-            {teamMembers.map((member) => (
-              <ScrollAnimationWrapper key={member.name}>
-                <div className="group hover-lift">
-                  <div className="relative h-56 w-full overflow-hidden rounded-2xl">
-                    <Image
-                      src={member.image || "/placeholder.svg"}
-                      alt={member.name}
-                      fill
-                      className="object-cover transition-transform duration-500 group-hover:scale-105"
-                    />
-                  </div>
-                  <h3 className="mt-6 text-lg font-semibold text-foreground">{member.name}</h3>
-                  <p className="text-sm text-primary">{member.role}</p>
-                  <p className="mt-2 text-sm text-muted-foreground">{member.bio}</p>
-                </div>
-              </ScrollAnimationWrapper>
-            ))}
+        {teamMembers.map((member) => (
+          <ScrollAnimationWrapper key={member.name}>
+            <div className="group hover-lift mx-auto" style={{ width: "250px" }}>
+          <div className="relative aspect-square overflow-hidden rounded-2xl">
+            <Image
+              src={member.image || "/placeholder.svg"}
+              alt={member.name}
+              fill
+              className="object-cover transition-transform duration-500 group-hover:scale-105"
+            />
+          </div>
+          <h3 className="mt-6 text-lg font-semibold text-foreground text-center">{member.name}</h3>
+          <p className="text-sm text-primary text-center">{member.role}</p>
+          <p className="mt-2 text-sm text-muted-foreground text-center">{member.bio}</p>
+            </div>
+          </ScrollAnimationWrapper>
+        ))}
           </div>
         </div>
       </div>

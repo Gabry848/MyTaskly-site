@@ -34,7 +34,7 @@ const translations: Record<Language, Record<string, string>> = {
     // Hero
     "hero.title": "Mytaskly",
     "hero.subtitle":
-      "The elegant todo list app crafted by a solo developer — launching soon. Stay tuned!",
+      "The sleek app that integrates AI to simplify to-do management — coming soon!",
     "hero.cta.download": "Join the Waitlist",
     "hero.cta.features": "See Upcoming Features",
 
@@ -53,8 +53,8 @@ const translations: Record<Language, Record<string, string>> = {
     "features.appFeaturesSubtitle": "Discover what makes Mytaskly the perfect companion for your productivity journey.",
 
     // Feature items
-    "feature.smartLists.title": "Smart Lists",
-    "feature.smartLists.description": "Automatically organize your tasks into Today, Upcoming, and Completed views.",
+    "feature.smartLists.title": "Organize with AI",
+    "feature.smartLists.description": "Use AI chatbot to create and edit tasks",
     "feature.reminders.title": "Reminders",
     "feature.reminders.description": "Never miss a deadline with customizable notifications and alerts.",
     "feature.sync.title": "Seamless Mobile Experience",
@@ -331,7 +331,7 @@ const translations: Record<Language, Record<string, string>> = {
     "download.comingSoonAppStore": "Coming Soon to App Store",
     "download.comingSoonGooglePlay": "Coming Soon to Google Play",
 
-    "download.countdown.title": "Launching in Summer 2024",
+    "download.countdown.title": "Launching in Summer 2025",
     "download.countdown.description":
       "We're putting the finishing touches on Mytaskly. Sign up for our waitlist to get exclusive early access and special benefits.",
 
@@ -376,7 +376,7 @@ const translations: Record<Language, Record<string, string>> = {
       "Yes! We're launching simultaneously on both mobile platforms. Mytaskly is designed specifically for smartphones and tablets to provide the best mobile task management experience.",
     "download.faq.q3": "Is there a cost to join the waitlist?",
     "download.faq.a3":
-      "No, joining the waitlist is completely free. You'll also receive special benefits and discounts when the app launches.",
+      "No, joining the waitlist is completely free. You'll also receive special benefits",
 
     "download.cta.title": "Don't Miss Out",
     "download.cta.description": "Spaces on our priority waitlist are limited. Secure your spot today!",
@@ -491,10 +491,10 @@ const translations: Record<Language, Record<string, string>> = {
     "about.story.idea.title": "The Idea",
     "about.story.idea.description":
       "It all started as a simple sketch in a notebook. One developer’s vision: a minimalist todo app to declutter life.",
-    "about.story.team.title": "The Team (2022)",
-    "about.story.team.description": "Gabriele assembled a team of designers, developers, and productivity enthusiasts who shared the same vision: to create the ultimate task management app that people would love using every day.",
+    "about.story.team.title": "The Team (2024)",
+    "about.story.team.description": "Gabriele single-handedly designed and developed a task management app with a clear vision: to create the ultimate tool that people would love to use every day.",
     "about.story.today.title": "Today",
-    "about.story.today.description": "Mytaskly has grown to become one of the most loved productivity apps, with users in over 150 countries. We continue to innovate and improve, always keeping our original design philosophy.",
+    "about.story.today.description": "Mytaskly is being developed relentlessly by our team with dedication and patience, to ensure the best experience for you",
     "about.mission.title": "Our Mission",
     "about.mission.description":
       "At Mytaskly, we believe technology should simplify life, not complicate it. Our mission is to create tools that help people organize their lives with minimal effort and maximum joy.",
@@ -591,7 +591,7 @@ const translations: Record<Language, Record<string, string>> = {
     // Hero
     "hero.title": "Mytaskly",
     "hero.subtitle":
-      "L'elegante app per liste di cose da fare creata da uno sviluppatore solitario — in arrivo. Resta sintonizzato!",
+      "L'elegante app che integra IA per semplificare la gestione delle cose da fare — in arrivo!",
     "hero.cta.download": "Iscriviti alla Lista d'Attesa",
     "hero.cta.features": "Vedi Funzionalità Future",
 
@@ -611,9 +611,9 @@ const translations: Record<Language, Record<string, string>> = {
       "Scopri cosa rende Mytaskly il compagno perfetto per il tuo percorso di produttività.",
 
     // Feature items
-    "feature.smartLists.title": "Liste Intelligenti",
+    "feature.smartLists.title": "Oraganizza con IA",
     "feature.smartLists.description":
-      "Organizza automaticamente le tue attività in viste Oggi, In Arrivo e Completate.",
+      "Utilizza chatbot con IA per organizzare le tue attività in modo intelligente e intuitivo.",
     "feature.reminders.title": "Promemoria",
     "feature.reminders.description": "Non perdere mai una scadenza con notifiche e avvisi personalizzabili.",
     "feature.sync.title": "Esperienza Mobile Senza Interruzioni",
@@ -894,7 +894,7 @@ const translations: Record<Language, Record<string, string>> = {
     "download.comingSoonAppStore": "Presto su App Store",
     "download.comingSoonGooglePlay": "Presto su Google Play",
 
-    "download.countdown.title": "Lancio nell'Estate 2024",
+    "download.countdown.title": "Lancio nell'Estate 2025",
     "download.countdown.description":
       "Stiamo mettendo gli ultimi ritocchi a Mytaskly. Iscriviti alla nostra lista d'attesa per ottenere accesso anticipato esclusivo e vantaggi speciali.",
 
@@ -930,19 +930,19 @@ const translations: Record<Language, Record<string, string>> = {
 
     "download.benefits.premiumDiscount.title": "Sconto Premium",
     "download.benefits.premiumDiscount.description":
-      "Ricevi uno sconto speciale del 30% su Mytaskly Premium per il primo anno quando ti iscrivi dalla nostra lista d'attesa.",
+      "Ricevi un abbonamento gratuito di 6mesi gratis per i primi 200 utenti Quando ti iscrivi dalla nostra lista d'attesa.",
 
     "download.faq.title": "Domande Frequenti",
     "download.faq.subtitle": "Hai domande sul nostro lancio? Trova le risposte qui sotto.",
     "download.faq.q1": "Quando esattamente verrà lanciato Mytaskly?",
     "download.faq.a1":
-      "Stiamo puntando a un lancio nell'Estate 2024. I membri della lista d'attesa riceveranno accesso a ondate a partire da alcune settimane prima del lancio pubblico.",
+      "Stiamo puntando a un lancio nell'Estate 2025. I membri della lista d'attesa riceveranno accesso a ondate a partire da alcune settimane prima del lancio pubblico.",
     "download.faq.q2": "Mytaskly sarà disponibile sia su iOS che su Android?",
     "download.faq.a2":
       "Sì! Stiamo lanciando simultaneamente su entrambe le piattaforme mobili. Mytaskly è progettato specificamente per smartphone e tablet per offrire la migliore esperienza di gestione delle attività su dispositivi mobili.",
     "download.faq.q3": "C'è un costo per unirsi alla lista d'attesa?",
     "download.faq.a3":
-      "No, unirsi alla lista d'attesa è completamente gratuito. Riceverai anche vantaggi speciali e sconti quando l'app verrà lanciata.",
+      "No, unirsi alla lista d'attesa è completamente gratuito. Riceverai anche vantaggi speciali",
 
     "download.cta.title": "Non Perdere l'Opportunità",
     "download.cta.description":
@@ -1054,14 +1054,14 @@ const translations: Record<Language, Record<string, string>> = {
       "Scopri il team dietro Mytaskly e la nostra missione di rendere la gestione delle attività semplice, bella ed efficace per tutti.",
     "about.story.title": "La Nostra Storia",
     "about.story.description":
-      "Mytaskly è nato dalla frustrazione del nostro fondatore con le app di produttività esistenti - troppo complesse, troppo ingombranti, o semplicemente non abbastanza belle da usare quotidianamente.",
-    "about.story.idea.title": "L'Idea (2021)",
+      "Durante una serie di sessioni di brainstorming nel 2024, é emerso il concetto di Mytaskly. Abbiamo identificato una lacuna nel mercato per un•app todo veramente elegante che prioritizza la semplicitå e l'immediatezza senza sacrificare le funzionalitå.",
+    "about.story.idea.title": "L'Idea (2024)",
     "about.story.idea.description":
       "È cominciato come uno schizzo in un taccuino. La visione di un unico sviluppatore: un'app todo minimalista per portare ordine nella vita.",
-    "about.story.team.title": "Il Team (2022)",
-    "about.story.team.description": "Gabriele ha assemblato un team di designer, sviluppatori e appassionati di produttività che condividevano la stessa visione: creare l'app di gestione attività definitiva che le persone avrebbero amato usare ogni giorno.",
+    "about.story.team.title": "Il Team (2024)",
+    "about.story.team.description": "Gabriele ha ideato e sviluppato da solo un'app di gestione attività con una visione chiara: creare lo strumento definitivo che le persone avrebbero amato usare ogni giorno.",
     "about.story.today.title": "Oggi",
-    "about.story.today.description": "Mytaskly è diventata una delle app di produttività più amate, con utenti in oltre 150 paesi. Continuiamo a innovare e migliorare, mantenendo sempre la nostra filosofia di design originale.",
+    "about.story.today.description": "Mytaskly sta venendo sviluppata incessantemente dal nostro team con dedizione e pazienza, per asscurarvi la migliore esperienza",
     "about.mission.title": "La Nostra Missione",
     "about.mission.description":
       "In Mytaskly, crediamo che la tecnologia dovrebbe semplificare la vita, non complicarla. La nostra missione è creare strumenti che aiutino le persone a organizzare la propria vita con il minimo sforzo e il massimo piacere.",

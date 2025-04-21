@@ -16,7 +16,7 @@ export default function FeatureCarousel() {
     {
       title: t("feature.smartLists.title"),
       description: t("feature.smartLists.description"),
-      icon: "📋",
+      icon: "🧠",
     },
     {
       title: t("feature.reminders.title"),
