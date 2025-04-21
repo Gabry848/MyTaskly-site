@@ -470,7 +470,7 @@ const translations: Record<Language, Record<string, string>> = {
 
     // Launch Banner
     "launch.notLaunched": "Mytaskly has not been launched yet!",
-    "launch.joinWaitlist": "Join our waitlist to try the beta version early and receive",
+    "launch.joinWaitlist": "Join ovur waitlist to try the beta version early and receive",
     "launch.sixMonthsFree": "6 months of Premium subscription for free",
     "launch.atOfficialLaunch": "at the official launch.",
     "launch.earlyAccess": "Early access + 6 months free",
