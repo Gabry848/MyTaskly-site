@@ -57,7 +57,7 @@ const translations: Record<Language, Record<string, string>> = {
     "feature.smartLists.description": "Automatically organize your tasks into Today, Upcoming, and Completed views.",
     "feature.reminders.title": "Reminders",
     "feature.reminders.description": "Never miss a deadline with customizable notifications and alerts.",
-    "feature.sync.title": "Sync Across Devices",
+    "feature.sync.title": "Seamless Mobile Experience",
     "feature.sync.description": "Your tasks are always up-to-date on all your devices.",
     "feature.darkMode.title": "Dark Mode",
     "feature.darkMode.description": "Easy on the eyes with beautiful light and dark themes.",
@@ -114,6 +114,26 @@ const translations: Record<Language, Record<string, string>> = {
     "timeline.global.description": "Reached 1 million users worldwide and added support for 10 languages.",
     "timeline.global.details":
       "Mytaskly became a global productivity tool with localization in major languages and users across 150 countries.",
+    "timeline.idea.title": "Mytaskly Idea",
+    "timeline.idea.description": "The idea for a minimalist, user-friendly todo app was born through discussions.",
+    "timeline.idea.details":
+      "During a series of brainstorming sessions in 2024, the concept of Mytaskly emerged. We identified a gap in the market for a truly elegant todo app that prioritizes simplicity and immediacy without sacrificing functionality.",
+    "timeline.development.title": "Development Begins",
+    "timeline.development.description": "A solo developer starts building the foundation of Mytaskly.",
+    "timeline.development.details":
+      "In January 2025, a passionate developer began coding the first version of Mytaskly, focusing on creating a clean, intuitive interface that would simplify task management for users of all technical abilities.",
+    "timeline.launch.title": "Official Launch",
+    "timeline.launch.description": "Mytaskly 1.0 scheduled for release on iOS and Android.",
+    "timeline.launch.details":
+      "Mytaskly is set to launch in August 2025 on iOS and Android platforms. The first version will feature our core functionality with the clean, minimalist design philosophy that has guided our development.",
+    "timeline.future.premium.title": "Premium Features",
+    "timeline.future.premium.description": "Introduction of Mytaskly Pro with advanced productivity tools.",
+    "timeline.future.premium.details":
+      "Following our successful launch, we plan to introduce a premium tier with enhanced features like unlimited projects, advanced analytics, and priority support for power users who need more from their task management solution.",
+    "timeline.future.expansion.title": "Global Expansion",
+    "timeline.future.expansion.description": "Growing our user base and adding support for multiple languages.",
+    "timeline.future.expansion.details":
+      "Looking ahead to 2026, our roadmap includes expanding Mytaskly to serve users worldwide with localization in multiple languages and culturally relevant features to help everyone stay organized.",
 
     // Contact Form
 
@@ -153,10 +173,10 @@ const translations: Record<Language, Record<string, string>> = {
     "featuresPage.reminders.feature3": "Smart notification scheduling to avoid overwhelm",
     "featuresPage.reminders.feature4": "Customizable notification sounds and styles",
 
-    "featuresPage.sync.title": "Seamless Cross-platform Experience",
+    "featuresPage.sync.title": "Seamless Mobile Experience",
     "featuresPage.sync.description":
-      "Your tasks follow you everywhere. Mytaskly synchronizes instantly across all your devices, ensuring you have access to your up-to-date task lists whether you're on your phone, tablet, or computer.",
-    "featuresPage.sync.feature1": "Real-time sync across iOS, Android, and web",
+      "Your tasks follow you everywhere. Mytaskly synchronizes instantly across your iOS and Android devices, ensuring you have access to your up-to-date task lists whether you're on your phone or tablet.",
+    "featuresPage.sync.feature1": "Real-time sync across iOS and Android devices",
     "featuresPage.sync.feature2": "Offline mode with automatic sync when back online",
     "featuresPage.sync.feature3": "Cloud backup to prevent data loss",
     "featuresPage.sync.feature4": "Consistent user experience across all platforms",
@@ -184,7 +204,7 @@ const translations: Record<Language, Record<string, string>> = {
     "featuresPage.calendar.feature1.description":
       "Changes made in either your calendar or Mytaskly are instantly reflected in both places",
     "featuresPage.calendar.feature2.title": "Multiple Calendars",
-    "featuresPage.calendar.feature2.description": "Connect with Google Calendar, Apple Calendar, Outlook, and more",
+    "featuresPage.calendar.feature2.description": "Connect with most popular calendar app",
     "featuresPage.calendar.feature3.title": "Smart Scheduling",
     "featuresPage.calendar.feature3.description":
       "Find the perfect time for your tasks based on your calendar availability",
@@ -353,7 +373,7 @@ const translations: Record<Language, Record<string, string>> = {
       "We're targeting a Summer 2024 launch. Waitlist members will receive access in waves starting a few weeks before the public launch.",
     "download.faq.q2": "Will Mytaskly be available on both iOS and Android?",
     "download.faq.a2":
-      "Yes! We're launching simultaneously on both platforms, as well as providing a web application for desktop users.",
+      "Yes! We're launching simultaneously on both mobile platforms. Mytaskly is designed specifically for smartphones and tablets to provide the best mobile task management experience.",
     "download.faq.q3": "Is there a cost to join the waitlist?",
     "download.faq.a3":
       "No, joining the waitlist is completely free. You'll also receive special benefits and discounts when the app launches.",
@@ -364,7 +384,7 @@ const translations: Record<Language, Record<string, string>> = {
 
     // Testimonials
     "testimonials.title": "What Our Users Say",
-    "testimonials.subtitle": "Join thousands of satisfied users who have transformed their productivity with Mytaskly",
+    "testimonials.subtitle": "Join the community of satisfied users who have transformed their productivity with Mytaskly",
     "testimonials.quote1":
       "Mytaskly has completely changed how I organize my day. The interface is beautiful and intuitive, and the smart lists feature saves me so much time. I've tried dozens of todo apps, but this is the one I'm sticking with.",
     "testimonials.author1": "Sarah Johnson",
@@ -438,6 +458,10 @@ const translations: Record<Language, Record<string, string>> = {
 
     // Footer
     "footer.copyright": "© 2025 Mytaskly. All rights reserved.",
+    "footer.description": "Mytaskly - Organize your tasks.", // New key
+    "footer.section.product": "Product", // New key
+    "footer.section.company": "Company", // New key
+    "footer.section.legal": "Legal", // New key
 
     // Common
     "common.learnMore": "Learn more",
@@ -468,7 +492,7 @@ const translations: Record<Language, Record<string, string>> = {
     "about.story.idea.description":
       "It all started as a simple sketch in a notebook. One developer’s vision: a minimalist todo app to declutter life.",
     "about.story.team.title": "The Team (2022)",
-    "about.story.team.description": "Marco assembled a team of designers, developers, and productivity enthusiasts who shared the same vision: to create the ultimate task management app that people would love using every day.",
+    "about.story.team.description": "Gabriele assembled a team of designers, developers, and productivity enthusiasts who shared the same vision: to create the ultimate task management app that people would love using every day.",
     "about.story.today.title": "Today",
     "about.story.today.description": "Mytaskly has grown to become one of the most loved productivity apps, with users in over 150 countries. We continue to innovate and improve, always keeping our original design philosophy.",
     "about.mission.title": "Our Mission",
@@ -484,11 +508,16 @@ const translations: Record<Language, Record<string, string>> = {
     "about.mission.innovation.description": "We never settle for the status quo. Our team is constantly looking for ways to improve Mytaskly, incorporating new technologies and ideas.",
     "about.team.title": "Our Team",
     "about.team.description":
-      "We're a diverse group of designers, developers, and productivity enthusiasts united by the mission to create the world's best task management app.",
-    "about.team.member1.name": "Marco Rossi",
+      "I'm Gabriele, founder of Mytaskly: designer, developer and obsessed with time optimization. Working alone allows me to:" +
+      "✔ maintain a clear and coherent vision – No compromises, just the app I've always dreamed of." +
+      "✔ Move with agility – I implement new features in hours, not months." +
+      "✔ Listen to you directly – All feedback comes to me, without filters." +
+      "" + 
+      "The result? An app entirely built with maniacal precision, where every pixel and every line of code reflects a single obsession: your productivity.",
+    "about.team.member1.name": "Gabriele Cipriani",
     "about.team.member1.role": "CEO & Founder",
     "about.team.member1.bio":
-      "Marco founded Mytaskly with the vision of creating a productivity app that was both powerful and beautiful to use.",
+      "Gabriele founded Mytaskly with the vision of creating a productivity app that was both powerful and beautiful to use.",
     "about.team.member2.name": "Sofia Bianchi",
     "about.team.member2.role": "Chief Design Officer",
     "about.team.member2.bio":
@@ -520,7 +549,7 @@ const translations: Record<Language, Record<string, string>> = {
     "blog.page.description": "Explore articles, tips, and updates from the Mytaskly team.",
 
     // Features Blog Contents
-    "features.blog.author": "Marco Rossi",
+    "features.blog.author": "Gabriele Cipriani",
     "features.blog.readTime": "5 min read",
     "features.blog.tocTitle": "Table of Contents",
     "features.blog.taskManagement.section1.title": "Introduction to Task Management",
@@ -587,7 +616,7 @@ const translations: Record<Language, Record<string, string>> = {
       "Organizza automaticamente le tue attività in viste Oggi, In Arrivo e Completate.",
     "feature.reminders.title": "Promemoria",
     "feature.reminders.description": "Non perdere mai una scadenza con notifiche e avvisi personalizzabili.",
-    "feature.sync.title": "Sincronizzazione tra Dispositivi",
+    "feature.sync.title": "Esperienza Mobile Senza Interruzioni",
     "feature.sync.description": "Le tue attività sono sempre aggiornate su tutti i tuoi dispositivi.",
     "feature.darkMode.title": "Modalità Scura",
     "feature.darkMode.description": "Facile per gli occhi con bellissimi temi chiari e scuri.",
@@ -645,6 +674,26 @@ const translations: Record<Language, Record<string, string>> = {
     "timeline.global.description": "Raggiunto 1 milione di utenti in tutto il mondo e aggiunto supporto per 10 lingue.",
     "timeline.global.details":
       "Mytaskly è diventato uno strumento di produttività globale con localizzazione nelle principali lingue e utenti in 150 paesi.",
+    "timeline.idea.title": "L'Idea di Mytaskly",
+    "timeline.idea.description": "L'idea di un'app todo minimalista e facile da usare è nata dalle discussioni.",
+    "timeline.idea.details":
+      "Durante una serie di sessioni di brainstorming nel 2024, è emerso il concetto di Mytaskly. Abbiamo identificato una lacuna nel mercato per un'app todo veramente elegante che prioritizza la semplicità e l'immediatezza senza sacrificare le funzionalità.",
+    "timeline.development.title": "Inizio Sviluppo",
+    "timeline.development.description": "Uno sviluppatore solitario inizia a costruire le fondamenta di Mytaskly.",
+    "timeline.development.details":
+      "Nel gennaio 2025, uno sviluppatore appassionato ha iniziato a programmare la prima versione di Mytaskly, concentrandosi sulla creazione di un'interfaccia pulita e intuitiva che semplificasse la gestione delle attività per utenti di tutte le abilità tecniche.",
+    "timeline.launch.title": "Lancio Ufficiale",
+    "timeline.launch.description": "Mytaskly 1.0 programmato per il rilascio su iOS e Android.",
+    "timeline.launch.details":
+      "Mytaskly è previsto per il lancio ad agosto 2025 su piattaforme iOS e Android. La prima versione presenterà le nostre funzionalità principali con la filosofia di design pulita e minimalista che ha guidato il nostro sviluppo.",
+    "timeline.future.premium.title": "Funzionalità Premium",
+    "timeline.future.premium.description": "Introduzione di Mytaskly Pro con strumenti di produttività avanzati.",
+    "timeline.future.premium.details":
+      "Dopo il nostro lancio di successo, prevediamo di introdurre un livello premium con funzionalità avanzate come progetti illimitati, analisi avanzate e supporto prioritario per gli utenti avanzati che necessitano di più dalla loro soluzione di gestione delle attività.",
+    "timeline.future.expansion.title": "Espansione Globale",
+    "timeline.future.expansion.description": "Crescita della nostra base di utenti e aggiunta del supporto per più lingue.",
+    "timeline.future.expansion.details":
+      "Guardando al 2026, la nostra roadmap include l'espansione di Mytaskly per servire utenti in tutto il mondo con localizzazione in più lingue e funzionalità culturalmente rilevanti per aiutare tutti a rimanere organizzati.",
 
     // Contact Form
 
@@ -685,10 +734,10 @@ const translations: Record<Language, Record<string, string>> = {
     "featuresPage.reminders.feature3": "Pianificazione intelligente delle notifiche per evitare sovraccarichi",
     "featuresPage.reminders.feature4": "Suoni e stili di notifica personalizzabili",
 
-    "featuresPage.sync.title": "Esperienza Multi-piattaforma Senza Interruzioni",
+    "featuresPage.sync.title": "Esperienza Mobile Senza Interruzioni",
     "featuresPage.sync.description":
-      "Le tue attività ti seguono ovunque. Mytaskly si sincronizza istantaneamente su tutti i tuoi dispositivi, assicurandoti di avere accesso alle tue liste di attività aggiornate sia che tu sia sul telefono, tablet o computer.",
-    "featuresPage.sync.feature1": "Sincronizzazione in tempo reale tra iOS, Android e web",
+      "Le tue attività ti seguono ovunque. Mytaskly si sincronizza istantaneamente su tutti i tuoi dispositivi iOS e Android, assicurandoti di avere accesso alle tue liste di attività aggiornate sia che tu sia sul telefono o sul tablet.",
+    "featuresPage.sync.feature1": "Sincronizzazione in tempo reale tra dispositivi iOS e Android",
     "featuresPage.sync.feature2": "Modalità offline con sincronizzazione automatica quando torni online",
     "featuresPage.sync.feature3": "Backup cloud per prevenire la perdita di dati",
     "featuresPage.sync.feature4": "Esperienza utente coerente su tutte le piattaforme",
@@ -716,7 +765,7 @@ const translations: Record<Language, Record<string, string>> = {
     "featuresPage.calendar.feature1.description":
       "Le modifiche apportate nel tuo calendario o in Mytaskly si riflettono istantaneamente in entrambi i luoghi",
     "featuresPage.calendar.feature2.title": "Calendari Multipli",
-    "featuresPage.calendar.feature2.description": "Connettiti con Google Calendar, Apple Calendar, Outlook e altro",
+    "featuresPage.calendar.feature2.description": "Connettiti con le piu` famose app calendar",
     "featuresPage.calendar.feature3.title": "Pianificazione Intelligente",
     "featuresPage.calendar.feature3.description":
       "Trova il momento perfetto per le tue attività in base alla disponibilità del tuo calendario",
@@ -890,7 +939,7 @@ const translations: Record<Language, Record<string, string>> = {
       "Stiamo puntando a un lancio nell'Estate 2024. I membri della lista d'attesa riceveranno accesso a ondate a partire da alcune settimane prima del lancio pubblico.",
     "download.faq.q2": "Mytaskly sarà disponibile sia su iOS che su Android?",
     "download.faq.a2":
-      "Sì! Stiamo lanciando simultaneamente su entrambe le piattaforme, oltre a fornire un'applicazione web per gli utenti desktop.",
+      "Sì! Stiamo lanciando simultaneamente su entrambe le piattaforme mobili. Mytaskly è progettato specificamente per smartphone e tablet per offrire la migliore esperienza di gestione delle attività su dispositivi mobili.",
     "download.faq.q3": "C'è un costo per unirsi alla lista d'attesa?",
     "download.faq.a3":
       "No, unirsi alla lista d'attesa è completamente gratuito. Riceverai anche vantaggi speciali e sconti quando l'app verrà lanciata.",
@@ -911,17 +960,15 @@ const translations: Record<Language, Record<string, string>> = {
     // Testimonials
     "testimonials.title": "Cosa Dicono i Nostri Utenti",
     "testimonials.subtitle":
-      "Unisciti a migliaia di utenti soddisfatti che hanno trasformato la loro produttività con Mytaskly",
+      "Unisciti alla community di utenti soddisfatti che hanno trasformato la loro produttività con Mytaskly",
     "testimonials.quote1":
       "Mytaskly ha completamente cambiato il modo in cui organizzo la mia giornata. L'interfaccia è bella e intuitiva, e la funzione delle liste intelligenti mi fa risparmiare molto tempo. Ho provato decine di app todo, ma questa è quella con cui rimarrò.",
     "testimonials.author1": "Sara Bianchi",
     "testimonials.position1": "Direttrice Marketing",
-    "testimonials.quote2":
-      "Come persona con ADHD, ho sempre avuto difficoltà con la gestione delle attività. Il design pulito e i promemoria intelligenti di Mytaskly hanno cambiato radicalmente la mia produttività. Finalmente posso rimanere al passo con le mie responsabilità senza sentirmi sopraffatto.",
-    "testimonials.author2": "Marco Chen",
+    "testimonials.quote2": "Mytaskly ha completamente cambiato il modo in cui organizzo la mia giornata. L'interfaccia è bella e intuitiva, e la funzione delle liste intelligenti mi fa risparmiare molto tempo. Ho provato decine di app todo, ma questa è quella con cui rimarrò.",
+    "testimonials.author2": "Gabriele Cipriani,",
     "testimonials.position2": "Ingegnere Software",
-    "testimonials.quote3":
-      "La sincronizzazione multi-piattaforma è impeccabile! Posso iniziare una lista di attività sul mio telefono durante il pendolarismo e continuare sul mio laptop al lavoro. La modalità scura è anche facile per gli occhi durante le sessioni di lavoro notturne.",
+    "testimonials.quote3": "La sincronizzazione multi-piattaforma è impeccabile! Posso iniziare una lista di attività sul mio telefono durante il pendolarismo e continuare sul mio laptop al lavoro. La modalità scura è anche facile per gli occhi durante le sessioni di lavoro notturne.",
     "testimonials.author3": "Emma Rossi",
     "testimonials.position3": "Designer Freelance",
     "testimonials.appStoreRating": "Valutazione App Store",
@@ -986,6 +1033,10 @@ const translations: Record<Language, Record<string, string>> = {
 
     // Footer
     "footer.copyright": "© 2025 Mytaskly. Tutti i diritti riservati.",
+    "footer.description": "Mytaskly - Organizza le tue attività.", // New key
+    "footer.section.product": "Prodotto", // New key
+    "footer.section.company": "Azienda", // New key
+    "footer.section.legal": "Legale", // New key
 
     // Common
     "common.learnMore": "Scopri di più",
@@ -1008,7 +1059,7 @@ const translations: Record<Language, Record<string, string>> = {
     "about.story.idea.description":
       "È cominciato come uno schizzo in un taccuino. La visione di un unico sviluppatore: un'app todo minimalista per portare ordine nella vita.",
     "about.story.team.title": "Il Team (2022)",
-    "about.story.team.description": "Marco ha assemblato un team di designer, sviluppatori e appassionati di produttività che condividevano la stessa visione: creare l'app di gestione attività definitiva che le persone avrebbero amato usare ogni giorno.",
+    "about.story.team.description": "Gabriele ha assemblato un team di designer, sviluppatori e appassionati di produttività che condividevano la stessa visione: creare l'app di gestione attività definitiva che le persone avrebbero amato usare ogni giorno.",
     "about.story.today.title": "Oggi",
     "about.story.today.description": "Mytaskly è diventata una delle app di produttività più amate, con utenti in oltre 150 paesi. Continuiamo a innovare e migliorare, mantenendo sempre la nostra filosofia di design originale.",
     "about.mission.title": "La Nostra Missione",
@@ -1025,11 +1076,16 @@ const translations: Record<Language, Record<string, string>> = {
     "about.mission.innovation.description": "Non ci accontentiamo mai dello status quo. Siamo costantemente alla ricerca di modi per migliorare Mytaskly, incorporando nuove tecnologie e idee.",
     "about.team.title": "Il Nostro Team",
     "about.team.description":
-      "Siamo un gruppo diversificato di designer, sviluppatori e appassionati di produttività uniti dalla missione di creare la migliore app di gestione attività al mondo.",
-    "about.team.member1.name": "Marco Rossi",
+      "Sono Gabriele, fondatore di Mytaskly: designer, sviluppatore e ossessionato dall’ottimizzazione del tempo. Lavorare da solista mi permette di:" +
+      "✔ Mantenere una visione chiara e coerente – Niente compromessi, solo l’app che ho sempre sognato." +
+      "✔ Muovermi con agilità – Implemento nuove funzionalità in ore, non in mesi." + 
+      "✔ Ascoltarti direttamente – Ogni feedback arriva a me, senza filtri." +
+      "" +
+      "Il risultato? Un’app todo costruita con precisione maniacale, dove ogni pixel e ogni linea di codice rispecchiano un’unica ossessione: la tua produttività.",
+    "about.team.member1.name": "Gabriele Cipriani",
     "about.team.member1.role": "CEO & Founder",
     "about.team.member1.bio":
-      "Marco ha fondato Mytaskly con la visione di creare un'app di produttività che fosse sia potente che bella da usare.",
+      "Gabriele ha fondato Mytaskly con la visione di creare un'app di produttività che fosse sia potente che bella da usare.",
     "about.team.member2.name": "Sofia Bianchi",
     "about.team.member2.role": "Chief Design Officer",
     "about.team.member2.bio":
@@ -1061,7 +1117,7 @@ const translations: Record<Language, Record<string, string>> = {
     "blog.page.description": "Esplora articoli, suggerimenti e aggiornamenti dal team di Mytaskly.",
 
     // Features Blog Contents - Italian
-    "features.blog.author": "Marco Rossi",
+    "features.blog.author": "Gabriele Cipriani",
     "features.blog.readTime": "5 min di lettura",
     "features.blog.tocTitle": "Indice dei contenuti",
     "features.blog.taskManagement.section1.title": "Introduzione alla Gestione delle Attività",

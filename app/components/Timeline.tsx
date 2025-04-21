@@ -43,40 +43,40 @@ export default function Timeline() {
 
   const timelineEvents = [
     {
-      year: 2021,
-      title: t("timeline.concept.title"),
-      description: t("timeline.concept.description"),
-      details: t("timeline.concept.details"),
+      year: 2024,
+      title: t("timeline.idea.title"),
+      description: t("timeline.idea.description"),
+      details: t("timeline.idea.details"),
     },
     {
-      year: 2022,
+      year: 2025,
+      title: t("timeline.development.title"),
+      description: t("timeline.development.description"),
+      details: t("timeline.development.details"),
+    },
+    {
+      year: 2025,
       title: t("timeline.beta.title"),
       description: t("timeline.beta.description"),
       details: t("timeline.beta.details"),
     },
     {
-      year: 2022,
-      title: t("timeline.release.title"),
-      description: t("timeline.release.description"),
-      details: t("timeline.release.details"),
+      year: 2025,
+      title: t("timeline.launch.title"),
+      description: t("timeline.launch.description"),
+      details: t("timeline.launch.details"),
     },
     {
-      year: 2023,
-      title: t("timeline.webapp.title"),
-      description: t("timeline.webapp.description"),
-      details: t("timeline.webapp.details"),
+      year: 2025,
+      title: t("timeline.future.premium.title"),
+      description: t("timeline.future.premium.description"),
+      details: t("timeline.future.premium.details"),
     },
     {
-      year: 2023,
-      title: t("timeline.premium.title"),
-      description: t("timeline.premium.description"),
-      details: t("timeline.premium.details"),
-    },
-    {
-      year: 2024,
-      title: t("timeline.global.title"),
-      description: t("timeline.global.description"),
-      details: t("timeline.global.details"),
+      year: 2026,
+      title: t("timeline.future.expansion.title"),
+      description: t("timeline.future.expansion.description"),
+      details: t("timeline.future.expansion.details"),
     },
   ]
 

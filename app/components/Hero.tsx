@@ -50,7 +50,6 @@ export default function Hero() {
           <div className="relative">
             <video
             controls
-              autoPlay
               loop
               // muted
               playsInline

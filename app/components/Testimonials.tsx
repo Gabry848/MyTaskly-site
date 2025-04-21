@@ -76,13 +76,13 @@ export default function Testimonials() {
 
         <ScrollAnimationWrapper delay={0.4}>
           <div className="mt-16 text-center">
-            <p className="text-muted-foreground mb-4">{t("testimonials.appStoreRating")}</p>
+            {/* <p className="text-muted-foreground mb-4">{t("testimonials.appStoreRating")}</p> */}
             <div className="flex justify-center items-center gap-1 mb-2">
               {Array.from({ length: 5 }).map((_, i) => (
                 <Star key={i} className="h-6 w-6 text-yellow-400 fill-yellow-400" />
               ))}
             </div>
-            <p className="text-foreground font-medium">{t("testimonials.averageRating")}</p>
+            {/* <p className="text-foreground font-medium">{t("testimonials.averageRating")}</p> */}
           </div>
         </ScrollAnimationWrapper>
       </div>
