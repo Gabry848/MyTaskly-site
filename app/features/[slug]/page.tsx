@@ -3,10 +3,13 @@
 import { useLanguage } from "@/app/contexts/LanguageContext"
 import Link from "next/link"
 import { useParams, useRouter } from 'next/navigation'
+import { ArrowLeft } from "lucide-react" // Importa l'icona
+import { Button } from "@/components/ui/button" // Importa il componente Button se non già presente
 
 export default function FeatureArticlePage() {
   const { t } = useLanguage()
   const { slug } = useParams() as { slug: string }
+  const router = useRouter() // Ottieni l'istanza del router
   const title = t(`portfolio.${slug}.title`)
   const subtitle = t(`portfolio.${slug}.description`)
 
@@ -58,12 +61,20 @@ export default function FeatureArticlePage() {
 
   return (
     <>
-      <main className="container mx-auto px-4 py-8">
+      {/* Pulsante Indietro */}
+      <div className="container mx-auto px-4 pt-4">
+        <Button variant="ghost" onClick={() => router.back()} className="mb-4 text-sm text-muted-foreground hover:text-foreground">
+          <ArrowLeft className="mr-2 h-4 w-4" />
+          {t("common.back")} {/* Assicurati di avere questa traduzione */}
+        </Button>
+      </div>
+
+      <main className="container mx-auto px-4 py-8 pt-0"> {/* Rimosso pt-8 per avvicinare al pulsante */}
         {/* Hero Section */}
         <section className="hero text-center mb-8">
-          <h1 className="text-4xl font-bold">{title}</h1>
-          <h2 className="text-xl text-gray-600 mt-2">{subtitle}</h2>
-          <p className="text-sm text-gray-500 mt-1">
+          <h1 className="text-4xl font-bold text-foreground">{title}</h1>
+          <h2 className="text-xl text-muted-foreground mt-2">{subtitle}</h2>
+          <p className="text-sm text-muted-foreground mt-1">
             di {author} • {date} • {readingTime}
           </p>
           <img
@@ -93,9 +104,9 @@ export default function FeatureArticlePage() {
           <article className="content lg:w-3/4 lg:order-1">
             {sections.map(sec => (
               <section key={sec.id} id={sec.id} className="mb-8">
-                <h3 className="text-2xl font-semibold mb-4">{sec.title}</h3>
+                <h3 className="text-2xl font-semibold mb-4 text-foreground">{sec.title}</h3>
                 {sec.paragraphs.map((p, i) => (
-                  <p key={i} className="mb-4 text-gray-700 leading-relaxed">{p}</p>
+                  <p key={i} className="mb-4 text-foreground/90 leading-relaxed">{p}</p>
                 ))}
               </section>
             ))}

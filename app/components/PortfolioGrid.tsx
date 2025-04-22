@@ -16,7 +16,7 @@ export default function PortfolioGrid() {
       slug: 'taskManagement',
       title: t("portfolio.taskManagement.title"),
       description: t("portfolio.taskManagement.description"),
-      imageUrl: "/placeholder.svg?height=600&width=800",
+      imageUrl: "/images/ai-power.png",
       category: t("category.coreFeatures"),
     },
     {
@@ -24,7 +24,7 @@ export default function PortfolioGrid() {
       slug: 'smartLists',
       title: t("portfolio.smartLists.title"),
       description: t("portfolio.smartLists.description"),
-      imageUrl: "/placeholder.svg?height=800&width=600",
+      imageUrl: "/images/smart-lists.png",
       category: t("category.organization"),
     },
     {
@@ -32,7 +32,7 @@ export default function PortfolioGrid() {
       slug: 'calendar',
       title: t("portfolio.calendar.title"),
       description: t("portfolio.calendar.description"),
-      imageUrl: "/placeholder.svg?height=600&width=800",
+      imageUrl: "/images/integration.png",
       category: t("category.integration"),
     },
     {
@@ -40,7 +40,7 @@ export default function PortfolioGrid() {
       slug: 'themes',
       title: t("portfolio.themes.title"),
       description: t("portfolio.themes.description"),
-      imageUrl: "/placeholder.svg?height=800&width=600",
+      imageUrl: "/images/personalization.png",
       category: t("category.personalization"),
     },
     {
@@ -56,7 +56,7 @@ export default function PortfolioGrid() {
       slug: 'collaboration',
       title: t("portfolio.collaboration.title"),
       description: t("portfolio.collaboration.description"),
-      imageUrl: "/placeholder.svg?height=800&width=600",
+      imageUrl: "/images/collaboration.png",
       category: t("category.collaboration"),
     },
   ]

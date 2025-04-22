@@ -467,6 +467,7 @@ const translations: Record<Language, Record<string, string>> = {
     "common.learnMore": "Learn more",
     "common.getStarted": "Get Started",
     "common.comingSoon": "Coming Soon",
+    "common.back": "Back", // Aggiunto
 
     // Launch Banner
     "launch.notLaunched": "Mytaskly has not been launched yet!",
@@ -1042,6 +1043,7 @@ const translations: Record<Language, Record<string, string>> = {
     "common.learnMore": "Scopri di più",
     "common.getStarted": "Inizia Ora",
     "common.comingSoon": "Prossimamente",
+    "common.back": "Indietro", // Aggiunto
 
     // Theme
     "theme.switchToLight": "Passa al tema chiaro",
