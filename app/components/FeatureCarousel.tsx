@@ -92,9 +92,9 @@ export default function FeatureCarousel() {
                     <p className="text-sm sm:text-base text-muted-foreground">{feature.description}</p>
                   </div>
                   <div className="mt-4">
-                    <a href="#" className="text-primary hover:underline text-sm sm:text-base interactive-element">
+                    {/* <a href="#" className="text-primary hover:underline text-sm sm:text-base interactive-element">
                       {t("features.learnMore")} →
-                    </a>
+                    </a> */}
                   </div>
                 </motion.div>
               ))}

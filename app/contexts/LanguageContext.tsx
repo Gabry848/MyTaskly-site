@@ -97,7 +97,7 @@ const translations: Record<Language, Record<string, string>> = {
     "timeline.beta.title": "Beta Launch",
     "timeline.beta.description": "First version released to a select group of productivity enthusiasts.",
     "timeline.beta.details":
-      "The initial beta version was tested by 500 users who provided invaluable feedback that shaped the core features of Mytaskly. The minimalist design philosophy was established during this phase.",
+      "The initial beta version was tested by select users who provided valuable feedback that shaped Mytaskly's core features. The minimalist design philosophy was established during this phase.",
     "timeline.release.title": "Public Release",
     "timeline.release.description": "Mytaskly 1.0 launched on iOS and Android platforms.",
     "timeline.release.details":
@@ -657,7 +657,7 @@ const translations: Record<Language, Record<string, string>> = {
     "timeline.beta.title": "Lancio Beta",
     "timeline.beta.description": "Prima versione rilasciata a un gruppo selezionato di appassionati di produttività.",
     "timeline.beta.details":
-      "La versione beta iniziale è stata testata da 500 utenti che hanno fornito un feedback prezioso che ha plasmato le funzionalità principali di Mytaskly. La filosofia di design minimalista è stata stabilita durante questa fase.",
+      "La versione beta iniziale è stata testata da utenti selezionati che hanno fornito un feedback prezioso che ha plasmato le funzionalità principali di Mytaskly. La filosofia di design minimalista è stata stabilita durante questa fase.",
     "timeline.release.title": "Rilascio Pubblico",
     "timeline.release.description": "Mytaskly 1.0 lanciato su piattaforme iOS e Android.",
     "timeline.release.details":

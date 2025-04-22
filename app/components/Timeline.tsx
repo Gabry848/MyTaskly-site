@@ -60,24 +60,24 @@ export default function Timeline() {
       description: t("timeline.beta.description"),
       details: t("timeline.beta.details"),
     },
-    {
-      year: 2025,
-      title: t("timeline.launch.title"),
-      description: t("timeline.launch.description"),
-      details: t("timeline.launch.details"),
-    },
-    {
-      year: 2025,
-      title: t("timeline.future.premium.title"),
-      description: t("timeline.future.premium.description"),
-      details: t("timeline.future.premium.details"),
-    },
-    {
-      year: 2026,
-      title: t("timeline.future.expansion.title"),
-      description: t("timeline.future.expansion.description"),
-      details: t("timeline.future.expansion.details"),
-    },
+    // {
+    //   year: 2025,
+    //   title: t("timeline.launch.title"),
+    //   description: t("timeline.launch.description"),
+    //   details: t("timeline.launch.details"),
+    // },
+    // {
+    //   year: 2025,
+    //   title: t("timeline.future.premium.title"),
+    //   description: t("timeline.future.premium.description"),
+    //   details: t("timeline.future.premium.details"),
+    // },
+    // {
+    //   year: 2026,
+    //   title: t("timeline.future.expansion.title"),
+    //   description: t("timeline.future.expansion.description"),
+    //   details: t("timeline.future.expansion.details"),
+    // },
   ]
 
   return (
