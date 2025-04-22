@@ -431,8 +431,8 @@ const translations: Record<Language, Record<string, string>> = {
     "contact.info.email": "Email",
     "contact.info.phone": "Phone",
     "contact.info.address": "Address",
-    "contact.info.hours": "Business Hours",
-    "contact.info.hoursDetails": "Monday - Friday: 9AM - 6PM (PST)",
+    "contact.info.hours": "Time to response",
+    "contact.info.hoursDetails": "1/2 business days",
 
     "contact.social.title": "Follow Us",
 
@@ -1005,8 +1005,8 @@ const translations: Record<Language, Record<string, string>> = {
     "contact.info.email": "Email",
     "contact.info.phone": "Telefono",
     "contact.info.address": "Indirizzo",
-    "contact.info.hours": "Orari di Lavoro",
-    "contact.info.hoursDetails": "Lunedì - Venerdì: 9:00 - 18:00 (PST)",
+    "contact.info.hours": "Tempo di Risposta",
+    "contact.info.hoursDetails": "1/2 giorni lavorativi",
 
     "contact.social.title": "Seguici",
 

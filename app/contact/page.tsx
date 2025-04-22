@@ -39,20 +39,46 @@ export default function ContactPage() {
   })
 
   // Form submission handler
-  function onSubmit(values: z.infer<typeof formSchema>) {
+  async function onSubmit(values: z.infer<typeof formSchema>) {
     setIsSubmitting(true)
 
-    // Simulate API call
-    setTimeout(() => {
-      console.log(values)
-      setIsSubmitting(false)
-      form.reset()
+    console.log(values)
 
-      toast({
-        title: t("contact.toast.success"),
-        description: t("contact.toast.successMessage"),
+    try {
+      const response = await fetch("https://mytaskly-site-server-production.up.railway.app/message", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(values),
       })
-    }, 1500)
+
+      if (response.ok) {
+        form.reset()
+        toast({
+          title: t("contact.toast.success"),
+          description: t("contact.toast.successMessage"),
+        })
+      } else {
+        // Handle server errors (e.g., validation errors, server down)
+        const errorData = await response.json().catch(() => ({})) // Try to parse error, default to empty object
+        toast({
+          variant: "destructive",
+          title: t("contact.toast.error"),
+          description: errorData.message || t("contact.toast.errorMessage"),
+        })
+      }
+    } catch (error) {
+      // Handle network errors or other unexpected issues
+      console.error("Submission error:", error)
+      toast({
+        variant: "destructive",
+        title: t("contact.toast.error"),
+        description: t("contact.toast.errorMessageNetwork"),
+      })
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   // Contact information
@@ -60,21 +86,16 @@ export default function ContactPage() {
     {
       icon: <Mail className="h-6 w-6 text-primary" />,
       title: t("contact.info.email"),
-      details: "support@mytaskly.com",
-      link: "mailto:support@mytaskly.com",
+      details: "support@mytaskly.io",
+      link: "mailto:support@mytaskly.io",
     },
     {
       icon: <Phone className="h-6 w-6 text-primary" />,
       title: t("contact.info.phone"),
-      details: "+1 (555) 123-4567",
+      details: "None at the moment",
       link: "tel:+15551234567",
     },
-    {
-      icon: <MapPin className="h-6 w-6 text-primary" />,
-      title: t("contact.info.address"),
-      details: "123 Productivity Lane, San Francisco, CA 94107, USA",
-      link: "https://maps.google.com/?q=San+Francisco",
-    },
+
     {
       icon: <Clock className="h-6 w-6 text-primary" />,
       title: t("contact.info.hours"),
@@ -260,7 +281,7 @@ export default function ContactPage() {
       </div>
 
       {/* Map Section */}
-      <div className="w-full h-96 bg-muted relative overflow-hidden">
+      {/* <div className="w-full h-96 bg-muted relative overflow-hidden">
         <ScrollAnimationWrapper>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100939.98555098464!2d-122.50764017948534!3d37.75781499657613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sSan%20Francisco%2C%20CA%2C%20USA!5e0!3m2!1sen!2s!4v1649252132504!5m2!1sen!2s"
@@ -271,7 +292,7 @@ export default function ContactPage() {
             title="Mytaskly Office Location"
           ></iframe>
         </ScrollAnimationWrapper>
-      </div>
+      </div> */}
 
       {/* FAQ Section */}
       <div className="bg-background py-16 sm:py-24">
