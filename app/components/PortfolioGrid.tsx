@@ -48,7 +48,7 @@ export default function PortfolioGrid() {
       slug: 'progress',
       title: t("portfolio.progress.title"),
       description: t("portfolio.progress.description"),
-      imageUrl: "/placeholder.svg?height=600&width=800",
+      imageUrl: "/images/analytics.png",
       category: t("category.analytics"),
     },
     {

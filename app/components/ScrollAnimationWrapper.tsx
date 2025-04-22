@@ -29,8 +29,9 @@ export default function ScrollAnimationWrapper({
       opacity: 0,
       y: direction === "up" ? 50 : direction === "down" ? -50 : 0,
       x: direction === "left" ? 50 : direction === "right" ? -50 : 0,
+      scale: 0.95, // Aggiunto effetto scala
     },
-    visible: { opacity: 1, y: 0, x: 0 },
+    visible: { opacity: 1, y: 0, x: 0, scale: 1 }, // Aggiunto effetto scala
   }
 
   return (
@@ -39,7 +40,7 @@ export default function ScrollAnimationWrapper({
       initial="hidden"
       animate={isInView ? "visible" : "hidden"}
       variants={variants}
-      transition={{ duration: 0.5, delay }}
+      transition={{ duration: 0.6, delay, ease: "easeOut" }} // Modificata durata e easing
       className={className}
       style={{ ...style, transition: "background-color 0.3s ease, color 0.3s ease, ...style?.transition" }}
     >
