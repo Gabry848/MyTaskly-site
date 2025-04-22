@@ -54,6 +54,7 @@ export default function Hero() {
               // muted
               playsInline
               preload="auto"
+              poster="/images/video-poster.png"
               className="w-full max-w-[300px] sm:max-w-[400px] md:max-w-[500px] mx-auto rounded-2xl shadow-xl ring-1 ring-gray-900/10 object-cover"
             >
               <source src="/video/presentation.mp4" type="video/mp4" />
