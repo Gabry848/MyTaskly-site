@@ -1152,8 +1152,8 @@ const translations: Record<Language, Record<string, string>> = {
 
 // Provider component
 export function LanguageProvider({ children }: { children: ReactNode }) {
-  // Try to get the language from localStorage, default to 'en'
-  const [language, setLanguageState] = useState<Language>("en")
+  // Try to get the language from localStorage, default to 'it'
+  const [language, setLanguageState] = useState<Language>("it")
 
   // Load saved language preference from localStorage on component mount
   useEffect(() => {
