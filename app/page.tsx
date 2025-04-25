@@ -16,8 +16,8 @@ import { useLanguage } from "@/app/contexts/LanguageContext"; // Keep this impor
 import TermlyCMP from './components/TermlyCMP'
 import { SpeedInsights } from '@vercel/speed-insights/next';
 
-
-const WEBSITE_UUID = '29fbb6f2-35bc-44a8-9ba0-30dc81146a52'
+// Definisci l'UUID di Termly - Se non hai un vero UUID, puoi usarne uno vuoto
+const WEBSITE_UUID = process.env.NEXT_PUBLIC_TERMLY_UUID || '';
 
 export default function Home() {
   const { t } = useLanguage(); // Keep this if used elsewhere in the component
