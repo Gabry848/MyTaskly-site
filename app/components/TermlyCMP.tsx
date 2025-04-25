@@ -38,10 +38,13 @@ export default function TermlyCMP({ autoBlock, masterConsentsOrigin, websiteUUID
     isScriptAdded.current = true
   }, [scriptSrc])
 
+  // Utilizziamo questi hook solo lato client
   const pathname = usePathname()
   const searchParams = useSearchParams()
 
   useEffect(() => {
+    if (typeof window === 'undefined') return
+    
     (window as TermlyWindow).Termly?.initialize()
   }, [pathname, searchParams])
 

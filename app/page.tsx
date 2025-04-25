@@ -15,6 +15,7 @@ import { Analytics } from "@vercel/analytics/react"
 import { useLanguage } from "@/app/contexts/LanguageContext"; // Keep this import if needed elsewhere
 import TermlyCMP from './components/TermlyCMP'
 import { SpeedInsights } from '@vercel/speed-insights/next';
+import { Suspense } from 'react';
 
 // Definisci l'UUID di Termly - Se non hai un vero UUID, puoi usarne uno vuoto
 const WEBSITE_UUID = process.env.NEXT_PUBLIC_TERMLY_UUID || '';
@@ -24,7 +25,9 @@ export default function Home() {
   
   return (
     <>
-     <TermlyCMP websiteUUID={WEBSITE_UUID} />
+     <Suspense fallback={null}>
+       <TermlyCMP websiteUUID={WEBSITE_UUID} />
+     </Suspense>
       <div id="home">
         <Hero />
         <LaunchBanner />
