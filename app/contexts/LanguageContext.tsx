@@ -364,7 +364,7 @@ const translations: Record<Language, Record<string, string>> = {
 
     "download.benefits.premiumDiscount.title": "Premium Discount",
     "download.benefits.premiumDiscount.description":
-      "Receive a special 30% discount on Mytaskly Premium for the first year when you join from our waitlist.",
+      "Receive 6 month free Mytaskly Premium if you join from our waitlist.",
 
     "download.faq.title": "Frequently Asked Questions",
     "download.faq.subtitle": "Have questions about our launch? Find answers below.",

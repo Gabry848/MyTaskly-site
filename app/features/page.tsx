@@ -5,6 +5,8 @@ import Link from "next/link"
 import Image from "next/image"
 import ScrollAnimationWrapper from "@/app/components/ScrollAnimationWrapper"
 import { useLanguage } from "@/app/contexts/LanguageContext"
+import { Analytics } from "@vercel/analytics/react"
+
 
 export default function FeaturesPage() {
   const { t } = useLanguage()
@@ -247,6 +249,7 @@ export default function FeaturesPage() {
           </ScrollAnimationWrapper>
         </div>
       </div>
+      <Analytics />
     </div>
   )
 }

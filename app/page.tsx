@@ -28,6 +28,7 @@ import Marquee from "./components/Marquee"
 // import ContactForm from "./components/ContactForm" // Keep commented or remove if not used elsewhere
 // import NewsletterSubscribe from "./components/NewsletterSubscribe" // Remove this line
 import Testimonials from "./components/Testimonials"
+import { Analytics } from "@vercel/analytics/react"
 
 // Add form schema from download page
 const formSchema = z.object({
@@ -252,7 +253,7 @@ export default function Home() {
                   </form>
                 </Form>
               </div>
-        {/* <NewsletterSubscribe /> */} {/* Remove this line */}
+        <Analytics />
       </div>
     </>
   )
