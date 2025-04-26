@@ -15,7 +15,7 @@ export default function AboutPage() {
       name: t("about.team.member1.name"),
       role: t("about.team.member1.role"),
       bio: t("about.team.member1.bio"),
-      image: "/placeholder.svg?height=300&width=300",
+      image: "/logo.png",
     },
   ]
 
@@ -155,7 +155,7 @@ export default function AboutPage() {
             <div className="group hover-lift mx-auto" style={{ width: "250px" }}>
           <div className="relative aspect-square overflow-hidden rounded-2xl">
             <Image
-              src={member.image || "/placeholder.svg"}
+              src={"/images/gabriele.png"}
               alt={member.name}
               fill
               className="object-cover transition-transform duration-500 group-hover:scale-105"

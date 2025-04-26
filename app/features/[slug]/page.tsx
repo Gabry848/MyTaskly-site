@@ -3,28 +3,54 @@
 import { useLanguage } from "@/app/contexts/LanguageContext"
 import Link from "next/link"
 import { useParams, useRouter } from 'next/navigation'
-import { ArrowLeft } from "lucide-react" // Importa l'icona
-import { Button } from "@/components/ui/button" // Importa il componente Button se non già presente
+import { ArrowLeft } from "lucide-react"
+import { Button } from "@/components/ui/button"
 
 export default function FeatureArticlePage() {
   const { t } = useLanguage()
   const { slug } = useParams() as { slug: string }
-  const router = useRouter() // Ottieni l'istanza del router
-  const title = t(`portfolio.${slug}.title`)
-  const subtitle = t(`portfolio.${slug}.description`)
+  const router = useRouter()
+  
+  // Lista di slug da escludere (nessun contenuto sarà generato per questi)
+  const excludedSlugs = ["taskManagement", "smartLists"]
+  
+  // Se lo slug è nella lista degli esclusi, mostra solo un messaggio di "prossimamente"
+  if (excludedSlugs.includes(slug)) {
+    return (
+      <>
+        {/* Pulsante Indietro */}
+        <div className="container mx-auto px-4 pt-4">
+          <Button variant="ghost" onClick={() => router.back()} className="mb-4 text-sm text-muted-foreground hover:text-foreground">
+            <ArrowLeft className="mr-2 h-4 w-4" />
+            {t("common.back")}
+          </Button>
+        </div>
+
+        <main className="container mx-auto px-4 py-8 pt-0 text-center">
+          <h1 className="text-4xl font-bold text-foreground">
+            {t(`portfolio.${slug}.title`)} - ComingSoon
+          </h1>
+          <p className="mt-8 text-xl">
+            Contenuto in arrivo prossimamente.
+          </p>
+        </main>
+      </>
+    )
+  }
+
+  const title = t(`portfolio.${slug}.title`) + " - ComingSoon"
+  const subtitle = t(`portfolio.${slug}.description`) + " - ComingSoon"
 
   const author = t("features.blog.author")
-  const date = "19 aprile 2025" // Mantenuto fisso per il momento
+  const date = "19 aprile 2025 - ComingSoon"
   const readingTime = t("features.blog.readTime")
 
   // Cover images per slug
   const coverImages: Record<string, { url: string; alt: string }> = {
-    taskManagement: { url: "/images/taskly-app.png", alt: "Interfaccia Task Management" },
-    smartLists: { url: "/images/smart-lists.png", alt: "Smart Lists in azione" },
-    calendar: { url: "/images/crossplatform.png", alt: "Integrazione Calendario" },
-    themes: { url: "/images/taskly-app.png", alt: "Personalizzazione Temi" },
-    progress: { url: "/images/taskly-app.png", alt: "Monitoraggio Progressi" },
-    collaboration: { url: "/images/taskly-app.png", alt: "Collaborazione" },
+    calendar: { url: "/images/crossplatform.png", alt: "Integrazione Calendario - ComingSoon" },
+    themes: { url: "/images/taskly-app.png", alt: "Personalizzazione Temi - ComingSoon" },
+    progress: { url: "/images/taskly-app.png", alt: "Monitoraggio Progressi - ComingSoon" },
+    collaboration: { url: "/images/taskly-app.png", alt: "Collaborazione - ComingSoon" },
   }
   const cover = coverImages[slug] || { url: "/placeholder.jpg", alt: title }
 
@@ -40,7 +66,7 @@ export default function FeatureArticlePage() {
     if (titleText !== titleKey) {
       const section: { id: string; title: string; paragraphs: string[] } = {
         id: `section-${i}`,
-        title: titleText,
+        title: titleText + " - ComingSoon",
         paragraphs: []
       }
       
@@ -49,7 +75,7 @@ export default function FeatureArticlePage() {
         const paraKey = `features.blog.${slug}.section${i}.p${j}`
         const paraText = t(paraKey)
         if (paraText !== paraKey) {
-          section.paragraphs.push(paraText)
+          section.paragraphs.push(paraText + " - ComingSoon")
         }
       }
       
@@ -65,11 +91,11 @@ export default function FeatureArticlePage() {
       <div className="container mx-auto px-4 pt-4">
         <Button variant="ghost" onClick={() => router.back()} className="mb-4 text-sm text-muted-foreground hover:text-foreground">
           <ArrowLeft className="mr-2 h-4 w-4" />
-          {t("common.back")} {/* Assicurati di avere questa traduzione */}
+          {t("common.back")}
         </Button>
       </div>
 
-      <main className="container mx-auto px-4 py-8 pt-0"> {/* Rimosso pt-8 per avvicinare al pulsante */}
+      <main className="container mx-auto px-4 py-8 pt-0">
         {/* Hero Section */}
         <section className="hero text-center mb-8">
           <h1 className="text-4xl font-bold text-foreground">{title}</h1>

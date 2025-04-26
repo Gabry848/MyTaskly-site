@@ -214,6 +214,12 @@ const translations: Record<Language, Record<string, string>> = {
     "featuresPage.cta.download": "Download Now",
     "featuresPage.cta.pricing": "View pricing",
 
+    // Add disclaimer translation
+    "featuresPage.disclaimer": "Disclaimer: Mytaskly is currently under development. Features shown on this page represent our roadmap and vision, but the final product may vary. The Mytaskly team will strive to implement all these features, but some may be subject to change or available in future updates.",
+    
+    // Add pricing disclaimer
+    "pricing.disclaimer": "Disclaimer: Prices and features shown are indicative and subject to change. Final pricing and available features may differ upon official launch of Mytaskly.",
+
     // Pricing Page
     "pricing.title": "Choose Your Plan",
     "pricing.subtitle": "Select the perfect Mytaskly plan that fits your productivity needs",
@@ -776,6 +782,12 @@ const translations: Record<Language, Record<string, string>> = {
       "Unisciti a migliaia di utenti che hanno rivoluzionato la loro gestione delle attività con Mytaskly.",
     "featuresPage.cta.download": "Scarica Ora",
     "featuresPage.cta.pricing": "Vedi prezzi",
+
+    // Add disclaimer translation
+    "featuresPage.disclaimer": "Avviso: Mytaskly è attualmente in fase di sviluppo. Le funzionalità mostrate in questa pagina rappresentano la nostra roadmap e la nostra visione, ma il prodotto finale potrebbe variare. Il team di Mytaskly si impegnerà ad implementare tutte queste funzionalità, ma alcune potrebbero essere soggette a modifiche o disponibili in aggiornamenti futuri.",
+    
+    // Add pricing disclaimer
+    "pricing.disclaimer": "Avviso: I prezzi e le funzionalità mostrate sono indicativi e soggetti a modifiche. Prezzi finali e funzionalità disponibili potrebbero differire al momento del lancio ufficiale di Mytaskly.",
 
     // Pricing Page
     "pricing.title": "Scegli il Tuo Piano",

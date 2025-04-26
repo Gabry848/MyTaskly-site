@@ -65,7 +65,7 @@ export default function FeatureCarousel() {
     <div className="py-12 sm:py-20 bg-gradient-to-b from-background to-secondary/20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <ScrollAnimationWrapper>
-          <h2 className="text-2xl sm:text-3xl font-bold text-center mb-8 sm:mb-12 text-foreground">
+          <h2 className="text-2xl sm:text-3xl font-bold text-center mb-8 sm:mb-12 text-slate-800 dark:text-slate-200">
             {t("features.whyChoose")}
           </h2>
         </ScrollAnimationWrapper>
@@ -87,7 +87,7 @@ export default function FeatureCarousel() {
                   className="min-w-[250px] sm:min-w-[300px] h-[350px] sm:h-[400px] p-6 sm:p-8 m-2 sm:m-4 bg-card text-card-foreground rounded-3xl shadow-lg flex flex-col justify-between hover-lift transition-all duration-300 ease-in-out border-2 border-transparent hover:border-primary/10"
                 >
                   <div>
-                    <div className="text-3xl sm:text-4xl mb-4 feature-icon">{feature.icon}</div>
+                    <div className="text-3xl sm:text-4xl mb-4 text-foreground transition-all duration-300">{feature.icon}</div>
                     <h3 className="text-lg sm:text-xl font-semibold mb-2 text-foreground">{feature.title}</h3>
                     <p className="text-sm sm:text-base text-muted-foreground">{feature.description}</p>
                   </div>

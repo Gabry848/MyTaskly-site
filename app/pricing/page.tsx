@@ -645,6 +645,20 @@ export default function PricingPage() {
           </ScrollAnimationWrapper>
         </div>
       </div>
+
+      {/* Disclaimer Section */}
+      <div className="bg-background border-t border-border/30">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 py-6 lg:px-8">
+          <ScrollAnimationWrapper>
+            <div className="mx-auto max-w-3xl text-center">
+              <p className="text-xs sm:text-sm text-muted-foreground/70 italic">
+                {t("pricing.disclaimer")}
+              </p>
+            </div>
+          </ScrollAnimationWrapper>
+        </div>
+      </div>
+      
       <Analytics /> 
     </div>
   )

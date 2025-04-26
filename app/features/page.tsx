@@ -238,7 +238,11 @@ export default function FeaturesPage() {
                 {t("featuresPage.cta.subtitle")}
               </p>
               <div className="mt-8 sm:mt-10 flex flex-wrap items-center justify-center gap-4 sm:gap-x-6">
-                <Button className="rounded-full" size="lg">
+                <Button 
+                  className="rounded-full" 
+                  size="lg" 
+                  onClick={() => window.location.href = "/download"}
+                >
                   {t("featuresPage.cta.download")}
                 </Button>
                 <Link href="/pricing" className="text-sm font-semibold leading-6 text-foreground">
@@ -249,6 +253,20 @@ export default function FeaturesPage() {
           </ScrollAnimationWrapper>
         </div>
       </div>
+
+      {/* Disclaimer Section */}
+      <div className="bg-background border-t border-border/30">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 py-6 lg:px-8">
+          <ScrollAnimationWrapper>
+            <div className="mx-auto max-w-3xl text-center">
+              <p className="text-xs sm:text-sm text-muted-foreground/70 italic">
+                {t("featuresPage.disclaimer")}
+              </p>
+            </div>
+          </ScrollAnimationWrapper>
+        </div>
+      </div>
+      
       <Analytics />
     </div>
   )
