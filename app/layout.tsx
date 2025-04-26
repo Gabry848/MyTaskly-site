@@ -1,6 +1,8 @@
 import "./globals.css"
 import { Inter } from "next/font/google"
 import { LanguageProvider } from "./contexts/LanguageContext"
+import { SpeedInsights } from '@vercel/speed-insights/next'
+import { Analytics } from "@vercel/analytics/react"
 import Header from "./components/Header"
 import Footer from "./components/Footer"
 import ScrollReset from "./components/ScrollReset"
@@ -27,6 +29,8 @@ export default function RootLayout({
           <Header />
           <main>{children}</main>
           <Footer />
+          <SpeedInsights />
+          <Analytics />
         </LanguageProvider>
       </body>
     </html>

@@ -7,7 +7,6 @@ import ScrollAnimationWrapper from "@/app/components/ScrollAnimationWrapper"
 import { useLanguage } from "@/app/contexts/LanguageContext"
 import { useState } from "react"
 import { cn } from "@/lib/utils"
-import { Analytics } from "@vercel/analytics/react"
 
 export default function PricingPage() {
   const { t } = useLanguage()
@@ -658,8 +657,6 @@ export default function PricingPage() {
           </ScrollAnimationWrapper>
         </div>
       </div>
-      
-      <Analytics /> 
     </div>
   )
 }

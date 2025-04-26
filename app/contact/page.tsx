@@ -13,7 +13,6 @@ import { useLanguage } from "@/app/contexts/LanguageContext"
 import ScrollAnimationWrapper from "@/app/components/ScrollAnimationWrapper"
 import { Mail, Phone, Clock, Send } from "lucide-react"
 import Link from "next/link"
-import { Analytics } from "@vercel/analytics/react"
 
 export default function ContactPage() {
   const { t } = useLanguage()
@@ -341,7 +340,6 @@ export default function ContactPage() {
           </ScrollAnimationWrapper>
         </div>
       </div>
-      <Analytics />
     </div>
   )
 }

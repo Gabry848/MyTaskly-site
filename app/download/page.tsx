@@ -19,7 +19,6 @@ import { useToast } from "@/components/ui/use-toast";
 import { useLanguage } from "@/app/contexts/LanguageContext";
 import ScrollAnimationWrapper from "@/app/components/ScrollAnimationWrapper";
 import { CalendarClock, Rocket, Star, Zap } from "lucide-react";
-import { Analytics } from "@vercel/analytics/react"
 
 const formSchema = z.object({
   email: z.string().email({ message: "Please enter a valid email address." }),
@@ -404,7 +403,6 @@ export default function DownloadPage() {
           </ScrollAnimationWrapper>
         </div>
       </div>
-      <Analytics />
     </div>
   );
 }
