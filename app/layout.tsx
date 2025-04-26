@@ -12,8 +12,8 @@ const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
   title: "Mytaskly - Minimal Todo List App",
-  description: "Organize your life with the elegant and minimal Mytaskly todo app",
-    generator: 'v0.dev'
+  description: "The sleek app that integrates AI to simplify to-do management",
+  generator: 'v0.dev'
 }
 
 export default function RootLayout({
