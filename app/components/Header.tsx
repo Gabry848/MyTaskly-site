@@ -21,7 +21,7 @@ export default function Header() {
         <div className="flex lg:flex-1">
           <Link href="/" className="-m-1.5 p-1.5 flex items-center gap-2">
             <span className="sr-only">Mytaskly</span>
-            <img className="h-8 w-auto rounded" src="/images/taskly-app.png" alt="Mytaskly Logo" />
+            <img className="h-8 w-auto rounded" src="/images/taskly-logo.png" alt="Mytaskly Logo" />
             <span className="font-bold text-foreground">Mytaskly</span>
           </Link>
         </div>
