@@ -3,6 +3,7 @@ import dynamic from 'next/dynamic';
 import TermlyCMP from './components/TermlyCMP';
 import Hero from "./components/Hero";
 import LaunchBanner from "./components/LaunchBanner";
+import { Metadata } from 'next';
 
 // Importazioni dinamiche per componenti non critici per il rendering iniziale
 const WearYourStory = dynamic(() => import('./components/WearYourStory'), { ssr: true });
@@ -15,6 +16,19 @@ const WaitlistForm = dynamic(() => import('./components/WaitlistForm'), { ssr: t
 // Definisci l'UUID di Termly
 const WEBSITE_UUID = process.env.NEXT_PUBLIC_TERMLY_UUID || '';
 
+// Metadata specifici per la home page
+export const metadata: Metadata = {
+  title: 'MyTaskly - App Todo List Minimalista con IA',
+  description: 'Organizza la tua vita con MyTaskly, l\'app Todo List minimalista potenziata dall\'intelligenza artificiale che semplifica la gestione delle tue attività quotidiane',
+  alternates: {
+    canonical: 'https://mytaskly.com',
+  },
+  openGraph: {
+    title: 'MyTaskly - Rivoluziona la Tua Produttività con l\'IA',
+    description: 'Scopri come MyTaskly, l\'app Todo List potenziata dall\'intelligenza artificiale, può trasformare il modo in cui organizzi le tue giornate',
+  }
+};
+
 export default function Home() {
   return (
     <>
@@ -22,32 +36,32 @@ export default function Home() {
         <TermlyCMP websiteUUID={WEBSITE_UUID} />
       </Suspense>
       
-      {/* Sezione iniziale ad alta priorità */}
-      <div id="home">
+      {/* Sezione iniziale ad alta priorità con markup semantico migliorato */}
+      <section id="home" aria-label="MyTaskly - Introduzione">
         <Hero />
         <LaunchBanner />
-      </div>
+      </section>
       
-      {/* Componenti caricati dinamicamente */}
+      {/* Componenti caricati dinamicamente con markup semantico */}
       <Suspense fallback={<div className="min-h-[200px]"></div>}>
-        <div id="features">
+        <section id="features" aria-label="Caratteristiche di MyTaskly">
           <WearYourStory />
           <FeatureCarousel />
           <PortfolioGrid />
-        </div>
+        </section>
       </Suspense>
       
       <Suspense fallback={<div className="min-h-[200px]"></div>}>
-        <div id="about">
+        <section id="about" aria-label="Chi siamo">
           <Timeline />
           <Marquee />
-        </div>
+        </section>
       </Suspense>
       
       <Suspense fallback={<div className="min-h-[200px]"></div>}>
-        <div id="download">
+        <section id="download" aria-label="Scarica MyTaskly">
           <WaitlistForm />
-        </div>
+        </section>
       </Suspense>
     </>
   )
