@@ -1,11 +1,18 @@
 "use client"
 
+import { useEffect, useState } from "react"
 import { motion } from "framer-motion"
 import { useLanguage } from "@/app/contexts/LanguageContext"
 import Link from "next/link"
+import Image from "next/image"
 
 export default function Hero() {
   const { t } = useLanguage()
+  const [isClient, setIsClient] = useState(false)
+
+  useEffect(() => {
+    setIsClient(true)
+  }, [])
 
   return (
     <div className="relative isolate overflow-hidden bg-gradient-to-b from-background to-muted">
@@ -48,18 +55,44 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.6 }}
         >
           <div className="relative">
-            <video
-            controls
-              loop
-              // muted
-              playsInline
-              preload="auto"
-              poster="/images/video-poster.png"
-              className="w-full max-w-[300px] sm:max-w-[400px] md:max-w-[500px] mx-auto rounded-2xl shadow-xl ring-1 ring-gray-900/10 object-cover"
-            >
-              <source src="/video/presentation.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
+            {isClient ? (
+              <div className="w-full max-w-[300px] sm:max-w-[400px] md:max-w-[500px] mx-auto rounded-2xl shadow-xl ring-1 ring-gray-900/10 overflow-hidden">
+                <Image 
+                  src="/images/video-poster.png" 
+                  alt="Mytaskly App Preview"
+                  width={500}
+                  height={800}
+                  priority={true}
+                  loading="eager"
+                  className="w-full h-auto object-cover"
+                />
+                <button 
+                  onClick={() => {
+                    const videoElement = document.createElement('video')
+                    videoElement.src = "/video/presentation.mp4"
+                    videoElement.controls = true
+                    videoElement.autoplay = true
+                    videoElement.playsInline = true
+                    videoElement.className = "w-full h-full object-cover"
+                    const container = document.querySelector('.video-container')
+                    if (container) {
+                      container.innerHTML = ''
+                      container.appendChild(videoElement)
+                    }
+                  }}
+                  className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40 video-container"
+                  aria-label="Play video"
+                >
+                  <div className="w-16 h-16 sm:w-20 sm:h-20 bg-primary rounded-full flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-white ml-1">
+                      <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                    </svg>
+                  </div>
+                </button>
+              </div>
+            ) : (
+              <div className="w-full max-w-[300px] sm:max-w-[400px] md:max-w-[500px] mx-auto rounded-2xl shadow-xl ring-1 ring-gray-900/10 overflow-hidden bg-muted aspect-[9/16]"></div>
+            )}
           </div>
         </motion.div>
       </div>

@@ -1,51 +1,54 @@
-"use client";
-
-import Hero from "./components/Hero"
-import LaunchBanner from "./components/LaunchBanner"
-import WearYourStory from "./components/WearYourStory" // This is now "Organize Your Life" content
-import FeatureCarousel from "./components/FeatureCarousel"
-import PortfolioGrid from "./components/PortfolioGrid"
-import Timeline from "./components/Timeline"
-import Marquee from "./components/Marquee"
-// import ContactForm from "./components/ContactForm" // Keep commented or remove if not used elsewhere
-// import NewsletterSubscribe from "./components/NewsletterSubscribe" // Remove this line
-//import Testimonials from "./components/Testimonials"
-import WaitlistForm from "./components/WaitlistForm" // Import the new component
-import { useLanguage } from "@/app/contexts/LanguageContext"; // Keep this import if needed elsewhere
-import TermlyCMP from './components/TermlyCMP'
 import { Suspense } from 'react';
+import dynamic from 'next/dynamic';
+import TermlyCMP from './components/TermlyCMP';
+import Hero from "./components/Hero";
+import LaunchBanner from "./components/LaunchBanner";
 
-// Definisci l'UUID di Termly - Se non hai un vero UUID, puoi usarne uno vuoto
+// Importazioni dinamiche per componenti non critici per il rendering iniziale
+const WearYourStory = dynamic(() => import('./components/WearYourStory'), { ssr: true });
+const FeatureCarousel = dynamic(() => import('./components/FeatureCarousel'), { ssr: true });
+const PortfolioGrid = dynamic(() => import('./components/PortfolioGrid'), { ssr: true });
+const Timeline = dynamic(() => import('./components/Timeline'), { ssr: true });
+const Marquee = dynamic(() => import('./components/Marquee'), { ssr: true });
+const WaitlistForm = dynamic(() => import('./components/WaitlistForm'), { ssr: true });
+
+// Definisci l'UUID di Termly
 const WEBSITE_UUID = process.env.NEXT_PUBLIC_TERMLY_UUID || '';
 
 export default function Home() {
-  const { t } = useLanguage(); // Keep this if used elsewhere in the component
-  
   return (
     <>
-     <Suspense fallback={null}>
-       <TermlyCMP websiteUUID={WEBSITE_UUID} />
-     </Suspense>
+      <Suspense fallback={null}>
+        <TermlyCMP websiteUUID={WEBSITE_UUID} />
+      </Suspense>
+      
+      {/* Sezione iniziale ad alta priorità */}
       <div id="home">
         <Hero />
         <LaunchBanner />
       </div>
-      <div id="features">
-        <WearYourStory />
-        <FeatureCarousel />
-        <PortfolioGrid />
-      </div>
-      <div id="about">
-        <Timeline />
-        <Marquee />
-      </div>
-      {/* <div id="testimonials">
-        <Testimonials />
-      </div> */}
-      <div id="download">
-        {/* Usando il nuovo componente WaitlistForm */}
-        <WaitlistForm />
-      </div>
+      
+      {/* Componenti caricati dinamicamente */}
+      <Suspense fallback={<div className="min-h-[200px]"></div>}>
+        <div id="features">
+          <WearYourStory />
+          <FeatureCarousel />
+          <PortfolioGrid />
+        </div>
+      </Suspense>
+      
+      <Suspense fallback={<div className="min-h-[200px]"></div>}>
+        <div id="about">
+          <Timeline />
+          <Marquee />
+        </div>
+      </Suspense>
+      
+      <Suspense fallback={<div className="min-h-[200px]"></div>}>
+        <div id="download">
+          <WaitlistForm />
+        </div>
+      </Suspense>
     </>
   )
 }
