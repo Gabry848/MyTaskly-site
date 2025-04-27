@@ -30,6 +30,7 @@ const nextConfig = {
   swcMinify: true,
   // Precaricamento dei dati per pagine frequentemente visitate
   experimental: {
+    // Disabilitato optimizeCss per evitare l'errore con critters
     optimizeCss: true,
     scrollRestoration: true,
   },
