@@ -86,8 +86,8 @@ export default function ContactPage() {
     {
       icon: <Mail className="h-6 w-6 text-primary" />,
       title: t("contact.info.email"),
-      details: "support@mytaskly.io",
-      link: "mailto:support@mytaskly.io",
+      details: "support@mytasklyapp.com",
+      link: "mailto:support@mytasklyapp.com",
     },
     {
       icon: <Phone className="h-6 w-6 text-primary" />,

@@ -370,7 +370,7 @@ const translations: Record<Language, Record<string, string>> = {
 
     "download.benefits.premiumDiscount.title": "Premium Discount",
     "download.benefits.premiumDiscount.description":
-      "Receive 6 month free Mytaskly Premium if you join from our waitlist.",
+      "Receive 3 month free Mytaskly Premium if you join from our waitlist.",
 
     "download.faq.title": "Frequently Asked Questions",
     "download.faq.subtitle": "Have questions about our launch? Find answers below.",
@@ -477,10 +477,10 @@ const translations: Record<Language, Record<string, string>> = {
 
     // Launch Banner
     "launch.notLaunched": "Mytaskly has not been launched yet!",
-    "launch.joinWaitlist": "Join ovur waitlist to try the beta version early and receive",
-    "launch.sixMonthsFree": "6 months of Premium subscription for free",
+    "launch.joinWaitlist": "Join our waitlist to try the beta version early and receive",
+    "launch.sixMonthsFree": "3 months of Premium subscription for free + 30% discount",
     "launch.atOfficialLaunch": "at the official launch.",
-    "launch.earlyAccess": "Early access + 6 months free",
+    "launch.earlyAccess": "Early access + 3 months free + 30% discount",
     "launch.joinWaitlistButton": "Join the Waitlist",
 
     // Theme
@@ -943,7 +943,7 @@ const translations: Record<Language, Record<string, string>> = {
 
     "download.benefits.premiumDiscount.title": "Sconto Premium",
     "download.benefits.premiumDiscount.description":
-      "Ricevi un abbonamento gratuito di 6mesi gratis per i primi 200 utenti Quando ti iscrivi dalla nostra lista d'attesa.",
+      "Ricevi un abbonamento gratuito di 3 mesi gratis per i primi 200 utenti Quando ti iscrivi dalla nostra lista d'attesa.",
 
     "download.faq.title": "Domande Frequenti",
     "download.faq.subtitle": "Hai domande sul nostro lancio? Trova le risposte qui sotto.",
@@ -965,9 +965,9 @@ const translations: Record<Language, Record<string, string>> = {
     // Launch Banner
     "launch.notLaunched": "Mytaskly non è ancora stato lanciato!",
     "launch.joinWaitlist": "Iscriviti alla nostra waitlist per provare la versione beta in anteprima e ricevere",
-    "launch.sixMonthsFree": "6 mesi di abbonamento Premium gratuito",
+    "launch.sixMonthsFree": "3 mesi di abbonamento Premium gratuito + sconto premium 30%",
     "launch.atOfficialLaunch": "al lancio ufficiale.",
-    "launch.earlyAccess": "Accesso anticipato + 6 mesi gratis",
+    "launch.earlyAccess": "Accesso anticipato + 3 mesi gratis + sconto premium 30%",
     "launch.joinWaitlistButton": "Iscriviti alla Waitlist",
 
     // Testimonials
