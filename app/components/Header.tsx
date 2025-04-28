@@ -55,26 +55,28 @@ export default function Header() {
         </div>
 
         <div className="flex flex-1 justify-end items-center gap-3">
-          {/* Social Media Icons */}
-          <a
-            href="https://twitter.com/mytaskly"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-foreground hover:text-primary transition-colors"
-            aria-label="Twitter"
-          >
-            <Twitter className="h-5 w-5" />
-          </a>
-          <a
-            href="https://instagram.com/mytaskly"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-foreground hover:text-primary transition-colors"
-            aria-label="Instagram"
-          >
-            <Instagram className="h-5 w-5" />
-          </a>
-          <div className="mx-2 h-4 w-px bg-border/50"></div>
+          {/* Social Media Icons - visible only on desktop */}
+          <div className="hidden md:flex items-center gap-3">
+            <a
+              href="https://twitter.com/mytaskly"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-foreground hover:text-primary transition-colors"
+              aria-label="Twitter"
+            >
+              <Twitter className="h-5 w-5" />
+            </a>
+            <a
+              href="https://instagram.com/mytaskly"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-foreground hover:text-primary transition-colors"
+              aria-label="Instagram"
+            >
+              <Instagram className="h-5 w-5" />
+            </a>
+            <div className="h-4 w-px bg-border/50"></div>
+          </div>
           <LanguageSwitcher />
           <ThemeToggle />
 
