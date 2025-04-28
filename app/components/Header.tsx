@@ -35,12 +35,6 @@ export default function Header() {
             {t("nav.features")}
           </Link>
           <Link
-            href="/pricing"
-            className="text-sm font-semibold leading-6 text-foreground hover:text-primary transition-colors"
-          >
-            {t("nav.pricing")}
-          </Link>
-          <Link
             href="/download"
             className="text-sm font-semibold leading-6 text-foreground hover:text-primary transition-colors"
           >
@@ -96,12 +90,6 @@ export default function Header() {
                     className="text-lg font-semibold text-foreground hover:text-primary transition-colors"
                   >
                     {t("nav.features")}
-                  </Link>
-                  <Link
-                    href="/pricing"
-                    className="text-lg font-semibold text-foreground hover:text-primary transition-colors"
-                  >
-                    {t("nav.pricing")}
                   </Link>
                   <Link
                     href="/download"
