@@ -5,6 +5,7 @@ import { motion } from "framer-motion"
 import { useLanguage } from "@/app/contexts/LanguageContext"
 import Link from "next/link"
 import Image from "next/image"
+import { Button } from "@/components/ui/button"
 
 export default function Hero() {
   const { t } = useLanguage()
