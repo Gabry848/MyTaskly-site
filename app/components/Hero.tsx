@@ -36,7 +36,7 @@ export default function Hero() {
             {t("hero.subtitle")}
           </motion.p>
           <motion.div
-            className="mt-6 sm:mt-10 flex flex-wrap items-center gap-4 sm:gap-x-6"
+            className="mt-6 sm:mt-10 flex flex-col sm:flex-row items-center gap-4 sm:gap-x-6"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
