@@ -1,8 +1,10 @@
 import { Suspense } from 'react';
 import dynamic from 'next/dynamic';
+// dynamic import rimosso per WaitlistForm
 import TermlyCMP from './components/TermlyCMP';
 import Hero from "./components/Hero";
 import LaunchBanner from "./components/LaunchBanner";
+import WaitlistForm from './components/WaitlistForm';
 import { Metadata } from 'next';
 
 // Importazioni dinamiche per componenti non critici per il rendering iniziale
@@ -11,7 +13,6 @@ const FeatureCarousel = dynamic(() => import('./components/FeatureCarousel'), { 
 const PortfolioGrid = dynamic(() => import('./components/PortfolioGrid'), { ssr: true });
 const Timeline = dynamic(() => import('./components/Timeline'), { ssr: true });
 const Marquee = dynamic(() => import('./components/Marquee'), { ssr: true });
-const WaitlistForm = dynamic(() => import('./components/WaitlistForm'), { ssr: true });
 
 // Definisci l'UUID di Termly
 const WEBSITE_UUID = process.env.NEXT_PUBLIC_TERMLY_UUID || '';
@@ -58,11 +59,10 @@ export default function Home() {
         </section>
       </Suspense>
       
-      <Suspense fallback={<div className="min-h-[200px]"></div>}>
-        <section id="download" aria-label="Scarica MyTaskly">
-          <WaitlistForm />
-        </section>
-      </Suspense>
+      {/* Render immediato del form di waitlist */}
+      <section id="download" aria-label="Scarica MyTaskly">
+        <WaitlistForm />
+      </section>
     </>
   )
 }

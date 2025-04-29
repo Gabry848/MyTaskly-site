@@ -5,7 +5,7 @@ import { motion } from "framer-motion"
 import { useLanguage } from "@/app/contexts/LanguageContext"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { CalendarClock, Gift } from "lucide-react"
+import { CalendarClock, Gift, Mail } from "lucide-react"
 
 export default function LaunchBanner() {
   const { t } = useLanguage()
@@ -47,7 +47,8 @@ export default function LaunchBanner() {
               </div>
               <div className="flex-shrink-0">
                 <Link href="/download" prefetch={true}>
-                  <Button className="rounded-full px-6" size="lg">
+                  <Button className="flex items-center rounded-full bg-green-600 text-white px-8 py-4 hover:bg-green-700 transition-all">
+                    <Mail className="mr-2 h-5 w-5" />
                     {t("launch.joinWaitlistButton")}
                   </Button>
                 </Link>
