@@ -2,6 +2,7 @@ import { Suspense } from 'react';
 import dynamic from 'next/dynamic';
 // dynamic import rimosso per WaitlistForm
 import TermlyCMP from './components/TermlyCMP';
+import SubscriptionPopup from './components/SubscriptionPopup';
 import Hero from "./components/Hero";
 import LaunchBanner from "./components/LaunchBanner";
 import WaitlistForm from './components/WaitlistForm';
@@ -32,37 +33,40 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <main className="w-full px-4 sm:px-6 lg:px-8">
-      <Suspense fallback={null}>
-        <TermlyCMP websiteUUID={WEBSITE_UUID} />
-      </Suspense>
-      
-      {/* Sezione iniziale ad alta priorità con markup semantico migliorato */}
-      <section id="home" aria-label="MyTaskly - Introduzione" className="py-8">
-        <Hero />
-        <LaunchBanner />
-      </section>
-      
-      {/* Componenti caricati dinamicamente con markup semantico */}
-      <Suspense fallback={<div className="min-h-[200px]"></div>}>
-        <section id="features" aria-label="Caratteristiche di MyTaskly" className="py-8">
-          <WearYourStory />
-          <FeatureCarousel />
-          <PortfolioGrid />
+    <>
+      <SubscriptionPopup />
+      <main className="w-full px-4 sm:px-6 lg:px-8">
+        <Suspense fallback={null}>
+          <TermlyCMP websiteUUID={WEBSITE_UUID} />
+        </Suspense>
+        
+        {/* Sezione iniziale ad alta priorità con markup semantico migliorato */}
+        <section id="home" aria-label="MyTaskly - Introduzione" className="py-8">
+          <Hero />
+          <LaunchBanner />
         </section>
-      </Suspense>
-      
-      <Suspense fallback={<div className="min-h-[200px]"></div>}>
-        <section id="about" aria-label="Chi siamo" className="py-8">
-          <Timeline />
-          <Marquee />
+        
+        {/* Componenti caricati dinamicamente con markup semantico */}
+        <Suspense fallback={<div className="min-h-[200px]"></div>}>
+          <section id="features" aria-label="Caratteristiche di MyTaskly" className="py-8">
+            <WearYourStory />
+            <FeatureCarousel />
+            <PortfolioGrid />
+          </section>
+        </Suspense>
+        
+        <Suspense fallback={<div className="min-h-[200px]"></div>}>
+          <section id="about" aria-label="Chi siamo" className="py-8">
+            <Timeline />
+            <Marquee />
+          </section>
+        </Suspense>
+        
+        {/* Render immediato del form di waitlist */}
+        <section id="download" aria-label="Scarica MyTaskly" className="py-8">
+          <WaitlistForm />
         </section>
-      </Suspense>
-      
-      {/* Render immediato del form di waitlist */}
-      <section id="download" aria-label="Scarica MyTaskly" className="py-8">
-        <WaitlistForm />
-      </section>
-    </main>
+      </main>
+    </>
   )
 }
