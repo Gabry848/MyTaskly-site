@@ -15,7 +15,8 @@ export default function SubscriptionPopup() {
   const [open, setOpen] = useState(false)
 
   useEffect(() => {
-    setOpen(true)
+    const timer = setTimeout(() => setOpen(true), 10000)
+    return () => clearTimeout(timer)
   }, [])
 
   return (
