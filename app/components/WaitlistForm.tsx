@@ -26,7 +26,12 @@ const formSchema = z.object({
   notifications: z.boolean().default(true),
 });
 
-export default function WaitlistForm() {
+// Aggiungi il tipo della prop onSuccessfulSubmission
+interface WaitlistFormProps {
+  onSuccessfulSubmission?: () => void;
+}
+
+export default function WaitlistForm({ onSuccessfulSubmission }: WaitlistFormProps) {
   const { t } = useLanguage();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const { toast } = useToast();
@@ -62,6 +67,14 @@ export default function WaitlistForm() {
         throw new Error(data.message || t("download.toast.error.generic"));
       }
 
+      // Imposta il flag in localStorage per indicare che l'utente si è registrato
+      localStorage.setItem("waitlist_subscribed", "true");
+      
+      // Chiude il popup se è stata fornita la funzione di callback
+      if (onSuccessfulSubmission) {
+        onSuccessfulSubmission();
+      }
+      
       form.reset();
       toast({
         title: t("download.toast.title"),
