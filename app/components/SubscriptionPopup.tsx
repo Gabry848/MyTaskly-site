@@ -6,8 +6,7 @@ import {
   DialogContent,
   DialogOverlay,
   DialogTitle,
-  DialogDescription,
-  DialogClose
+  DialogDescription
 } from '@/components/ui/dialog'
 import WaitlistForm from './WaitlistForm'
 
@@ -28,9 +27,7 @@ export default function SubscriptionPopup() {
         <div className="mt-4">
           <WaitlistForm />
         </div>
-        <DialogClose className="mt-6 inline-flex justify-center rounded-md bg-secondary px-4 py-2 text-sm font-medium text-secondary-foreground hover:bg-secondary/80">
-          Chiudi
-        </DialogClose>
+        {/* Rimosso il pulsante DialogClose ridondante */}
       </DialogContent>
     </Dialog>
   )
