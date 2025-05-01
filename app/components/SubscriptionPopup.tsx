@@ -1,41 +1,56 @@
 "use client"
 
+import React from 'react'
 import { useState, useEffect } from 'react'
 import {
   Dialog,
-  DialogContent,
+  DialogContent as BaseDialogContent,
   DialogOverlay,
   DialogTitle,
-  DialogDescription
+  DialogDescription,
+  DialogClose
 } from '@/components/ui/dialog'
 import WaitlistForm from './WaitlistForm'
+
+// Componente DialogContent personalizzato che estende BaseDialogContent senza il pulsante di chiusura originale
+const DialogContent = React.forwardRef<
+  React.ElementRef<typeof BaseDialogContent>,
+  React.ComponentPropsWithoutRef<typeof BaseDialogContent>
+>(({ className, children, ...props }, ref) => (
+  <BaseDialogContent 
+    ref={ref} 
+    className={className} 
+    {...props} 
+    // Questo attributo nasconde il pulsante di chiusura predefinito
+    data-no-close-button
+  >
+    {children}
+  </BaseDialogContent>
+));
+DialogContent.displayName = "CustomDialogContent";
 
 export default function SubscriptionPopup() {
   const [open, setOpen] = useState(false)
 
   useEffect(() => {
-    // Controlla se l'utente si è già iscritto
-    const hasSubscribed = typeof window !== 'undefined' && localStorage.getItem('waitlist_subscribed') === 'true'
-    
-    // Mostra il popup solo se l'utente non si è già iscritto
-    if (!hasSubscribed) {
-      const timer = setTimeout(() => setOpen(true), 10000)
-      return () => clearTimeout(timer)
-    }
+    const timer = setTimeout(() => setOpen(true), 10000)
+    return () => clearTimeout(timer)
   }, [])
-
-  // Funzione per chiudere il popup
-  const handleClosePopup = () => setOpen(false)
 
   return (
     <Dialog open={open} onOpenChange={setOpen}>
-      <DialogOverlay />
-      <DialogContent>
-        <DialogTitle>Iscriviti alla nostra newsletter</DialogTitle>
-        <DialogDescription>Rimani aggiornato con tutte le novità e accedi anticipatamente alle funzionalità.</DialogDescription>
-        <div className="mt-4">
-          <WaitlistForm onSuccessfulSubmission={handleClosePopup} />
-        </div>
+      <DialogOverlay className="touch-auto" />
+      <DialogContent className="w-[95%] max-w-lg p-4 sm:p-6 max-h-[90vh] overflow-y-auto">
+        <DialogTitle className="text-center mb-2">Iscriviti alla nostra newsletter</DialogTitle>
+        <DialogDescription className="text-center mb-3">Rimani aggiornato con tutte le novità e accedi anticipatamente alle funzionalità.</DialogDescription>
+        <WaitlistForm />
+        <DialogClose className="absolute right-2 top-2 sm:right-4 sm:top-4 rounded-full p-2 bg-secondary/50 text-secondary-foreground hover:bg-secondary z-50">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-5 w-5">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+          <span className="sr-only">Chiudi</span>
+        </DialogClose>
       </DialogContent>
     </Dialog>
   )
