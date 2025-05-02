@@ -30,7 +30,17 @@ export const metadata = {
   keywords: ['todo app', 'applicazione todo', 'task management', 'produttività', 'intelligenza artificiale', 'IA todo', 'design minimalista', 'gestione attività', 'app organizzazione', 'reminder', 'promemoria', 'app mobile', 'migliore app to-do', 'organizzazione personale'],
   authors: [{ name: 'Gabriele Cipriani', url: 'https://mytaskly.com/about' }],
   creator: 'Gabriele Cipriani',
-  publisher: 'MyTaskly Team',
+  publisher: {
+    '@type': 'Organization',
+    name: 'MyTaskly Team',
+    logo: {
+      '@type': 'ImageObject',
+      url: '/images/taskly-logo.png', // Assicurati che questo file esista in /public
+      // Puoi aggiungere width e height se conosci le dimensioni esatte
+      // width: 600, 
+      // height: 600,
+    }
+  },
   alternates: {
     canonical: 'https://mytaskly.com',
     languages: {
