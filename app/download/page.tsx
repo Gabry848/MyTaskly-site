@@ -18,7 +18,7 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { useToast } from "@/components/ui/use-toast";
 import { useLanguage } from "@/app/contexts/LanguageContext";
 import ScrollAnimationWrapper from "@/app/components/ScrollAnimationWrapper";
-import { CalendarClock, Rocket, Star, Zap } from "lucide-react";
+import { CalendarClock, ChevronDown, Gift, Rocket, Star, Zap } from "lucide-react"; // Added ChevronDown and Gift
 
 const formSchema = z.object({
   email: z.string().email({ message: "Please enter a valid email address." }),
@@ -53,7 +53,7 @@ export default function DownloadPage() {
           email: values.email,
           name: values.name,
           selected_platform: values.platform,
-          newsletter: values.notifications,
+          newsletter: values.notifications, // Corrected: should probably be values.newsletter based on schema? Or schema needs update? Using notifications for now as per original code.
         }),
       });
 
@@ -83,6 +83,14 @@ export default function DownloadPage() {
     }
   }
 
+  // Function to scroll to the waitlist section
+  const scrollToWaitlist = () => {
+    const waitlistElement = document.getElementById('waitlist-section');
+    if (waitlistElement) {
+      waitlistElement.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <div className="bg-background">
       {/* Hero Section */}
@@ -108,13 +116,27 @@ export default function DownloadPage() {
                   </div>
                 </div>
               </div>
+
+              {/* Animated arrows section */}
+              <div className="mt-16 flex flex-col items-center">
+                <div className="text-primary font-medium flex items-center mb-4">
+                  <Gift className="w-5 h-5 mr-2" />
+                  {/* Using hardcoded text as requested, consider adding to translations */}
+                  <span>Scorri per iscriverti alla waitlist e ricevere 3 mesi gratis + 30% di sconto!</span>
+                </div>
+                <div className="flex flex-col items-center cursor-pointer" onClick={scrollToWaitlist}>
+                  <ChevronDown className="w-6 h-6 text-primary animate-bounce" />
+                  <ChevronDown className="w-6 h-6 text-primary -mt-3 animate-bounce" style={{ animationDelay: '0.3s' }} />
+                  <ChevronDown className="w-6 h-6 text-primary -mt-3 animate-bounce" style={{ animationDelay: '0.6s' }} />
+                </div>
+              </div>
             </div>
           </ScrollAnimationWrapper>
         </div>
       </div>
 
-      {/* Countdown Section */}
-      <div className="bg-gradient-to-b from-background to-primary/5 py-16">
+      {/* Countdown Section - Adding id here for scroll target */}
+      <div id="waitlist-section" className="bg-gradient-to-b from-background to-primary/5 py-16">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <ScrollAnimationWrapper>
             <div className="mx-auto max-w-2xl text-center">
@@ -233,19 +255,20 @@ export default function DownloadPage() {
                       <div className="sm:col-span-2">
                         <FormField
                           control={form.control}
-                          name="notifications"
+                          name="notifications" // This field seems to control the newsletter subscription based on the API call
                           render={({ field }) => (
                             <FormItem className="flex flex-row items-start space-x-3 space-y-0">
                               <FormControl>
                                 <Checkbox
                                   checked={field.value}
                                   onCheckedChange={field.onChange}
-                                  id="notifications"
+                                  id="notifications" // ID should probably match the name/purpose, e.g., "newsletter-check"
                                 />
                               </FormControl>
                               <div className="space-y-1 leading-none">
                                 <FormLabel htmlFor="notifications">
-                                  {t("download.form.notifications")}
+                                  {/* Label text should reflect what the checkbox controls */}
+                                  {t("download.form.notifications")} 
                                 </FormLabel>
                               </div>
                             </FormItem>
@@ -393,7 +416,8 @@ export default function DownloadPage() {
                   className="rounded-full px-8"
                   size="lg"
                   onClick={() =>
-                    window.scrollTo({ top: 0, behavior: "smooth" })
+                    // Scroll to waitlist section instead of top
+                    scrollToWaitlist()
                   }
                 >
                   {t("download.cta.button")}

@@ -6,6 +6,7 @@ import SubscriptionPopup from './components/SubscriptionPopup';
 import Hero from "./components/Hero";
 import LaunchBanner from "./components/LaunchBanner";
 import WaitlistForm from './components/WaitlistForm';
+import AppComparison from './components/AppComparison';
 import { Metadata } from 'next';
 
 // Importazioni dinamiche per componenti non critici per il rendering iniziale
@@ -52,6 +53,13 @@ export default function Home() {
             <WearYourStory />
             <FeatureCarousel />
             <PortfolioGrid />
+          </section>
+        </Suspense>
+        
+        {/* Sezione di confronto con altre app todo */}
+        <Suspense fallback={<div className="min-h-[200px]"></div>}>
+          <section id="comparison" aria-label="Confronto con altre app" className="py-8">
+            <AppComparison />
           </section>
         </Suspense>
         
