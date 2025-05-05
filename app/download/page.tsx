@@ -22,7 +22,9 @@ import { CalendarClock, ChevronDown, Gift, Rocket, Star, Zap } from "lucide-reac
 
 const formSchema = z.object({
   email: z.string().email({ message: "Please enter a valid email address." }),
-  name: z.string().min(2, { message: "Name must be at least 2 characters." }),
+  name: z.string()
+    .min(2, { message: "Name must be at least 2 characters." })
+    .regex(/^[a-zA-Z\s'\-]+$/, { message: "Il nome può contenere solo lettere, spazi, apostrofi e trattini." }),
   platform: z.enum(["ios", "android", "both"]),
   notifications: z.boolean().default(true),
   newsletter: z.boolean().default(true),
