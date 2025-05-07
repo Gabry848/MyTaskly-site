@@ -17,6 +17,7 @@ import {
 import { Checkbox } from "@/components/ui/checkbox";
 import { useToast } from "@/components/ui/use-toast";
 import { useLanguage } from "@/app/contexts/LanguageContext";
+import { useWaitlistRegistration } from "@/hooks/use-waitlist-registration";
 
 // Form schema
 const formSchema = z.object({
@@ -35,6 +36,7 @@ export default function WaitlistForm({ onSuccessfulSubmission }: WaitlistFormPro
   const { t } = useLanguage();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const { toast } = useToast();
+  const { markAsRegistered } = useWaitlistRegistration();
 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -67,8 +69,8 @@ export default function WaitlistForm({ onSuccessfulSubmission }: WaitlistFormPro
         throw new Error(data.message || t("download.toast.error.generic"));
       }
 
-      // Imposta il flag in localStorage per indicare che l'utente si è registrato
-      localStorage.setItem("waitlist_subscribed", "true");
+      // Utilizza il metodo del hook per segnare l'utente come registrato
+      markAsRegistered();
       
       // Chiude il popup se è stata fornita la funzione di callback
       if (onSuccessfulSubmission) {

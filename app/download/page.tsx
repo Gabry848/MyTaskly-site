@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
@@ -18,7 +18,10 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { useToast } from "@/components/ui/use-toast";
 import { useLanguage } from "@/app/contexts/LanguageContext";
 import ScrollAnimationWrapper from "@/app/components/ScrollAnimationWrapper";
-import { CalendarClock, ChevronDown, Gift, Rocket, Star, Zap } from "lucide-react"; // Added ChevronDown and Gift
+import { CalendarClock, ChevronDown, Gift, Rocket, Star, Zap } from "lucide-react"; 
+// import { useCookieConsent } from "@/hooks/use-cookie-consent"; // Ensure this module exists or comment it out if not needed
+import { useWaitlistRegistration } from "@/hooks/use-waitlist-registration";
+import { useCookieConsent } from "@/hooks/use-cookie-consent";
 
 const formSchema = z.object({
   email: z.string().email({ message: "Please enter a valid email address." }),
@@ -34,6 +37,8 @@ export default function DownloadPage() {
   const { t } = useLanguage();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const { toast } = useToast();
+  const { isCookieBannerClosed } = useCookieConsent();
+  const { isRegistered, markAsRegistered } = useWaitlistRegistration();
 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -55,7 +60,7 @@ export default function DownloadPage() {
           email: values.email,
           name: values.name,
           selected_platform: values.platform,
-          newsletter: values.notifications, // Corrected: should probably be values.newsletter based on schema? Or schema needs update? Using notifications for now as per original code.
+          newsletter: values.notifications,
         }),
       });
 
@@ -66,6 +71,9 @@ export default function DownloadPage() {
         throw new Error(data.message || t("download.toast.error.generic"));
       }
 
+      // Segna l'utente come registrato dopo che la registrazione è andata a buon fine
+      markAsRegistered();
+      
       form.reset();
       toast({
         title: t("download.toast.title"),
@@ -92,6 +100,21 @@ export default function DownloadPage() {
       waitlistElement.scrollIntoView({ behavior: 'smooth' });
     }
   };
+
+  useEffect(() => {
+    // Mostra il popup solo se l'utente ha chiuso il banner dei cookie 
+    // E non si è ancora registrato alla waitlist
+    if (isCookieBannerClosed && !isRegistered) {
+      const timer = setTimeout(() => {
+        const popupElement = document.getElementById("subscription-popup");
+        if (popupElement) {
+          popupElement.style.display = "block";
+        }
+      }, 10000); // Mostra il popup dopo 10 secondi (come richiesto)
+      
+      return () => clearTimeout(timer);
+    }
+  }, [isCookieBannerClosed, isRegistered]);
 
   return (
     <div className="bg-background">
@@ -428,6 +451,10 @@ export default function DownloadPage() {
             </div>
           </ScrollAnimationWrapper>
         </div>
+      </div>
+
+      <div id="subscription-popup" style={{ display: "none" }}>
+        {/* Popup content */}
       </div>
     </div>
   );

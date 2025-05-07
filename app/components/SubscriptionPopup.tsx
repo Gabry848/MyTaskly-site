@@ -11,6 +11,8 @@ import {
   DialogClose
 } from '@/components/ui/dialog'
 import WaitlistForm from './WaitlistForm'
+import { useWaitlistRegistration } from '@/hooks/use-waitlist-registration'
+import { useCookieConsent } from '@/hooks/use-cookie-consent'
 
 // Componente DialogContent personalizzato che estende BaseDialogContent senza il pulsante di chiusura originale
 const DialogContent = React.forwardRef<
@@ -31,11 +33,23 @@ DialogContent.displayName = "CustomDialogContent";
 
 export default function SubscriptionPopup() {
   const [open, setOpen] = useState(false)
+  const { isRegistered } = useWaitlistRegistration()
+  const { isCookieBannerClosed } = useCookieConsent()
 
   useEffect(() => {
-    const timer = setTimeout(() => setOpen(true), 10000)
-    return () => clearTimeout(timer)
-  }, [])
+    // Mostra il popup solo se:
+    // 1. L'utente ha chiuso il banner dei cookie
+    // 2. L'utente NON si è ancora registrato alla waitlist
+    if (isCookieBannerClosed && !isRegistered) {
+      const timer = setTimeout(() => setOpen(true), 10000)
+      return () => clearTimeout(timer)
+    }
+  }, [isCookieBannerClosed, isRegistered])
+
+  // Non renderizzare nulla se l'utente è già registrato
+  if (isRegistered) {
+    return null
+  }
 
   return (
     <Dialog open={open} onOpenChange={setOpen}>
