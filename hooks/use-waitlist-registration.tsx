@@ -1,25 +1,56 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { createContext, useContext, useEffect, useState, ReactNode } from 'react';
 
-export function useWaitlistRegistration() {
+interface WaitlistRegistrationContextType {
+  isRegistered: boolean;
+  markAsRegistered: () => void;
+  hasAccess: () => boolean;
+}
+
+const WaitlistRegistrationContext = createContext<WaitlistRegistrationContextType | undefined>(undefined);
+
+interface WaitlistRegistrationProviderProps {
+  children: ReactNode;
+}
+
+export function WaitlistRegistrationProvider({ children }: WaitlistRegistrationProviderProps) {
   const [isRegistered, setIsRegistered] = useState(false);
 
   useEffect(() => {
-    // Controlla se l'utente si è già registrato alla waitlist
-    const registrationStatus = localStorage.getItem("waitlist-registered");
-    if (registrationStatus === "true") {
+    // Controlla se l'utente è già registrato guardando il localStorage
+    const registered = localStorage.getItem('waitlist-registered');
+    if (registered === 'true') {
       setIsRegistered(true);
     }
   }, []);
 
   const markAsRegistered = () => {
-    localStorage.setItem("waitlist-registered", "true");
     setIsRegistered(true);
+    localStorage.setItem('waitlist-registered', 'true');
   };
 
-  return {
-    isRegistered,
-    markAsRegistered
+  const hasAccess = () => {
+    // Per ora tutti gli utenti registrati hanno accesso
+    // In futuro potresti implementare una logica più complessa
+    return isRegistered;
   };
+
+  return (
+    <WaitlistRegistrationContext.Provider value={{
+      isRegistered,
+      markAsRegistered,
+      hasAccess
+    }}>
+      {children}
+    </WaitlistRegistrationContext.Provider>
+  );
+}
+
+export function useWaitlistRegistration() {
+  const context = useContext(WaitlistRegistrationContext);
+  if (context === undefined) {
+    throw new Error('useWaitlistRegistration must be used within a WaitlistRegistrationProvider');
+  }
+  return context;
 }

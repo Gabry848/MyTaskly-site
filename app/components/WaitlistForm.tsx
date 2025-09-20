@@ -4,8 +4,9 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
-import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Checkbox } from "@/components/ui/checkbox";
 import {
   Form,
   FormControl,
@@ -14,25 +15,20 @@ import {
   FormLabel,
   FormMessage,
 } from "@/components/ui/form";
-import { Checkbox } from "@/components/ui/checkbox";
 import { useToast } from "@/components/ui/use-toast";
 import { useLanguage } from "@/app/contexts/LanguageContext";
 import { useWaitlistRegistration } from "@/hooks/use-waitlist-registration";
 
-// Form schema
 const formSchema = z.object({
   email: z.string().email({ message: "Please enter a valid email address." }),
-  name: z.string().min(2, { message: "Name must be at least 2 characters." }),
+  name: z.string()
+    .min(2, { message: "Name must be at least 2 characters." })
+    .regex(/^[a-zA-Z\s'\-]+$/, { message: "Il nome può contenere solo lettere, spazi, apostrofi e trattini." }),
   platform: z.enum(["ios", "android", "both"]),
   notifications: z.boolean().default(true),
 });
 
-// Aggiungi il tipo della prop onSuccessfulSubmission
-interface WaitlistFormProps {
-  onSuccessfulSubmission?: () => void;
-}
-
-export default function WaitlistForm({ onSuccessfulSubmission }: WaitlistFormProps) {
+export default function WaitlistForm() {
   const { t } = useLanguage();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const { toast } = useToast();
@@ -58,7 +54,7 @@ export default function WaitlistForm({ onSuccessfulSubmission }: WaitlistFormPro
           email: values.email,
           name: values.name,
           selected_platform: values.platform,
-          newsletter: values.notifications, // Send notifications value as newsletter
+          newsletter: values.notifications,
         }),
       });
 
@@ -69,14 +65,9 @@ export default function WaitlistForm({ onSuccessfulSubmission }: WaitlistFormPro
         throw new Error(data.message || t("download.toast.error.generic"));
       }
 
-      // Utilizza il metodo del hook per segnare l'utente come registrato
+      // Segna l'utente come registrato dopo che la registrazione è andata a buon fine
       markAsRegistered();
-      
-      // Chiude il popup se è stata fornita la funzione di callback
-      if (onSuccessfulSubmission) {
-        onSuccessfulSubmission();
-      }
-      
+
       form.reset();
       toast({
         title: t("download.toast.title"),
@@ -97,21 +88,9 @@ export default function WaitlistForm({ onSuccessfulSubmission }: WaitlistFormPro
   }
 
   return (
-    <div className="relative rounded-xl bg-background p-8 shadow-lg border border-border max-w-4xl mx-auto my-16">
-      <div className="mx-auto max-w-2xl text-center">
-        <h3 className="text-xl font-semibold leading-8 text-foreground">
-          {t("download.waitlist.title")}
-        </h3>
-        <p className="mt-2 text-base leading-7 text-muted-foreground">
-          {t("download.waitlist.description")}
-        </p>
-      </div>
-
+    <div className="w-full max-w-2xl mx-auto">
       <Form {...form}>
-        <form
-          onSubmit={form.handleSubmit(onSubmit)}
-          className="mt-8 max-w-xl mx-auto"
-        >
+        <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
           <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
             <FormField
               control={form.control}
@@ -137,9 +116,7 @@ export default function WaitlistForm({ onSuccessfulSubmission }: WaitlistFormPro
                   <FormLabel>{t("download.form.email")}</FormLabel>
                   <FormControl>
                     <Input
-                      placeholder={t(
-                        "download.form.emailPlaceholder"
-                      )}
+                      placeholder={t("download.form.emailPlaceholder")}
                       {...field}
                     />
                   </FormControl>
@@ -163,9 +140,7 @@ export default function WaitlistForm({ onSuccessfulSubmission }: WaitlistFormPro
                           onChange={() => field.onChange("ios")}
                           className="h-4 w-4 text-primary"
                         />
-                        <span className="text-sm text-foreground">
-                          iOS
-                        </span>
+                        <span className="text-sm text-foreground">iOS</span>
                       </label>
                       <label className="flex items-center gap-2 cursor-pointer">
                         <input
@@ -175,9 +150,7 @@ export default function WaitlistForm({ onSuccessfulSubmission }: WaitlistFormPro
                           onChange={() => field.onChange("android")}
                           className="h-4 w-4 text-primary"
                         />
-                        <span className="text-sm text-foreground">
-                          Android
-                        </span>
+                        <span className="text-sm text-foreground">Android</span>
                       </label>
                       <label className="flex items-center gap-2 cursor-pointer">
                         <input
@@ -220,7 +193,7 @@ export default function WaitlistForm({ onSuccessfulSubmission }: WaitlistFormPro
               />
             </div>
           </div>
-          <div className="mt-8 flex justify-center">
+          <div className="flex justify-center">
             <Button
               type="submit"
               className="rounded-full px-8"

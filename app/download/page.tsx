@@ -18,7 +18,7 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { useToast } from "@/components/ui/use-toast";
 import { useLanguage } from "@/app/contexts/LanguageContext";
 import ScrollAnimationWrapper from "@/app/components/ScrollAnimationWrapper";
-import { CalendarClock, ChevronDown, Gift, Rocket, Star, Zap } from "lucide-react"; 
+import { CalendarClock, ChevronDown, Gift, Rocket, Star, Zap } from "lucide-react";
 // import { useCookieConsent } from "@/hooks/use-cookie-consent"; // Ensure this module exists or comment it out if not needed
 import { useWaitlistRegistration } from "@/hooks/use-waitlist-registration";
 import { useCookieConsent } from "@/hooks/use-cookie-consent";
@@ -73,7 +73,7 @@ export default function DownloadPage() {
 
       // Segna l'utente come registrato dopo che la registrazione è andata a buon fine
       markAsRegistered();
-      
+
       form.reset();
       toast({
         title: t("download.toast.title"),
@@ -102,7 +102,7 @@ export default function DownloadPage() {
   };
 
   useEffect(() => {
-    // Mostra il popup solo se l'utente ha chiuso il banner dei cookie 
+    // Mostra il popup solo se l'utente ha chiuso il banner dei cookie
     // E non si è ancora registrato alla waitlist
     if (isCookieBannerClosed && !isRegistered) {
       const timer = setTimeout(() => {
@@ -111,7 +111,7 @@ export default function DownloadPage() {
           popupElement.style.display = "block";
         }
       }, 10000); // Mostra il popup dopo 10 secondi (come richiesto)
-      
+
       return () => clearTimeout(timer);
     }
   }, [isCookieBannerClosed, isRegistered]);
@@ -129,6 +129,19 @@ export default function DownloadPage() {
               <p className="mt-6 text-lg leading-8 text-muted-foreground">
                 {t("download.subtitle")}
               </p>
+
+              {/* Waitlist message */}
+              <div className="mt-8 p-4 bg-primary/10 border border-primary/20 rounded-lg">
+                <p className="text-sm text-primary font-medium">
+                  Fai parte della waitlist?
+                  <a
+                    href="/early-access"
+                    className="ml-1 underline hover:no-underline font-semibold"
+                  >
+                    Scarica l'app qui
+                  </a>
+                </p>
+              </div>
               <div className="mt-10 flex items-center justify-center gap-x-6">
                 <div className="relative h-16 w-48">
                   <div className="absolute inset-0 flex items-center justify-center text-sm font-medium text-foreground">
@@ -293,7 +306,7 @@ export default function DownloadPage() {
                               <div className="space-y-1 leading-none">
                                 <FormLabel htmlFor="notifications">
                                   {/* Label text should reflect what the checkbox controls */}
-                                  {t("download.form.notifications")} 
+                                  {t("download.form.notifications")}
                                 </FormLabel>
                               </div>
                             </FormItem>

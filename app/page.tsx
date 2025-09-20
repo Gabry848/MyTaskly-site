@@ -40,7 +40,7 @@ export default function Home() {
         <Suspense fallback={null}>
           <TermlyCMP websiteUUID={WEBSITE_UUID} />
         </Suspense>
-        
+
         {/* Sezione iniziale ad alta priorità con markup semantico migliorato */}
         <section id="home" aria-label="MyTaskly - Introduzione" className="py-8">
           <Hero />
@@ -69,7 +69,7 @@ export default function Home() {
             <Marquee />
           </section>
         </Suspense>
-        
+
         {/* Render immediato del form di waitlist */}
         <section id="download" aria-label="Scarica MyTaskly" className="py-8">
           <WaitlistForm />

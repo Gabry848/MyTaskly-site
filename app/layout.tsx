@@ -1,6 +1,7 @@
 import "./globals.css"
 import { Inter } from "next/font/google"
 import { LanguageProvider } from "./contexts/LanguageContext"
+import { WaitlistRegistrationProvider } from "../hooks/use-waitlist-registration"
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import { Analytics } from "@vercel/analytics/react"
 import Header from "./components/Header"
@@ -195,12 +196,14 @@ export default function RootLayout({
         <div id="lazy-load-trigger" className="absolute top-[800px] h-1 w-full pointer-events-none" aria-hidden="true" />
         
         <LanguageProvider>
-          <ScrollReset />
-          <Header />
-          <main className="min-h-screen">{children}</main>
-          <Footer />
-          <SpeedInsights />
-          <Analytics />
+          <WaitlistRegistrationProvider>
+            <ScrollReset />
+            <Header />
+            <main className="min-h-screen">{children}</main>
+            <Footer />
+            <SpeedInsights />
+            <Analytics />
+          </WaitlistRegistrationProvider>
         </LanguageProvider>
       </body>
     </html>
