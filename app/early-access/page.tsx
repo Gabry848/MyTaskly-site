@@ -72,6 +72,10 @@ export default function EarlyAccessPage() {
       {/* Hero Section */}
       <section className="container mx-auto px-4 py-16">
         <div className="flex justify-between items-start mb-12">
+          <Button variant="outline" onClick={() => router.push('/members')} className="gap-2 mr-4">
+            <ArrowRight className="h-4 w-4 rotate-180" />
+            Area Membri
+          </Button>
           <div className="text-center flex-1">
             <Badge variant="secondary" className="mb-4">
               <Sparkles className="h-4 w-4 mr-2" />
@@ -84,10 +88,6 @@ export default function EarlyAccessPage() {
               Scopri in anteprima le funzionalità rivoluzionarie di MyTaskly prima del lancio ufficiale
             </p>
           </div>
-          <Button variant="outline" onClick={() => router.push('/members')} className="gap-2 ml-4">
-            <ArrowRight className="h-4 w-4 rotate-180" />
-            Area Membri
-          </Button>
         </div>
 
         {/* Development Progress */}
