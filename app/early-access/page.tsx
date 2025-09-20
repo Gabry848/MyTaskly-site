@@ -204,11 +204,12 @@ export default function EarlyAccessPage() {
               <p className="text-lg">
                 La versione beta <strong>e` disponibile</strong> ora! Scarica l'app
               </p>
-              <Button size="lg" disabled className="gap-2">
-                <Shield className="h-5 w-5" />
-                Download Beta
-                <span className="text-xs">(Prossimamente)</span>
-              </Button>
+              <a href="https://expo.dev/artifacts/eas/c8eGpLxxhfMM6JkLmScnqG.apk">
+                <Button size="lg" className="gap-2">
+                  <Shield className="h-5 w-5" />
+                  Download Beta
+                </Button>
+              </a>
             </div>
           </CardContent>
         </Card>
