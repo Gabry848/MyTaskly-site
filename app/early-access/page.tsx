@@ -61,9 +61,9 @@ export default function EarlyAccessPage() {
 
   const developmentProgress = [
     { phase: "Concept & Design", completed: true, progress: 100 },
-    { phase: "Core Features", completed: true, progress: 100 },
-    { phase: "AI Integration", completed: false, progress: 75 },
-    { phase: "Beta Testing", completed: false, progress: 30 },
+    { phase: "Core Features", completed: true, progress: 80 },
+    { phase: "AI Integration", completed: false, progress: 65 },
+    { phase: "Beta Testing", completed: false, progress: 10 },
     { phase: "App Store Review", completed: false, progress: 0 },
   ];
 
