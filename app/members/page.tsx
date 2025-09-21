@@ -5,12 +5,17 @@ import { useRouter } from "next/navigation";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
 import { useWaitlistRegistration } from "@/hooks/use-waitlist-registration";
-import { Calendar, Download, Star, Users, Zap } from "lucide-react";
+import { Calendar, Download, Star, Users, Zap, Mail } from "lucide-react";
 
 export default function MembersPage() {
-  const { isRegistered, hasAccess, logout } = useWaitlistRegistration();
+  const { isRegistered, hasAccess, logout, login } = useWaitlistRegistration();
   const [isLoading, setIsLoading] = useState(true);
+  const [email, setEmail] = useState("");
+  const [loginLoading, setLoginLoading] = useState(false);
+  const [loginError, setLoginError] = useState("");
   const router = useRouter();
 
   useEffect(() => {
@@ -27,6 +32,26 @@ export default function MembersPage() {
     router.push('/');
   };
 
+  const handleLogin = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setLoginLoading(true);
+    setLoginError("");
+
+    try {
+      const success = await login(email);
+      if (success) {
+        // Login riuscito, la pagina si ricaricherà automaticamente
+        setEmail("");
+      } else {
+        setLoginError("Email non valida. Controlla il formato dell'email.");
+      }
+    } catch (error) {
+      setLoginError("Errore durante il login. Riprova.");
+    } finally {
+      setLoginLoading(false);
+    }
+  };
+
   if (isLoading) {
     return (
       <div className="min-h-screen flex items-center justify-center">
@@ -38,17 +63,50 @@ export default function MembersPage() {
   if (!isRegistered || !hasAccess()) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-background px-4">
-        <Card className="w-full max-w-md text-center">
+        <Card className="w-full max-w-md">
           <CardHeader>
-            <CardTitle>Accesso Negato</CardTitle>
+            <div className="flex items-center gap-2 justify-center">
+              <Mail className="h-6 w-6 text-primary" />
+              <CardTitle>Accesso Area Membri</CardTitle>
+            </div>
             <CardDescription>
-              Devi essere iscritto alla waitlist per accedere a questa pagina
+              Inserisci la tua email per accedere all'area riservata
             </CardDescription>
           </CardHeader>
           <CardContent>
-            <Button onClick={() => router.push('/#download')}>
-              Iscriviti alla Waitlist
-            </Button>
+            <form onSubmit={handleLogin} className="space-y-4">
+              <div className="space-y-2">
+                <Label htmlFor="email">Email</Label>
+                <Input
+                  id="email"
+                  type="email"
+                  placeholder="la-tua-email@esempio.com"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  required
+                  disabled={loginLoading}
+                />
+              </div>
+              {loginError && (
+                <p className="text-sm text-red-600">{loginError}</p>
+              )}
+              <Button
+                type="submit"
+                className="w-full"
+                disabled={loginLoading || !email.trim()}
+              >
+                {loginLoading ? "Accesso in corso..." : "Accedi"}
+              </Button>
+            </form>
+            <div className="mt-4 text-center">
+              <Button
+                variant="outline"
+                onClick={() => router.push('/#download')}
+                className="text-sm"
+              >
+                Non sei registrato? Iscriviti alla Waitlist
+              </Button>
+            </div>
           </CardContent>
         </Card>
       </div>

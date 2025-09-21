@@ -6,6 +6,8 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
 import { useWaitlistRegistration } from "@/hooks/use-waitlist-registration";
 import {
   Smartphone,
@@ -15,12 +17,16 @@ import {
   Sparkles,
   ArrowRight,
   CheckCircle,
-  Clock
+  Clock,
+  Mail
 } from "lucide-react";
 
 export default function EarlyAccessPage() {
-  const { isRegistered, hasAccess } = useWaitlistRegistration();
+  const { isRegistered, hasAccess, login } = useWaitlistRegistration();
   const [isLoading, setIsLoading] = useState(true);
+  const [email, setEmail] = useState("");
+  const [loginLoading, setLoginLoading] = useState(false);
+  const [loginError, setLoginError] = useState("");
   const router = useRouter();
 
   useEffect(() => {
@@ -30,6 +36,25 @@ export default function EarlyAccessPage() {
 
     return () => clearTimeout(timer);
   }, []);
+
+  const handleLogin = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setLoginLoading(true);
+    setLoginError("");
+
+    try {
+      const success = await login(email);
+      if (success) {
+        setEmail("");
+      } else {
+        setLoginError("Email non trovata nella waitlist. Registrati prima di accedere.");
+      }
+    } catch (error) {
+      setLoginError("Errore durante il login. Riprova.");
+    } finally {
+      setLoginLoading(false);
+    }
+  };
 
   if (isLoading) {
     return (
@@ -42,17 +67,41 @@ export default function EarlyAccessPage() {
   if (!isRegistered || !hasAccess()) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-background px-4">
-        <Card className="w-full max-w-md text-center">
+        <Card className="w-full max-w-md">
           <CardHeader>
-            <CardTitle>Accesso Negato</CardTitle>
+            <div className="flex items-center gap-2 justify-center">
+              <Sparkles className="h-6 w-6 text-primary" />
+              <CardTitle>Accesso Early Access</CardTitle>
+            </div>
             <CardDescription>
-              Devi essere iscritto alla waitlist per accedere all'early access
+              Inserisci la tua email per accedere all'early access di MyTaskly
             </CardDescription>
           </CardHeader>
           <CardContent>
-            <Button onClick={() => router.push('/#download')}>
-              Iscriviti alla Waitlist
-            </Button>
+            <form onSubmit={handleLogin} className="space-y-4">
+              <div className="space-y-2">
+                <Label htmlFor="email">Email</Label>
+                <Input
+                  id="email"
+                  type="email"
+                  placeholder="la-tua-email@esempio.com"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  required
+                  disabled={loginLoading}
+                />
+              </div>
+              {loginError && (
+                <p className="text-sm text-red-600">{loginError}</p>
+              )}
+              <Button
+                type="submit"
+                className="w-full"
+                disabled={loginLoading || !email.trim()}
+              >
+                {loginLoading ? "Verifica in corso..." : "Accedi"}
+              </Button>
+            </form>
           </CardContent>
         </Card>
       </div>
