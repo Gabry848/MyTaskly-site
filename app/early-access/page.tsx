@@ -230,7 +230,7 @@ export default function EarlyAccessPage() {
           <CardHeader className="text-center">
             <CardTitle className="text-2xl">Accesso Beta Esclusivo</CardTitle>
             <CardDescription>
-              Sei tra i primi ad avere accesso alla versione beta di MyTaskly
+              Sei tra i primi ad avere accesso alla versione beta di MyTaskly!
             </CardDescription>
           </CardHeader>
           <CardContent className="text-center space-y-6">
