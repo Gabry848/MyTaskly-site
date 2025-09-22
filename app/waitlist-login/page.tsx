@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, Suspense } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -24,7 +24,7 @@ const formSchema = z.object({
   email: z.string().email({ message: "Inserisci un indirizzo email valido." }),
 });
 
-export default function WaitlistLoginPage() {
+function WaitlistLoginContent() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const { toast } = useToast();
   const { markAsRegistered } = useWaitlistRegistration();
@@ -155,5 +155,13 @@ export default function WaitlistLoginPage() {
         </Card>
       </div>
     </div>
+  );
+}
+
+export default function WaitlistLoginPage() {
+  return (
+    <Suspense fallback={<div className="min-h-screen bg-background flex items-center justify-center">Caricamento...</div>}>
+      <WaitlistLoginContent />
+    </Suspense>
   );
 }
