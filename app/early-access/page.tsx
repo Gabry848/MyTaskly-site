@@ -259,6 +259,32 @@ export default function EarlyAccessPage() {
                   Download Beta
                 </Button>
               </a>
+
+              {/* Installation Guide */}
+              <div className="mt-6 p-4 bg-background/60 rounded-lg border border-border/50">
+                <h3 className="text-lg font-semibold mb-3 flex items-center gap-2">
+                  <Smartphone className="h-5 w-5" />
+                  Guida Installazione
+                </h3>
+                <ol className="text-sm text-muted-foreground space-y-2 text-left max-w-md mx-auto">
+                  <li className="flex items-start gap-2">
+                    <span className="bg-primary text-primary-foreground rounded-full w-5 h-5 flex items-center justify-center text-xs font-medium flex-shrink-0 mt-0.5">1</span>
+                    <span>Clicca sul pulsante "Download Beta" qui sopra</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="bg-primary text-primary-foreground rounded-full w-5 h-5 flex items-center justify-center text-xs font-medium flex-shrink-0 mt-0.5">2</span>
+                    <span>Al completamento del download, clicca sulla notifica o vai in Download e clicca sul file</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="bg-primary text-primary-foreground rounded-full w-5 h-5 flex items-center justify-center text-xs font-medium flex-shrink-0 mt-0.5">3</span>
+                    <span>Si aprirà un pop-up che chiederà se vuoi installare l'app - clicca "Sì"</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="bg-primary text-primary-foreground rounded-full w-5 h-5 flex items-center justify-center text-xs font-medium flex-shrink-0 mt-0.5">4</span>
+                    <span>Apri l'app, registrati e... enjoy! 🎉</span>
+                  </li>
+                </ol>
+              </div>
             </div>
           </CardContent>
         </Card>
