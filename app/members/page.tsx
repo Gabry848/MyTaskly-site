@@ -98,15 +98,6 @@ export default function MembersPage() {
                 {loginLoading ? "Accesso in corso..." : "Accedi"}
               </Button>
             </form>
-            <div className="mt-4 text-center">
-              <Button
-                variant="outline"
-                onClick={() => router.push('/#download')}
-                className="text-sm"
-              >
-                Non sei registrato? Iscriviti alla Waitlist
-              </Button>
-            </div>
           </CardContent>
         </Card>
       </div>

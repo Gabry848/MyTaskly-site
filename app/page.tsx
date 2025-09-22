@@ -5,7 +5,6 @@ import TermlyCMP from './components/TermlyCMP';
 import SubscriptionPopup from './components/SubscriptionPopup';
 import Hero from "./components/Hero";
 import LaunchBanner from "./components/LaunchBanner";
-import WaitlistForm from './components/WaitlistForm';
 import AppComparison from './components/AppComparison';
 import { Metadata } from 'next';
 
@@ -44,7 +43,6 @@ export default function Home() {
         {/* Sezione iniziale ad alta priorità con markup semantico migliorato */}
         <section id="home" aria-label="MyTaskly - Introduzione" className="py-8">
           <Hero />
-          <LaunchBanner />
         </section>
         
         {/* Componenti caricati dinamicamente con markup semantico */}
@@ -69,11 +67,6 @@ export default function Home() {
             <Marquee />
           </section>
         </Suspense>
-
-        {/* Render immediato del form di waitlist */}
-        <section id="download" aria-label="Scarica MyTaskly" className="py-8">
-          <WaitlistForm />
-        </section>
       </main>
     </>
   )
