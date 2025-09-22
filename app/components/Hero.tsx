@@ -43,7 +43,7 @@ export default function Hero() {
           >
             <Link 
               href="/download" 
-              className="apple-button btn-primary-custom cta-highlight"
+              className="apple-button cta-highlight"
               title="Scarica MyTaskly"
               aria-label="Scarica l'app MyTaskly"
             >

@@ -60,27 +60,6 @@ export function ThemeToggle() {
     }
   }, [isDark])
 
-  // Funzione per applicare accenti personalizzati agli elementi UI
-  useEffect(() => {
-    const applyCustomAccents = () => {
-      // Applica accenti personalizzati a elementi specifici
-      const buttons = document.querySelectorAll(".apple-button")
-      buttons.forEach((button) => {
-        button.classList.add("btn-primary-custom")
-      })
-
-      // Applica stili di accento a elementi selezionati
-      const accentElements = document.querySelectorAll(".feature-icon, .cta-highlight")
-      accentElements.forEach((element) => {
-        element.classList.add("accent-element")
-      })
-    }
-
-    // Esegui dopo il rendering
-    if (typeof window !== "undefined") {
-      applyCustomAccents()
-    }
-  }, [isDark]) // Riapplica quando cambia il tema
 
   return (
     <Button
