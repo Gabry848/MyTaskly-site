@@ -253,7 +253,7 @@ export default function EarlyAccessPage() {
               <p className="text-lg">
                 La versione beta <strong>e` disponibile</strong> ora! Scarica l'app
               </p>
-              <a href="https://expo.dev/artifacts/eas/ijLYSA34dPZ34t4KfgPwvw.apk">
+              <a href="https://expo.dev/artifacts/eas/r9vYTApKHGBKkXxbdHtYBj.apk">
                 <Button size="lg" className="gap-2">
                   <Shield className="h-5 w-5" />
                   Download Beta
