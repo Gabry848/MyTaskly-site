@@ -36,7 +36,7 @@ export const metadata = {
     name: 'MyTaskly Team',
     logo: {
       '@type': 'ImageObject',
-      url: '/images/taskly-logo.png', // Assicurati che questo file esista in /public
+      url: '/images/mytaskly-logo.png', // Assicurati che questo file esista in /public
       // Puoi aggiungere width e height se conosci le dimensioni esatte
       // width: 600, 
       // height: 600,
