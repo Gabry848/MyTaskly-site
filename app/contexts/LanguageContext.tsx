@@ -618,6 +618,112 @@ const translations: Record<Language, Record<string, string>> = {
 
     "privacy.cta.title": "Your Privacy Matters",
     "privacy.cta.description": "We are committed to protecting your privacy and ensuring your data remains secure.",
+
+    // Members Page
+    "members.login.title": "Members Area Access",
+    "members.login.description": "Enter your email to access the reserved area",
+    "members.login.emailLabel": "Email",
+    "members.login.emailPlaceholder": "your-email@example.com",
+    "members.login.errorInvalid": "Invalid email. Please check the email format.",
+    "members.login.errorGeneric": "Error during login. Please try again.",
+    "members.login.buttonLoading": "Logging in...",
+    "members.login.button": "Login",
+
+    "members.header.title": "Members Area",
+    "members.header.subtitle": "Exclusive content for waitlist members",
+    "members.header.logout": "Logout",
+
+    "members.welcome.title": "Welcome to the exclusive community!",
+    "members.welcome.description": "Thank you for joining the MyTaskly waitlist. Here's what you can do here:",
+
+    "members.card.betaPreview.title": "Beta Preview",
+    "members.card.betaPreview.description": "Get early access to MyTaskly beta features",
+    "members.card.betaPreview.button": "Access Early Access",
+
+    "members.card.community.title": "Community",
+    "members.card.community.description": "Join discussions with other early adopters",
+    "members.card.community.badge": "Coming Soon",
+
+    "members.card.feedback.title": "Feedback",
+    "members.card.feedback.description": "Share your feedback and influence development",
+    "members.card.feedback.button": "Send Feedback",
+
+    "members.updates.title": "Exclusive Updates",
+    "members.updates.description": "The latest news on MyTaskly development",
+
+    "members.updates.betaRelease.title": "Beta Release",
+    "members.updates.betaRelease.description": "The MyTaskly beta version has been successfully released. During the launch, we encountered some issues with the email notification system due to temporary SMTP provider restrictions. We are working to resolve the situation and ensure reliable communication with all waitlist members.",
+    "members.updates.betaRelease.badge": "Completed - October 2025",
+
+    "members.updates.playStoreBeta.title": "Play Store Launch (Official Beta)",
+    "members.updates.playStoreBeta.description": "Official beta version release on Google Play Store, accessible through closed testing program for waitlist members.",
+    "members.updates.playStoreBeta.badge": "In Progress - October 2025",
+
+    "members.updates.voiceChat.title": "Advanced Voice Chat",
+    "members.updates.voiceChat.description": "Perfecting voice chat with AI to offer the best natural interaction experience.",
+    "members.updates.voiceChat.badge": "November 2025",
+
+    "members.updates.playStorePublic.title": "Play Store Launch (Public)",
+    "members.updates.playStorePublic.description": "Official version of MyTaskly publicly available on Google Play Store for all users.",
+    "members.updates.playStorePublic.badge": "Late November 2025",
+
+    "members.updates.appStore.title": "iOS App Store",
+    "members.updates.appStore.description": "Publishing the MyTaskly app on the Apple App Store for iPhone and iPad devices.",
+    "members.updates.appStore.badge": "December 2025",
+
+    // Early Access Page
+    "earlyAccess.login.title": "Early Access",
+    "earlyAccess.login.description": "Enter your email to access MyTaskly early access",
+    "earlyAccess.login.emailLabel": "Email",
+    "earlyAccess.login.emailPlaceholder": "your-email@example.com",
+    "earlyAccess.login.errorNotFound": "Email not found in the waitlist. Please register before accessing.",
+    "earlyAccess.login.errorGeneric": "Error during login. Please try again.",
+    "earlyAccess.login.buttonLoading": "Verifying...",
+    "earlyAccess.login.button": "Access",
+
+    "earlyAccess.backButton": "Members Area",
+    "earlyAccess.badge": "Exclusive Early Access",
+    "earlyAccess.hero.title": "The Future of Productivity is Here",
+    "earlyAccess.hero.description": "Discover MyTaskly's revolutionary features in preview before the official launch",
+
+    "earlyAccess.progress.title": "Development Status",
+    "earlyAccess.progress.description": "Follow MyTaskly's development progress in real-time",
+    "earlyAccess.progress.phase1": "Concept & Design",
+    "earlyAccess.progress.phase2": "Core Features",
+    "earlyAccess.progress.phase3": "AI Integration",
+    "earlyAccess.progress.phase4": "Beta Testing",
+    "earlyAccess.progress.phase5": "App Store Review",
+
+    "earlyAccess.features.title": "Exclusive Features Preview",
+    "earlyAccess.features.ai.title": "Personal AI Assistant",
+    "earlyAccess.features.ai.description": "An AI assistant that learns from your habits and automatically suggests how to best organize your day.",
+    "earlyAccess.features.ai.badge": "In Development",
+
+    "earlyAccess.features.privacy.title": "Advanced Privacy",
+    "earlyAccess.features.privacy.description": "End-to-end encryption and complete control over your data and secure synchronization.",
+    "earlyAccess.features.privacy.badge": "Completed",
+
+    "earlyAccess.features.sync.title": "Cross-Platform Sync",
+    "earlyAccess.features.sync.description": "Instant synchronization across all your devices with offline support and automatically resolved conflicts.",
+    "earlyAccess.features.sync.badge": "Completed",
+
+    "earlyAccess.beta.title": "Exclusive Beta Access",
+    "earlyAccess.beta.description": "You're among the first to have access to the MyTaskly beta version!",
+    "earlyAccess.beta.stat1.value": "2025",
+    "earlyAccess.beta.stat1.label": "Launch Year",
+    "earlyAccess.beta.stat2.value": "11",
+    "earlyAccess.beta.stat2.label": "Months of Development",
+    "earlyAccess.beta.stat3.value": "50+",
+    "earlyAccess.beta.stat3.label": "Features",
+    "earlyAccess.beta.available": "The beta version is available now on Google Play Store!",
+    "earlyAccess.beta.button1": "1. Become Tester",
+    "earlyAccess.beta.button2": "2. Download App",
+
+    "earlyAccess.guide.title": "How to Access the Beta",
+    "earlyAccess.guide.step1": "Click the \"Become Tester\" button to join the internal testing program",
+    "earlyAccess.guide.step2": "Accept the invitation to become a MyTaskly app tester",
+    "earlyAccess.guide.step3": "Click the \"Download App\" button to access the Play Store page",
+    "earlyAccess.guide.step4": "Install the app, register and... enjoy! 🎉",
   },
   it: {
     // Header
@@ -1227,6 +1333,112 @@ const translations: Record<Language, Record<string, string>> = {
 
     "privacy.cta.title": "La Tua Privacy è Importante",
     "privacy.cta.description": "Siamo impegnati a proteggere la tua privacy e a garantire che i tuoi dati rimangano sicuri.",
+
+    // Members Page
+    "members.login.title": "Accesso Area Membri",
+    "members.login.description": "Inserisci la tua email per accedere all'area riservata",
+    "members.login.emailLabel": "Email",
+    "members.login.emailPlaceholder": "la-tua-email@esempio.com",
+    "members.login.errorInvalid": "Email non valida. Controlla il formato dell'email.",
+    "members.login.errorGeneric": "Errore durante il login. Riprova.",
+    "members.login.buttonLoading": "Accesso in corso...",
+    "members.login.button": "Accedi",
+
+    "members.header.title": "Area Membri",
+    "members.header.subtitle": "Contenuto esclusivo per i membri della waitlist",
+    "members.header.logout": "Logout",
+
+    "members.welcome.title": "Benvenuto nella community esclusiva!",
+    "members.welcome.description": "Grazie per esserti iscritto alla waitlist di MyTaskly. Ecco cosa puoi fare qui:",
+
+    "members.card.betaPreview.title": "Beta Preview",
+    "members.card.betaPreview.description": "Accedi in anteprima alle funzionalità della beta di MyTaskly",
+    "members.card.betaPreview.button": "Accedi Early Access",
+
+    "members.card.community.title": "Community",
+    "members.card.community.description": "Partecipa alle discussioni con altri early adopters",
+    "members.card.community.badge": "Prossimamente",
+
+    "members.card.feedback.title": "Feedback",
+    "members.card.feedback.description": "Condividi il tuo feedback e influenza lo sviluppo",
+    "members.card.feedback.button": "Invia Feedback",
+
+    "members.updates.title": "Aggiornamenti Esclusivi",
+    "members.updates.description": "Le ultime novità sullo sviluppo di MyTaskly",
+
+    "members.updates.betaRelease.title": "Release Beta",
+    "members.updates.betaRelease.description": "La versione beta di MyTaskly è stata rilasciata con successo. Durante il lancio, abbiamo riscontrato alcune problematiche con il sistema di notifica email dovute a restrizioni temporanee del provider SMTP. Stiamo lavorando per risolvere la situazione e garantire una comunicazione affidabile con tutti i membri della waitlist.",
+    "members.updates.betaRelease.badge": "Completato - Ottobre 2025",
+
+    "members.updates.playStoreBeta.title": "Lancio Play Store (Beta Ufficiale)",
+    "members.updates.playStoreBeta.description": "Rilascio della versione beta ufficiale su Google Play Store, accessibile tramite programma di testing chiuso per i membri della waitlist.",
+    "members.updates.playStoreBeta.badge": "In Corso - Ottobre 2025",
+
+    "members.updates.voiceChat.title": "Chat Vocale Avanzata",
+    "members.updates.voiceChat.description": "Perfezionamento della chat vocale con IA per offrire la migliore esperienza di interazione naturale.",
+    "members.updates.voiceChat.badge": "Novembre 2025",
+
+    "members.updates.playStorePublic.title": "Lancio Play Store (Pubblico)",
+    "members.updates.playStorePublic.description": "Versione ufficiale di MyTaskly disponibile pubblicamente su Google Play Store per tutti gli utenti.",
+    "members.updates.playStorePublic.badge": "Fine Novembre 2025",
+
+    "members.updates.appStore.title": "App Store iOS",
+    "members.updates.appStore.description": "Pubblicazione dell'app MyTaskly sull'App Store di Apple per dispositivi iPhone e iPad.",
+    "members.updates.appStore.badge": "Dicembre 2025",
+
+    // Early Access Page
+    "earlyAccess.login.title": "Accesso Early Access",
+    "earlyAccess.login.description": "Inserisci la tua email per accedere all'early access di MyTaskly",
+    "earlyAccess.login.emailLabel": "Email",
+    "earlyAccess.login.emailPlaceholder": "la-tua-email@esempio.com",
+    "earlyAccess.login.errorNotFound": "Email non trovata nella waitlist. Registrati prima di accedere.",
+    "earlyAccess.login.errorGeneric": "Errore durante il login. Riprova.",
+    "earlyAccess.login.buttonLoading": "Verifica in corso...",
+    "earlyAccess.login.button": "Accedi",
+
+    "earlyAccess.backButton": "Area Membri",
+    "earlyAccess.badge": "Early Access Esclusivo",
+    "earlyAccess.hero.title": "Il Futuro della Produttività è Qui",
+    "earlyAccess.hero.description": "Scopri in anteprima le funzionalità rivoluzionarie di MyTaskly prima del lancio ufficiale",
+
+    "earlyAccess.progress.title": "Stato dello Sviluppo",
+    "earlyAccess.progress.description": "Segui i progressi in tempo reale dello sviluppo di MyTaskly",
+    "earlyAccess.progress.phase1": "Concept & Design",
+    "earlyAccess.progress.phase2": "Core Features",
+    "earlyAccess.progress.phase3": "AI Integration",
+    "earlyAccess.progress.phase4": "Beta Testing",
+    "earlyAccess.progress.phase5": "App Store Review",
+
+    "earlyAccess.features.title": "Exclusive Features Preview",
+    "earlyAccess.features.ai.title": "AI Assistente Personale",
+    "earlyAccess.features.ai.description": "Un assistente IA che impara dalle tue abitudini e suggerisce automaticamente come organizzare al meglio la tua giornata.",
+    "earlyAccess.features.ai.badge": "In Sviluppo",
+
+    "earlyAccess.features.privacy.title": "Privacy Avanzata",
+    "earlyAccess.features.privacy.description": "Crittografia end-to-end e controllo completo sui tuoi dati e sincronizzazione sicura.",
+    "earlyAccess.features.privacy.badge": "Completato",
+
+    "earlyAccess.features.sync.title": "Sync Cross-Platform",
+    "earlyAccess.features.sync.description": "Sincronizzazione istantanea tra tutti i tuoi dispositivi con supporto offline e conflitti risolti automaticamente.",
+    "earlyAccess.features.sync.badge": "Completato",
+
+    "earlyAccess.beta.title": "Accesso Beta Esclusivo",
+    "earlyAccess.beta.description": "Sei tra i primi ad avere accesso alla versione beta di MyTaskly!",
+    "earlyAccess.beta.stat1.value": "2025",
+    "earlyAccess.beta.stat1.label": "Anno di Lancio",
+    "earlyAccess.beta.stat2.value": "11",
+    "earlyAccess.beta.stat2.label": "Mesi di Sviluppo",
+    "earlyAccess.beta.stat3.value": "50+",
+    "earlyAccess.beta.stat3.label": "Funzionalità",
+    "earlyAccess.beta.available": "La versione beta è disponibile ora su Google Play Store!",
+    "earlyAccess.beta.button1": "1. Diventa Tester",
+    "earlyAccess.beta.button2": "2. Scarica l'App",
+
+    "earlyAccess.guide.title": "Come Accedere alla Beta",
+    "earlyAccess.guide.step1": "Clicca sul pulsante \"Diventa Tester\" per iscriverti al programma di test interno",
+    "earlyAccess.guide.step2": "Accetta l'invito a diventare tester dell'app MyTaskly",
+    "earlyAccess.guide.step3": "Clicca sul pulsante \"Scarica l'App\" per accedere alla pagina del Play Store",
+    "earlyAccess.guide.step4": "Installa l'app, registrati e... enjoy! 🎉",
   },
 }
 

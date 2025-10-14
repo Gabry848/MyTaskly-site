@@ -48,10 +48,10 @@ export default function Header() {
             {t("nav.about")}
           </Link>
           <Link
-            href="/privacy"
+            href="/members"
             className="text-sm font-semibold leading-6 text-foreground hover:text-primary transition-colors"
           >
-            {t("nav.privacy")}
+            Beta
           </Link>
         </div>
 
