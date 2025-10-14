@@ -1,6 +1,7 @@
 "use client"
 import ScrollAnimationWrapper from "./ScrollAnimationWrapper"
 import { useLanguage } from "@/app/contexts/LanguageContext"
+import Link from "next/link"
 
 export default function OrganizeYourLife() {
   const { t } = useLanguage()
@@ -17,7 +18,7 @@ export default function OrganizeYourLife() {
               {t("organize.description")}
             </p>
             <div className="mt-6 sm:mt-10">
-              <a href="#download" className="apple-button inline-flex items-center">
+              <Link href="/download" className="apple-button inline-flex items-center">
                 {t("organize.cta")}
                 <svg
                   className="w-5 h-5 ml-2"
@@ -28,7 +29,7 @@ export default function OrganizeYourLife() {
                 >
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                 </svg>
-              </a>
+              </Link>
             </div>
           </div>
         </ScrollAnimationWrapper>

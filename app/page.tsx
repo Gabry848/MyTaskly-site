@@ -1,10 +1,7 @@
 import { Suspense } from 'react';
 import dynamic from 'next/dynamic';
-// dynamic import rimosso per WaitlistForm
 import TermlyCMP from './components/TermlyCMP';
-import SubscriptionPopup from './components/SubscriptionPopup';
 import Hero from "./components/Hero";
-import LaunchBanner from "./components/LaunchBanner";
 import AppComparison from './components/AppComparison';
 import { Metadata } from 'next';
 
@@ -34,7 +31,6 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
-      <SubscriptionPopup />
       <main className="w-full px-4 sm:px-6 lg:px-8">
         <Suspense fallback={null}>
           <TermlyCMP websiteUUID={WEBSITE_UUID} />

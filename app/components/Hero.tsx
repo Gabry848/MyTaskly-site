@@ -41,14 +41,6 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            <Link 
-              href="/download" 
-              className="apple-button cta-highlight"
-              title="Scarica MyTaskly"
-              aria-label="Scarica l'app MyTaskly"
-            >
-              {t("hero.cta.download")}
-            </Link>
             <a 
               href="/features" 
               className="text-sm font-semibold leading-6 text-foreground interactive-element"
