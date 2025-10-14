@@ -211,10 +211,22 @@ export default function MembersPage() {
             <div className="border-l-4 border-green-500 pl-4">
               <h4 className="font-semibold">Release Beta</h4>
               <p className="text-muted-foreground text-sm">
-                La versione beta di MyTaskly è stata rilasciata con successo
-                per i membri della waitlist.
+                La versione beta di MyTaskly è stata rilasciata con successo.
+                Durante il lancio, abbiamo riscontrato alcune problematiche con il sistema
+                di notifica email dovute a restrizioni temporanee del provider SMTP.
+                Stiamo lavorando per risolvere la situazione e garantire una comunicazione
+                affidabile con tutti i membri della waitlist.
               </p>
-              <Badge variant="outline" className="mt-2 bg-green-50 text-green-700 border-green-200">Completato - Settembre 2025</Badge>
+              <Badge variant="outline" className="mt-2 bg-green-50 text-green-700 border-green-200">Completato - Ottobre 2025</Badge>
+            </div>
+
+            <div className="border-l-4 border-primary pl-4">
+              <h4 className="font-semibold">Lancio Play Store (Beta Ufficiale)</h4>
+              <p className="text-muted-foreground text-sm">
+                Rilascio della versione beta ufficiale su Google Play Store,
+                accessibile tramite programma di testing chiuso per i membri della waitlist.
+              </p>
+              <Badge variant="outline" className="mt-2 bg-blue-50 text-blue-700 border-blue-200">In Corso - Ottobre 2025</Badge>
             </div>
 
             <div className="border-l-4 border-primary pl-4">
@@ -223,16 +235,16 @@ export default function MembersPage() {
                 Perfezionamento della chat vocale con IA per offrire
                 la migliore esperienza di interazione naturale.
               </p>
-              <Badge variant="outline" className="mt-2">Ottobre 2025</Badge>
+              <Badge variant="outline" className="mt-2">Novembre 2025</Badge>
             </div>
 
             <div className="border-l-4 border-primary pl-4">
-              <h4 className="font-semibold">Lancio Play Store</h4>
+              <h4 className="font-semibold">Lancio Play Store (Pubblico)</h4>
               <p className="text-muted-foreground text-sm">
-                Prima versione ufficiale di MyTaskly disponibile
-                per il download su Google Play Store.
+                Versione ufficiale di MyTaskly disponibile pubblicamente
+                su Google Play Store per tutti gli utenti.
               </p>
-              <Badge variant="outline" className="mt-2">Fine Ottobre 2025</Badge>
+              <Badge variant="outline" className="mt-2">Fine Novembre 2025</Badge>
             </div>
 
             <div className="border-l-4 border-muted pl-4">
@@ -241,7 +253,7 @@ export default function MembersPage() {
                 Pubblicazione dell'app MyTaskly sull'App Store di Apple
                 per dispositivi iPhone e iPad.
               </p>
-              <Badge variant="outline" className="mt-2">Novembre 2025</Badge>
+              <Badge variant="outline" className="mt-2">Dicembre 2025</Badge>
             </div>
           </CardContent>
         </Card>
