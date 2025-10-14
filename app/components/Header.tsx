@@ -47,6 +47,12 @@ export default function Header() {
           >
             {t("nav.about")}
           </Link>
+          <Link
+            href="/privacy"
+            className="text-sm font-semibold leading-6 text-foreground hover:text-primary transition-colors"
+          >
+            {t("nav.privacy")}
+          </Link>
         </div>
 
         <div className="flex flex-1 justify-end items-center gap-3">
@@ -95,6 +101,12 @@ export default function Header() {
                     className="text-lg font-semibold text-foreground hover:text-primary transition-colors"
                   >
                     {t("nav.about")}
+                  </Link>
+                  <Link
+                    href="/privacy"
+                    className="text-lg font-semibold text-foreground hover:text-primary transition-colors"
+                  >
+                    {t("nav.privacy")}
                   </Link>
                   <div className="flex gap-4 mt-4">
                     {/* Removed Twitter link */}

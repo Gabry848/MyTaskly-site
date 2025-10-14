@@ -584,6 +584,40 @@ const translations: Record<Language, Record<string, string>> = {
     "features.blog.smartLists.section3.p1": "Time-saving: you no longer need to manually move tasks.",
     "features.blog.smartLists.section3.p2": "Greater clarity: see immediately what requires attention in the short term.",
     "features.blog.smartLists.section3.p3": "Flexibility: modify rules at any time based on your workflow needs.",
+
+    // Privacy Policy Page
+    "privacy.title": "Privacy Policy",
+    "privacy.lastUpdated": "Last Updated",
+    "privacy.intro": "This Privacy Policy describes how MyTaskly (\"we\", \"our\" or \"the app\") handles information when you use our mobile application.",
+
+    "privacy.section1.title": "1. INFORMATION WE COLLECT",
+    "privacy.section1.content": "MyTaskly may request access to your device's microphone to enable the voice recording feature for creating tasks and notes. Audio recordings are saved locally on your device.",
+
+    "privacy.section2.title": "2. HOW WE USE YOUR INFORMATION",
+    "privacy.section2.item1": "Audio recordings are used exclusively to create voice notes within the app",
+    "privacy.section2.item2": "All data is saved locally on your device",
+    "privacy.section2.item3": "We do not transmit, share, or sell your audio data to third parties",
+
+    "privacy.section3.title": "3. DATA STORAGE AND SECURITY",
+    "privacy.section3.item1": "All audio recordings remain on your device",
+    "privacy.section3.item2": "You have full control to delete recordings at any time",
+    "privacy.section3.item3": "We do not have access to your recordings",
+
+    "privacy.section4.title": "4. PERMISSIONS",
+    "privacy.section4.permission1": "To record voice notes for tasks",
+    "privacy.section4.permission2": "To adjust audio settings during recording",
+
+    "privacy.section5.title": "5. CHILDREN'S PRIVACY",
+    "privacy.section5.content": "Our app does not knowingly collect information from children under 13 years of age.",
+
+    "privacy.section6.title": "6. CHANGES TO THIS PRIVACY POLICY",
+    "privacy.section6.content": "We may update this Privacy Policy from time to time. Changes will be posted within the app.",
+
+    "privacy.section7.title": "7. CONTACT US",
+    "privacy.section7.content": "For questions about this Privacy Policy, contact us at:",
+
+    "privacy.cta.title": "Your Privacy Matters",
+    "privacy.cta.description": "We are committed to protecting your privacy and ensuring your data remains secure.",
   },
   it: {
     // Header
@@ -1159,6 +1193,40 @@ const translations: Record<Language, Record<string, string>> = {
     "features.blog.smartLists.section3.p1": "Risparmio di tempo: non devi più spostare manualmente le attività.",
     "features.blog.smartLists.section3.p2": "Maggiore chiarezza: vedi subito cosa richiede attenzione nel breve termine.",
     "features.blog.smartLists.section3.p3": "Flessibilità: modifica le regole in qualsiasi momento in base alle esigenze del tuo workflow.",
+
+    // Privacy Policy Page
+    "privacy.title": "Informativa sulla Privacy",
+    "privacy.lastUpdated": "Ultimo aggiornamento",
+    "privacy.intro": "Questa Informativa sulla Privacy descrive come MyTaskly (\"noi\", \"nostra\" o \"l'app\") gestisce le informazioni quando utilizzi la nostra applicazione mobile.",
+
+    "privacy.section1.title": "1. INFORMAZIONI CHE RACCOGLIAMO",
+    "privacy.section1.content": "MyTaskly può richiedere l'accesso al microfono del tuo dispositivo per abilitare la funzione di registrazione vocale per la creazione di task e note. Le registrazioni audio vengono salvate localmente sul tuo dispositivo.",
+
+    "privacy.section2.title": "2. COME UTILIZZIAMO LE TUE INFORMAZIONI",
+    "privacy.section2.item1": "Le registrazioni audio vengono utilizzate esclusivamente per creare note vocali all'interno dell'app",
+    "privacy.section2.item2": "Tutti i dati vengono salvati localmente sul tuo dispositivo",
+    "privacy.section2.item3": "Non trasmettiamo, condividiamo o vendiamo i tuoi dati audio a terze parti",
+
+    "privacy.section3.title": "3. ARCHIVIAZIONE E SICUREZZA DEI DATI",
+    "privacy.section3.item1": "Tutte le registrazioni audio rimangono sul tuo dispositivo",
+    "privacy.section3.item2": "Hai il pieno controllo per eliminare le registrazioni in qualsiasi momento",
+    "privacy.section3.item3": "Non abbiamo accesso alle tue registrazioni",
+
+    "privacy.section4.title": "4. PERMESSI",
+    "privacy.section4.permission1": "Per registrare note vocali per i task",
+    "privacy.section4.permission2": "Per regolare le impostazioni audio durante la registrazione",
+
+    "privacy.section5.title": "5. PRIVACY DEI MINORI",
+    "privacy.section5.content": "La nostra app non raccoglie consapevolmente informazioni da minori di 13 anni.",
+
+    "privacy.section6.title": "6. MODIFICHE A QUESTA INFORMATIVA SULLA PRIVACY",
+    "privacy.section6.content": "Potremmo aggiornare questa Informativa sulla Privacy di tanto in tanto. Le modifiche verranno pubblicate all'interno dell'app.",
+
+    "privacy.section7.title": "7. CONTATTACI",
+    "privacy.section7.content": "Per domande su questa Informativa sulla Privacy, contattaci a:",
+
+    "privacy.cta.title": "La Tua Privacy è Importante",
+    "privacy.cta.description": "Siamo impegnati a proteggere la tua privacy e a garantire che i tuoi dati rimangano sicuri.",
   },
 }
 
