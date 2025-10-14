@@ -110,9 +110,9 @@ export default function EarlyAccessPage() {
 
   const developmentProgress = [
     { phase: "Concept & Design", completed: true, progress: 100 },
-    { phase: "Core Features", completed: true, progress: 80 },
-    { phase: "AI Integration", completed: false, progress: 65 },
-    { phase: "Beta Testing", completed: false, progress: 10 },
+    { phase: "Core Features", completed: true, progress: 90 },
+    { phase: "AI Integration", completed: false, progress: 50 },
+    { phase: "Beta Testing", completed: false, progress: 20 },
     { phase: "App Store Review", completed: false, progress: 0 },
   ];
 
@@ -201,8 +201,8 @@ export default function EarlyAccessPage() {
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground mb-4">
-                Crittografia end-to-end e controllo completo sui tuoi dati,
-                con possibilità di backup locali e sincronizzazione sicura.
+                Crittografia end-to-end e controllo completo sui tuoi dati
+                e sincronizzazione sicura.
               </p>
               <Badge variant="outline">Completato</Badge>
             </CardContent>
@@ -251,37 +251,51 @@ export default function EarlyAccessPage() {
 
             <div className="space-y-4">
               <p className="text-lg">
-                La versione beta <strong>e` disponibile</strong> ora! Scarica l'app
+                La versione beta <strong>è disponibile</strong> ora su Google Play Store!
               </p>
-              <a href="https://expo.dev/artifacts/eas/h7LcGC7PvQEVsfCUjCHf83.apk">
-                <Button size="lg" className="gap-2">
+
+              <div className="flex flex-col sm:flex-row gap-3 justify-center">
+                <Button
+                  size="lg"
+                  className="gap-2"
+                  onClick={() => window.open('https://play.google.com/apps/internaltest/4701407835802258178', '_blank')}
+                >
                   <Shield className="h-5 w-5" />
-                  Download Beta
+                  1. Diventa Tester
                 </Button>
-              </a>
+                <Button
+                  size="lg"
+                  className="gap-2"
+                  variant="outline"
+                  onClick={() => window.open('https://play.google.com/store/apps/details?id=com.Gabry848Studio.Mytaskly&hl=en-US&ah=A0Ml8z3VsRUmRFkINxQ1zi8Pj68', '_blank')}
+                >
+                  <Smartphone className="h-5 w-5" />
+                  2. Scarica l'App
+                </Button>
+              </div>
 
               {/* Installation Guide */}
               <div className="mt-6 p-4 bg-background/60 rounded-lg border border-border/50">
                 <h3 className="text-lg font-semibold mb-3 flex items-center gap-2">
                   <Smartphone className="h-5 w-5" />
-                  Guida Installazione
+                  Come Accedere alla Beta
                 </h3>
                 <ol className="text-sm text-muted-foreground space-y-2 text-left max-w-md mx-auto">
                   <li className="flex items-start gap-2">
                     <span className="bg-primary text-primary-foreground rounded-full w-5 h-5 flex items-center justify-center text-xs font-medium flex-shrink-0 mt-0.5">1</span>
-                    <span>Clicca sul pulsante "Download Beta" qui sopra</span>
+                    <span>Clicca sul pulsante "Diventa Tester" per iscriverti al programma di test interno</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="bg-primary text-primary-foreground rounded-full w-5 h-5 flex items-center justify-center text-xs font-medium flex-shrink-0 mt-0.5">2</span>
-                    <span>Al completamento del download, clicca sulla notifica o vai in Download e clicca sul file</span>
+                    <span>Accetta l'invito a diventare tester dell'app MyTaskly</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="bg-primary text-primary-foreground rounded-full w-5 h-5 flex items-center justify-center text-xs font-medium flex-shrink-0 mt-0.5">3</span>
-                    <span>Si aprirà un pop-up che chiederà se vuoi installare l'app - clicca "Sì"</span>
+                    <span>Clicca sul pulsante "Scarica l'App" per accedere alla pagina del Play Store</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="bg-primary text-primary-foreground rounded-full w-5 h-5 flex items-center justify-center text-xs font-medium flex-shrink-0 mt-0.5">4</span>
-                    <span>Apri l'app, registrati e... enjoy! 🎉</span>
+                    <span>Installa l'app, registrati e... enjoy! 🎉</span>
                   </li>
                 </ol>
               </div>
