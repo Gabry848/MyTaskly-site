@@ -32,37 +32,50 @@ const translations: Record<Language, Record<string, string>> = {
     "nav.terms": "Terms",
 
     // Hero
+    "hero.tagline": "AI-FIRST PRODUCTIVITY",
     "hero.title": "Mytaskly",
     "hero.subtitle":
-      "The sleek app that integrates AI to simplify to-do management — coming soon!",
+      "A monochrome workspace where voice and intelligence organise your day for you.",
     "hero.cta.download": "Join the Waitlist",
     "hero.cta.features": "See Upcoming Features",
+    "hero.cta.voice": "Experience the AI voice assistant",
+    "hero.cta.waitlist": "Join the beta waitlist",
+    "hero.voiceTitle": "Voice conversations, instant clarity",
+    "hero.voiceDescription":
+      "Capture tasks, notes and reminders just by speaking. Mytaskly listens, understands and responds in real time.",
+    "hero.aiTitle": "Planning that adapts to you",
+    "hero.aiDescription":
+      "The AI co-pilot keeps track of context, reshuffles priorities and prepares your next steps automatically.",
 
     // Organize Your Life
-    "organize.title": "Organize Your Life",
+    "organize.title": "Voice-first productivity",
     "organize.description":
-      "Mytaskly helps you bring order to chaos. Our minimalist design philosophy ensures you focus on what matters most - completing your tasks and achieving your goals.",
-    "organize.cta": "Get Started",
+      "Mytaskly mirrors the clean aesthetic of the mobile app with a calm black and white interface that keeps attention on your conversations with the assistant.",
+    "organize.cta": "Download preview",
+    "organize.point1": "Voice chat turns your ideas into organised tasks without touching the keyboard.",
+    "organize.point2": "AI keeps categories, notes and calendar in sync across every device instantly.",
+    "organize.point3": "Minimal layouts give every feature room to breathe for a distraction-free flow.",
 
     // Features
     "features.title": "Powerful Features",
     "features.subtitle": "Discover how Mytaskly helps you organize your life with elegance and efficiency",
     "features.whyChoose": "Why Choose Mytaskly",
+    "features.whyChooseDescription": "Designed for the new generation of AI-first productivity with natural voice control.",
     "features.learnMore": "Learn more",
     "features.appFeatures": "App Features",
-    "features.appFeaturesSubtitle": "Discover what makes Mytaskly the perfect companion for your productivity journey.",
+    "features.appFeaturesSubtitle": "Explore the monochrome, AI-first workspace powering your productivity journey.",
 
     // Feature items
-    "feature.smartLists.title": "Organize with AI",
-    "feature.smartLists.description": "Use AI chatbot to create and edit tasks",
-    "feature.reminders.title": "Reminders",
-    "feature.reminders.description": "Never miss a deadline with customizable notifications and alerts.",
-    "feature.sync.title": "Seamless Mobile Experience",
-    "feature.sync.description": "Your tasks are always up-to-date on all your devices.",
-    "feature.darkMode.title": "Dark Mode",
-    "feature.darkMode.description": "Easy on the eyes with beautiful light and dark themes.",
-    "feature.priority.title": "Priority Levels",
-    "feature.priority.description": "Focus on what matters most with customizable priority settings.",
+    "feature.voiceChat.title": "Talk to your tasks",
+    "feature.voiceChat.description": "Converse with the assistant to capture activities, reminders and follow-ups instantly.",
+    "feature.contextualAI.title": "Context-aware automation",
+    "feature.contextualAI.description": "Mytaskly keeps track of priorities and suggests the perfect schedule for your day.",
+    "feature.instantNotes.title": "Instant voice notes",
+    "feature.instantNotes.description": "Turn ideas into structured notes that sync across every space in seconds.",
+    "feature.timeline.title": "Calendar-ready",
+    "feature.timeline.description": "The AI voice assistant understands dates, deadlines and meetings while you speak.",
+    "feature.privacy.title": "Privacy-first",
+    "feature.privacy.description": "All your conversations are encrypted and handled with enterprise-grade security.",
 
     // Portfolio Grid Categories
     "category.all": "All",
@@ -74,18 +87,18 @@ const translations: Record<Language, Record<string, string>> = {
     "category.collaboration": "Collaboration",
 
     // Portfolio Grid Items
-    "portfolio.taskManagement.title": "Task Management",
-    "portfolio.taskManagement.description": "Create, organize, and complete tasks with ease",
-    "portfolio.smartLists.title": "Smart Lists",
-    "portfolio.smartLists.description": "Automatically categorized lists for better organization",
-    "portfolio.calendar.title": "Calendar Integration",
-    "portfolio.calendar.description": "Seamlessly connect with your existing calendar apps",
-    "portfolio.themes.title": "Customizable Themes",
-    "portfolio.themes.description": "Personalize your experience with beautiful themes",
-    "portfolio.progress.title": "Progress Tracking",
-    "portfolio.progress.description": "Monitor your productivity with insightful statistics",
-    "portfolio.collaboration.title": "Collaboration Tools",
-    "portfolio.collaboration.description": "Share lists and assign tasks to team members or family",
+    "portfolio.taskManagement.title": "Voice command hub",
+    "portfolio.taskManagement.description": "Drive every task through natural conversations with the assistant.",
+    "portfolio.smartLists.title": "Adaptive categories",
+    "portfolio.smartLists.description": "Spaces that reorganise themselves based on priorities and context.",
+    "portfolio.calendar.title": "Calendar intelligence",
+    "portfolio.calendar.description": "Instantly translate spoken plans into calendar-ready events and reminders.",
+    "portfolio.themes.title": "Minimal layouts",
+    "portfolio.themes.description": "A serene monochrome interface that mirrors the mobile experience.",
+    "portfolio.progress.title": "Insightful briefings",
+    "portfolio.progress.description": "Daily AI recaps highlight what matters next and why.",
+    "portfolio.collaboration.title": "Shared voice spaces",
+    "portfolio.collaboration.description": "Collaborate in real time with shared rooms and delegated actions.",
 
     // Timeline
     "timeline.title": "Our Journey",
@@ -736,40 +749,52 @@ const translations: Record<Language, Record<string, string>> = {
     "nav.terms": "Termini",
 
     // Hero
+    "hero.tagline": "PRODUTTIVITÀ AI-FIRST",
     "hero.title": "Mytaskly",
     "hero.subtitle":
-      "L'elegante app che integra IA per semplificare la gestione delle cose da fare — in arrivo!",
+      "Uno spazio monocromatico dove voce e intelligenza organizzano la tua giornata.",
     "hero.cta.download": "Iscriviti alla Lista d'Attesa",
     "hero.cta.features": "Vedi Funzionalità Future",
+    "hero.cta.voice": "Prova l'assistente vocale IA",
+    "hero.cta.waitlist": "Unisciti alla beta",
+    "hero.voiceTitle": "Conversazioni vocali, chiarezza immediata",
+    "hero.voiceDescription":
+      "Parla per catturare attività, note e promemoria. Mytaskly ascolta, comprende e risponde in tempo reale.",
+    "hero.aiTitle": "Pianificazione che si adatta a te",
+    "hero.aiDescription":
+      "Il co-pilota intelligente tiene traccia del contesto, riordina le priorità e prepara i prossimi passi automaticamente.",
 
     // Organize Your Life
-    "organize.title": "Organizza la Tua Vita",
+    "organize.title": "Produttività guidata dalla voce",
     "organize.description":
-      "Mytaskly ti aiuta a portare ordine nel caos. La nostra filosofia di design minimalista ti assicura di concentrarti su ciò che conta di più: completare le tue attività e raggiungere i tuoi obiettivi.",
-    "organize.cta": "Inizia Ora",
+      "Mytaskly riprende l'estetica pulita dell'app mobile con un'interfaccia bianco e nero che mette al centro il dialogo con l'assistente.",
+    "organize.cta": "Scarica l'anteprima",
+    "organize.point1": "La chat vocale trasforma le idee in attività organizzate senza toccare la tastiera.",
+    "organize.point2": "L'IA mantiene categorie, note e calendario sincronizzati su ogni dispositivo all'istante.",
+    "organize.point3": "Layout essenziali danno respiro a ogni funzione per un flusso senza distrazioni.",
 
     // Features
     "features.title": "Potenti Funzionalità",
     "features.subtitle": "Scopri come Mytaskly ti aiuta a organizzare la tua vita con eleganza ed efficienza",
     "features.whyChoose": "Perché Scegliere Mytaskly",
+    "features.whyChooseDescription": "Progettata per la nuova generazione di produttività con controllo vocale naturale.",
     "features.learnMore": "Scopri di più",
     "features.appFeatures": "Funzionalità dell'App",
     "features.appFeaturesSubtitle":
-      "Scopri cosa rende Mytaskly il compagno perfetto per il tuo percorso di produttività.",
+      "Esplora lo spazio di lavoro monocromatico e AI-first che sostiene la tua produttività.",
 
     // Feature items
-    "feature.smartLists.title": "Oraganizza con IA",
-    "feature.smartLists.description":
-      "Utilizza chatbot con IA per organizzare le tue attività in modo intelligente e intuitivo.",
-    "feature.reminders.title": "Promemoria",
-    "feature.reminders.description": "Non perdere mai una scadenza con notifiche e avvisi personalizzabili.",
-    "feature.sync.title": "Esperienza Mobile Senza Interruzioni",
-    "feature.sync.description": "Le tue attività sono sempre aggiornate su tutti i tuoi dispositivi.",
-    "feature.darkMode.title": "Modalità Scura",
-    "feature.darkMode.description": "Facile per gli occhi con bellissimi temi chiari e scuri.",
-    "feature.priority.title": "Livelli di Priorità",
-    "feature.priority.description":
-      "Concentrati su ciò che conta di più con impostazioni di priorità personalizzabili.",
+    "feature.voiceChat.title": "Parla con le tue attività",
+    "feature.voiceChat.description":
+      "Conversa con l'assistente per catturare impegni, promemoria e follow-up all'istante.",
+    "feature.contextualAI.title": "Automazioni contestuali",
+    "feature.contextualAI.description": "Mytaskly tiene traccia delle priorità e suggerisce l'agenda ideale per la tua giornata.",
+    "feature.instantNotes.title": "Note vocali istantanee",
+    "feature.instantNotes.description": "Trasforma le idee in note strutturate sincronizzate in pochi secondi.",
+    "feature.timeline.title": "Calendario pronto",
+    "feature.timeline.description": "L'assistente vocale riconosce date, scadenze e riunioni mentre parli.",
+    "feature.privacy.title": "Privacy al primo posto",
+    "feature.privacy.description": "Ogni conversazione è criptata e gestita con sicurezza di livello enterprise.",
 
     // Portfolio Grid Categories
     "category.all": "Tutti",
@@ -781,18 +806,18 @@ const translations: Record<Language, Record<string, string>> = {
     "category.collaboration": "Collaborazione",
 
     // Portfolio Grid Items
-    "portfolio.taskManagement.title": "Gestione Attività",
-    "portfolio.taskManagement.description": "Crea, organizza e completa attività con facilità",
-    "portfolio.smartLists.title": "Liste Intelligenti",
-    "portfolio.smartLists.description": "Liste categorizzate automaticamente per una migliore organizzazione",
-    "portfolio.calendar.title": "Integrazione Calendario",
-    "portfolio.calendar.description": "Connettiti senza problemi con le tue app di calendario esistenti",
-    "portfolio.themes.title": "Temi Personalizzabili",
-    "portfolio.themes.description": "Personalizza la tua esperienza con bellissimi temi",
-    "portfolio.progress.title": "Monitoraggio Progressi",
-    "portfolio.progress.description": "Monitora la tua produttività con statistiche dettagliate",
-    "portfolio.collaboration.title": "Strumenti di Collaborazione",
-    "portfolio.collaboration.description": "Condividi liste e assegna attività a membri del team o familiari",
+    "portfolio.taskManagement.title": "Centro comandi vocale",
+    "portfolio.taskManagement.description": "Gestisci ogni attività conversando naturalmente con l'assistente.",
+    "portfolio.smartLists.title": "Categorie adattive",
+    "portfolio.smartLists.description": "Spazi che si riorganizzano in base a priorità e contesto.",
+    "portfolio.calendar.title": "Intelligenza calendario",
+    "portfolio.calendar.description": "Trasforma i piani detti a voce in eventi e promemoria pronti per il calendario.",
+    "portfolio.themes.title": "Layout essenziali",
+    "portfolio.themes.description": "Interfaccia monocromatica e ariosa che rispecchia l'app mobile.",
+    "portfolio.progress.title": "Briefing intelligenti",
+    "portfolio.progress.description": "Riepiloghi IA quotidiani evidenziano ciò che conta davvero.",
+    "portfolio.collaboration.title": "Spazi vocali condivisi",
+    "portfolio.collaboration.description": "Collabora in tempo reale con stanze condivise e azioni delegate.",
 
     // Timeline
     "timeline.title": "Il Nostro Percorso",

@@ -7,17 +7,24 @@ export default function OrganizeYourLife() {
   const { t } = useLanguage()
 
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-muted">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="py-24 px-4 sm:px-6 lg:px-8 bg-background">
+      <div className="max-w-6xl mx-auto">
         <ScrollAnimationWrapper>
           <div className="text-center">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-4 sm:mb-6">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold text-foreground mb-6">
               {t("organize.title")}
             </h2>
-            <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto px-4">
+            <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
               {t("organize.description")}
             </p>
-            <div className="mt-6 sm:mt-10">
+            <ul className="mt-12 grid gap-6 text-left sm:grid-cols-3">
+              {["organize.point1", "organize.point2", "organize.point3"].map((point) => (
+                <li key={point} className="rounded-3xl border border-border/60 bg-secondary/40 p-6 text-sm leading-relaxed text-foreground">
+                  {t(point)}
+                </li>
+              ))}
+            </ul>
+            <div className="mt-12">
               <Link href="/download" className="apple-button inline-flex items-center">
                 {t("organize.cta")}
                 <svg

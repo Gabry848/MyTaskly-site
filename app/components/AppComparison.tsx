@@ -22,40 +22,40 @@ export default function AppComparison() {
   // Features principali da confrontare - ridotte e semplificate
   const features = [
     {
-      name: "Design Minimalista",
-      tooltip: "Interfaccia pulita e facile da usare",
+      name: "Chat vocale IA",
+      tooltip: "Parla con l'assistente e genera attività con la voce",
       mytaskly: true,
       todoist: false,
       microsoft: false,
       ticktick: false,
     },
     {
-      name: "Liste Intelligenti",
-      tooltip: "Organizzazione automatica delle attività",
+      name: "Briefing intelligente",
+      tooltip: "Riepilogo giornaliero personalizzato per restare allineato",
       mytaskly: true,
       todoist: false,
       microsoft: false,
       ticktick: true,
     },
     {
-      name: "Assistente IA",
-      tooltip: "Suggerimenti intelligenti per l'organizzazione",
+      name: "Automazioni IA",
+      tooltip: "Pianificazione automatica e suggerimenti contestuali",
       mytaskly: true,
       todoist: false,
       microsoft: false,
       ticktick: false,
     },
     {
-      name: "Offline Mode",
-      tooltip: "Funziona anche senza connessione",
+      name: "Note vocali istantanee",
+      tooltip: "Trascrizioni accurate e comprensione multi-lingua",
       mytaskly: true,
-      todoist: true,
+      todoist: false,
       microsoft: true,
       ticktick: true,
     },
     {
-      name: "Sincronizzazione",
-      tooltip: "Sincronizzazione su tutti i dispositivi",
+      name: "Modalità offline",
+      tooltip: "Funziona anche senza connessione",
       mytaskly: true,
       todoist: true,
       microsoft: true,
@@ -75,12 +75,12 @@ export default function AppComparison() {
     <section className="w-full py-12 bg-secondary/5">
       <div className="container max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <ScrollAnimationWrapper>
-          <div className="text-center mb-8">
-            <h2 className="text-2xl sm:text-3xl font-bold text-foreground">
-              Perché scegliere MyTaskly?
+          <div className="text-center mb-10">
+            <h2 className="text-2xl sm:text-3xl font-semibold text-foreground">
+              Perché l'assistente IA di MyTaskly è diverso
             </h2>
             <p className="mt-3 text-muted-foreground max-w-2xl mx-auto">
-              Ecco come ci confrontiamo con le app todo più popolari
+              Confronta le capacità vocali e intelligenti di MyTaskly con le app todo più popolari
             </p>
           </div>
         </ScrollAnimationWrapper>

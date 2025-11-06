@@ -6,6 +6,7 @@ import { useLanguage } from "@/app/contexts/LanguageContext"
 import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
+import { Mic, Sparkles } from "lucide-react"
 
 export default function Hero() {
   const { t } = useLanguage()
@@ -16,52 +17,77 @@ export default function Hero() {
   }, [])
 
   return (
-    <section className="relative isolate overflow-hidden bg-gradient-to-b from-background to-muted">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 py-12 sm:py-20 lg:flex lg:items-center lg:gap-x-10 lg:px-8">
-        <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-lg lg:flex-shrink-0">
+    <section className="relative isolate overflow-hidden bg-background">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 py-16 lg:py-24 lg:flex lg:items-center lg:gap-x-16 lg:px-8">
+        <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl lg:flex-shrink-0">
+          <motion.span
+            className="text-xs font-semibold uppercase tracking-[0.35em] text-muted-foreground"
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+          >
+            {t("hero.tagline")}
+          </motion.span>
           <motion.h1
-            className="mt-4 sm:mt-10 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-foreground flex flex-wrap items-center gap-4"
+            className="mt-6 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold tracking-tight text-foreground"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
             <span className="text-gradient">{t("hero.title")}</span>
+            <span className="block font-normal text-muted-foreground text-lg sm:text-xl md:text-2xl mt-4">
+              {t("hero.subtitle")}
+            </span>
           </motion.h1>
-          <motion.p
-            className="mt-4 sm:mt-6 text-base sm:text-lg leading-7 sm:leading-8 text-muted-foreground"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-          >
-            {t("hero.subtitle")}
-          </motion.p>
           <motion.div
-            className="mt-6 sm:mt-10 flex flex-col sm:flex-row items-center gap-4 sm:gap-x-6"
+            className="mt-10 flex flex-col sm:flex-row items-center gap-4 sm:gap-6"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            <a 
-              href="/features" 
-              className="text-sm font-semibold leading-6 text-foreground interactive-element"
-              title="Scopri le funzionalità"
-              aria-label="Scopri tutte le funzionalità di MyTaskly"
+            <Button asChild className="rounded-full px-8 py-6 text-base font-medium">
+              <Link href="/features#ai">
+                {t("hero.cta.voice")}
+              </Link>
+            </Button>
+            <Link
+              href="/download"
+              className="text-sm font-semibold leading-6 text-muted-foreground interactive-element"
+              title={t("hero.cta.waitlist")}
+              aria-label={t("hero.cta.waitlist")}
             >
-              {t("hero.cta.features")} <span aria-hidden="true">→</span>
-            </a>
+              {t("hero.cta.waitlist")} <span aria-hidden="true">→</span>
+            </Link>
+          </motion.div>
+          <motion.div
+            className="mt-14 grid gap-4 sm:grid-cols-2"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.6 }}
+          >
+            <div className="rounded-3xl border border-border/80 bg-card/40 p-6">
+              <Mic className="h-8 w-8 text-foreground" aria-hidden="true" />
+              <h3 className="mt-4 text-lg font-semibold text-foreground">{t("hero.voiceTitle")}</h3>
+              <p className="mt-2 text-sm text-muted-foreground leading-relaxed">{t("hero.voiceDescription")}</p>
+            </div>
+            <div className="rounded-3xl border border-border/80 bg-card/40 p-6">
+              <Sparkles className="h-8 w-8 text-foreground" aria-hidden="true" />
+              <h3 className="mt-4 text-lg font-semibold text-foreground">{t("hero.aiTitle")}</h3>
+              <p className="mt-2 text-sm text-muted-foreground leading-relaxed">{t("hero.aiDescription")}</p>
+            </div>
           </motion.div>
         </div>
         <motion.div
-          className="mx-auto mt-10 sm:mt-16 lg:mt-0"
+          className="mx-auto mt-16 lg:mt-0"
           initial={{ opacity: 0, x: 20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
         >
           <div className="relative">
             {isClient ? (
-              <div className="w-full max-w-[300px] sm:max-w-[400px] md:max-w-[500px] mx-auto rounded-2xl shadow-xl ring-1 ring-gray-900/10 overflow-hidden">
-                <Image 
-                  src="/images/video-poster.png" 
+              <div className="w-full max-w-[320px] sm:max-w-[420px] md:max-w-[520px] mx-auto rounded-[2.5rem] border border-border/60 bg-card shadow-xl overflow-hidden">
+                <Image
+                  src="/images/video-poster.png"
                   alt="MyTaskly App: interfaccia utente minimalista con gestione attività intelligente"
                   width={500}
                   height={800}
@@ -69,7 +95,7 @@ export default function Hero() {
                   loading="eager"
                   className="w-full h-auto object-cover"
                 />
-                <button 
+                <button
                   onClick={() => {
                     const videoElement = document.createElement('video')
                     videoElement.src = "/video/presentation.mp4"
@@ -83,7 +109,7 @@ export default function Hero() {
                       container.appendChild(videoElement)
                     }
                   }}
-                  className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40 video-container"
+                  className="absolute inset-0 flex items-center justify-center bg-black/50 video-container"
                   aria-label="Riproduci video di presentazione MyTaskly"
                 >
                   <div className="w-16 h-16 sm:w-20 sm:h-20 bg-primary rounded-full flex items-center justify-center">
@@ -94,7 +120,7 @@ export default function Hero() {
                 </button>
               </div>
             ) : (
-              <div className="w-full max-w-[300px] sm:max-w-[400px] md:max-w-[500px] mx-auto rounded-2xl shadow-xl ring-1 ring-gray-900/10 overflow-hidden bg-muted aspect-[9/16]" aria-hidden="true"></div>
+              <div className="w-full max-w-[320px] sm:max-w-[420px] md:max-w-[520px] mx-auto rounded-[2.5rem] border border-border/60 bg-muted aspect-[9/16]" aria-hidden="true"></div>
             )}
           </div>
         </motion.div>

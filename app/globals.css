@@ -4,79 +4,67 @@
 
 @layer base {
   :root {
-    /* Colori di base più tenui e naturali */
-    --background: 40 30% 98%;
-    --foreground: 215 25% 27%;
+    --background: 0 0% 100%;
+    --foreground: 0 0% 10%;
 
-    /* Colori delle card leggermente più caldi del background */
-    --card: 35 25% 97%;
-    --card-foreground: 215 25% 27%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 10%;
 
-    /* Popover con leggera trasparenza */
-    --popover: 40 30% 98%;
-    --popover-foreground: 215 25% 27%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 10%;
 
-    /* Nuovo colore primario: blu teal più rilassante */
-    --primary: 187 65% 40%;
+    --primary: 0 0% 10%;
     --primary-foreground: 0 0% 100%;
 
-    /* Colore secondario complementare */
-    --secondary: 187 20% 90%;
-    --secondary-foreground: 187 50% 25%;
+    --secondary: 0 0% 96%;
+    --secondary-foreground: 0 0% 20%;
 
-    /* Colori muted più caldi */
-    --muted: 35 25% 94%;
-    --muted-foreground: 215 15% 45%;
+    --muted: 0 0% 92%;
+    --muted-foreground: 0 0% 35%;
 
-    /* Colore di accento distintivo: tonalità ambrata */
-    --accent: 35 80% 60%;
-    --accent-foreground: 35 40% 20%;
+    --accent: 0 0% 15%;
+    --accent-foreground: 0 0% 100%;
 
-    /* Colore distruttivo più soft */
-    --destructive: 0 65% 55%;
+    --destructive: 0 65% 45%;
     --destructive-foreground: 0 0% 100%;
 
-    /* Bordi e input più sottili e meno contrastanti */
-    --border: 35 15% 85%;
-    --input: 35 15% 85%;
+    --border: 0 0% 85%;
+    --input: 0 0% 85%;
 
-    /* Ring color che riprende il primario */
-    --ring: 187 65% 40%;
+    --ring: 0 0% 10%;
 
     --radius: 0.5rem;
   }
 
   .dark {
-    --background: 215 30% 10%;
-    --foreground: 210 20% 98%;
+    --background: 0 0% 6%;
+    --foreground: 0 0% 96%;
 
-    --card: 215 35% 12%;
-    --card-foreground: 210 20% 98%;
+    --card: 0 0% 8%;
+    --card-foreground: 0 0% 96%;
 
-    --popover: 215 30% 10%;
-    --popover-foreground: 210 20% 98%;
+    --popover: 0 0% 6%;
+    --popover-foreground: 0 0% 96%;
 
-    /* Colore primario coordinato con la versione light */
-    --primary: 187 70% 45%;
-    --primary-foreground: 0 0% 100%;
+    --primary: 0 0% 100%;
+    --primary-foreground: 0 0% 6%;
 
-    --secondary: 215 25% 25%;
-    --secondary-foreground: 210 20% 98%;
+    --secondary: 0 0% 16%;
+    --secondary-foreground: 0 0% 96%;
 
-    --muted: 215 25% 20%;
-    --muted-foreground: 210 20% 70%;
+    --muted: 0 0% 20%;
+    --muted-foreground: 0 0% 65%;
 
-    /* Accento coordinato con la versione light */
-    --accent: 35 70% 50%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 0 0% 90%;
+    --accent-foreground: 0 0% 6%;
 
     --destructive: 0 70% 45%;
-    --destructive-foreground: 210 20% 98%;
+    --destructive-foreground: 0 0% 96%;
 
-    --border: 215 25% 25%;
-    --input: 215 25% 25%;
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
 
-    --ring: 187 70% 45%;
+    --ring: 0 0% 90%;
   }
 }
 
@@ -105,14 +93,14 @@ body,
 
   /* Migliora il contrasto del testo per la leggibilità */
   .text-muted-foreground {
-    @apply text-opacity-75;
+    @apply text-opacity-70;
   }
 
   /* Riduce l'intensità delle ombre in tema chiaro */
   .shadow-lg,
   .shadow-md,
   .shadow-sm {
-    @apply shadow-black/5;
+    box-shadow: 0 24px 60px rgba(15, 15, 15, 0.08);
   }
 }
 
@@ -123,8 +111,8 @@ html.light * {
 
 @layer components {
   .apple-button {
-    @apply px-4 py-2 sm:px-6 sm:py-3 rounded-full bg-primary text-primary-foreground font-semibold transition-all duration-300 ease-in-out hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-50 text-sm sm:text-base;
-    box-shadow: 0 2px 10px rgba(var(--primary) / 0.3);
+    @apply px-5 py-3 sm:px-7 sm:py-3 rounded-full bg-primary text-primary-foreground font-semibold tracking-tight transition-all duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-primary/40 text-sm sm:text-base;
+    box-shadow: 0 18px 40px rgba(15, 15, 15, 0.16);
   }
 
   .section-title {
@@ -132,8 +120,8 @@ html.light * {
   }
 
   .text-gradient {
-    @apply bg-clip-text text-transparent;
-    background-image: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--accent)));
+    @apply text-foreground;
+    background-image: none;
   }
 
   .hover-lift {
