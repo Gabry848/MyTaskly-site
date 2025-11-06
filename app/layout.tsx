@@ -136,7 +136,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="it" suppressHydrationWarning className="dark scroll-smooth">
+    <html lang="it" suppressHydrationWarning className="scroll-smooth">
       <head>
         {/* Precarica risorse critiche */}
         <link
