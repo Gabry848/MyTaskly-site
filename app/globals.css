@@ -4,79 +4,68 @@
 
 @layer base {
   :root {
-    /* Colori di base più tenui e naturali */
-    --background: 40 30% 98%;
-    --foreground: 215 25% 27%;
+    /* Palette monocromatica minimalista */
+    --background: 0 0% 100%;
+    --foreground: 0 0% 7%;
 
-    /* Colori delle card leggermente più caldi del background */
-    --card: 35 25% 97%;
-    --card-foreground: 215 25% 27%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 7%;
 
-    /* Popover con leggera trasparenza */
-    --popover: 40 30% 98%;
-    --popover-foreground: 215 25% 27%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 7%;
 
-    /* Nuovo colore primario: blu teal più rilassante */
-    --primary: 187 65% 40%;
+    --primary: 0 0% 7%;
     --primary-foreground: 0 0% 100%;
 
-    /* Colore secondario complementare */
-    --secondary: 187 20% 90%;
-    --secondary-foreground: 187 50% 25%;
+    --secondary: 0 0% 96%;
+    --secondary-foreground: 0 0% 20%;
 
-    /* Colori muted più caldi */
-    --muted: 35 25% 94%;
-    --muted-foreground: 215 15% 45%;
+    --muted: 0 0% 94%;
+    --muted-foreground: 0 0% 38%;
 
-    /* Colore di accento distintivo: tonalità ambrata */
-    --accent: 35 80% 60%;
-    --accent-foreground: 35 40% 20%;
+    --accent: 0 0% 12%;
+    --accent-foreground: 0 0% 100%;
 
-    /* Colore distruttivo più soft */
-    --destructive: 0 65% 55%;
+    --destructive: 0 84% 50%;
     --destructive-foreground: 0 0% 100%;
 
-    /* Bordi e input più sottili e meno contrastanti */
-    --border: 35 15% 85%;
-    --input: 35 15% 85%;
+    --border: 0 0% 88%;
+    --input: 0 0% 82%;
 
-    /* Ring color che riprende il primario */
-    --ring: 187 65% 40%;
+    --ring: 0 0% 10%;
 
     --radius: 0.5rem;
   }
 
   .dark {
-    --background: 215 30% 10%;
-    --foreground: 210 20% 98%;
+    --background: 0 0% 6%;
+    --foreground: 0 0% 96%;
 
-    --card: 215 35% 12%;
-    --card-foreground: 210 20% 98%;
+    --card: 0 0% 8%;
+    --card-foreground: 0 0% 96%;
 
-    --popover: 215 30% 10%;
-    --popover-foreground: 210 20% 98%;
+    --popover: 0 0% 6%;
+    --popover-foreground: 0 0% 96%;
 
-    /* Colore primario coordinato con la versione light */
-    --primary: 187 70% 45%;
-    --primary-foreground: 0 0% 100%;
+    --primary: 0 0% 96%;
+    --primary-foreground: 0 0% 6%;
 
-    --secondary: 215 25% 25%;
-    --secondary-foreground: 210 20% 98%;
+    --secondary: 0 0% 12%;
+    --secondary-foreground: 0 0% 88%;
 
-    --muted: 215 25% 20%;
-    --muted-foreground: 210 20% 70%;
+    --muted: 0 0% 18%;
+    --muted-foreground: 0 0% 70%;
 
-    /* Accento coordinato con la versione light */
-    --accent: 35 70% 50%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 0 0% 90%;
+    --accent-foreground: 0 0% 6%;
 
-    --destructive: 0 70% 45%;
-    --destructive-foreground: 210 20% 98%;
+    --destructive: 0 84% 50%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 215 25% 25%;
-    --input: 215 25% 25%;
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
 
-    --ring: 187 70% 45%;
+    --ring: 0 0% 96%;
   }
 }
 
@@ -133,7 +122,7 @@ html.light * {
 
   .text-gradient {
     @apply bg-clip-text text-transparent;
-    background-image: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--accent)));
+    background-image: linear-gradient(120deg, hsl(0 0% 0%), hsl(0 0% 35%));
   }
 
   .hover-lift {

@@ -5,18 +5,23 @@ import { SunIcon, MoonIcon } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 export function ThemeToggle() {
-  const [isDark, setIsDark] = useState(true)
+  const [isDark, setIsDark] = useState(false)
 
   // Initialize theme on component mount
   useEffect(() => {
     // Check if we're on the client side
     if (typeof window !== "undefined") {
-      // Get initial theme state from localStorage or default to dark
-      const savedTheme = localStorage.getItem("theme") || "dark"
-      setIsDark(savedTheme === "dark")
+      // Get initial theme state from localStorage or system preference
+      const storedTheme = localStorage.getItem("theme")
+      const prefersDark = window.matchMedia
+        ? window.matchMedia("(prefers-color-scheme: dark)").matches
+        : false
+      const resolvedTheme = storedTheme || (prefersDark ? "dark" : "light")
+
+      setIsDark(resolvedTheme === "dark")
 
       // Apply the theme to the document
-      if (savedTheme === "dark") {
+      if (resolvedTheme === "dark") {
         document.documentElement.classList.add("dark")
       } else {
         document.documentElement.classList.remove("dark")
