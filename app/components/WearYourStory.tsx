@@ -6,29 +6,36 @@ import Link from "next/link"
 export default function OrganizeYourLife() {
   const { t } = useLanguage()
 
+  const points = [
+    t("organize.points.voice"),
+    t("organize.points.context"),
+    t("organize.points.calendar"),
+  ]
+
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-muted">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="py-24 px-4 sm:px-6 lg:px-8 bg-background">
+      <div className="max-w-5xl mx-auto">
         <ScrollAnimationWrapper>
-          <div className="text-center">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-4 sm:mb-6">
+          <div className="space-y-8">
+            <p className="text-xs font-semibold uppercase tracking-[0.4em] text-muted-foreground">
+              {t("organize.pretitle")}
+            </p>
+            <h2 className="text-4xl sm:text-5xl font-semibold text-foreground">
               {t("organize.title")}
             </h2>
-            <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto px-4">
+            <p className="text-lg text-muted-foreground max-w-3xl leading-8">
               {t("organize.description")}
             </p>
-            <div className="mt-6 sm:mt-10">
-              <Link href="/download" className="apple-button inline-flex items-center">
+            <div className="grid gap-4 sm:grid-cols-3">
+              {points.map((point, index) => (
+                <div key={index} className="rounded-3xl border border-border bg-card px-6 py-6 text-sm leading-relaxed text-muted-foreground">
+                  {point}
+                </div>
+              ))}
+            </div>
+            <div>
+              <Link href="/download" className="inline-flex items-center text-sm font-semibold uppercase tracking-[0.3em] text-foreground hover:text-foreground/80">
                 {t("organize.cta")}
-                <svg
-                  className="w-5 h-5 ml-2"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                </svg>
               </Link>
             </div>
           </div>
