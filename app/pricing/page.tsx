@@ -31,7 +31,7 @@ export default function ClientPricingPage() {
       cta: t("pricing.cta.free"),
     },
     {
-      name: "FAUDERS",
+      name: "FAUNDERS",
       price: "3.99",
       description: "Support MyTaskly development with permanent pricing",
       features: [
