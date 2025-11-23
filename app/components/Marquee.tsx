@@ -11,6 +11,8 @@ export default function Marquee() {
   return (
     <ScrollAnimationWrapper threshold={0.1}>
       <div className="relative w-full overflow-hidden bg-background py-16 border-y border-border">
+        <div className="pointer-events-none absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-background via-background/70 to-transparent" />
+        <div className="pointer-events-none absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-background via-background/70 to-transparent" />
         <motion.div
           className="flex whitespace-nowrap"
           animate={{ x: ["0%", "-50%"] }}

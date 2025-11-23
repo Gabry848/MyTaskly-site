@@ -31,19 +31,22 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
-      <main className="w-full px-4 sm:px-6 lg:px-8">
+      <main className="relative w-full overflow-hidden bg-background">
+        <div className="pointer-events-none absolute inset-x-0 top-0 h-64 bg-[radial-gradient(circle_at_top,_rgba(99,102,241,0.12),transparent_40%)]" />
+        <div className="pointer-events-none absolute inset-x-0 bottom-0 h-64 bg-[radial-gradient(circle_at_bottom,_rgba(12,18,39,0.12),transparent_45%)]" />
+
         <Suspense fallback={null}>
           <TermlyCMP websiteUUID={WEBSITE_UUID} />
         </Suspense>
 
         {/* Sezione iniziale ad alta priorità con markup semantico migliorato */}
-        <section id="home" aria-label="MyTaskly - Introduzione" className="py-8">
+        <section id="home" aria-label="MyTaskly - Introduzione" className="relative">
           <Hero />
         </section>
         
         {/* Componenti caricati dinamicamente con markup semantico */}
         <Suspense fallback={<div className="min-h-[200px]"></div>}>
-          <section id="features" aria-label="Caratteristiche di MyTaskly" className="py-8">
+          <section id="features" aria-label="Caratteristiche di MyTaskly" className="relative">
             <WearYourStory />
             <FeatureCarousel />
             <PortfolioGrid />
@@ -52,13 +55,13 @@ export default function Home() {
         
         {/* Sezione di confronto con altre app todo */}
         <Suspense fallback={<div className="min-h-[200px]"></div>}>
-          <section id="comparison" aria-label="Confronto con altre app" className="py-8">
+          <section id="comparison" aria-label="Confronto con altre app" className="relative">
             <AppComparison />
           </section>
         </Suspense>
         
         <Suspense fallback={<div className="min-h-[200px]"></div>}>
-          <section id="about" aria-label="Chi siamo" className="py-8">
+          <section id="about" aria-label="Chi siamo" className="relative">
             <Timeline />
             <Marquee />
           </section>
