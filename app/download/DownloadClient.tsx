@@ -15,6 +15,10 @@ export default function DownloadPage() {
         <div className="mx-auto max-w-2xl py-16 sm:py-24 lg:py-32">
           <ScrollAnimationWrapper>
             <div className="text-center">
+              <span className="inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-4 py-2 text-sm font-medium text-primary">
+                <span className="h-2 w-2 rounded-full bg-primary" aria-hidden />
+                {t("download.badge")}
+              </span>
               <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-6xl">
                 <span className="text-gradient">{t("download.title")}</span>
               </h1>
@@ -22,18 +26,26 @@ export default function DownloadPage() {
                 {t("download.subtitle")}
               </p>
 
-              <div className="mt-10 flex items-center justify-center gap-x-6">
-                <div className="relative h-16 w-48">
-                  <div className="absolute inset-0 flex items-center justify-center text-sm font-medium text-foreground">
-                    {t("download.comingSoonAppStore")}
-                  </div>
-                </div>
-                <div className="relative h-16 w-48">
-                  <div className="absolute inset-0 flex items-center justify-center text-sm font-medium text-foreground">
-                    {t("download.comingSoonGooglePlay")}
-                  </div>
-                </div>
+              <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row sm:gap-6">
+                <Button className="rounded-full px-8" size="lg" asChild>
+                  <a
+                    href="https://play.google.com/store/apps/details?id=com.Gabry848Studio.Mytaskly&hl=en-US&ah=A0Ml8z3VsRUmRFkINxQ1zi8Pj68"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {t("download.buttons.playStore")}
+                  </a>
+                </Button>
+                <Button className="rounded-full px-8" size="lg" variant="outline" asChild>
+                  <a href="/early-access">
+                    {t("download.buttons.progress")}
+                  </a>
+                </Button>
               </div>
+
+              <p className="mt-6 text-sm text-muted-foreground">
+                {t("download.comingSoonAppStore")}
+              </p>
 
             </div>
           </ScrollAnimationWrapper>
@@ -47,31 +59,75 @@ export default function DownloadPage() {
             <div className="mx-auto max-w-2xl text-center">
               <CalendarClock className="h-12 w-12 mx-auto text-primary mb-6" />
               <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-                Periodo di Iscrizione Terminato
+                {t("download.waitlist.title")}
               </h2>
               <p className="mt-6 text-lg leading-8 text-muted-foreground">
-                Il periodo per iscriversi alla waitlist è terminato. Se hai già completato la tua iscrizione, puoi accedere all'area riservata.
+                {t("download.waitlist.description")}
               </p>
             </div>
           </ScrollAnimationWrapper>
 
-          <div className="mt-16 flow-root">
+          <div className="mt-16 grid gap-6 lg:grid-cols-2">
             <ScrollAnimationWrapper>
               <div className="relative rounded-xl bg-background p-8 shadow-lg border border-border">
-                <div className="mx-auto max-w-2xl text-center">
-                  <h3 className="text-xl font-semibold leading-8 text-foreground">
-                    Accesso all'Area Riservata
-                  </h3>
-                  <p className="mt-2 text-base leading-7 text-muted-foreground mb-8">
-                    Se ti sei già registrato alla waitlist, clicca il pulsante qui sotto per accedere all'area riservata e scaricare l'app.
+                <div className="space-y-6">
+                  <div className="flex items-center gap-3">
+                    <Rocket className="h-6 w-6 text-primary" />
+                    <h3 className="text-xl font-semibold leading-8 text-foreground">
+                      {t("download.buttons.playStore")}
+                    </h3>
+                  </div>
+                  <p className="text-base leading-7 text-muted-foreground">
+                    {t("download.subtitle")}
                   </p>
-                  <Button
-                    className="rounded-full px-8"
-                    size="lg"
-                    asChild
-                  >
+                  <ol className="space-y-3 text-sm leading-6 text-muted-foreground list-decimal list-inside">
+                    <li>{t("earlyAccess.guide.step1")}</li>
+                    <li>{t("earlyAccess.guide.step2")}</li>
+                    <li>{t("earlyAccess.guide.step3")}</li>
+                    <li>{t("earlyAccess.guide.step4")}</li>
+                  </ol>
+                  <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
+                    <Button className="rounded-full px-6" asChild>
+                      <a
+                        href="https://play.google.com/apps/internaltest/4701407835802258178"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {t("earlyAccess.beta.button1")}
+                      </a>
+                    </Button>
+                    <Button className="rounded-full px-6" variant="outline" asChild>
+                      <a
+                        href="https://play.google.com/store/apps/details?id=com.Gabry848Studio.Mytaskly&hl=en-US&ah=A0Ml8z3VsRUmRFkINxQ1zi8Pj68"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {t("earlyAccess.beta.button2")}
+                      </a>
+                    </Button>
+                  </div>
+                </div>
+              </div>
+            </ScrollAnimationWrapper>
+
+            <ScrollAnimationWrapper delay={0.1}>
+              <div className="relative rounded-xl bg-background p-8 shadow-lg border border-border">
+                <div className="space-y-4">
+                  <div className="flex items-center gap-3">
+                    <CalendarClock className="h-6 w-6 text-primary" />
+                    <h3 className="text-xl font-semibold leading-8 text-foreground">
+                      {t("download.buttons.progress")}
+                    </h3>
+                  </div>
+                  <p className="text-base leading-7 text-muted-foreground">
+                    {t("download.benefits.exclusiveFeatures.description")}
+                  </p>
+                  <p className="text-sm text-muted-foreground">
+                    {t("download.comingSoonAppStore")}
+                  </p>
+                  <Button className="rounded-full px-6" variant="secondary" asChild>
                     <a href="/early-access">
-                      Accedi all'Area Riservata
+                      {t("download.buttons.progress")}
                     </a>
                   </Button>
                 </div>
@@ -96,7 +152,7 @@ export default function DownloadPage() {
           </ScrollAnimationWrapper>
 
           <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
-            <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-24 lg:max-w-3xl lg:grid-cols-2 lg:mx-auto">
+            <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-24 lg:max-w-5xl lg:grid-cols-3 lg:mx-auto">
               <ScrollAnimationWrapper delay={0.1}>
                 <div className="flex flex-col">
                   <dt className="text-base font-semibold leading-7 text-foreground">
@@ -115,7 +171,6 @@ export default function DownloadPage() {
                   </dd>
                 </div>
               </ScrollAnimationWrapper>
-
               <ScrollAnimationWrapper delay={0.3}>
                 <div className="flex flex-col">
                   <dt className="text-base font-semibold leading-7 text-foreground">
@@ -127,6 +182,22 @@ export default function DownloadPage() {
                   <dd className="mt-1 flex flex-auto flex-col text-base leading-7 text-muted-foreground">
                     <p className="flex-auto">
                       {t("download.benefits.premiumDiscount.description")}
+                    </p>
+                  </dd>
+                </div>
+              </ScrollAnimationWrapper>
+
+              <ScrollAnimationWrapper delay={0.5}>
+                <div className="flex flex-col">
+                  <dt className="text-base font-semibold leading-7 text-foreground">
+                    <div className="mb-6 flex h-10 w-10 items-center justify-center rounded-lg bg-primary">
+                      <CalendarClock className="h-6 w-6 text-white" aria-hidden="true" />
+                    </div>
+                    {t("download.benefits.exclusiveFeatures.title")}
+                  </dt>
+                  <dd className="mt-1 flex flex-auto flex-col text-base leading-7 text-muted-foreground">
+                    <p className="flex-auto">
+                      {t("download.benefits.exclusiveFeatures.description")}
                     </p>
                   </dd>
                 </div>
@@ -203,8 +274,8 @@ export default function DownloadPage() {
                   size="lg"
                   asChild
                 >
-                  <a href="/early-access">
-                    Accedi all'Area Riservata
+                  <a href="https://play.google.com/store/apps/details?id=com.Gabry848Studio.Mytaskly&hl=en-US&ah=A0Ml8z3VsRUmRFkINxQ1zi8Pj68" target="_blank" rel="noopener noreferrer">
+                    {t("download.cta.button")}
                   </a>
                 </Button>
               </div>

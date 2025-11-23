@@ -35,9 +35,10 @@ const translations: Record<Language, Record<string, string>> = {
     "hero.pretitle": "VOICE-FIRST PRODUCTIVITY",
     "hero.title": "Talk to your tasks.",
     "hero.subtitle":
-      "Mytaskly is the black-and-white workspace where an AI voice assistant organises tasks, schedules and notes the moment you speak.",
-    "hero.cta.download": "Request early access",
-    "hero.cta.features": "Explore the AI workspace",
+      "Mytaskly is the black-and-white workspace where an AI voice assistant organises tasks, schedules and notes the moment you speak. The open beta is ready for you on Android.",
+    "hero.betaBadge": "Open Beta on Google Play",
+    "hero.cta.download": "Join the open beta",
+    "hero.cta.features": "Check development status",
     "hero.highlight.voice.title": "VOICE CHAT",
     "hero.highlight.voice.description": "Capture tasks and ideas hands-free with natural conversations.",
     "hero.highlight.memory.title": "LIVING MEMORY",
@@ -375,18 +376,18 @@ const translations: Record<Language, Record<string, string>> = {
     "pricing.comparison.dedicatedManager": "Dedicated Account Manager",
 
     // Download Page
-    "download.title": "Coming Soon",
+    "download.title": "Open Beta Available",
     "download.subtitle":
-      "Mytaskly is almost ready! Join our waitlist to be among the first to experience the future of task management.",
-    "download.comingSoonAppStore": "Coming Soon to App Store",
-    "download.comingSoonGooglePlay": "Coming Soon to Google Play",
+      "Start talking to your tasks today. Download the Android beta, try the voice-first experience, and keep an eye on the app's roadmap.",
+    "download.comingSoonAppStore": "iOS version in development",
+    "download.comingSoonGooglePlay": "Download on Google Play (Beta)",
 
-    "download.countdown.title": "Launching in Summer 2025",
-    "download.countdown.description":
-      "We're putting the finishing touches on Mytaskly. Sign up for our waitlist to get exclusive early access and special benefits.",
+    "download.badge": "Beta now live",
+    "download.buttons.playStore": "Download Android beta",
+    "download.buttons.progress": "View development progress",
 
-    "download.waitlist.title": "Join the Waitlist",
-    "download.waitlist.description": "Be the first to know when Mytaskly launches and receive exclusive benefits.",
+    "download.waitlist.title": "Stay in the loop",
+    "download.waitlist.description": "See how the beta evolves, read changelogs, and follow the roadmap.",
 
     "download.form.name": "Name",
     "download.form.namePlaceholder": "John Doe",
@@ -398,39 +399,39 @@ const translations: Record<Language, Record<string, string>> = {
     "download.form.submitting": "Submitting...",
     "download.form.submit": "Join Waitlist",
 
-    "download.toast.title": "You're on the list!",
-    "download.toast.description": "Thanks for joining our waitlist. We'll notify you when Mytaskly launches.",
+    "download.toast.title": "You're set!",
+    "download.toast.description": "Thanks for testing the beta. We'll keep you updated on each release.",
 
-    "download.benefits.title": "Waitlist Benefits",
-    "download.benefits.subtitle": "Join our waitlist today and enjoy these exclusive benefits when Mytaskly launches.",
+    "download.benefits.title": "Why join the beta",
+    "download.benefits.subtitle": "Get hands-on now and help shape the final release.",
 
-    "download.benefits.earlyAccess.title": "Early Access",
+    "download.benefits.earlyAccess.title": "Immediate access",
     "download.benefits.earlyAccess.description":
-      "Get access to Mytaskly before the general public and be the first to experience our innovative features.",
+      "Use the Android beta today and explore the voice-first interface with every new drop.",
 
-    "download.benefits.exclusiveFeatures.title": "Exclusive Features",
+    "download.benefits.exclusiveFeatures.title": "Progress tracking",
     "download.benefits.exclusiveFeatures.description":
-      "Unlock special features only available to our waitlist members, including custom themes and advanced organization tools.",
+      "Follow the development status from the progress page and read the latest changelog.",
 
-    "download.benefits.premiumDiscount.title": "Premium Discount",
+    "download.benefits.premiumDiscount.title": "Priority feedback",
     "download.benefits.premiumDiscount.description":
-      "Receive 3 month free Mytaskly Premium if you join from our waitlist.",
+      "Share ideas directly with the team during beta and influence what ships next.",
 
     "download.faq.title": "Frequently Asked Questions",
-    "download.faq.subtitle": "Have questions about our launch? Find answers below.",
-    "download.faq.q1": "When exactly will Mytaskly launch?",
+    "download.faq.subtitle": "Everything you need to know about testing the beta.",
+    "download.faq.q1": "How do I join the beta?",
     "download.faq.a1":
-      "We're targeting a Summer 2024 launch. Waitlist members will receive access in waves starting a few weeks before the public launch.",
-    "download.faq.q2": "Will Mytaskly be available on both iOS and Android?",
+      "Tap the Play Store button, accept the tester invitation, and install Mytaskly. Updates are delivered automatically.",
+    "download.faq.q2": "Is iOS supported?",
     "download.faq.a2":
-      "Yes! We're launching simultaneously on both mobile platforms. Mytaskly is designed specifically for smartphones and tablets to provide the best mobile task management experience.",
-    "download.faq.q3": "Is there a cost to join the waitlist?",
+      "We're building the iOS version now. In the meantime, follow the progress page to see milestones and release timing.",
+    "download.faq.q3": "What should I expect from the beta?",
     "download.faq.a3":
-      "No, joining the waitlist is completely free. You'll also receive special benefits",
+      "The app is stable but still evolving. Voice-first flows are ready, and we're polishing AI assistance and collaboration.",
 
-    "download.cta.title": "Don't Miss Out",
-    "download.cta.description": "Spaces on our priority waitlist are limited. Secure your spot today!",
-    "download.cta.button": "Join the Waitlist",
+    "download.cta.title": "Start testing now",
+    "download.cta.description": "Install the Android beta and keep the progress page bookmarked for updates.",
+    "download.cta.button": "Download the beta",
 
     // Testimonials
     "testimonials.title": "What Our Users Say",
@@ -783,9 +784,10 @@ const translations: Record<Language, Record<string, string>> = {
     "hero.pretitle": "PRODUTTIVITÀ VOCALE",
     "hero.title": "Parla con le tue attività.",
     "hero.subtitle":
-      "Mytaskly è lo spazio bianco e nero dove un assistente vocale IA organizza attività, agenda e note nell'istante in cui parli.",
-    "hero.cta.download": "Richiedi l'accesso anticipato",
-    "hero.cta.features": "Esplora l'area IA",
+      "Mytaskly è lo spazio bianco e nero dove un assistente vocale IA organizza attività, agenda e note nell'istante in cui parli. La beta aperta su Android è pronta da provare.",
+    "hero.betaBadge": "Beta aperta su Google Play",
+    "hero.cta.download": "Partecipa alla beta",
+    "hero.cta.features": "Vedi lo stato di sviluppo",
     "hero.highlight.voice.title": "CHAT VOCALE",
     "hero.highlight.voice.description": "Cattura attività e idee senza mani con conversazioni naturali.",
     "hero.highlight.memory.title": "MEMORIA VIVA",
@@ -1127,19 +1129,19 @@ const translations: Record<Language, Record<string, string>> = {
     "pricing.comparison.dedicatedManager": "Manager Account Dedicato",
 
     // Download Page
-    "download.title": "Prossimamente",
+    "download.title": "Beta aperta disponibile",
     "download.subtitle":
-      "Mytaskly è quasi pronto! Unisciti alla nostra lista d'attesa per essere tra i primi a sperimentare il futuro della gestione delle attività.",
-    "download.comingSoonAppStore": "Presto su App Store",
-    "download.comingSoonGooglePlay": "Presto su Google Play",
+      "Inizia a parlare con le tue attività oggi. Scarica la beta Android, prova l'esperienza vocale e tieni d'occhio la roadmap dell'app.",
+    "download.comingSoonAppStore": "Versione iOS in sviluppo",
+    "download.comingSoonGooglePlay": "Scarica su Google Play (Beta)",
 
-    "download.countdown.title": "Lancio nell'Estate 2025",
-    "download.countdown.description":
-      "Stiamo mettendo gli ultimi ritocchi a Mytaskly. Iscriviti alla nostra lista d'attesa per ottenere accesso anticipato esclusivo e vantaggi speciali.",
+    "download.badge": "Beta ora attiva",
+    "download.buttons.playStore": "Scarica la beta Android",
+    "download.buttons.progress": "Segui lo stato di sviluppo",
 
-    "download.waitlist.title": "Unisciti alla Lista d'Attesa",
+    "download.waitlist.title": "Resta aggiornato",
     "download.waitlist.description":
-      "Sii il primo a sapere quando Mytaskly verrà lanciato e ricevi vantaggi esclusivi.",
+      "Scopri come evolve la beta, leggi i changelog e segui la roadmap.",
 
     "download.form.name": "Nome",
     "download.form.namePlaceholder": "Mario Rossi",
@@ -1151,42 +1153,42 @@ const translations: Record<Language, Record<string, string>> = {
     "download.form.submitting": "Invio in corso...",
     "download.form.submit": "Unisciti alla Lista d'Attesa",
 
-    "download.toast.title": "Sei nella lista!",
+    "download.toast.title": "Sei dei nostri!",
     "download.toast.description":
-      "Grazie per esserti unito alla nostra lista d'attesa. Ti avviseremo quando Mytaskly sarà lanciato.",
+      "Grazie per testare la beta. Ti aggiorneremo a ogni rilascio.",
 
-    "download.benefits.title": "Vantaggi della Lista d'Attesa",
+    "download.benefits.title": "Perché unirti alla beta",
     "download.benefits.subtitle":
-      "Unisciti alla nostra lista d'attesa oggi e goditi questi vantaggi esclusivi quando Mytaskly verrà lanciato.",
+      "Prova subito e contribuisci a plasmare il rilascio finale.",
 
-    "download.benefits.earlyAccess.title": "Accesso Anticipato",
+    "download.benefits.earlyAccess.title": "Accesso immediato",
     "download.benefits.earlyAccess.description":
-      "Ottieni accesso a Mytaskly prima del pubblico generale e sii il primo a sperimentare le nostre funzionalità innovative.",
+      "Usa subito la beta Android e scopri l'interfaccia vocale con ogni aggiornamento.",
 
-    "download.benefits.exclusiveFeatures.title": "Funzionalità Esclusive",
+    "download.benefits.exclusiveFeatures.title": "Avanzamento sempre visibile",
     "download.benefits.exclusiveFeatures.description":
-      "Sblocca funzionalità speciali disponibili solo per i membri della nostra lista d'attesa, inclusi temi personalizzati e strumenti di organizzazione avanzati.",
+      "Segui lo stato di sviluppo dalla pagina progressi e leggi l'ultimo changelog.",
 
-    "download.benefits.premiumDiscount.title": "Sconto Premium",
+    "download.benefits.premiumDiscount.title": "Feedback prioritario",
     "download.benefits.premiumDiscount.description":
-      "Ricevi un abbonamento gratuito di 3 mesi gratis per i primi 200 utenti Quando ti iscrivi dalla nostra lista d'attesa.",
+      "Condividi idee direttamente con il team durante la beta e influenza cosa arriverà dopo.",
 
     "download.faq.title": "Domande Frequenti",
-    "download.faq.subtitle": "Hai domande sul nostro lancio? Trova le risposte qui sotto.",
-    "download.faq.q1": "Quando esattamente verrà lanciato Mytaskly?",
+    "download.faq.subtitle": "Tutto quello che ti serve per testare la beta.",
+    "download.faq.q1": "Come entro nella beta?",
     "download.faq.a1":
-      "Stiamo puntando a un lancio nell'Estate 2025. I membri della lista d'attesa riceveranno accesso a ondate a partire da alcune settimane prima del lancio pubblico.",
-    "download.faq.q2": "Mytaskly sarà disponibile sia su iOS che su Android?",
+      "Tocca il pulsante del Play Store, accetta l'invito tester e installa Mytaskly. Gli aggiornamenti arrivano in automatico.",
+    "download.faq.q2": "Posso provarla su iOS?",
     "download.faq.a2":
-      "Sì! Stiamo lanciando simultaneamente su entrambe le piattaforme mobili. Mytaskly è progettato specificamente per smartphone e tablet per offrire la migliore esperienza di gestione delle attività su dispositivi mobili.",
-    "download.faq.q3": "C'è un costo per unirsi alla lista d'attesa?",
+      "Stiamo sviluppando la versione iOS. Nel frattempo, segui la pagina progressi per vedere milestone e tempistiche di rilascio.",
+    "download.faq.q3": "Cosa aspettarmi dalla beta?",
     "download.faq.a3":
-      "No, unirsi alla lista d'attesa è completamente gratuito. Riceverai anche vantaggi speciali",
+      "L'app è stabile ma in evoluzione. I flussi vocali sono pronti, mentre perfezioniamo assistente IA e collaborazione.",
 
-    "download.cta.title": "Non Perdere l'Opportunità",
+    "download.cta.title": "Inizia a testare ora",
     "download.cta.description":
-      "I posti nella nostra lista d'attesa prioritaria sono limitati. Assicurati il tuo posto oggi!",
-    "download.cta.button": "Unisciti alla Lista d'Attesa",
+      "Installa la beta Android e tieni nei preferiti la pagina progressi per gli aggiornamenti.",
+    "download.cta.button": "Scarica la beta",
 
     // Launch Banner
     "launch.notLaunched": "Mytaskly non è ancora stato lanciato!",

@@ -21,6 +21,15 @@ export default function Hero() {
             >
               {t("hero.pretitle")}
             </motion.span>
+            <motion.div
+              className="inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-4 py-2 text-sm font-medium text-primary"
+              initial={{ opacity: 0, y: 12 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+            >
+              <span className="inline-block h-2 w-2 rounded-full bg-primary" aria-hidden />
+              {t("hero.betaBadge")}
+            </motion.div>
             <motion.h1
               className="text-4xl sm:text-5xl lg:text-6xl font-semibold tracking-tight text-foreground"
               initial={{ opacity: 0, y: 20 }}
@@ -51,7 +60,7 @@ export default function Hero() {
                 <Link href="/download" title={t("hero.cta.download")}>{t("hero.cta.download")}</Link>
               </Button>
               <Link
-                href="/features"
+                href="/early-access"
                 className="mt-4 sm:mt-0 inline-flex items-center justify-center text-sm font-semibold uppercase tracking-[0.2em] text-foreground/70 hover:text-foreground"
                 title={t("hero.cta.features")}
                 aria-label={t("hero.cta.features")}
