@@ -44,7 +44,7 @@ export default function ClientPricingPage() {
         "Task analytics",
         "Permanent pricing - locked in forever",
       ],
-      cta: "Become a FAUDER",
+      cta: "Become a FAUNDER",
       highlighted: true,
     },
   ]
