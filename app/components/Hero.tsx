@@ -7,8 +7,6 @@ import { Button } from "@/components/ui/button"
 
 export default function Hero() {
   const { t } = useLanguage()
-  const phoneFeatures = ["Cattura vocale", "Pianificazione contestuale", "Routine automatizzate", "Privacy integrata"]
-
   return (
     <section className="relative isolate overflow-hidden bg-background">
       <motion.div
@@ -152,21 +150,6 @@ export default function Hero() {
                     </svg>
                   </span>
                 </div>
-              </div>
-
-              <div className="mt-6 grid grid-cols-2 gap-4">
-                {phoneFeatures.map((item, index) => (
-                  <motion.div
-                    key={item}
-                    className="rounded-2xl border border-border/70 bg-background/70 px-4 py-3 text-xs uppercase tracking-[0.2em] text-muted-foreground"
-                    initial={{ opacity: 0, y: 12 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.45 + index * 0.05, duration: 0.5 }}
-                    whileHover={{ y: -4 }}
-                  >
-                    {item}
-                  </motion.div>
-                ))}
               </div>
             </div>
           </motion.div>
