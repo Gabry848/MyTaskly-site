@@ -51,7 +51,7 @@ export default function Hero() {
                 <Link href="/download" title={t("hero.cta.download")}>{t("hero.cta.download")}</Link>
               </Button>
               <Link
-                href="/features"
+                href="/early-access"
                 className="mt-4 sm:mt-0 inline-flex items-center justify-center text-sm font-semibold uppercase tracking-[0.2em] text-foreground/70 hover:text-foreground"
                 title={t("hero.cta.features")}
                 aria-label={t("hero.cta.features")}

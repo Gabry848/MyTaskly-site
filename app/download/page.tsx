@@ -4,7 +4,7 @@ import DownloadClient from './DownloadClient';
 
 export const metadata: Metadata = generatePageMetadata({
   title: 'Scarica MyTaskly - App Todo List',
-  description: 'Scarica MyTaskly per iOS e Android. La todo list minimalista con intelligenza artificiale che semplifica la gestione delle tue attività. Disponibile su App Store e Google Play.',
+  description: 'Partecipa alla beta aperta di MyTaskly. Scarica la build Android su Google Play, segui i progressi di sviluppo e ricevi aggiornamenti sulla prossima versione iOS.',
   path: '/download',
   image: '/images/taskly-app.png',
   imageAlt: 'Scarica MyTaskly - App Todo List',
