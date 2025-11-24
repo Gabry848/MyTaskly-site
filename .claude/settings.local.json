@@ -4,7 +4,9 @@
       "Bash(rm:*)",
       "Bash(npm run build:*)",
       "Bash(mkdir:*)",
-      "Bash(npx next lint:*)"
+      "Bash(npx next lint:*)",
+      "Bash(npm run dev:*)",
+      "Bash(timeout 15 bash:*)"
     ],
     "deny": [],
     "ask": []

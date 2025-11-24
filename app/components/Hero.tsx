@@ -32,6 +32,15 @@ export default function Hero() {
         <div className="grid gap-12 lg:grid-cols-[minmax(0,1fr)_minmax(0,420px)] lg:items-center">
           <div className="space-y-7 relative z-10">
             <motion.span
+              className="inline-flex items-center gap-2 rounded-full border border-green-500/40 bg-green-500/10 px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.35em] text-green-600 dark:text-green-400"
+              initial={{ opacity: 0, y: 12 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+            >
+              <span className="inline-block h-2 w-2 rounded-full bg-green-600 dark:bg-green-400" aria-hidden />
+              {t("hero.openSourceBadge")}
+            </motion.span>
+            <motion.span
               className="inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.35em] text-primary"
               initial={{ opacity: 0, y: 12 }}
               animate={{ opacity: 1, y: 0 }}

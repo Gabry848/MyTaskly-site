@@ -48,6 +48,12 @@ export default function Header() {
             {t("nav.about")}
           </Link>
           <Link
+            href="/open-source"
+            className="text-sm font-semibold leading-6 text-foreground hover:text-primary transition-colors"
+          >
+            {t("nav.openSource")}
+          </Link>
+          <Link
             href="/members"
             className="text-sm font-semibold leading-6 text-foreground hover:text-primary transition-colors"
           >
@@ -101,6 +107,12 @@ export default function Header() {
                     className="text-lg font-semibold text-foreground hover:text-primary transition-colors"
                   >
                     {t("nav.about")}
+                  </Link>
+                  <Link
+                    href="/open-source"
+                    className="text-lg font-semibold text-foreground hover:text-primary transition-colors"
+                  >
+                    {t("nav.openSource")}
                   </Link>
                   <Link
                     href="/privacy"
