@@ -30,6 +30,7 @@ const translations: Record<Language, Record<string, string>> = {
     "nav.support": "Support",
     "nav.privacy": "Privacy",
     "nav.terms": "Terms",
+    "nav.openSource": "Open Source",
 
     // Hero
     "hero.pretitle": "VOICE-FIRST PRODUCTIVITY",
@@ -779,6 +780,7 @@ const translations: Record<Language, Record<string, string>> = {
     "nav.support": "Supporto",
     "nav.privacy": "Privacy",
     "nav.terms": "Termini",
+    "nav.openSource": "Open Source",
 
     // Hero
     "hero.pretitle": "PRODUTTIVITÀ VOCALE",
