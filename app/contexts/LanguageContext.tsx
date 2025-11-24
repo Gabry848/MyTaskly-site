@@ -33,6 +33,7 @@ const translations: Record<Language, Record<string, string>> = {
     "nav.terms": "Terms",
 
     // Hero
+    "hero.openSourceBadge": "Open Source on GitHub",
     "hero.pretitle": "VOICE-FIRST PRODUCTIVITY",
     "hero.title": "Talk to your tasks.",
     "hero.subtitle":
@@ -830,6 +831,8 @@ const translations: Record<Language, Record<string, string>> = {
     "openSource.repos.repo2Description": "The foundation of the website and web experience: perfect for contributing to UI, accessibility and performance.",
     "openSource.repos.repo3Title": "MyTaskly MCP",
     "openSource.repos.repo3Description": "The official connector to integrate MyTaskly into automations, agents and custom tools.",
+    "openSource.repos.repo4Title": "MyTaskly Server",
+    "openSource.repos.repo4Description": "The backend infrastructure powering MyTaskly: authentication, data management and API endpoints for seamless integration.",
     "openSource.repos.buttonText": "Open repository",
     "openSource.repos.footerTitle": "MyTaskly is born from the passion of a sixteen-year-old",
     "openSource.repos.footerDescription": "After 11 months of constant work, the code is open to allow anyone to verify it, improve it and integrate it. If you love open source productivity, now is the time to join.",
@@ -846,6 +849,7 @@ const translations: Record<Language, Record<string, string>> = {
     "nav.terms": "Termini",
 
     // Hero
+    "hero.openSourceBadge": "Open Source su GitHub",
     "hero.pretitle": "PRODUTTIVITÀ VOCALE",
     "hero.title": "Parla con le tue attività.",
     "hero.subtitle":
@@ -1652,6 +1656,8 @@ const translations: Record<Language, Record<string, string>> = {
     "openSource.repos.repo2Description": "La base del sito e dell'esperienza web: perfetta per contribuire a UI, accessibilità e performance.",
     "openSource.repos.repo3Title": "MCP di MyTaskly",
     "openSource.repos.repo3Description": "Il connettore ufficiale per integrare MyTaskly in automazioni, agent e strumenti personalizzati.",
+    "openSource.repos.repo4Title": "MyTaskly Server",
+    "openSource.repos.repo4Description": "L'infrastruttura backend che alimenta MyTaskly: autenticazione, gestione dati e API endpoint per un'integrazione senza soluzione di continuità.",
     "openSource.repos.buttonText": "Apri la repository",
     "openSource.repos.footerTitle": "MyTaskly nasce dalla passione di un sedicenne",
     "openSource.repos.footerDescription": "Dopo 11 mesi di lavoro costante, il codice è aperto per permettere a chiunque di verificarlo, migliorarlo e integrarlo. Se ami la produttività open source, questo è il momento di unirti.",

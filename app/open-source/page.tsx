@@ -5,6 +5,7 @@ import { ArrowUpRight, GitBranch, HeartHandshake, PlugZap, Zap } from "lucide-re
 import { ScrollAnimatedCard } from "@/app/components/ScrollAnimatedCard"
 import { ScrollAnimatedSection } from "@/app/components/ScrollAnimatedSection"
 import { useLanguage } from "@/app/contexts/LanguageContext"
+import { link } from "fs"
 
 export default function OpenSourcePage() {
   const { t } = useLanguage()
@@ -32,14 +33,14 @@ export default function OpenSourcePage() {
               </p>
               <div className="flex flex-wrap gap-3">
                 <Link
-                  href="#repos"
+                  href="https://github.com/Gabry848/MyTaskly-app"
                   className="inline-flex items-center gap-2 rounded-full bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground shadow-lg transition hover:-translate-y-0.5 hover:shadow-xl"
                 >
                   {t("openSource.hero.ctaRepositories")}
                   <ArrowUpRight className="h-4 w-4" />
                 </Link>
                 <Link
-                  href="#mcp"
+                  href="https://github.com/Gabry848/MyTaskly-MCP"
                   className="inline-flex items-center gap-2 rounded-full border border-border px-5 py-3 text-sm font-semibold text-foreground transition hover:-translate-y-0.5 hover:bg-card/80"
                 >
                   {t("openSource.hero.ctaMCP")}
@@ -125,7 +126,7 @@ export default function OpenSourcePage() {
               </div>
             </div>
             <Link
-              href="#repos"
+              href="https://github.com/Gabry848/MyTaskly-mcp"
               className="inline-flex w-fit items-center gap-2 rounded-full bg-foreground px-5 py-3 text-sm font-semibold text-background shadow-lg transition hover:-translate-y-0.5 hover:shadow-xl"
             >
               {t("openSource.mcp.button")}
@@ -213,14 +214,22 @@ export default function OpenSourcePage() {
             {
               titleKey: "openSource.repos.repo1Title",
               descriptionKey: "openSource.repos.repo1Description",
+              link: "https://github.com/Gabry848/MyTaskly-app"
             },
             {
               titleKey: "openSource.repos.repo2Title",
               descriptionKey: "openSource.repos.repo2Description",
+              link: "https://github.com/Gabry848/MyTaskly-site"
             },
             {
               titleKey: "openSource.repos.repo3Title",
               descriptionKey: "openSource.repos.repo3Description",
+              link: "https://github.com/Gabry848/MyTaskly-mcp"
+            },
+            {
+              titleKey: "openSource.repos.repo4Title",
+              descriptionKey: "openSource.repos.repo4Description",
+              link: "https://github.com/Gabry848/MyTaskly-server"
             },
           ].map((repo, index) => (
             <ScrollAnimatedCard key={repo.titleKey} delay={index * 0.1}>
@@ -235,7 +244,7 @@ export default function OpenSourcePage() {
                     <p className="text-sm text-muted-foreground">{t(repo.descriptionKey)}</p>
                   </div>
                   <Link
-                    href="#"
+                    href={repo.link}
                     className="relative inline-flex items-center gap-2 text-sm font-semibold text-primary transition group-hover:translate-x-1"
                   >
                     {t("openSource.repos.buttonText")}
