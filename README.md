@@ -6,6 +6,8 @@
 [![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/gabry848s-projects/v0-my-taskly-site)
 [![Built with v0.dev](https://img.shields.io/badge/Built%20with-v0.dev-black?style=for-the-badge)](https://v0.dev/chat/projects/D3ITZ8btAED)
 
+![Screen home page](public/image.png)
+
 ## Overview
 MyTaskly is a modern productivity experience that blends a clean Next.js frontend with a polished design system powered by Tailwind CSS and Radix UI. The site shares product storytelling, a public roadmap, beta access options, and member-area entry points, with deployments continuously delivered via Vercel.
 
