@@ -129,8 +129,8 @@ export default function DownloadPage() {
             </div>
           </ScrollAnimationWrapper>
 
-          <div className="mt-16 grid gap-6 lg:grid-cols-2">
-            <ScrollAnimationWrapper>
+          <div className="mt-16 grid gap-6">
+            {/* <ScrollAnimationWrapper>
               <div className="relative rounded-xl bg-background p-8 shadow-lg border border-border">
                 <div className="space-y-6">
                   <div className="flex items-center gap-3">
@@ -170,7 +170,7 @@ export default function DownloadPage() {
                   </div>
                 </div>
               </div>
-            </ScrollAnimationWrapper>
+            </ScrollAnimationWrapper> */}
 
             <ScrollAnimationWrapper delay={0.1}>
               <div className="relative rounded-xl bg-background p-8 shadow-lg border border-border">
