@@ -115,6 +115,12 @@ export default function Header() {
                     {t("nav.openSource")}
                   </Link>
                   <Link
+                    href="/members"
+                    className="text-lg font-semibold text-foreground hover:text-primary transition-colors"
+                  >
+                    Beta
+                  </Link>
+                  <Link
                     href="/privacy"
                     className="text-lg font-semibold text-foreground hover:text-primary transition-colors"
                   >
