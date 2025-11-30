@@ -5,7 +5,6 @@ import { ArrowUpRight, GitBranch, HeartHandshake, PlugZap, Zap } from "lucide-re
 import { ScrollAnimatedCard } from "@/app/components/ScrollAnimatedCard"
 import { ScrollAnimatedSection } from "@/app/components/ScrollAnimatedSection"
 import { useLanguage } from "@/app/contexts/LanguageContext"
-import { link } from "fs"
 
 export default function OpenSourcePage() {
   const { t } = useLanguage()
@@ -210,7 +209,7 @@ export default function OpenSourcePage() {
           </p>
         </div>
         <div className="grid gap-6 md:grid-cols-3">
-          {[
+          {[ 
             {
               titleKey: "openSource.repos.repo1Title",
               descriptionKey: "openSource.repos.repo1Description",
@@ -225,11 +224,6 @@ export default function OpenSourcePage() {
               titleKey: "openSource.repos.repo3Title",
               descriptionKey: "openSource.repos.repo3Description",
               link: "https://github.com/Gabry848/MyTaskly-mcp"
-            },
-            {
-              titleKey: "openSource.repos.repo4Title",
-              descriptionKey: "openSource.repos.repo4Description",
-              link: "https://github.com/Gabry848/MyTaskly-server"
             },
           ].map((repo, index) => (
             <ScrollAnimatedCard key={repo.titleKey} delay={index * 0.1}>

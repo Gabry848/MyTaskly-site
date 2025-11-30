@@ -1,12 +1,74 @@
 "use client";
 
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/app/contexts/LanguageContext";
 import ScrollAnimationWrapper from "@/app/components/ScrollAnimationWrapper";
-import { CalendarClock, Rocket, Star, Zap } from "lucide-react";
+import {
+  CalendarClock,
+  CheckCircle2,
+  Rocket,
+  Star,
+  Zap,
+} from "lucide-react";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
+import { Switch } from "@/components/ui/switch";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogFooter,
+  DialogHeader,
+  DialogTitle,
+} from "@/components/ui/dialog";
+import { useWaitlistRegistration } from "@/hooks/use-waitlist-registration";
 
 export default function DownloadPage() {
   const { t } = useLanguage();
+  const { markAsRegistered } = useWaitlistRegistration();
+  const [fullName, setFullName] = useState("");
+  const [email, setEmail] = useState("");
+  const [platform, setPlatform] = useState("android");
+  const [wantsUpdates, setWantsUpdates] = useState(true);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [formError, setFormError] = useState("");
+  const [showConfirmation, setShowConfirmation] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setFormError("");
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      setFormError(t("download.form.errorEmail"));
+      return;
+    }
+
+    setIsSubmitting(true);
+
+    try {
+      // Simula una registrazione andata a buon fine per la waitlist della beta
+      await new Promise((resolve) => setTimeout(resolve, 400));
+      markAsRegistered();
+      setShowConfirmation(true);
+      setFullName("");
+      setEmail("");
+      setPlatform("android");
+      setWantsUpdates(true);
+    } catch (error) {
+      setFormError(t("download.form.errorGeneric"));
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
 
   return (
     <div className="bg-background">
@@ -112,30 +174,124 @@ export default function DownloadPage() {
 
             <ScrollAnimationWrapper delay={0.1}>
               <div className="relative rounded-xl bg-background p-8 shadow-lg border border-border">
-                <div className="space-y-4">
+                <div className="space-y-6">
                   <div className="flex items-center gap-3">
                     <CalendarClock className="h-6 w-6 text-primary" />
                     <h3 className="text-xl font-semibold leading-8 text-foreground">
-                      {t("download.buttons.progress")}
+                      {t("download.waitlist.formTitle")}
                     </h3>
                   </div>
                   <p className="text-base leading-7 text-muted-foreground">
-                    {t("download.benefits.exclusiveFeatures.description")}
+                    {t("download.waitlist.formDescription")}
                   </p>
+
+                  <form onSubmit={handleSubmit} className="space-y-4">
+                    <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                      <div className="space-y-2">
+                        <Label htmlFor="fullName">{t("download.form.name")}</Label>
+                        <Input
+                          id="fullName"
+                          value={fullName}
+                          onChange={(e) => setFullName(e.target.value)}
+                          placeholder={t("download.form.namePlaceholder")}
+                          disabled={isSubmitting}
+                          required
+                        />
+                      </div>
+                      <div className="space-y-2">
+                        <Label htmlFor="email">{t("download.form.email")}</Label>
+                        <Input
+                          id="email"
+                          type="email"
+                          value={email}
+                          onChange={(e) => setEmail(e.target.value)}
+                          placeholder={t("download.form.emailPlaceholder")}
+                          disabled={isSubmitting}
+                          required
+                        />
+                      </div>
+                    </div>
+
+                    <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                      <div className="space-y-2">
+                        <Label htmlFor="platform">{t("download.form.platform")}</Label>
+                        <Select
+                          value={platform}
+                          onValueChange={setPlatform}
+                          defaultValue="android"
+                        >
+                          <SelectTrigger id="platform" className="w-full">
+                            <SelectValue placeholder={t("download.form.platformPlaceholder")} />
+                          </SelectTrigger>
+                          <SelectContent>
+                            <SelectItem value="android">Android</SelectItem>
+                            <SelectItem value="ios">iOS</SelectItem>
+                            <SelectItem value="both">{t("download.form.both")}</SelectItem>
+                          </SelectContent>
+                        </Select>
+                      </div>
+                      <div className="flex items-center justify-between rounded-lg border border-border px-4 py-3">
+                        <div>
+                          <p className="text-sm font-medium text-foreground">
+                            {t("download.form.notifications")}
+                          </p>
+                          <p className="text-xs text-muted-foreground">
+                            {t("download.form.notificationsHint")}
+                          </p>
+                        </div>
+                        <Switch
+                          checked={wantsUpdates}
+                          onCheckedChange={setWantsUpdates}
+                          disabled={isSubmitting}
+                          aria-label={t("download.form.notifications")}
+                        />
+                      </div>
+                    </div>
+
+                    {formError && (
+                      <p className="text-sm text-red-600">{formError}</p>
+                    )}
+
+                    <Button
+                      className="w-full rounded-full"
+                      type="submit"
+                      disabled={isSubmitting}
+                    >
+                      {isSubmitting
+                        ? t("download.form.submitting")
+                        : t("download.form.submit")}
+                    </Button>
+                  </form>
                   <p className="text-sm text-muted-foreground">
-                    {t("download.comingSoonAppStore")}
+                    {t("download.waitlist.formFootnote")}
                   </p>
-                  <Button className="rounded-full px-6" variant="secondary" asChild>
-                    <a href="/early-access">
-                      {t("download.buttons.progress")}
-                    </a>
-                  </Button>
                 </div>
               </div>
             </ScrollAnimationWrapper>
           </div>
         </div>
       </div>
+
+      <Dialog open={showConfirmation} onOpenChange={setShowConfirmation}>
+        <DialogContent>
+          <DialogHeader className="items-center text-center space-y-2">
+            <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 text-primary">
+              <CheckCircle2 className="h-6 w-6" />
+            </div>
+            <DialogTitle className="text-2xl">
+              {t("download.waitlist.confirmationTitle")}
+            </DialogTitle>
+            <DialogDescription>
+              {t("download.waitlist.confirmationDescription")}
+            </DialogDescription>
+          </DialogHeader>
+          <DialogFooter className="sm:justify-center">
+            <Button onClick={() => setShowConfirmation(false)} className="w-full sm:w-auto">
+              {t("download.waitlist.confirmationButton")}
+            </Button>
+          </DialogFooter>
+        </DialogContent>
+      </Dialog>
 
       {/* Benefits Section */}
       <div className="py-24 sm:py-32">

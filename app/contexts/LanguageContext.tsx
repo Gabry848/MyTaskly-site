@@ -166,9 +166,9 @@ const translations: Record<Language, Record<string, string>> = {
     "timeline.idea.details":
       "During a series of brainstorming sessions in 2024, the concept of Mytaskly emerged. We identified a gap in the market for a truly elegant todo app that prioritizes simplicity and immediacy without sacrificing functionality.",
     "timeline.development.title": "Development Begins",
-    "timeline.development.description": "A solo developer starts building the foundation of Mytaskly.",
+    "timeline.development.description": "Gabriele Cipriani, a 16-year-old builder, starts laying Mytaskly's foundation.",
     "timeline.development.details":
-      "In January 2025, a passionate developer began coding the first version of Mytaskly, focusing on creating a clean, intuitive interface that would simplify task management for users of all technical abilities.",
+      "In January 2025, 16-year-old founder Gabriele Cipriani began coding the first version of Mytaskly, focusing on a clean, intuitive interface that would simplify task management for users of all technical abilities.",
     "timeline.launch.title": "Official Launch",
     "timeline.launch.description": "Mytaskly 1.0 scheduled for release on iOS and Android.",
     "timeline.launch.details":
@@ -388,16 +388,26 @@ const translations: Record<Language, Record<string, string>> = {
     "download.buttons.playStore": "Download Android beta",
     "download.buttons.progress": "View development progress",
 
-    "download.waitlist.title": "Stay in the loop",
-    "download.waitlist.description": "See how the beta evolves, read changelogs, and follow the roadmap.",
+    "download.waitlist.title": "Join the beta waitlist",
+    "download.waitlist.description": "Sign up to try Mytaskly beta early, follow the roadmap, and be first to know when iOS is ready.",
+    "download.waitlist.formTitle": "Request beta access",
+    "download.waitlist.formDescription": "Tell us where you want to try Mytaskly. We'll notify you as soon as your build is ready.",
+    "download.waitlist.formFootnote": "We respect your inbox. You can unsubscribe from updates at any time.",
+    "download.waitlist.confirmationTitle": "You're on the list!",
+    "download.waitlist.confirmationDescription": "Thanks for joining the beta waitlist. We'll email you with access details and roadmap updates.",
+    "download.waitlist.confirmationButton": "Back to download page",
 
     "download.form.name": "Name",
     "download.form.namePlaceholder": "John Doe",
     "download.form.email": "Email",
     "download.form.emailPlaceholder": "john@example.com",
     "download.form.platform": "Preferred Platform",
+    "download.form.platformPlaceholder": "Choose a platform",
     "download.form.both": "Both",
     "download.form.notifications": "Send me updates about Mytaskly",
+    "download.form.notificationsHint": "Changelogs, roadmap milestones, and beta invites.",
+    "download.form.errorEmail": "Enter a valid email to join the waitlist.",
+    "download.form.errorGeneric": "Something went wrong. Please try again.",
     "download.form.submitting": "Submitting...",
     "download.form.submit": "Join Waitlist",
 
@@ -667,14 +677,14 @@ const translations: Record<Language, Record<string, string>> = {
     "privacy.cta.description": "We are committed to protecting your privacy and ensuring your data remains secure.",
 
     // Members Page
-    "members.login.title": "Members Area Access",
-    "members.login.description": "Enter your email to access the reserved area",
+    "members.login.title": "Join or access the Members Area",
+    "members.login.description": "Enter your email to join the waitlist and access the reserved beta space.",
     "members.login.emailLabel": "Email",
     "members.login.emailPlaceholder": "your-email@example.com",
     "members.login.errorInvalid": "Invalid email. Please check the email format.",
     "members.login.errorGeneric": "Error during login. Please try again.",
     "members.login.buttonLoading": "Logging in...",
-    "members.login.button": "Login",
+    "members.login.button": "Access or Register",
 
     "members.header.title": "Members Area",
     "members.header.subtitle": "Exclusive content for waitlist members",
@@ -831,8 +841,6 @@ const translations: Record<Language, Record<string, string>> = {
     "openSource.repos.repo2Description": "The foundation of the website and web experience: perfect for contributing to UI, accessibility and performance.",
     "openSource.repos.repo3Title": "MyTaskly MCP",
     "openSource.repos.repo3Description": "The official connector to integrate MyTaskly into automations, agents and custom tools.",
-    "openSource.repos.repo4Title": "MyTaskly Server",
-    "openSource.repos.repo4Description": "The backend infrastructure powering MyTaskly: authentication, data management and API endpoints for seamless integration.",
     "openSource.repos.buttonText": "Open repository",
     "openSource.repos.footerTitle": "MyTaskly is born from the passion of a sixteen-year-old",
     "openSource.repos.footerDescription": "After 11 months of constant work, the code is open to allow anyone to verify it, improve it and integrate it. If you love open source productivity, now is the time to join.",
@@ -983,9 +991,9 @@ const translations: Record<Language, Record<string, string>> = {
     "timeline.idea.details":
       "Durante una serie di sessioni di brainstorming nel 2024, è emerso il concetto di Mytaskly. Abbiamo identificato una lacuna nel mercato per un'app todo veramente elegante che prioritizza la semplicità e l'immediatezza senza sacrificare le funzionalità.",
     "timeline.development.title": "Inizio Sviluppo",
-    "timeline.development.description": "Uno sviluppatore solitario inizia a costruire le fondamenta di Mytaskly.",
+    "timeline.development.description": "Gabriele Cipriani, sviluppatore 16enne, inizia a costruire le fondamenta di Mytaskly.",
     "timeline.development.details":
-      "Nel gennaio 2025, uno sviluppatore appassionato ha iniziato a programmare la prima versione di Mytaskly, concentrandosi sulla creazione di un'interfaccia pulita e intuitiva che semplificasse la gestione delle attività per utenti di tutte le abilità tecniche.",
+      "Nel gennaio 2025, il fondatore sedicenne Gabriele Cipriani ha iniziato a programmare la prima versione di Mytaskly, concentrandosi su un'interfaccia pulita e intuitiva che semplificasse la gestione delle attività per utenti di tutte le abilità tecniche.",
     "timeline.launch.title": "Lancio Ufficiale",
     "timeline.launch.description": "Mytaskly 1.0 programmato per il rilascio su iOS e Android.",
     "timeline.launch.details":
@@ -1208,17 +1216,29 @@ const translations: Record<Language, Record<string, string>> = {
     "download.buttons.playStore": "Scarica la beta Android",
     "download.buttons.progress": "Segui lo stato di sviluppo",
 
-    "download.waitlist.title": "Resta aggiornato",
+    "download.waitlist.title": "Iscriviti alla waitlist beta",
     "download.waitlist.description":
-      "Scopri come evolve la beta, leggi i changelog e segui la roadmap.",
+      "Registrati per provare Mytaskly in beta, seguire la roadmap e ricevere subito l'invito quando sarà pronta anche la versione iOS.",
+    "download.waitlist.formTitle": "Richiedi l'accesso alla beta",
+    "download.waitlist.formDescription":
+      "Dicci dove vuoi provare Mytaskly. Ti avviseremo non appena la build sarà pronta per te.",
+    "download.waitlist.formFootnote": "Rispettiamo la tua inbox. Potrai disiscriverti dagli aggiornamenti in qualsiasi momento.",
+    "download.waitlist.confirmationTitle": "Sei in lista!",
+    "download.waitlist.confirmationDescription":
+      "Grazie per esserti iscritto alla waitlist della beta. Ti invieremo via email l'accesso e gli aggiornamenti sulla roadmap.",
+    "download.waitlist.confirmationButton": "Torna alla pagina download",
 
     "download.form.name": "Nome",
     "download.form.namePlaceholder": "Mario Rossi",
     "download.form.email": "Email",
     "download.form.emailPlaceholder": "mario@esempio.com",
     "download.form.platform": "Piattaforma Preferita",
+    "download.form.platformPlaceholder": "Scegli una piattaforma",
     "download.form.both": "Entrambe",
     "download.form.notifications": "Inviami aggiornamenti su Mytaskly",
+    "download.form.notificationsHint": "Changelog, milestone della roadmap e inviti alla beta.",
+    "download.form.errorEmail": "Inserisci un'email valida per entrare in lista d'attesa.",
+    "download.form.errorGeneric": "Qualcosa è andato storto. Riprova.",
     "download.form.submitting": "Invio in corso...",
     "download.form.submit": "Unisciti alla Lista d'Attesa",
 
@@ -1492,14 +1512,14 @@ const translations: Record<Language, Record<string, string>> = {
     "privacy.cta.description": "Siamo impegnati a proteggere la tua privacy e a garantire che i tuoi dati rimangano sicuri.",
 
     // Members Page
-    "members.login.title": "Accesso Area Membri",
-    "members.login.description": "Inserisci la tua email per accedere all'area riservata",
+    "members.login.title": "Iscriviti o accedi all'Area Membri",
+    "members.login.description": "Inserisci la tua email per iscriverti alla waitlist e accedere all'area riservata.",
     "members.login.emailLabel": "Email",
     "members.login.emailPlaceholder": "la-tua-email@esempio.com",
     "members.login.errorInvalid": "Email non valida. Controlla il formato dell'email.",
     "members.login.errorGeneric": "Errore durante il login. Riprova.",
     "members.login.buttonLoading": "Accesso in corso...",
-    "members.login.button": "Accedi",
+    "members.login.button": "Accedi o registrati",
 
     "members.header.title": "Area Membri",
     "members.header.subtitle": "Contenuto esclusivo per i membri della waitlist",
@@ -1656,8 +1676,6 @@ const translations: Record<Language, Record<string, string>> = {
     "openSource.repos.repo2Description": "La base del sito e dell'esperienza web: perfetta per contribuire a UI, accessibilità e performance.",
     "openSource.repos.repo3Title": "MCP di MyTaskly",
     "openSource.repos.repo3Description": "Il connettore ufficiale per integrare MyTaskly in automazioni, agent e strumenti personalizzati.",
-    "openSource.repos.repo4Title": "MyTaskly Server",
-    "openSource.repos.repo4Description": "L'infrastruttura backend che alimenta MyTaskly: autenticazione, gestione dati e API endpoint per un'integrazione senza soluzione di continuità.",
     "openSource.repos.buttonText": "Apri la repository",
     "openSource.repos.footerTitle": "MyTaskly nasce dalla passione di un sedicenne",
     "openSource.repos.footerDescription": "Dopo 11 mesi di lavoro costante, il codice è aperto per permettere a chiunque di verificarlo, migliorarlo e integrarlo. Se ami la produttività open source, questo è il momento di unirti.",
