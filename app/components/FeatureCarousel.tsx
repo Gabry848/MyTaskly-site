@@ -20,19 +20,19 @@ export default function FeatureCarousel() {
       icon: Mic,
     },
     {
-      title: t("feature.context.title"),
-      description: t("feature.context.description"),
+      title: t("feature.notifications.title"),
+      description: t("feature.notifications.description"),
       icon: Brain,
     },
     {
-      title: t("feature.automation.title"),
-      description: t("feature.automation.description"),
-      icon: Zap,
+      title: t("feature.calendar.title"),
+      description: t("feature.calendar.description"),
+      icon: Clock3,
     },
     {
-      title: t("feature.memory.title"),
-      description: t("feature.memory.description"),
-      icon: Clock3,
+      title: t("feature.sync.title"),
+      description: t("feature.sync.description"),
+      icon: Zap,
     },
     {
       title: t("feature.privacy.title"),
