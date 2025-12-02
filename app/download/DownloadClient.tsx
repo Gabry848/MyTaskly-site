@@ -10,6 +10,16 @@ import {
   Rocket,
   Star,
   Zap,
+  Mic,
+  Bell,
+  Calendar,
+  Cloud,
+  Shield,
+  ListChecks,
+  Users,
+  Sparkles,
+  Clock,
+  Globe,
 } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -292,6 +302,280 @@ export default function DownloadPage() {
           </DialogFooter>
         </DialogContent>
       </Dialog>
+
+      {/* Features Section */}
+      <div className="py-24 sm:py-32">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <ScrollAnimationWrapper>
+            <div className="mx-auto max-w-2xl text-center mb-16">
+              <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
+                Funzionalità Disponibili
+              </h2>
+              <p className="mt-6 text-lg leading-8 text-muted-foreground">
+                MyTaskly offre già un set completo di funzionalità per gestire al meglio le tue attività
+              </p>
+            </div>
+          </ScrollAnimationWrapper>
+
+          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            <ScrollAnimationWrapper delay={0.1}>
+              <div className="relative rounded-2xl border border-border bg-card p-6 shadow-sm hover:shadow-md transition-shadow">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10">
+                    <Mic className="h-5 w-5 text-primary" />
+                  </div>
+                  <h3 className="text-lg font-semibold text-foreground">Voice & Audio</h3>
+                </div>
+                <ul className="space-y-2 text-sm text-muted-foreground">
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-primary flex-shrink-0 mt-0.5" />
+                    <span>Registrazione vocale con streaming</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-primary flex-shrink-0 mt-0.5" />
+                    <span>Voice Activity Detection</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-primary flex-shrink-0 mt-0.5" />
+                    <span>Chat testuale con risposte streaming</span>
+                  </li>
+                </ul>
+              </div>
+            </ScrollAnimationWrapper>
+
+            <ScrollAnimationWrapper delay={0.2}>
+              <div className="relative rounded-2xl border border-border bg-card p-6 shadow-sm hover:shadow-md transition-shadow">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10">
+                    <Bell className="h-5 w-5 text-primary" />
+                  </div>
+                  <h3 className="text-lg font-semibold text-foreground">Notifiche & Promemoria</h3>
+                </div>
+                <ul className="space-y-2 text-sm text-muted-foreground">
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-primary flex-shrink-0 mt-0.5" />
+                    <span>Push notifications complete</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-primary flex-shrink-0 mt-0.5" />
+                    <span>Promemoria 1 ora prima scadenza</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-primary flex-shrink-0 mt-0.5" />
+                    <span>Notifiche per tipo di task</span>
+                  </li>
+                </ul>
+              </div>
+            </ScrollAnimationWrapper>
+
+            <ScrollAnimationWrapper delay={0.3}>
+              <div className="relative rounded-2xl border border-border bg-card p-6 shadow-sm hover:shadow-md transition-shadow">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10">
+                    <Calendar className="h-5 w-5 text-primary" />
+                  </div>
+                  <h3 className="text-lg font-semibold text-foreground">Calendario</h3>
+                </div>
+                <ul className="space-y-2 text-sm text-muted-foreground">
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-primary flex-shrink-0 mt-0.5" />
+                    <span>Google Calendar sync bidirezionale</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-primary flex-shrink-0 mt-0.5" />
+                    <span>Visualizzazione calendario</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-primary flex-shrink-0 mt-0.5" />
+                    <span>Task per giorno</span>
+                  </li>
+                </ul>
+              </div>
+            </ScrollAnimationWrapper>
+
+            <ScrollAnimationWrapper delay={0.4}>
+              <div className="relative rounded-2xl border border-border bg-card p-6 shadow-sm hover:shadow-md transition-shadow">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10">
+                    <ListChecks className="h-5 w-5 text-primary" />
+                  </div>
+                  <h3 className="text-lg font-semibold text-foreground">Gestione Task</h3>
+                </div>
+                <ul className="space-y-2 text-sm text-muted-foreground">
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-primary flex-shrink-0 mt-0.5" />
+                    <span>CRUD completo (Create, Read, Update, Delete)</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-primary flex-shrink-0 mt-0.5" />
+                    <span>Categorizzazione e organizzazione</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-primary flex-shrink-0 mt-0.5" />
+                    <span>Filtraggio avanzato per status, priorità, categoria</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-primary flex-shrink-0 mt-0.5" />
+                    <span>Ricerca globale dei task</span>
+                  </li>
+                </ul>
+              </div>
+            </ScrollAnimationWrapper>
+
+            <ScrollAnimationWrapper delay={0.5}>
+              <div className="relative rounded-2xl border border-border bg-card p-6 shadow-sm hover:shadow-md transition-shadow">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10">
+                    <Cloud className="h-5 w-5 text-primary" />
+                  </div>
+                  <h3 className="text-lg font-semibold text-foreground">Sincronizzazione</h3>
+                </div>
+                <ul className="space-y-2 text-sm text-muted-foreground">
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-primary flex-shrink-0 mt-0.5" />
+                    <span>Offline-first con caching</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-primary flex-shrink-0 mt-0.5" />
+                    <span>Sync periodico ogni 5 minuti</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-primary flex-shrink-0 mt-0.5" />
+                    <span>Queue system per operazioni offline</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-primary flex-shrink-0 mt-0.5" />
+                    <span>Cache versioning con deduplicazione</span>
+                  </li>
+                </ul>
+              </div>
+            </ScrollAnimationWrapper>
+
+            <ScrollAnimationWrapper delay={0.6}>
+              <div className="relative rounded-2xl border border-border bg-card p-6 shadow-sm hover:shadow-md transition-shadow">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10">
+                    <Shield className="h-5 w-5 text-primary" />
+                  </div>
+                  <h3 className="text-lg font-semibold text-foreground">Sicurezza & Altro</h3>
+                </div>
+                <ul className="space-y-2 text-sm text-muted-foreground">
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-primary flex-shrink-0 mt-0.5" />
+                    <span>JWT Authentication & HTTPS</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-primary flex-shrink-0 mt-0.5" />
+                    <span>Condivisione categorie con permessi</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-primary flex-shrink-0 mt-0.5" />
+                    <span>Note adesive draggabili</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-primary flex-shrink-0 mt-0.5" />
+                    <span>Multi-lingua (IT/EN)</span>
+                  </li>
+                </ul>
+              </div>
+            </ScrollAnimationWrapper>
+          </div>
+        </div>
+      </div>
+
+      {/* Coming Soon Section */}
+      <div className="bg-gradient-to-b from-primary/5 to-background py-24 sm:py-32">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <ScrollAnimationWrapper>
+            <div className="mx-auto max-w-2xl text-center mb-16">
+              <div className="inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-4 py-2 text-sm font-medium text-primary mb-4">
+                <Clock className="h-4 w-4" />
+                <span>Prossimamente</span>
+              </div>
+              <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
+                Nuove Funzionalità in Arrivo
+              </h2>
+              <p className="mt-6 text-lg leading-8 text-muted-foreground">
+                Stiamo lavorando per portarti ancora più funzionalità avanzate
+              </p>
+            </div>
+          </ScrollAnimationWrapper>
+
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            <ScrollAnimationWrapper delay={0.1}>
+              <div className="relative rounded-2xl border border-dashed border-primary/30 bg-card/50 p-6">
+                <div className="flex items-center gap-3 mb-3">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/5">
+                    <Calendar className="h-5 w-5 text-primary/70" />
+                  </div>
+                  <h3 className="text-lg font-semibold text-foreground">Calendari Multipli</h3>
+                </div>
+                <p className="text-sm text-muted-foreground">Gestisci più calendari contemporaneamente con sincronizzazione avanzata</p>
+              </div>
+            </ScrollAnimationWrapper>
+
+            <ScrollAnimationWrapper delay={0.2}>
+              <div className="relative rounded-2xl border border-dashed border-primary/30 bg-card/50 p-6">
+                <div className="flex items-center gap-3 mb-3">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/5">
+                    <Clock className="h-5 w-5 text-primary/70" />
+                  </div>
+                  <h3 className="text-lg font-semibold text-foreground">Task Ricorrenti</h3>
+                </div>
+                <p className="text-sm text-muted-foreground">Crea attività che si ripetono automaticamente con frequenze personalizzabili</p>
+              </div>
+            </ScrollAnimationWrapper>
+
+            <ScrollAnimationWrapper delay={0.3}>
+              <div className="relative rounded-2xl border border-dashed border-primary/30 bg-card/50 p-6">
+                <div className="flex items-center gap-3 mb-3">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/5">
+                    <ListChecks className="h-5 w-5 text-primary/70" />
+                  </div>
+                  <h3 className="text-lg font-semibold text-foreground">Subtask</h3>
+                </div>
+                <p className="text-sm text-muted-foreground">Suddividi le attività complesse in sotto-attività più gestibili</p>
+              </div>
+            </ScrollAnimationWrapper>
+
+            <ScrollAnimationWrapper delay={0.4}>
+              <div className="relative rounded-2xl border border-dashed border-primary/30 bg-card/50 p-6">
+                <div className="flex items-center gap-3 mb-3">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/5">
+                    <Sparkles className="h-5 w-5 text-primary/70" />
+                  </div>
+                  <h3 className="text-lg font-semibold text-foreground">AI Categorization</h3>
+                </div>
+                <p className="text-sm text-muted-foreground">Categorizzazione automatica dei task tramite intelligenza artificiale</p>
+              </div>
+            </ScrollAnimationWrapper>
+
+            <ScrollAnimationWrapper delay={0.5}>
+              <div className="relative rounded-2xl border border-dashed border-primary/30 bg-card/50 p-6">
+                <div className="flex items-center gap-3 mb-3">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/5">
+                    <Sparkles className="h-5 w-5 text-primary/70" />
+                  </div>
+                  <h3 className="text-lg font-semibold text-foreground">Smart Suggestions</h3>
+                </div>
+                <p className="text-sm text-muted-foreground">Suggerimenti intelligenti basati sulle tue abitudini e preferenze</p>
+              </div>
+            </ScrollAnimationWrapper>
+
+            <ScrollAnimationWrapper delay={0.6}>
+              <div className="relative rounded-2xl border border-dashed border-primary/30 bg-card/50 p-6">
+                <div className="flex items-center gap-3 mb-3">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/5">
+                    <Shield className="h-5 w-5 text-primary/70" />
+                  </div>
+                  <h3 className="text-lg font-semibold text-foreground">2FA & Pattern Learning</h3>
+                </div>
+                <p className="text-sm text-muted-foreground">Autenticazione a due fattori e apprendimento dei pattern comportamentali</p>
+              </div>
+            </ScrollAnimationWrapper>
+          </div>
+        </div>
+      </div>
 
       {/* Benefits Section */}
       <div className="py-24 sm:py-32">

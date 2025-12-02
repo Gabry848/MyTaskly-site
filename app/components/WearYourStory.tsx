@@ -9,8 +9,8 @@ export default function OrganizeYourLife() {
 
   const points = [
     t("organize.points.voice"),
-    t("organize.points.context"),
     t("organize.points.calendar"),
+    t("organize.points.sync"),
   ]
 
   return (

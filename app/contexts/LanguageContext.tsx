@@ -63,6 +63,7 @@ const translations: Record<Language, Record<string, string>> = {
     "organize.points.voice": "Dictate tasks, notes and follow-ups without touching the screen.",
     "organize.points.context": "Let the assistant understand priorities and dependencies automatically.",
     "organize.points.calendar": "Sync plans with your calendar and adjust scheduling with a simple sentence.",
+    "organize.points.sync": "Access your tasks from any device with offline-first synchronization.",
     "organize.cta": "See how it works",
 
     // Features
@@ -79,6 +80,12 @@ const translations: Record<Language, Record<string, string>> = {
     // Feature items
     "feature.voice.title": "Voice-first capture",
     "feature.voice.description": "Start a conversation and watch tasks, notes and reminders appear instantly.",
+    "feature.notifications.title": "Smart notifications",
+    "feature.notifications.description": "Receive timely reminders and updates that adapt to your schedule and priorities.",
+    "feature.calendar.title": "Calendar integration",
+    "feature.calendar.description": "Sync seamlessly with Google Calendar for a unified view of tasks and events.",
+    "feature.sync.title": "Multi-device sync",
+    "feature.sync.description": "Your tasks follow you everywhere with offline-first synchronization across all devices.",
     "feature.context.title": "Context-aware planning",
     "feature.context.description": "The assistant understands dependencies, collaborators and priorities in real time.",
     "feature.automation.title": "Automated routines",
@@ -91,6 +98,9 @@ const translations: Record<Language, Record<string, string>> = {
     // Portfolio Grid Categories
     "category.all": "All",
     "category.voice": "Voice workspace",
+    "category.core": "Core Features",
+    "category.integration": "Integration",
+    "category.security": "Security",
     "category.automation": "Automation",
     "category.intelligence": "Intelligence",
     "category.collaboration": "Collaboration",
@@ -98,14 +108,22 @@ const translations: Record<Language, Record<string, string>> = {
     // Portfolio Grid Items
     "portfolio.voice.title": "Voice console",
     "portfolio.voice.description": "Issue commands, capture thoughts and receive spoken confirmations instantly.",
+    "portfolio.tasks.title": "Task Management",
+    "portfolio.tasks.description": "Create, organize and complete tasks with full CRUD operations and smart categorization.",
+    "portfolio.notifications.title": "Smart Notifications",
+    "portfolio.notifications.description": "Receive timely reminders 1 hour before deadlines with intelligent categorization.",
+    "portfolio.calendar.title": "Calendar sync",
+    "portfolio.calendar.description": "Bidirectional synchronization with Google Calendar for unified schedule view.",
+    "portfolio.sync.title": "Offline Sync",
+    "portfolio.sync.description": "Offline-first architecture with automatic synchronization every 5 minutes when online.",
+    "portfolio.security.title": "Security & Privacy",
+    "portfolio.security.description": "JWT authentication, HTTPS encryption and secure category sharing with granular permissions.",
     "portfolio.routines.title": "AI routines",
     "portfolio.routines.description": "Generate recurring flows that adjust to real life without manual tweaks.",
     "portfolio.context.title": "Context hub",
     "portfolio.context.description": "Keep projects, people and priorities connected inside the assistant\'s memory.",
     "portfolio.notes.title": "Shared notes",
     "portfolio.notes.description": "Create collaborative boards that stay perfectly in sync with voice updates.",
-    "portfolio.calendar.title": "Calendar sync",
-    "portfolio.calendar.description": "Blend meetings and commitments with a single sentence.",
     "portfolio.metrics.title": "Focus metrics",
     "portfolio.metrics.description": "Track your capacity and energy with calm, monochrome visualisations.",
 
@@ -196,47 +214,96 @@ const translations: Record<Language, Record<string, string>> = {
     "featuresPage.hero.title": "Powerful Features",
     "featuresPage.hero.subtitle": "Discover how Mytaskly helps you organize your life with elegance and efficiency",
 
-    "featuresPage.taskManagement.title": "Intuitive Task Management",
-    "featuresPage.taskManagement.description":
-      "Mytaskly's clean interface makes managing tasks effortless. Create, organize, and complete tasks with just a few taps. Our minimalist design ensures you focus on what matters most - getting things done.",
-    "featuresPage.taskManagement.feature1": "Create tasks with rich text formatting and attachments",
-    "featuresPage.taskManagement.feature2": "Drag and drop to reorder and prioritize",
-    "featuresPage.taskManagement.feature3": "Swipe gestures for quick actions on mobile",
-    "featuresPage.taskManagement.feature4": "Subtasks for breaking down complex projects",
+    // Voice & Audio
+    "featuresPage.voice.title": "Smart Voice & Audio",
+    "featuresPage.voice.description": "Interact with Mytaskly using your voice. Record voice notes, chat with the AI assistant, and receive audio responses in real-time.",
+    "featuresPage.voice.feature1": "Voice recording with real-time streaming via WebSocket",
+    "featuresPage.voice.feature2": "Voice Activity Detection (VAD) with auto-stop on prolonged silence",
+    "featuresPage.voice.feature3": "Sequential audio chunk playback for immediate responses",
+    "featuresPage.voice.feature4": "Natural voice chat with integrated AI bot",
 
-    "featuresPage.smartLists.title": "Smart Lists & Organization",
-    "featuresPage.smartLists.description":
-      "Never lose track of your tasks with Mytaskly's intelligent organization system. Our smart lists automatically categorize your tasks based on due dates, priorities, and tags, giving you clear visibility of what needs your attention.",
-    "featuresPage.smartLists.feature1": "Today, Upcoming, and Completed views",
-    "featuresPage.smartLists.feature2": "Custom lists for projects, work, personal, and more",
-    "featuresPage.smartLists.feature3": "Tags and filters for precise organization",
-    "featuresPage.smartLists.feature4": "Search functionality to find any task instantly",
+    // Notifications & Reminders
+    "featuresPage.notifications.title": "Advanced Notifications & Reminders",
+    "featuresPage.notifications.description": "Complete push notification system to never miss an important deadline. Receive personalized reminders based on task type.",
+    "featuresPage.notifications.feature1": "Push Notifications with complete Expo Notifications setup",
+    "featuresPage.notifications.feature2": "Automatic Task Reminders 1 hour before deadline",
+    "featuresPage.notifications.feature3": "Categorized notifications by task type with specific metadata",
+    "featuresPage.notifications.feature4": "Smart notification management without overload",
 
-    "featuresPage.reminders.title": "Smart Reminders & Notifications",
-    "featuresPage.reminders.description":
-      "Never miss a deadline again. Mytaskly's reminder system ensures you stay on top of your tasks with timely notifications that adapt to your schedule and priorities.",
-    "featuresPage.reminders.feature1": "Time and location-based reminders",
-    "featuresPage.reminders.feature2": "Recurring reminders for habits and routines",
-    "featuresPage.reminders.feature3": "Smart notification scheduling to avoid overwhelm",
-    "featuresPage.reminders.feature4": "Customizable notification sounds and styles",
+    // Calendars
+    "featuresPage.calendars.title": "Calendar Integration",
+    "featuresPage.calendars.description": "Sync your tasks with Google Calendar for a unified view of your schedule. Changes reflect instantly in both directions.",
+    "featuresPage.calendars.feature1": "Google Calendar Sync: bidirectional tasks ↔ Google Calendar synchronization",
+    "featuresPage.calendars.feature2": "Calendar View: calendar view with tasks organized by day",
+    "featuresPage.calendars.feature3": "Real-time updates between Mytaskly and your calendar",
+    "featuresPage.calendars.feature4": "Smart scheduling based on calendar availability",
 
-    "featuresPage.sync.title": "Seamless Mobile Experience",
-    "featuresPage.sync.description":
-      "Your tasks follow you everywhere. Mytaskly synchronizes instantly across your iOS and Android devices, ensuring you have access to your up-to-date task lists whether you're on your phone or tablet.",
-    "featuresPage.sync.feature1": "Real-time sync across iOS and Android devices",
-    "featuresPage.sync.feature2": "Offline mode with automatic sync when back online",
-    "featuresPage.sync.feature3": "Cloud backup to prevent data loss",
-    "featuresPage.sync.feature4": "Consistent user experience across all platforms",
+    // Complete Task Management
+    "featuresPage.taskManagement.title": "Complete Task Management",
+    "featuresPage.taskManagement.description": "Full CRUD system to create, read, update, and delete tasks. Organize with custom categories, filter by status, priority, and date. Instant global search to find any task.",
+    "featuresPage.taskManagement.feature1": "Complete CRUD: Create, Read, Update, Delete for all tasks",
+    "featuresPage.taskManagement.feature2": "Advanced categorization with custom category creation",
+    "featuresPage.taskManagement.feature3": "Filtering by status, priority, category, and due date",
+    "featuresPage.taskManagement.feature4": "Global Search: instant global search across all tasks",
 
-    "featuresPage.themes.title": "Beautiful Themes & Customization",
-    "featuresPage.themes.description":
-      "Make Mytaskly truly yours with extensive customization options. Choose from elegant themes, custom accent colors, and layout options to create a task management experience that matches your style.",
-    "featuresPage.themes.feature1": "Light and dark modes with automatic switching",
-    "featuresPage.themes.feature2": "Custom accent colors and theme options",
-    "featuresPage.themes.feature3": "Adjustable font sizes and display options",
-    "featuresPage.themes.feature4": "Customizable home screen widgets",
+    // Multi-device Synchronization
+    "featuresPage.multiDeviceSync.title": "Multi-device Synchronization",
+    "featuresPage.multiDeviceSync.description": "Offline-first system with automatic synchronization. Your changes are saved locally and synced every 5 minutes when online, with smart queue management for offline operations.",
+    "featuresPage.multiDeviceSync.feature1": "Offline-First: Sync manager with offline caching to work without connection",
+    "featuresPage.multiDeviceSync.feature2": "Periodic Sync: automatic synchronization every 5 minutes when online",
+    "featuresPage.multiDeviceSync.feature3": "Queue System: queued operations when offline, executed as soon as back online",
+    "featuresPage.multiDeviceSync.feature4": "Cache Versioning with automatic deduplication and smart cleanup",
 
-    "featuresPage.ai.title": "AI-Powered Productivity",
+    // Security
+    "featuresPage.security.title": "Security & Privacy",
+    "featuresPage.security.description": "Your data is protected with JWT authentication, HTTPS communication, and secure category sharing system with granular permission levels.",
+    "featuresPage.security.feature1": "JWT Authentication: secure token-based authentication",
+    "featuresPage.security.feature2": "HTTPS: all communications are end-to-end encrypted",
+    "featuresPage.security.feature3": "Category Sharing with permission levels (READ_ONLY, READ_WRITE)",
+    "featuresPage.security.feature4": "Password Management: secure password change and email verification",
+
+    // Other Features
+    "featuresPage.other.title": "Other Features",
+    "featuresPage.other.description": "Draggable sticky notes, text chat with AI bot, multi-language support, and interactive tutorial for a complete and personalized experience.",
+    "featuresPage.other.feature1": "Notes System: draggable sticky notes with customizable colors",
+    "featuresPage.other.feature2": "Bot Chat: text chat with real-time streaming responses",
+    "featuresPage.other.feature3": "Multi-Language: full support for Italian and English (i18n)",
+    "featuresPage.other.feature4": "Tutorial System: interactive onboarding for new users",
+
+    // Roadmap - Planned Features
+    "featuresPage.roadmap.title": "Roadmap & Future Features",
+    "featuresPage.roadmap.subtitle": "Here's what we're developing to make Mytaskly even more powerful",
+    "featuresPage.roadmap.comingSoon": "Coming Soon",
+    
+    "featuresPage.roadmap.speechToText.title": "Advanced Speech-to-Text",
+    "featuresPage.roadmap.speechToText.description": "Automatic voice transcription with OpenAI Whisper, Google Cloud Speech-to-Text, or Azure support",
+    
+    "featuresPage.roadmap.voiceCommands.title": "Voice Commands",
+    "featuresPage.roadmap.voiceCommands.description": "Complete app control via natural voice commands",
+    
+    "featuresPage.roadmap.locationReminders.title": "Location-Based Reminders",
+    "featuresPage.roadmap.locationReminders.description": "Geofencing to receive reminders when you arrive at specific locations",
+    
+    "featuresPage.roadmap.recurringTasks.title": "Recurring Tasks",
+    "featuresPage.roadmap.recurringTasks.description": "Create tasks that automatically repeat with custom frequencies",
+    
+    "featuresPage.roadmap.subtasks.title": "Subtasks & Checklists",
+    "featuresPage.roadmap.subtasks.description": "Break down complex tasks into smaller, manageable subtasks",
+    
+    "featuresPage.roadmap.aiCategorization.title": "Automatic AI Categorization",
+    "featuresPage.roadmap.aiCategorization.description": "AI learns from your habits and automatically categorizes new tasks",
+    
+    "featuresPage.roadmap.smartLists.title": "Dynamic Smart Lists",
+    "featuresPage.roadmap.smartLists.description": "Automatically generated lists like 'Today', 'This Week', 'Next 7 Days'",
+    
+    "featuresPage.roadmap.analytics.title": "Advanced Analytics",
+    "featuresPage.roadmap.analytics.description": "Habit tracking, pattern learning, and productivity reports",
+    
+    "featuresPage.roadmap.twoFactor.title": "Two-Factor Authentication (2FA)",
+    "featuresPage.roadmap.twoFactor.description": "Extra security with biometric authentication and 2FA",
+    
+    "featuresPage.roadmap.automation.title": "Workflow Automation",
+    "featuresPage.roadmap.automation.description": "Automation rules, batch operations, and conditional actions",
     "featuresPage.ai.description":
       "Let artificial intelligence boost your productivity. Mytaskly's AI features learn from your habits and help you work smarter with intelligent suggestions, automated task creation, and personalized productivity insights.",
     "featuresPage.ai.feature1": "Smart task suggestions based on your habits",
@@ -773,14 +840,13 @@ const translations: Record<Language, Record<string, string>> = {
     "earlyAccess.beta.stat3.value": "50+",
     "earlyAccess.beta.stat3.label": "Features",
     "earlyAccess.beta.available": "The beta version is available now on Google Play Store!",
-    "earlyAccess.beta.button1": "1. Become Tester",
-    "earlyAccess.beta.button2": "2. Download App",
+    "earlyAccess.beta.button1": "1. Download App",
 
     "earlyAccess.guide.title": "How to Access the Beta",
-    "earlyAccess.guide.step1": "Click the \"Become Tester\" button to join the internal testing program",
-    "earlyAccess.guide.step2": "Accept the invitation to become a MyTaskly app tester",
-    "earlyAccess.guide.step3": "Click the \"Download App\" button to access the Play Store page",
-    "earlyAccess.guide.step4": "Install the app, register and... enjoy! 🎉",
+    "earlyAccess.guide.step1": "Click the \"Download App\" button to access the Play Store page",
+    "earlyAccess.guide.step2": "Install the MyTaskly app on your device",
+    "earlyAccess.guide.step3": "Register with your email to create an account",
+    "earlyAccess.guide.step4": "Start using the beta and enjoy all the features! 🎉",
 
     // Open Source Page
     "openSource.hero.badge": "Open Source without compromises",
@@ -887,6 +953,7 @@ const translations: Record<Language, Record<string, string>> = {
     "organize.points.voice": "Detta attività, note e follow-up senza toccare lo schermo.",
     "organize.points.context": "L'assistente comprende priorità e dipendenze automaticamente.",
     "organize.points.calendar": "Sincronizza i piani con il calendario e riprogramma con una frase.",
+    "organize.points.sync": "Accedi alle tue attività da qualsiasi dispositivo con sincronizzazione offline-first.",
     "organize.cta": "Scopri come funziona",
 
     // Features
@@ -896,14 +963,19 @@ const translations: Record<Language, Record<string, string>> = {
     "features.whyChoose": "Perché scegliere Mytaskly",
     "features.learnMore": "Scopri di più",
     "features.appFeatures": "Moduli nativi per la voce",
-    "features.appFeaturesSubtitle":
-      "Ogni sezione è calibrata per uno spazio monocromatico e arioso che mette al centro la conversazione.",
+    "features.appFeaturesSubtitle": "Ogni sezione è calibrata per uno spazio monocromatico e arioso che mette al centro la conversazione.",
     "features.carouselHint": "trascina in orizzontale",
     "features.collectionsPretitle": "LA POSTAZIONE",
 
     // Feature items
     "feature.voice.title": "Cattura vocale",
     "feature.voice.description": "Avvia una conversazione e guarda comparire attività, note e promemoria.",
+    "feature.notifications.title": "Notifiche intelligenti",
+    "feature.notifications.description": "Ricevi promemoria e aggiornamenti tempestivi che si adattano al tuo programma e alle tue priorità.",
+    "feature.calendar.title": "Integrazione calendario",
+    "feature.calendar.description": "Sincronizza perfettamente con Google Calendar per una visione unificata di attività ed eventi.",
+    "feature.sync.title": "Sincronizzazione multi-dispositivo",
+    "feature.sync.description": "Le tue attività ti seguono ovunque con sincronizzazione offline-first su tutti i dispositivi.",
     "feature.context.title": "Pianificazione contestuale",
     "feature.context.description": "L'assistente comprende dipendenze, collaboratori e priorità in tempo reale.",
     "feature.automation.title": "Routine automatizzate",
@@ -916,6 +988,9 @@ const translations: Record<Language, Record<string, string>> = {
     // Portfolio Grid Categories
     "category.all": "Tutti",
     "category.voice": "Spazio vocale",
+    "category.core": "Funzionalità Principali",
+    "category.integration": "Integrazione",
+    "category.security": "Sicurezza",
     "category.automation": "Automazione",
     "category.intelligence": "Intelligenza",
     "category.collaboration": "Collaborazione",
@@ -923,14 +998,22 @@ const translations: Record<Language, Record<string, string>> = {
     // Portfolio Grid Items
     "portfolio.voice.title": "Console vocale",
     "portfolio.voice.description": "Dai comandi, cattura pensieri e ricevi conferme vocali all'istante.",
+    "portfolio.tasks.title": "Gestione Attività",
+    "portfolio.tasks.description": "Crea, organizza e completa attività con operazioni CRUD complete e categorizzazione intelligente.",
+    "portfolio.notifications.title": "Notifiche Intelligenti",
+    "portfolio.notifications.description": "Ricevi promemoria tempestivi 1 ora prima delle scadenze con categorizzazione intelligente.",
+    "portfolio.calendar.title": "Calendario sincronizzato",
+    "portfolio.calendar.description": "Sincronizzazione bidirezionale con Google Calendar per una visione unificata del programma.",
+    "portfolio.sync.title": "Sincronizzazione Offline",
+    "portfolio.sync.description": "Architettura offline-first con sincronizzazione automatica ogni 5 minuti quando online.",
+    "portfolio.security.title": "Sicurezza & Privacy",
+    "portfolio.security.description": "Autenticazione JWT, crittografia HTTPS e condivisione categorie sicura con permessi granulari.",
     "portfolio.routines.title": "Routine IA",
     "portfolio.routines.description": "Genera flussi ricorrenti che si adattano alla vita reale senza ritocchi manuali.",
     "portfolio.context.title": "Hub contestuale",
     "portfolio.context.description": "Mantieni progetti, persone e priorità connessi nella memoria dell'assistente.",
     "portfolio.notes.title": "Note condivise",
     "portfolio.notes.description": "Crea board collaborative sempre sincronizzate con gli aggiornamenti vocali.",
-    "portfolio.calendar.title": "Calendario sincronizzato",
-    "portfolio.calendar.description": "Fondi riunioni e impegni con una sola frase.",
     "portfolio.metrics.title": "Metriche di focus",
     "portfolio.metrics.description": "Monitora capacità ed energia con visual minimaliste in bianco e nero.",
 
@@ -1022,65 +1105,97 @@ const translations: Record<Language, Record<string, string>> = {
     "featuresPage.hero.title": "Potenti Funzionalità",
     "featuresPage.hero.subtitle": "Scopri come Mytaskly ti aiuta a organizzare la tua vita con eleganza ed efficienza",
 
-    "featuresPage.taskManagement.title": "Gestione Attività Intuitiva",
-    "featuresPage.taskManagement.description":
-      "L'interfaccia pulita di Mytaskly rende la gestione delle attività senza sforzo. Crea, organizza e completa le attività con pochi tocchi. Il nostro design minimalista ti assicura di concentrarti su ciò che conta di più: portare a termine le cose.",
-    "featuresPage.taskManagement.feature1": "Crea attività con formattazione del testo e allegati",
-    "featuresPage.taskManagement.feature2": "Trascina e rilascia per riordinare e dare priorità",
-    "featuresPage.taskManagement.feature3": "Gesti di scorrimento per azioni rapide su mobile",
-    "featuresPage.taskManagement.feature4": "Sottoattività per suddividere progetti complessi",
+    // Voice & Audio
+    "featuresPage.voice.title": "Voice & Audio Intelligente",
+    "featuresPage.voice.description": "Interagisci con Mytaskly usando la tua voce. Registra note vocali, chatta con l'assistente AI e ricevi risposte audio in tempo reale.",
+    "featuresPage.voice.feature1": "Registrazione vocale con streaming in tempo reale via WebSocket",
+    "featuresPage.voice.feature2": "Voice Activity Detection (VAD) con auto-stop su silenzio prolungato",
+    "featuresPage.voice.feature3": "Riproduzione sequenziale di chunk audio per risposte immediate",
+    "featuresPage.voice.feature4": "Chat vocale naturale con il bot AI integrato",
 
-    "featuresPage.smartLists.title": "Liste Intelligenti e Organizzazione",
-    "featuresPage.smartLists.description":
-      "Non perdere mai traccia delle tue attività con il sistema di organizzazione intelligente di Mytaskly. Le nostre liste intelligenti categorizzano automaticamente le tue attività in base a scadenze, priorità e tag, offrendoti una chiara visibilità di ciò che richiede la tua attenzione.",
-    "featuresPage.smartLists.feature1": "Viste Oggi, In Arrivo e Completate",
-    "featuresPage.smartLists.feature2": "Liste personalizzate per progetti, lavoro, personale e altro",
-    "featuresPage.smartLists.feature3": "Tag e filtri per un'organizzazione precisa",
-    "featuresPage.smartLists.feature4": "Funzionalità di ricerca per trovare qualsiasi attività istantaneamente",
+    // Notifiche & Promemoria
+    "featuresPage.notifications.title": "Notifiche & Promemoria Avanzati",
+    "featuresPage.notifications.description": "Sistema completo di notifiche push per non perdere mai una scadenza importante. Ricevi promemoria personalizzati in base al tipo di task.",
+    "featuresPage.notifications.feature1": "Push Notifications con setup completo Expo Notifications",
+    "featuresPage.notifications.feature2": "Task Reminders automatici 1 ora prima della scadenza",
+    "featuresPage.notifications.feature3": "Notifiche categorizzate per tipo di task con metadati specifici",
+    "featuresPage.notifications.feature4": "Gestione intelligente delle notifiche senza sovraccarichi",
 
-    "featuresPage.reminders.title": "Promemoria e Notifiche Intelligenti",
-    "featuresPage.reminders.description":
-      "Non perdere mai più una scadenza. Il sistema di promemoria di Mytaskly ti assicura di rimanere al passo con le tue attività con notifiche tempestive che si adattano al tuo programma e alle tue priorità.",
-    "featuresPage.reminders.feature1": "Promemoria basati su tempo e posizione",
-    "featuresPage.reminders.feature2": "Promemoria ricorrenti per abitudini e routine",
-    "featuresPage.reminders.feature3": "Pianificazione intelligente delle notifiche per evitare sovraccarichi",
-    "featuresPage.reminders.feature4": "Suoni e stili di notifica personalizzabili",
+    // Calendari
+    "featuresPage.calendars.title": "Integrazione Calendario",
+    "featuresPage.calendars.description": "Sincronizza i tuoi task con Google Calendar per una visione unificata del tuo programma. Le modifiche si riflettono istantaneamente in entrambe le direzioni.",
+    "featuresPage.calendars.feature1": "Google Calendar Sync: sincronizzazione bidirezionale tasks ↔ Google Calendar",
+    "featuresPage.calendars.feature2": "Calendar View: visualizzazione calendario con task organizzati per giorno",
+    "featuresPage.calendars.feature3": "Aggiornamenti in tempo reale tra Mytaskly e il tuo calendario",
+    "featuresPage.calendars.feature4": "Pianificazione intelligente basata sulla disponibilità del calendario",
 
-    "featuresPage.sync.title": "Esperienza Mobile Senza Interruzioni",
-    "featuresPage.sync.description":
-      "Le tue attività ti seguono ovunque. Mytaskly si sincronizza istantaneamente su tutti i tuoi dispositivi iOS e Android, assicurandoti di avere accesso alle tue liste di attività aggiornate sia che tu sia sul telefono o sul tablet.",
-    "featuresPage.sync.feature1": "Sincronizzazione in tempo reale tra dispositivi iOS e Android",
-    "featuresPage.sync.feature2": "Modalità offline con sincronizzazione automatica quando torni online",
-    "featuresPage.sync.feature3": "Backup cloud per prevenire la perdita di dati",
-    "featuresPage.sync.feature4": "Esperienza utente coerente su tutte le piattaforme",
+    // Task Management Completo
+    "featuresPage.taskManagement.title": "Gestione Attività Completa",
+    "featuresPage.taskManagement.description": "Sistema CRUD completo per creare, leggere, aggiornare ed eliminare task. Organizza con categorie personalizzate, filtra per status, priorità e data. Ricerca globale istantanea per trovare qualsiasi task.",
+    "featuresPage.taskManagement.feature1": "CRUD Completo: Create, Read, Update, Delete per tutti i task",
+    "featuresPage.taskManagement.feature2": "Categorizzazione avanzata con creazione di categorie personalizzate",
+    "featuresPage.taskManagement.feature3": "Filtraggio per status, priorità, categoria e data di scadenza",
+    "featuresPage.taskManagement.feature4": "Global Search: ricerca globale istantanea in tutti i task",
 
-    "featuresPage.themes.title": "Bellissimi Temi e Personalizzazione",
-    "featuresPage.themes.description":
-      "Rendi Mytaskly veramente tuo con ampie opzioni di personalizzazione. Scegli tra temi eleganti, colori di accento personalizzati e opzioni di layout per creare un'esperienza di gestione delle attività che si adatta al tuo stile.",
-    "featuresPage.themes.feature1": "Modalità chiara e scura con cambio automatico",
-    "featuresPage.themes.feature2": "Colori di accento personalizzati e opzioni di tema",
-    "featuresPage.themes.feature3": "Dimensioni dei caratteri regolabili e opzioni di visualizzazione",
-    "featuresPage.themes.feature4": "Widget per la schermata home personalizzabili",
+    // Sincronizzazione Multi-dispositivo
+    "featuresPage.multiDeviceSync.title": "Sincronizzazione Multi-dispositivo",
+    "featuresPage.multiDeviceSync.description": "Sistema offline-first con sincronizzazione automatica. Le tue modifiche vengono salvate localmente e sincronizzate ogni 5 minuti quando online, con gestione intelligente della coda per operazioni offline.",
+    "featuresPage.multiDeviceSync.feature1": "Offline-First: Sync manager con caching offline per lavorare senza connessione",
+    "featuresPage.multiDeviceSync.feature2": "Periodic Sync: sincronizzazione automatica ogni 5 minuti quando online",
+    "featuresPage.multiDeviceSync.feature3": "Queue System: operazioni in coda quando offline, eseguite appena torni online",
+    "featuresPage.multiDeviceSync.feature4": "Cache Versioning con deduplicazione automatica e cleanup intelligente",
 
-    "featuresPage.ai.title": "Produttività Potenziata dall'IA",
-    "featuresPage.ai.description":
-      "Lascia che l'intelligenza artificiale aumenti la tua produttività. Le funzionalità IA di Mytaskly imparano dalle tue abitudini e ti aiutano a lavorare in modo più intelligente con suggerimenti intelligenti, creazione automatica di attività e approfondimenti personalizzati sulla produttività.",
-    "featuresPage.ai.feature1": "Suggerimenti intelligenti di attività basati sulle tue abitudini",
-    "featuresPage.ai.feature2": "Elaborazione del linguaggio naturale per l'inserimento rapido di attività",
-    "featuresPage.ai.feature3": "Pianificazione automatica delle attività per una produttività ottimale",
-    "featuresPage.ai.feature4": "Approfondimenti e report personalizzati sulla produttività",
+    // Sicurezza
+    "featuresPage.security.title": "Sicurezza & Privacy",
+    "featuresPage.security.description": "I tuoi dati sono protetti con autenticazione JWT, comunicazione HTTPS e sistema di condivisione sicura delle categorie con livelli di permessi granulari.",
+    "featuresPage.security.feature1": "JWT Authentication: autenticazione token-based sicura",
+    "featuresPage.security.feature2": "HTTPS: tutte le comunicazioni sono crittografate end-to-end",
+    "featuresPage.security.feature3": "Category Sharing con permission levels (READ_ONLY, READ_WRITE)",
+    "featuresPage.security.feature4": "Password Management: cambio password sicuro e email verification",
 
-    "featuresPage.calendar.title": "Integrazione Calendario Senza Interruzioni",
-    "featuresPage.calendar.subtitle":
-      "Connetti Mytaskly con le tue app di calendario preferite per una visione unificata del tuo programma e delle tue attività",
-    "featuresPage.calendar.feature1.title": "Sincronizzazione Bidirezionale",
-    "featuresPage.calendar.feature1.description":
-      "Le modifiche apportate nel tuo calendario o in Mytaskly si riflettono istantaneamente in entrambi i luoghi",
-    "featuresPage.calendar.feature2.title": "Calendari Multipli",
-    "featuresPage.calendar.feature2.description": "Connettiti con le piu` famose app calendar",
-    "featuresPage.calendar.feature3.title": "Pianificazione Intelligente",
-    "featuresPage.calendar.feature3.description":
-      "Trova il momento perfetto per le tue attività in base alla disponibilità del tuo calendario",
+    // Altri Features
+    "featuresPage.other.title": "Altre Funzionalità",
+    "featuresPage.other.description": "Note adesive draggabili, chat testuale con bot AI, supporto multi-lingua e tutorial interattivo per un'esperienza completa e personalizzata.",
+    "featuresPage.other.feature1": "Notes System: sticky notes draggabili con colori personalizzabili",
+    "featuresPage.other.feature2": "Bot Chat: chat testuale con risposte streaming in tempo reale",
+    "featuresPage.other.feature3": "Multi-Language: supporto completo per Italiano e Inglese (i18n)",
+    "featuresPage.other.feature4": "Tutorial System: onboarding interattivo per nuovi utenti",
+
+    // Roadmap - Funzionalità Pianificate
+    "featuresPage.roadmap.title": "Roadmap & Funzionalità Future",
+    "featuresPage.roadmap.subtitle": "Ecco cosa stiamo sviluppando per rendere Mytaskly ancora più potente",
+    "featuresPage.roadmap.comingSoon": "Prossimamente",
+    
+    "featuresPage.roadmap.speechToText.title": "Speech-to-Text Avanzato",
+    "featuresPage.roadmap.speechToText.description": "Trascrizione vocale automatica con supporto OpenAI Whisper, Google Cloud Speech-to-Text o Azure",
+    
+    "featuresPage.roadmap.voiceCommands.title": "Comandi Vocali",
+    "featuresPage.roadmap.voiceCommands.description": "Controllo completo dell'app tramite comandi vocali naturali",
+    
+    "featuresPage.roadmap.locationReminders.title": "Promemoria Basati su Posizione",
+    "featuresPage.roadmap.locationReminders.description": "Geofencing per ricevere promemoria quando arrivi in luoghi specifici",
+    
+    "featuresPage.roadmap.recurringTasks.title": "Task Ricorrenti",
+    "featuresPage.roadmap.recurringTasks.description": "Crea task che si ripetono automaticamente con frequenze personalizzate",
+    
+    "featuresPage.roadmap.subtasks.title": "Subtasks & Checklists",
+    "featuresPage.roadmap.subtasks.description": "Suddividi task complessi in subtask più piccoli e gestibili",
+    
+    "featuresPage.roadmap.aiCategorization.title": "Categorizzazione AI Automatica",
+    "featuresPage.roadmap.aiCategorization.description": "L'AI impara dalle tue abitudini e categorizza automaticamente i nuovi task",
+    
+    "featuresPage.roadmap.smartLists.title": "Liste Intelligenti Dinamiche",
+    "featuresPage.roadmap.smartLists.description": "Liste generate automaticamente come 'Oggi', 'Questa Settimana', 'Prossimi 7 Giorni'",
+    
+    "featuresPage.roadmap.analytics.title": "Analytics Avanzate",
+    "featuresPage.roadmap.analytics.description": "Tracking delle abitudini, pattern learning e report sulla produttività",
+    
+    "featuresPage.roadmap.twoFactor.title": "Autenticazione a Due Fattori (2FA)",
+    "featuresPage.roadmap.twoFactor.description": "Sicurezza extra con autenticazione biometrica e 2FA",
+    
+    "featuresPage.roadmap.automation.title": "Workflow Automation",
+    "featuresPage.roadmap.automation.description": "Regole di automazione, operazioni batch e azioni condizionali",
+
 
     "featuresPage.cta.title": "Pronto a trasformare la tua produttività?",
     "featuresPage.cta.subtitle":
@@ -1608,14 +1723,13 @@ const translations: Record<Language, Record<string, string>> = {
     "earlyAccess.beta.stat3.value": "50+",
     "earlyAccess.beta.stat3.label": "Funzionalità",
     "earlyAccess.beta.available": "La versione beta è disponibile ora su Google Play Store!",
-    "earlyAccess.beta.button1": "1. Diventa Tester",
-    "earlyAccess.beta.button2": "2. Scarica l'App",
+    "earlyAccess.beta.button1": "1. Scarica l'App",
 
     "earlyAccess.guide.title": "Come Accedere alla Beta",
-    "earlyAccess.guide.step1": "Clicca sul pulsante \"Diventa Tester\" per iscriverti al programma di test interno",
-    "earlyAccess.guide.step2": "Accetta l'invito a diventare tester dell'app MyTaskly",
-    "earlyAccess.guide.step3": "Clicca sul pulsante \"Scarica l'App\" per accedere alla pagina del Play Store",
-    "earlyAccess.guide.step4": "Installa l'app, registrati e... enjoy! 🎉",
+    "earlyAccess.guide.step1": "Clicca sul pulsante \"Scarica l'App\" per accedere alla pagina del Play Store",
+    "earlyAccess.guide.step2": "Installa l'app MyTaskly sul tuo dispositivo",
+    "earlyAccess.guide.step3": "Registrati con la tua email per creare un account",
+    "earlyAccess.guide.step4": "Inizia ad usare la beta e goditi tutte le funzionalità! 🎉",
 
     // Open Source Page
     "openSource.hero.badge": "Open Source senza compromessi",
