@@ -840,14 +840,13 @@ const translations: Record<Language, Record<string, string>> = {
     "earlyAccess.beta.stat3.value": "50+",
     "earlyAccess.beta.stat3.label": "Features",
     "earlyAccess.beta.available": "The beta version is available now on Google Play Store!",
-    "earlyAccess.beta.button1": "1. Become Tester",
-    "earlyAccess.beta.button2": "2. Download App",
+    "earlyAccess.beta.button1": "1. Download App",
 
     "earlyAccess.guide.title": "How to Access the Beta",
-    "earlyAccess.guide.step1": "Click the \"Become Tester\" button to join the internal testing program",
-    "earlyAccess.guide.step2": "Accept the invitation to become a MyTaskly app tester",
-    "earlyAccess.guide.step3": "Click the \"Download App\" button to access the Play Store page",
-    "earlyAccess.guide.step4": "Install the app, register and... enjoy! 🎉",
+    "earlyAccess.guide.step1": "Click the \"Download App\" button to access the Play Store page",
+    "earlyAccess.guide.step2": "Install the MyTaskly app on your device",
+    "earlyAccess.guide.step3": "Register with your email to create an account",
+    "earlyAccess.guide.step4": "Start using the beta and enjoy all the features! 🎉",
 
     // Open Source Page
     "openSource.hero.badge": "Open Source without compromises",
@@ -1724,14 +1723,13 @@ const translations: Record<Language, Record<string, string>> = {
     "earlyAccess.beta.stat3.value": "50+",
     "earlyAccess.beta.stat3.label": "Funzionalità",
     "earlyAccess.beta.available": "La versione beta è disponibile ora su Google Play Store!",
-    "earlyAccess.beta.button1": "1. Diventa Tester",
-    "earlyAccess.beta.button2": "2. Scarica l'App",
+    "earlyAccess.beta.button1": "1. Scarica l'App",
 
     "earlyAccess.guide.title": "Come Accedere alla Beta",
-    "earlyAccess.guide.step1": "Clicca sul pulsante \"Diventa Tester\" per iscriverti al programma di test interno",
-    "earlyAccess.guide.step2": "Accetta l'invito a diventare tester dell'app MyTaskly",
-    "earlyAccess.guide.step3": "Clicca sul pulsante \"Scarica l'App\" per accedere alla pagina del Play Store",
-    "earlyAccess.guide.step4": "Installa l'app, registrati e... enjoy! 🎉",
+    "earlyAccess.guide.step1": "Clicca sul pulsante \"Scarica l'App\" per accedere alla pagina del Play Store",
+    "earlyAccess.guide.step2": "Installa l'app MyTaskly sul tuo dispositivo",
+    "earlyAccess.guide.step3": "Registrati con la tua email per creare un account",
+    "earlyAccess.guide.step4": "Inizia ad usare la beta e goditi tutte le funzionalità! 🎉",
 
     // Open Source Page
     "openSource.hero.badge": "Open Source senza compromessi",

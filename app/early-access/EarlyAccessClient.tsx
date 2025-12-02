@@ -255,19 +255,10 @@ export default function EarlyAccessClient() {
                 <Button
                   size="lg"
                   className="gap-2"
-                  onClick={() => window.open('https://play.google.com/apps/internaltest/4701407835802258178', '_blank')}
-                >
-                  <Shield className="h-5 w-5" />
-                  {t("earlyAccess.beta.button1")}
-                </Button>
-                <Button
-                  size="lg"
-                  className="gap-2"
-                  variant="outline"
                   onClick={() => window.open('https://play.google.com/store/apps/details?id=com.Gabry848Studio.Mytaskly&hl=en-US&ah=A0Ml8z3VsRUmRFkINxQ1zi8Pj68', '_blank')}
                 >
                   <Smartphone className="h-5 w-5" />
-                  {t("earlyAccess.beta.button2")}
+                  {t("earlyAccess.beta.button1")}
                 </Button>
               </div>
 
