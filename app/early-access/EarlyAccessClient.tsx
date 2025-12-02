@@ -255,7 +255,7 @@ export default function EarlyAccessClient() {
                 <Button
                   size="lg"
                   className="gap-2"
-                  onClick={() => window.open('https://groups.google.com/g/mytaskly', '_blank')}
+                  onClick={() => window.open('https://groups.google.com/g/mytaskly-testers', '_blank')}
                 >
                   <Sparkles className="h-5 w-5" />
                   Unisciti al Google Group
