@@ -255,10 +255,19 @@ export default function EarlyAccessClient() {
                 <Button
                   size="lg"
                   className="gap-2"
-                  onClick={() => window.open('https://play.google.com/store/apps/details?id=com.Gabry848Studio.Mytaskly&hl=en-US&ah=A0Ml8z3VsRUmRFkINxQ1zi8Pj68', '_blank')}
+                  onClick={() => window.open('https://groups.google.com/g/mytaskly', '_blank')}
+                >
+                  <Sparkles className="h-5 w-5" />
+                  Unisciti al Google Group
+                </Button>
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="gap-2"
+                  onClick={() => window.open('https://play.google.com/store/apps/details?id=com.Gabry848Studio.Mytaskly', '_blank')}
                 >
                   <Smartphone className="h-5 w-5" />
-                  {t("earlyAccess.beta.button1")}
+                  Scarica dal Play Store
                 </Button>
               </div>
 
@@ -271,19 +280,11 @@ export default function EarlyAccessClient() {
                 <ol className="text-sm text-muted-foreground space-y-2 text-left max-w-md mx-auto">
                   <li className="flex items-start gap-2">
                     <span className="bg-primary text-primary-foreground rounded-full w-5 h-5 flex items-center justify-center text-xs font-medium flex-shrink-0 mt-0.5">1</span>
-                    <span>{t("earlyAccess.guide.step1")}</span>
+                    <span>Clicca su "Unisciti al Google Group" e nella pagina clicca sul pulsante "Unisciti al gruppo" in alto a sinistra</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="bg-primary text-primary-foreground rounded-full w-5 h-5 flex items-center justify-center text-xs font-medium flex-shrink-0 mt-0.5">2</span>
-                    <span>{t("earlyAccess.guide.step2")}</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="bg-primary text-primary-foreground rounded-full w-5 h-5 flex items-center justify-center text-xs font-medium flex-shrink-0 mt-0.5">3</span>
-                    <span>{t("earlyAccess.guide.step3")}</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="bg-primary text-primary-foreground rounded-full w-5 h-5 flex items-center justify-center text-xs font-medium flex-shrink-0 mt-0.5">4</span>
-                    <span>{t("earlyAccess.guide.step4")}</span>
+                    <span>Clicca su "Scarica dal Play Store" per installare l'app MyTaskly sul tuo dispositivo Android</span>
                   </li>
                 </ol>
               </div>
