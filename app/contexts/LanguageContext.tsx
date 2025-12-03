@@ -704,9 +704,6 @@ const translations: Record<Language, Record<string, string>> = {
       "What information should I include in my support request?",
     "contact.faq.a2":
       "To help us assist you better, please include your app version, device type, a clear description of the issue, and any relevant screenshots if possible.",
-    "contact.faq.q3": "Do you offer phone support?",
-    "contact.faq.a3":
-      "Phone support is available for Pro plan subscribers. Free and Premium users can reach us via email or the contact form on this page.",
     "contact.faq.q4": "How can I report a bug?",
     "contact.faq.a4":
       "You can report bugs through this contact form or by emailing support@mytaskly.com. Please include steps to reproduce the issue and your device information.",
@@ -1507,7 +1504,8 @@ const translations: Record<Language, Record<string, string>> = {
     "featuresPage.roadmap.voiceCommands.description":
       "Controllo completo dell'app tramite comandi vocali naturali",
 
-    "featuresPage.roadmap.locationReminders.title": "Promemoria Basati su Posizione",
+    "featuresPage.roadmap.locationReminders.title":
+      "Promemoria Basati su Posizione",
     "featuresPage.roadmap.locationReminders.description":
       "Geofencing per ricevere promemoria quando arrivi in luoghi specifici",
 
@@ -1532,7 +1530,8 @@ const translations: Record<Language, Record<string, string>> = {
     "featuresPage.roadmap.analytics.description":
       "Tracciamento abitudini, apprendimento pattern e report di produttività",
 
-    "featuresPage.roadmap.twoFactor.title": "Autenticazione a Due Fattori (2FA)",
+    "featuresPage.roadmap.twoFactor.title":
+      "Autenticazione a Due Fattori (2FA)",
     "featuresPage.roadmap.twoFactor.description":
       "Sicurezza extra con autenticazione biometrica e 2FA",
 
@@ -1541,7 +1540,8 @@ const translations: Record<Language, Record<string, string>> = {
       "Regole di automazione, operazioni batch e azioni condizionali",
     "featuresPage.ai.description":
       "Lascia che l'intelligenza artificiale aumenti la tua produttività. Le funzionalità AI di Mytaskly imparano dalle tue abitudini e ti aiutano a lavorare in modo più intelligente con suggerimenti intelligenti, creazione automatica di attività e insight di produttività personalizzati.",
-    "featuresPage.ai.feature1": "Suggerimenti intelligenti basati sulle tue abitudini",
+    "featuresPage.ai.feature1":
+      "Suggerimenti intelligenti basati sulle tue abitudini",
     "featuresPage.ai.feature2":
       "Elaborazione del linguaggio naturale per inserimento rapido delle attività",
     "featuresPage.ai.feature3":
@@ -1630,7 +1630,8 @@ const translations: Record<Language, Record<string, string>> = {
     "pricing.faq.q3": "Quali metodi di pagamento accettate?",
     "pricing.faq.a3":
       "Accettiamo tutte le principali carte di credito, PayPal e Apple Pay per i pagamenti degli abbonamenti.",
-    "pricing.faq.q4": "Posso cancellare il mio abbonamento in qualsiasi momento?",
+    "pricing.faq.q4":
+      "Posso cancellare il mio abbonamento in qualsiasi momento?",
     "pricing.faq.a4":
       "Assolutamente. Puoi cancellare il tuo abbonamento in qualsiasi momento dalle impostazioni del tuo account. Continuerai ad avere accesso fino alla fine del periodo di fatturazione corrente.",
 
@@ -1727,7 +1728,8 @@ const translations: Record<Language, Record<string, string>> = {
     "download.form.notifications": "Inviami aggiornamenti su Mytaskly",
     "download.form.notificationsHint":
       "Changelog, traguardi roadmap e inviti beta.",
-    "download.form.errorEmail": "Inserisci un'email valida per unirti alla lista d'attesa.",
+    "download.form.errorEmail":
+      "Inserisci un'email valida per unirti alla lista d'attesa.",
     "download.form.errorGeneric": "Qualcosa è andato storto. Riprova.",
     "download.form.submitting": "Invio in corso...",
     "download.form.submit": "Unisciti alla Lista",
@@ -1806,7 +1808,8 @@ const translations: Record<Language, Record<string, string>> = {
     "contact.form.submit": "Invia Messaggio",
     "contact.form.sending": "Invio...",
 
-    "contact.validation.nameRequired": "Il nome deve essere di almeno 2 caratteri.",
+    "contact.validation.nameRequired":
+      "Il nome deve essere di almeno 2 caratteri.",
     "contact.validation.emailValid": "Inserisci un indirizzo email valido.",
     "contact.validation.subjectRequired":
       "L'oggetto deve essere di almeno 5 caratteri.",
@@ -1838,9 +1841,6 @@ const translations: Record<Language, Record<string, string>> = {
       "Quali informazioni dovrei includere nella mia richiesta di supporto?",
     "contact.faq.a2":
       "Per aiutarci ad assisterti meglio, includi la versione dell'app, il tipo di dispositivo, una descrizione chiara del problema e eventuali screenshot pertinenti se possibile.",
-    "contact.faq.q3": "Offrite supporto telefonico?",
-    "contact.faq.a3":
-      "Il supporto telefonico è disponibile per gli abbonati al piano Pro. Gli utenti Gratuiti e Premium possono contattarci via email o tramite il modulo di contatto in questa pagina.",
     "contact.faq.q4": "Come posso segnalare un bug?",
     "contact.faq.a4":
       "Puoi segnalare bug tramite questo modulo di contatto o inviando un'email a support@mytaskly.com. Includi i passaggi per riprodurre il problema e le informazioni del tuo dispositivo.",
@@ -1976,7 +1976,8 @@ const translations: Record<Language, Record<string, string>> = {
       "Promemoria personalizzabili per non perdere mai una scadenza importante.",
     "features.blog.taskManagement.section2.p3":
       "Sincronizzazione in tempo reale su tutti i dispositivi, da mobile a desktop.",
-    "features.blog.taskManagement.section3.title": "Best Practice e Suggerimenti",
+    "features.blog.taskManagement.section3.title":
+      "Best Practice e Suggerimenti",
     "features.blog.taskManagement.section3.p1":
       "Pianifica la tua giornata la sera prima per iniziare con chiarezza mentale.",
     "features.blog.taskManagement.section3.p2":
@@ -1984,7 +1985,8 @@ const translations: Record<Language, Record<string, string>> = {
     "features.blog.taskManagement.section3.p3":
       "Rivedi settimanalmente le attività completate per celebrare i progressi e identificare opportunità di miglioramento.",
 
-    "features.blog.smartLists.section1.title": "Introduzione alle Liste Intelligenti",
+    "features.blog.smartLists.section1.title":
+      "Introduzione alle Liste Intelligenti",
     "features.blog.smartLists.section1.p1":
       "Le Liste Intelligenti organizzano automaticamente le tue attività in base a data di scadenza, priorità e tag.",
     "features.blog.smartLists.section1.p2":
@@ -1998,7 +2000,8 @@ const translations: Record<Language, Record<string, string>> = {
       "Imposta parametri di filtro avanzati per evidenziare attività urgenti.",
     "features.blog.smartLists.section2.p3":
       "Salva viste personalizzate per tornare rapidamente alle attività prioritarie.",
-    "features.blog.smartLists.section3.title": "Vantaggi delle Liste Intelligenti",
+    "features.blog.smartLists.section3.title":
+      "Vantaggi delle Liste Intelligenti",
     "features.blog.smartLists.section3.p1":
       "Risparmio di tempo: non devi più spostare manualmente le attività.",
     "features.blog.smartLists.section3.p2":
@@ -2019,19 +2022,22 @@ const translations: Record<Language, Record<string, string>> = {
     "privacy.section2.title": "2. COME UTILIZZIAMO LE TUE INFORMAZIONI",
     "privacy.section2.item1":
       "Le registrazioni audio vengono utilizzate esclusivamente per creare note vocali all'interno dell'app",
-    "privacy.section2.item2": "Tutti i dati vengono salvati localmente sul tuo dispositivo",
+    "privacy.section2.item2":
+      "Tutti i dati vengono salvati localmente sul tuo dispositivo",
     "privacy.section2.item3":
       "Non trasmettiamo, condividiamo o vendiamo i tuoi dati audio a terze parti",
 
     "privacy.section3.title": "3. ARCHIVIAZIONE E SICUREZZA DEI DATI",
-    "privacy.section3.item1": "Tutte le registrazioni audio rimangono sul tuo dispositivo",
+    "privacy.section3.item1":
+      "Tutte le registrazioni audio rimangono sul tuo dispositivo",
     "privacy.section3.item2":
       "Hai il pieno controllo per eliminare le registrazioni in qualsiasi momento",
     "privacy.section3.item3": "Non abbiamo accesso alle tue registrazioni",
 
     "privacy.section4.title": "4. PERMESSI",
     "privacy.section4.permission1": "Per registrare note vocali per attività",
-    "privacy.section4.permission2": "Per regolare le impostazioni audio durante la registrazione",
+    "privacy.section4.permission2":
+      "Per regolare le impostazioni audio durante la registrazione",
 
     "privacy.section5.title": "5. PRIVACY DEI MINORI",
     "privacy.section5.content":
@@ -2062,7 +2068,8 @@ const translations: Record<Language, Record<string, string>> = {
     "members.login.button": "Accedi o Registrati",
 
     "members.header.title": "Area Membri",
-    "members.header.subtitle": "Contenuti esclusivi per i membri della lista d'attesa",
+    "members.header.subtitle":
+      "Contenuti esclusivi per i membri della lista d'attesa",
     "members.header.logout": "Esci",
 
     "members.welcome.title": "Benvenuto nella comunità esclusiva!",
