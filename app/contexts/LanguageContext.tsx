@@ -1131,6 +1131,1108 @@ const translations: Record<Language, Record<string, string>> = {
     "openSource.repos.footerDescription":
       "Dopo 11 mesi di lavoro costante, il codice è aperto per permettere a chiunque di verificarlo, migliorarlo e integrarlo. Se ami la produttività open source, questo è il momento di unirti.",
   },
+  it: {
+    // Header
+    "nav.features": "Funzionalità",
+    "nav.pricing": "Prezzi",
+    "nav.download": "Scarica",
+    "nav.about": "Chi Siamo",
+    "nav.openSource": "Open Source",
+    "nav.support": "Supporto",
+    "nav.privacy": "Privacy",
+    "nav.terms": "Termini",
+
+    // Hero
+    "hero.openSourceBadge": "Open Source su GitHub",
+    "hero.pretitle": "PRODUTTIVITÀ VOCALE",
+    "hero.title": "Parla alle tue attività.",
+    "hero.subtitle":
+      "Mytaskly è lo spazio di lavoro bianco e nero dove un assistente vocale AI organizza attività, pianificazioni e note nel momento in cui parli. L'applicazione sarà rilasciata tra qualche settimana. Iscriviti alla beta per l'accesso anticipato.",
+    "hero.betaBadge": "Iscrizioni Beta Aperte",
+    "hero.cta.download": "Unisciti alla Beta",
+    "hero.cta.features": "Controlla lo stato di sviluppo",
+    "hero.highlight.voice.title": "CHAT VOCALE",
+    "hero.highlight.voice.description":
+      "Cattura attività e idee a mani libere con conversazioni naturali.",
+    "hero.highlight.memory.title": "MEMORIA VIVA",
+    "hero.highlight.memory.description":
+      "Il tuo assistente ricorda contesto, decisioni e follow-up.",
+    "hero.highlight.focus.title": "VISTE FOCUS",
+    "hero.highlight.focus.description":
+      "Solo l'essenziale sullo schermo così ogni giorno rimane ordinato.",
+    "hero.preview.assistant": "ASSISTENTE AI",
+    "hero.preview.greeting": "Ciao! Cosa dovremmo pianificare insieme oggi?",
+    "hero.preview.user": "TU",
+    "hero.preview.userMessage":
+      "Ricordami domani mattina di confermare l'appuntamento dal dentista.",
+    "hero.preview.ai": "MYTASKLY",
+    "hero.preview.aiMessage":
+      "Assolutamente. Ti avviserò alle 8:00 e preparerò il resto della giornata intorno ad esso.",
+    "hero.preview.placeholder": "Tieni premuto per parlare",
+
+    // Organize Your Life
+    "organize.pretitle": "TUTTO SCORRE DALLA VOCE",
+    "organize.title": "Le conversazioni si trasformano in giorni organizzati.",
+    "organize.description":
+      "Parla naturalmente e lascia che Mytaskly traduca le parole in attività, promemoria e note con un layout monocromatico ponderato che mantiene spazio per respirare.",
+    "organize.points.voice":
+      "Detta attività, note e follow-up senza toccare lo schermo.",
+    "organize.points.context":
+      "Lascia che l'assistente comprenda automaticamente priorità e dipendenze.",
+    "organize.points.calendar":
+      "Sincronizza i piani con il tuo calendario e regola la pianificazione con una semplice frase.",
+    "organize.points.sync":
+      "Accedi alle tue attività da qualsiasi dispositivo con sincronizzazione offline-first.",
+    "organize.cta": "Guarda come funziona",
+
+    // Features
+    "features.pretitle": "AI CHE ASCOLTA",
+    "features.title": "Funzionalità Potenti",
+    "features.subtitle":
+      "Dalla prima frase al promemoria finale, l'assistente orchestra ogni dettaglio per te.",
+    "features.whyChoose": "Perché scegliere Mytaskly",
+    "features.learnMore": "Scopri di più",
+    "features.appFeatures": "Elementi vocali nativi",
+    "features.appFeaturesSubtitle":
+      "Ogni modulo è ottimizzato per uno spazio di lavoro monocromatico calmo che mantiene la conversazione al centro della scena.",
+    "features.carouselHint": "trascina lateralmente",
+    "features.collectionsPretitle": "IL BANCO DI LAVORO",
+
+    // Feature items
+    "feature.voice.title": "Cattura vocale",
+    "feature.voice.description":
+      "Inizia una conversazione e guarda attività, note e promemoria apparire all'istante.",
+    "feature.notifications.title": "Notifiche intelligenti",
+    "feature.notifications.description":
+      "Ricevi promemoria tempestivi e aggiornamenti che si adattano al tuo programma e priorità.",
+    "feature.calendar.title": "Integrazione calendario",
+    "feature.calendar.description":
+      "Sincronizza perfettamente con Google Calendar per una vista unificata di attività ed eventi.",
+    "feature.sync.title": "Sincronizzazione multi-dispositivo",
+    "feature.sync.description":
+      "Le tue attività ti seguono ovunque con sincronizzazione offline-first su tutti i dispositivi.",
+    "feature.context.title": "Pianificazione consapevole del contesto",
+    "feature.context.description":
+      "L'assistente comprende dipendenze, collaboratori e priorità in tempo reale.",
+    "feature.automation.title": "Routine automatizzate",
+    "feature.automation.description":
+      "Lascia che Mytaskly costruisca sequenze ricorrenti e ottimizzi gli orari automaticamente.",
+    "feature.memory.title": "Memoria condivisa",
+    "feature.memory.description":
+      "Ogni interazione alimenta una base di conoscenza in evoluzione pronta per prompt futuri.",
+    "feature.privacy.title": "Privacy by design",
+    "feature.privacy.description":
+      "Crittografia end-to-end e controlli chiari mantengono il tuo spazio di lavoro sicuro.",
+
+    // Portfolio Grid Categories
+    "category.all": "Tutto",
+    "category.voice": "Spazio vocale",
+    "category.core": "Funzionalità Core",
+    "category.integration": "Integrazione",
+    "category.security": "Sicurezza",
+    "category.automation": "Automazione",
+    "category.intelligence": "Intelligenza",
+    "category.collaboration": "Collaborazione",
+
+    // Portfolio Grid Items
+    "portfolio.voice.title": "Console vocale",
+    "portfolio.voice.description":
+      "Emetti comandi, cattura pensieri e ricevi conferme vocali all'istante.",
+    "portfolio.tasks.title": "Gestione Attività",
+    "portfolio.tasks.description":
+      "Crea, organizza e completa attività con operazioni CRUD complete e categorizzazione intelligente.",
+    "portfolio.notifications.title": "Notifiche Intelligenti",
+    "portfolio.notifications.description":
+      "Ricevi promemoria tempestivi 1 ora prima delle scadenze con categorizzazione intelligente.",
+    "portfolio.calendar.title": "Sincronizzazione calendario",
+    "portfolio.calendar.description":
+      "Sincronizzazione bidirezionale con Google Calendar per una vista unificata del programma.",
+    "portfolio.sync.title": "Sincronizzazione Offline",
+    "portfolio.sync.description":
+      "Architettura offline-first con sincronizzazione automatica ogni 5 minuti quando online.",
+    "portfolio.security.title": "Sicurezza e Privacy",
+    "portfolio.security.description":
+      "Autenticazione JWT, crittografia HTTPS e condivisione sicura delle categorie con permessi granulari.",
+    "portfolio.routines.title": "Routine AI",
+    "portfolio.routines.description":
+      "Genera flussi ricorrenti che si adattano alla vita reale senza modifiche manuali.",
+    "portfolio.context.title": "Hub di contesto",
+    "portfolio.context.description":
+      "Mantieni progetti, persone e priorità connessi nella memoria dell'assistente.",
+    "portfolio.notes.title": "Note condivise",
+    "portfolio.notes.description":
+      "Crea bacheche collaborative che rimangono perfettamente sincronizzate con aggiornamenti vocali.",
+    "portfolio.metrics.title": "Metriche di focus",
+    "portfolio.metrics.description":
+      "Traccia la tua capacità ed energia con visualizzazioni monocromatiche calme.",
+
+    // Comparison
+    "comparison.pretitle": "MEGLIO INSIEME",
+    "comparison.title": "Costruito per la produttività AI-first",
+    "comparison.subtitle":
+      "Un design monocromatico incontra l'input vocale naturale per offrire il modo più veloce dall'intenzione all'azione.",
+    "comparison.tableTitle": "Panoramica funzionalità",
+    "comparison.featuresLabel": "Funzionalità",
+    "comparison.cta": "Scopri ogni funzionalità",
+    "comparison.competitors.mytaskly": "Mytaskly",
+    "comparison.features.voice.name": "Interfaccia chat vocale",
+    "comparison.features.voice.tooltip":
+      "Emetti comandi, cattura note e delega attività attraverso il parlato naturale.",
+    "comparison.features.ai.name": "Assistenza AI per attività",
+    "comparison.features.ai.tooltip":
+      "Suggerimenti intelligenti si adattano ai tuoi modelli e modi di dire.",
+    "comparison.features.memory.name": "Memoria di contesto condivisa",
+    "comparison.features.memory.tooltip":
+      "L'assistente ricorda accordi, note e decisioni tra le chat.",
+    "comparison.features.automation.name": "Routine automatizzate",
+    "comparison.features.automation.tooltip":
+      "Costruisci flussi ricorrenti, riprogramma e coordina scadenze automaticamente.",
+    "comparison.features.design.name": "Design focus monocromatico",
+    "comparison.features.design.tooltip":
+      "Un'interfaccia in bianco e nero mantiene l'attenzione su ciò che dici e di cui hai bisogno.",
+
+    // Marquee
+    "marquee.voice": "VOCALE-FIRST",
+    "marquee.ai": "STUDIO AI",
+    "marquee.minimal": "SPAZIO MINIMALE",
+    "marquee.focus": "MODALITÀ FOCUS",
+
+    // Timeline
+    "timeline.title": "Il Nostro Viaggio",
+    "timeline.subtitle":
+      "L'evoluzione di Mytaskly dal concept alla tua app di produttività preferita",
+    "timeline.concept.title": "Concept Mytaskly",
+    "timeline.concept.description":
+      "È nata l'idea di un'app todo minimalista e user-friendly.",
+    "timeline.concept.details":
+      "Costruito da zero in un piccolo ufficio domestico da un singolo sviluppatore, Mytaskly si prepara al lancio. Preparati!",
+    "timeline.beta.title": "Lancio Beta",
+    "timeline.beta.description":
+      "Prima versione rilasciata a un gruppo selezionato di appassionati di produttività.",
+    "timeline.beta.details":
+      "La versione beta iniziale è stata testata da utenti selezionati che hanno fornito feedback prezioso che ha plasmato le funzionalità principali di Mytaskly. La filosofia di design minimalista è stata stabilita durante questa fase.",
+    "timeline.release.title": "Rilascio Pubblico",
+    "timeline.release.description":
+      "Mytaskly 1.0 lanciato su piattaforme iOS e Android.",
+    "timeline.release.details":
+      "Dopo mesi di perfezionamento, la prima versione pubblica è stata rilasciata con recensioni entusiastiche, elogiata per la sua interfaccia intuitiva e il design elegante.",
+    "timeline.webapp.title": "Lancio App Web",
+    "timeline.webapp.description":
+      "Mytaskly si è espanso al desktop con un'applicazione web completa.",
+    "timeline.webapp.details":
+      "L'esperienza cross-platform è stata completata con la nostra app web responsive, permettendo agli utenti di accedere alle loro attività da qualsiasi dispositivo con sincronizzazione perfetta.",
+    "timeline.premium.title": "Funzionalità Premium",
+    "timeline.premium.description":
+      "Introdotto Mytaskly Pro con strumenti di produttività avanzati.",
+    "timeline.premium.details":
+      "Per i power user, abbiamo lanciato Mytaskly Pro con funzionalità come progetti illimitati, analisi avanzate e supporto prioritario.",
+    "timeline.global.title": "Espansione Globale",
+    "timeline.global.description":
+      "Raggiunto 1 milione di utenti in tutto il mondo e aggiunto supporto per 10 lingue.",
+    "timeline.global.details":
+      "Mytaskly è diventato uno strumento di produttività globale con localizzazione nelle principali lingue e utenti in 150 paesi.",
+    "timeline.idea.title": "Idea Mytaskly",
+    "timeline.idea.description":
+      "L'idea di un'app todo minimalista e user-friendly è nata attraverso discussioni.",
+    "timeline.idea.details":
+      "Durante una serie di sessioni di brainstorming nel 2024, è emerso il concept di Mytaskly. Abbiamo identificato una lacuna nel mercato per un'app todo veramente elegante che dia priorità alla semplicità e all'immediatezza senza sacrificare la funzionalità.",
+    "timeline.development.title": "Inizio Sviluppo",
+    "timeline.development.description":
+      "Gabriele Cipriani, un costruttore di 16 anni, inizia a gettare le fondamenta di Mytaskly.",
+    "timeline.development.details":
+      "A gennaio 2025, il fondatore sedicenne Gabriele Cipriani ha iniziato a programmare la prima versione di Mytaskly, concentrandosi su un'interfaccia pulita e intuitiva che avrebbe semplificato la gestione delle attività per utenti di tutte le abilità tecniche.",
+    "timeline.launch.title": "Lancio Ufficiale",
+    "timeline.launch.description":
+      "Mytaskly 1.0 programmato per il rilascio su iOS e Android.",
+    "timeline.launch.details":
+      "Mytaskly è pronto per il lancio ad agosto 2025 su piattaforme iOS e Android. La prima versione presenterà la nostra funzionalità principale con la filosofia di design pulita e minimalista che ha guidato il nostro sviluppo.",
+    "timeline.future.premium.title": "Funzionalità Premium",
+    "timeline.future.premium.description":
+      "Introduzione di Mytaskly Pro con strumenti di produttività avanzati.",
+    "timeline.future.premium.details":
+      "Dopo il nostro lancio di successo, prevediamo di introdurre un livello premium con funzionalità avanzate come progetti illimitati, analisi avanzate e supporto prioritario per i power user che hanno bisogno di più dalla loro soluzione di gestione attività.",
+    "timeline.future.expansion.title": "Espansione Globale",
+    "timeline.future.expansion.description":
+      "Far crescere la nostra base utenti e aggiungere supporto per più lingue.",
+    "timeline.future.expansion.details":
+      "Guardando al 2026, la nostra roadmap include l'espansione di Mytaskly per servire utenti in tutto il mondo con localizzazione in più lingue e funzionalità culturalmente rilevanti per aiutare tutti a rimanere organizzati.",
+
+    // Newsletter
+    "newsletter.title": "Rimani Aggiornato",
+    "newsletter.subtitle":
+      "Iscriviti alla nostra newsletter per consigli di produttività e accesso anticipato a nuove funzionalità.",
+    "newsletter.placeholder": "Inserisci la tua email",
+    "newsletter.subscribing": "Iscrizione...",
+    "newsletter.subscribe": "Iscriviti",
+    "newsletter.success": "Grazie per esserti iscritto alla nostra newsletter!",
+
+    // Features Page
+    "featuresPage.hero.title": "Funzionalità Potenti",
+    "featuresPage.hero.subtitle":
+      "Scopri come Mytaskly ti aiuta a organizzare la tua vita con eleganza ed efficienza",
+
+    // Voice & Audio
+    "featuresPage.voice.title": "Voce e Audio Intelligente",
+    "featuresPage.voice.description":
+      "Interagisci con Mytaskly usando la tua voce. Registra note vocali, chatta con l'assistente AI e ricevi risposte audio in tempo reale.",
+    "featuresPage.voice.feature1":
+      "Registrazione vocale con streaming in tempo reale via WebSocket",
+    "featuresPage.voice.feature2":
+      "Voice Activity Detection (VAD) con stop automatico su silenzio prolungato",
+    "featuresPage.voice.feature3":
+      "Riproduzione sequenziale di chunk audio per risposte immediate",
+    "featuresPage.voice.feature4": "Chat vocale naturale con bot AI integrato",
+
+    // Notifications & Reminders
+    "featuresPage.notifications.title": "Notifiche e Promemoria Avanzati",
+    "featuresPage.notifications.description":
+      "Sistema completo di notifiche push per non perdere mai una scadenza importante. Ricevi promemoria personalizzati in base al tipo di attività.",
+    "featuresPage.notifications.feature1":
+      "Notifiche Push con setup completo di Expo Notifications",
+    "featuresPage.notifications.feature2":
+      "Promemoria Attività Automatici 1 ora prima della scadenza",
+    "featuresPage.notifications.feature3":
+      "Notifiche categorizzate per tipo di attività con metadati specifici",
+    "featuresPage.notifications.feature4":
+      "Gestione intelligente delle notifiche senza sovraccarico",
+
+    // Calendars
+    "featuresPage.calendars.title": "Integrazione Calendario",
+    "featuresPage.calendars.description":
+      "Sincronizza le tue attività con Google Calendar per una vista unificata del tuo programma. Le modifiche si riflettono istantaneamente in entrambe le direzioni.",
+    "featuresPage.calendars.feature1":
+      "Sincronizzazione Google Calendar: sincronizzazione bidirezionale attività ↔ Google Calendar",
+    "featuresPage.calendars.feature2":
+      "Vista Calendario: vista calendario con attività organizzate per giorno",
+    "featuresPage.calendars.feature3":
+      "Aggiornamenti in tempo reale tra Mytaskly e il tuo calendario",
+    "featuresPage.calendars.feature4":
+      "Pianificazione intelligente basata sulla disponibilità del calendario",
+
+    // Complete Task Management
+    "featuresPage.taskManagement.title": "Gestione Attività Completa",
+    "featuresPage.taskManagement.description":
+      "Sistema CRUD completo per creare, leggere, aggiornare ed eliminare attività. Organizza con categorie personalizzate, filtra per stato, priorità e data. Ricerca globale istantanea per trovare qualsiasi attività.",
+    "featuresPage.taskManagement.feature1":
+      "CRUD Completo: Create, Read, Update, Delete per tutte le attività",
+    "featuresPage.taskManagement.feature2":
+      "Categorizzazione avanzata con creazione di categorie personalizzate",
+    "featuresPage.taskManagement.feature3":
+      "Filtri per stato, priorità, categoria e data di scadenza",
+    "featuresPage.taskManagement.feature4":
+      "Ricerca Globale: ricerca globale istantanea tra tutte le attività",
+
+    // Multi-device Synchronization
+    "featuresPage.multiDeviceSync.title": "Sincronizzazione Multi-dispositivo",
+    "featuresPage.multiDeviceSync.description":
+      "Sistema offline-first con sincronizzazione automatica. Le tue modifiche vengono salvate localmente e sincronizzate ogni 5 minuti quando online, con gestione intelligente della coda per operazioni offline.",
+    "featuresPage.multiDeviceSync.feature1":
+      "Offline-First: Sync manager con caching offline per lavorare senza connessione",
+    "featuresPage.multiDeviceSync.feature2":
+      "Sincronizzazione Periodica: sincronizzazione automatica ogni 5 minuti quando online",
+    "featuresPage.multiDeviceSync.feature3":
+      "Sistema a Coda: operazioni in coda quando offline, eseguite appena torna la connessione",
+    "featuresPage.multiDeviceSync.feature4":
+      "Versionamento Cache con deduplicazione automatica e pulizia intelligente",
+
+    // Security
+    "featuresPage.security.title": "Sicurezza e Privacy",
+    "featuresPage.security.description":
+      "I tuoi dati sono protetti con autenticazione JWT, comunicazione HTTPS e sistema di condivisione categorie sicuro con livelli di permesso granulari.",
+    "featuresPage.security.feature1":
+      "Autenticazione JWT: autenticazione sicura basata su token",
+    "featuresPage.security.feature2":
+      "HTTPS: tutte le comunicazioni sono crittografate end-to-end",
+    "featuresPage.security.feature3":
+      "Condivisione Categorie con livelli di permesso (READ_ONLY, READ_WRITE)",
+    "featuresPage.security.feature4":
+      "Gestione Password: cambio password sicuro e verifica email",
+
+    // Other Features
+    "featuresPage.other.title": "Altre Funzionalità",
+    "featuresPage.other.description":
+      "Note adesive trascinabili, chat testuale con bot AI, supporto multilingua e tutorial interattivo per un'esperienza completa e personalizzata.",
+    "featuresPage.other.feature1":
+      "Sistema Note: note adesive trascinabili con colori personalizzabili",
+    "featuresPage.other.feature2":
+      "Chat Bot: chat testuale con risposte in streaming in tempo reale",
+    "featuresPage.other.feature3":
+      "Multi-Lingua: supporto completo per italiano e inglese (i18n)",
+    "featuresPage.other.feature4":
+      "Sistema Tutorial: onboarding interattivo per nuovi utenti",
+
+    // Roadmap - Planned Features
+    "featuresPage.roadmap.title": "Roadmap e Funzionalità Future",
+    "featuresPage.roadmap.subtitle":
+      "Ecco cosa stiamo sviluppando per rendere Mytaskly ancora più potente",
+    "featuresPage.roadmap.comingSoon": "Prossimamente",
+
+    "featuresPage.roadmap.speechToText.title": "Speech-to-Text Avanzato",
+    "featuresPage.roadmap.speechToText.description":
+      "Trascrizione vocale automatica con OpenAI Whisper, Google Cloud Speech-to-Text o supporto Azure",
+
+    "featuresPage.roadmap.voiceCommands.title": "Comandi Vocali",
+    "featuresPage.roadmap.voiceCommands.description":
+      "Controllo completo dell'app tramite comandi vocali naturali",
+
+    "featuresPage.roadmap.locationReminders.title": "Promemoria Basati su Posizione",
+    "featuresPage.roadmap.locationReminders.description":
+      "Geofencing per ricevere promemoria quando arrivi in luoghi specifici",
+
+    "featuresPage.roadmap.recurringTasks.title": "Attività Ricorrenti",
+    "featuresPage.roadmap.recurringTasks.description":
+      "Crea attività che si ripetono automaticamente con frequenze personalizzate",
+
+    "featuresPage.roadmap.subtasks.title": "Sottoattività e Checklist",
+    "featuresPage.roadmap.subtasks.description":
+      "Suddividi attività complesse in sottoattività più piccole e gestibili",
+
+    "featuresPage.roadmap.aiCategorization.title":
+      "Categorizzazione AI Automatica",
+    "featuresPage.roadmap.aiCategorization.description":
+      "L'AI impara dalle tue abitudini e categorizza automaticamente le nuove attività",
+
+    "featuresPage.roadmap.smartLists.title": "Liste Intelligenti Dinamiche",
+    "featuresPage.roadmap.smartLists.description":
+      "Liste generate automaticamente come 'Oggi', 'Questa Settimana', 'Prossimi 7 Giorni'",
+
+    "featuresPage.roadmap.analytics.title": "Analisi Avanzate",
+    "featuresPage.roadmap.analytics.description":
+      "Tracciamento abitudini, apprendimento pattern e report di produttività",
+
+    "featuresPage.roadmap.twoFactor.title": "Autenticazione a Due Fattori (2FA)",
+    "featuresPage.roadmap.twoFactor.description":
+      "Sicurezza extra con autenticazione biometrica e 2FA",
+
+    "featuresPage.roadmap.automation.title": "Automazione Workflow",
+    "featuresPage.roadmap.automation.description":
+      "Regole di automazione, operazioni batch e azioni condizionali",
+    "featuresPage.ai.description":
+      "Lascia che l'intelligenza artificiale aumenti la tua produttività. Le funzionalità AI di Mytaskly imparano dalle tue abitudini e ti aiutano a lavorare in modo più intelligente con suggerimenti intelligenti, creazione automatica di attività e insight di produttività personalizzati.",
+    "featuresPage.ai.feature1": "Suggerimenti intelligenti basati sulle tue abitudini",
+    "featuresPage.ai.feature2":
+      "Elaborazione del linguaggio naturale per inserimento rapido delle attività",
+    "featuresPage.ai.feature3":
+      "Pianificazione automatica delle attività per una produttività ottimale",
+    "featuresPage.ai.feature4":
+      "Insight e report di produttività personalizzati",
+
+    "featuresPage.calendar.title": "Integrazione Calendario Perfetta",
+    "featuresPage.calendar.subtitle":
+      "Collega Mytaskly con le tue app calendario preferite per una vista unificata del tuo programma e attività",
+    "featuresPage.calendar.feature1.title": "Sincronizzazione Bidirezionale",
+    "featuresPage.calendar.feature1.description":
+      "Le modifiche effettuate nel tuo calendario o in Mytaskly si riflettono istantaneamente in entrambi i posti",
+    "featuresPage.calendar.feature2.title": "Calendari Multipli",
+    "featuresPage.calendar.feature2.description":
+      "Connettiti con l'app calendario più popolare",
+    "featuresPage.calendar.feature3.title": "Pianificazione Intelligente",
+    "featuresPage.calendar.feature3.description":
+      "Trova il momento perfetto per le tue attività in base alla disponibilità del tuo calendario",
+
+    "featuresPage.cta.title": "Pronto a trasformare la tua produttività?",
+    "featuresPage.cta.subtitle":
+      "Unisciti a migliaia di utenti che hanno rivoluzionato la loro gestione delle attività con Mytaskly.",
+    "featuresPage.cta.download": "Scarica Ora",
+    "featuresPage.cta.pricing": "Visualizza prezzi",
+
+    // Add disclaimer translation
+    "featuresPage.disclaimer":
+      "Disclaimer: Mytaskly è attualmente in sviluppo. Le funzionalità mostrate in questa pagina rappresentano la nostra roadmap e visione, ma il prodotto finale potrebbe variare. Il team di Mytaskly si impegnerà a implementare tutte queste funzionalità, ma alcune potrebbero essere soggette a modifiche o disponibili in aggiornamenti futuri.",
+
+    // Add pricing disclaimer
+    "pricing.disclaimer":
+      "Disclaimer: I prezzi e le funzionalità mostrati sono indicativi e soggetti a modifiche. I prezzi finali e le funzionalità disponibili potrebbero differire al lancio ufficiale di Mytaskly.",
+
+    // Pricing Page
+    "pricing.title": "Scegli il Tuo Piano",
+    "pricing.subtitle":
+      "Seleziona il piano Mytaskly perfetto che si adatta alle tue esigenze di produttività",
+    "pricing.free.title": "Gratuito",
+    "pricing.free.description":
+      "Perfetto per iniziare con la gestione attività di base",
+    "pricing.premium.title": "Premium",
+    "pricing.premium.description":
+      "Produttività migliorata con funzionalità avanzate",
+    "pricing.pro.title": "Pro",
+    "pricing.pro.description": "Produttività definitiva con funzionalità AI",
+    "pricing.mostPopular": "Consigliato",
+    "pricing.month": "/mese",
+    "pricing.cta.free": "Inizia",
+    "pricing.cta.premium": "Iscriviti Ora",
+    "pricing.cta.pro": "Passa a Pro",
+
+    "pricing.free.feature1": "Fino a 3 liste attività",
+    "pricing.free.feature2": "Gestione attività di base",
+    "pricing.free.feature3": "Promemoria giornalieri",
+    "pricing.free.feature4": "Accesso app mobile",
+    "pricing.free.feature5": "Filtri avanzati",
+    "pricing.free.feature6": "Temi e personalizzazione",
+    "pricing.free.feature7": "Suggerimenti AI per attività",
+
+    "pricing.premium.feature1": "Liste attività illimitate",
+    "pricing.premium.feature2": "Gestione attività avanzata",
+    "pricing.premium.feature3": "Promemoria e notifiche personalizzate",
+    "pricing.premium.feature4": "Sincronizzazione cross-platform",
+    "pricing.premium.feature5": "Filtri e ordinamento avanzati",
+    "pricing.premium.feature6": "Temi e personalizzazione",
+    "pricing.premium.feature7": "Suggerimenti AI per attività",
+
+    "pricing.pro.feature1": "Tutto in Premium",
+    "pricing.pro.feature2": "Supporto prioritario",
+    "pricing.pro.feature3": "Analisi e report avanzati",
+    "pricing.pro.feature4": "Funzionalità di collaborazione team",
+    "pricing.pro.feature5": "Integrazione calendario",
+    "pricing.pro.feature6": "Workflow personalizzati",
+    "pricing.pro.feature7": "Suggerimenti e automazione AI",
+
+    "pricing.faq.title": "Domande frequenti",
+    "pricing.faq.subtitle":
+      "Hai domande sui nostri piani tariffari? Trova risposte alle domande comuni qui sotto.",
+    "pricing.faq.q1": "Posso cambiare tra piani?",
+    "pricing.faq.a1":
+      "Sì, puoi passare a un piano superiore o inferiore in qualsiasi momento. Le modifiche saranno applicate all'inizio del tuo prossimo ciclo di fatturazione.",
+    "pricing.faq.q2": "C'è una prova gratuita per i piani a pagamento?",
+    "pricing.faq.a2":
+      "Sì, offriamo una prova gratuita di 14 giorni sia per i piani Premium che Pro. Non è richiesta carta di credito per iniziare la prova.",
+    "pricing.faq.q3": "Quali metodi di pagamento accettate?",
+    "pricing.faq.a3":
+      "Accettiamo tutte le principali carte di credito, PayPal e Apple Pay per i pagamenti degli abbonamenti.",
+    "pricing.faq.q4": "Posso cancellare il mio abbonamento in qualsiasi momento?",
+    "pricing.faq.a4":
+      "Assolutamente. Puoi cancellare il tuo abbonamento in qualsiasi momento dalle impostazioni del tuo account. Continuerai ad avere accesso fino alla fine del periodo di fatturazione corrente.",
+
+    "pricing.cta.ready": "Pronto a potenziare la tua produttività?",
+    "pricing.cta.readySubtitle":
+      "Inizia a organizzare le tue attività con Mytaskly oggi e sperimenta la differenza.",
+    "pricing.cta.getStarted": "Inizia Gratuitamente",
+    "pricing.cta.learnMore": "Scopri di più",
+
+    "pricing.monthly": "Mensile",
+    "pricing.yearly": "Annuale",
+    "pricing.billed": "fatturato annualmente",
+    "pricing.save": "risparmia",
+
+    // Pricing Comparison Table
+    "pricing.comparison.title": "Confronta i Piani",
+    "pricing.comparison.subtitle":
+      "Trova il piano perfetto per le tue esigenze di produttività",
+    "pricing.comparison.feature": "Funzionalità",
+    "pricing.comparison.upTo3": "Fino a 3",
+    "pricing.comparison.upTo50": "Fino a 50",
+    "pricing.comparison.unlimited": "Illimitato",
+    "pricing.comparison.basic": "Base",
+    "pricing.comparison.advanced": "Avanzato",
+    "pricing.comparison.limited": "Limitato",
+
+    "pricing.comparison.category.core": "Funzionalità Core",
+    "pricing.comparison.category.organization": "Organizzazione",
+    "pricing.comparison.category.reminders": "Promemoria e Notifiche",
+    "pricing.comparison.category.sync": "Sincronizzazione e Dispositivi",
+    "pricing.comparison.category.customization": "Personalizzazione",
+    "pricing.comparison.category.advanced": "Funzionalità Avanzate",
+    "pricing.comparison.category.support": "Supporto",
+
+    "pricing.comparison.taskLists": "Liste Attività",
+    "pricing.comparison.tasks": "Attività per Lista",
+    "pricing.comparison.subtasks": "Sottoattività",
+    "pricing.comparison.attachments": "Allegati",
+    "pricing.comparison.tags": "Tag ed Etichette",
+    "pricing.comparison.filters": "Filtri",
+    "pricing.comparison.sorting": "Opzioni di Ordinamento",
+    "pricing.comparison.customViews": "Viste Personalizzate",
+    "pricing.comparison.basicReminders": "Promemoria Base",
+    "pricing.comparison.recurringReminders": "Promemoria Ricorrenti",
+    "pricing.comparison.locationReminders": "Promemoria Basati su Posizione",
+    "pricing.comparison.customNotifications": "Suoni Notifica Personalizzati",
+    "pricing.comparison.devices": "Dispositivi",
+    "pricing.comparison.cloudSync": "Sincronizzazione Cloud",
+    "pricing.comparison.offlineMode": "Modalità Offline",
+    "pricing.comparison.dataBackup": "Backup Dati",
+    "pricing.comparison.themes": "Temi",
+    "pricing.comparison.customColors": "Colori Personalizzati",
+    "pricing.comparison.widgets": "Widget Schermata Home",
+    "pricing.comparison.customFonts": "Font Personalizzati",
+    "pricing.comparison.calendarIntegration": "Integrazione Calendario",
+    "pricing.comparison.aiSuggestions": "Suggerimenti AI",
+    "pricing.comparison.teamCollaboration": "Collaborazione Team",
+    "pricing.comparison.analytics": "Analisi Produttività",
+    "pricing.comparison.emailSupport": "Supporto Email",
+    "pricing.comparison.prioritySupport": "Supporto Prioritario",
+    "pricing.comparison.dedicatedManager": "Account Manager Dedicato",
+
+    // Download Page
+    "download.title": "Unisciti alla Beta",
+    "download.subtitle":
+      "L'applicazione sarà rilasciata tra qualche settimana. Iscriviti ora per essere tra i primi a provarla e ricevere aggiornamenti esclusivi.",
+    "download.comingSoonAppStore": "Versione iOS in sviluppo",
+    "download.comingSoonGooglePlay": "Prossimamente su Google Play",
+
+    "download.badge": "Iscrizioni Beta Aperte",
+    "download.buttons.playStore": "Unisciti alla Lista d'Attesa",
+    "download.buttons.progress": "Visualizza progresso sviluppo",
+
+    "download.waitlist.title": "Unisciti alla lista d'attesa beta",
+    "download.waitlist.description":
+      "Iscriviti per provare Mytaskly beta in anticipo, seguire la roadmap ed essere il primo a sapere quando iOS sarà pronto.",
+    "download.waitlist.formTitle": "Richiedi accesso beta",
+    "download.waitlist.formDescription":
+      "Dicci dove vuoi provare Mytaskly. Ti avviseremo appena la tua build sarà pronta.",
+    "download.waitlist.formFootnote":
+      "Rispettiamo la tua casella di posta. Puoi disiscriverti dagli aggiornamenti in qualsiasi momento.",
+    "download.waitlist.confirmationTitle": "Sei nella lista!",
+    "download.waitlist.confirmationDescription":
+      "Grazie per esserti unito alla lista d'attesa beta. Ti invieremo un'email con i dettagli di accesso e aggiornamenti sulla roadmap.",
+    "download.waitlist.confirmationButton": "Torna alla pagina download",
+
+    "download.form.name": "Nome",
+    "download.form.namePlaceholder": "Mario Rossi",
+    "download.form.email": "Email",
+    "download.form.emailPlaceholder": "mario@esempio.com",
+    "download.form.platform": "Piattaforma Preferita",
+    "download.form.platformPlaceholder": "Scegli una piattaforma",
+    "download.form.both": "Entrambe",
+    "download.form.notifications": "Inviami aggiornamenti su Mytaskly",
+    "download.form.notificationsHint":
+      "Changelog, traguardi roadmap e inviti beta.",
+    "download.form.errorEmail": "Inserisci un'email valida per unirti alla lista d'attesa.",
+    "download.form.errorGeneric": "Qualcosa è andato storto. Riprova.",
+    "download.form.submitting": "Invio in corso...",
+    "download.form.submit": "Unisciti alla Lista",
+
+    "download.toast.title": "Sei a posto!",
+    "download.toast.description":
+      "Grazie per testare la beta. Ti terremo aggiornato su ogni rilascio.",
+
+    "download.benefits.title": "Perché unirsi alla beta",
+    "download.benefits.subtitle":
+      "Prova subito e aiuta a plasmare il rilascio finale.",
+
+    "download.benefits.earlyAccess.title": "Accesso Prioritario",
+    "download.benefits.earlyAccess.description":
+      "Sii tra i primi a provare la beta Android non appena sarà disponibile.",
+
+    "download.benefits.exclusiveFeatures.title": "Tracciamento progressi",
+    "download.benefits.exclusiveFeatures.description":
+      "Segui lo stato di sviluppo dalla pagina progressi e leggi il changelog più recente.",
+
+    "download.benefits.premiumDiscount.title": "Feedback prioritario",
+    "download.benefits.premiumDiscount.description":
+      "Condividi idee direttamente con il team durante la beta e influenza cosa verrà rilasciato dopo.",
+
+    "download.faq.title": "Domande Frequenti",
+    "download.faq.subtitle":
+      "Tutto quello che devi sapere sul test della beta.",
+    "download.faq.q1": "Come mi unisco alla beta?",
+    "download.faq.a1":
+      "Unisciti alla lista d'attesa. Ti avviseremo non appena la beta sarà pronta per il download.",
+    "download.faq.q2": "iOS è supportato?",
+    "download.faq.a2":
+      "Stiamo costruendo la versione iOS ora. Nel frattempo, segui la pagina progressi per vedere traguardi e tempi di rilascio.",
+    "download.faq.q3": "Cosa devo aspettarmi dalla beta?",
+    "download.faq.a3":
+      "L'app è stabile ma ancora in evoluzione. I flussi vocali sono pronti e stiamo perfezionando assistenza AI e collaborazione.",
+
+    "download.cta.title": "Preparati per il lancio",
+    "download.cta.description":
+      "Unisciti alla lista d'attesa e ti avviseremo non appena sarà disponibile.",
+    "download.cta.button": "Unisciti alla Lista d'Attesa",
+
+    // Testimonials
+    "testimonials.title": "Cosa Dicono i Nostri Utenti",
+    "testimonials.subtitle":
+      "Unisciti alla comunità di utenti soddisfatti che hanno trasformato la loro produttività con Mytaskly",
+    "testimonials.quote1":
+      "Mytaskly ha completamente cambiato il modo in cui organizzo la mia giornata. L'interfaccia è bella e intuitiva, e la funzione liste intelligenti mi fa risparmiare così tanto tempo. Ho provato dozzine di app todo, ma questa è quella che uso.",
+    "testimonials.author1": "Sarah Johnson",
+    "testimonials.position1": "Direttore Marketing",
+    "testimonials.quote2":
+      "Come persona con ADHD, ho sempre avuto difficoltà con la gestione delle attività. Il design pulito e i promemoria intelligenti di Mytaskly sono stati un cambiamento radicale per la mia produttività. Finalmente riesco a stare al passo con le mie responsabilità senza sentirmi sopraffatto.",
+    "testimonials.author2": "Michael Chen",
+    "testimonials.position2": "Ingegnere Software",
+    "testimonials.quote3":
+      "La sincronizzazione cross-platform è impeccabile! Posso iniziare una lista attività sul telefono durante il tragitto e continuare sul laptop al lavoro. Anche la modalità scura è facile per gli occhi durante le sessioni di lavoro notturne.",
+    "testimonials.author3": "Emma Rodriguez",
+    "testimonials.position3": "Designer Freelance",
+    "testimonials.appStoreRating": "Valutazione App Store",
+    "testimonials.averageRating": "4,8 su 5 stelle da oltre 10.000 recensioni",
+
+    // Contact Page
+    "contact.title": "Contattaci",
+    "contact.subtitle":
+      "Hai domande o hai bisogno di aiuto? Siamo qui per te. Contatta il nostro team e ti risponderemo il prima possibile.",
+
+    "contact.form.title": "Inviaci un messaggio",
+    "contact.form.name": "Nome",
+    "contact.form.namePlaceholder": "Mario Rossi",
+    "contact.form.email": "Email",
+    "contact.form.emailPlaceholder": "mario@esempio.com",
+    "contact.form.subject": "Oggetto",
+    "contact.form.subjectPlaceholder": "Aiuto con Mytaskly",
+    "contact.form.message": "Messaggio",
+    "contact.form.messagePlaceholder": "Dicci come possiamo aiutarti...",
+    "contact.form.submit": "Invia Messaggio",
+    "contact.form.sending": "Invio...",
+
+    "contact.validation.nameRequired": "Il nome deve essere di almeno 2 caratteri.",
+    "contact.validation.emailValid": "Inserisci un indirizzo email valido.",
+    "contact.validation.subjectRequired":
+      "L'oggetto deve essere di almeno 5 caratteri.",
+    "contact.validation.messageRequired":
+      "Il messaggio deve essere di almeno 10 caratteri.",
+
+    "contact.toast.success": "Messaggio Inviato!",
+    "contact.toast.successMessage":
+      "Grazie per averci contattato. Ti risponderemo il prima possibile.",
+
+    "contact.info.title": "Informazioni di Contatto",
+    "contact.info.description":
+      "Hai una domanda o hai bisogno di assistenza? Il nostro team di supporto è pronto ad aiutarti con qualsiasi domanda su Mytaskly.",
+    "contact.info.email": "Email",
+    "contact.info.phone": "Telefono",
+    "contact.info.address": "Indirizzo",
+    "contact.info.hours": "Tempo di risposta",
+    "contact.info.hoursDetails": "1/2 giorni lavorativi",
+
+    "contact.social.title": "Seguici",
+
+    "contact.faq.title": "Domande Frequenti",
+    "contact.faq.subtitle":
+      "Trova risposte rapide alle domande comuni sul contattare il nostro team di supporto.",
+    "contact.faq.q1": "Quanto velocemente riceverò una risposta?",
+    "contact.faq.a1":
+      "Miriamo a rispondere a tutte le richieste entro 24 ore durante i giorni lavorativi. Gli utenti Premium e Pro ricevono supporto prioritario con tempi di risposta più rapidi.",
+    "contact.faq.q2":
+      "Quali informazioni dovrei includere nella mia richiesta di supporto?",
+    "contact.faq.a2":
+      "Per aiutarci ad assisterti meglio, includi la versione dell'app, il tipo di dispositivo, una descrizione chiara del problema e eventuali screenshot pertinenti se possibile.",
+    "contact.faq.q3": "Offrite supporto telefonico?",
+    "contact.faq.a3":
+      "Il supporto telefonico è disponibile per gli abbonati al piano Pro. Gli utenti Gratuiti e Premium possono contattarci via email o tramite il modulo di contatto in questa pagina.",
+    "contact.faq.q4": "Come posso segnalare un bug?",
+    "contact.faq.a4":
+      "Puoi segnalare bug tramite questo modulo di contatto o inviando un'email a support@mytaskly.com. Includi i passaggi per riprodurre il problema e le informazioni del tuo dispositivo.",
+
+    "contact.cta.title": "Pronto a potenziare la tua produttività?",
+    "contact.cta.description":
+      "Unisciti a migliaia di utenti che hanno trasformato la loro gestione delle attività con Mytaskly.",
+    "contact.cta.button": "Scarica Mytaskly",
+    "contact.cta.link": "Visualizza piani tariffari",
+
+    // Footer
+    "footer.copyright": "© 2025 Mytaskly. Tutti i diritti riservati.",
+    "footer.description":
+      "Mytaskly — Lo spazio di lavoro AI vocale per l'organizzazione quotidiana.",
+    "footer.section.product": "Prodotto",
+    "footer.section.company": "Azienda",
+    "footer.section.legal": "Legale",
+
+    // Common
+    "common.learnMore": "Scopri di più",
+    "common.getStarted": "Inizia",
+    "common.comingSoon": "Prossimamente",
+    "common.back": "Indietro",
+
+    // Launch Banner
+    "launch.notLaunched": "Mytaskly non è ancora stato lanciato!",
+    "launch.joinWaitlist":
+      "Unisciti alla nostra lista d'attesa per provare la versione beta in anticipo e ricevere",
+    "launch.sixMonthsFree":
+      "3 mesi di abbonamento Premium gratuito + 30% di sconto",
+    "launch.atOfficialLaunch": "al lancio ufficiale.",
+    "launch.earlyAccess": "Accesso anticipato + 3 mesi gratis + 30% di sconto",
+    "launch.joinWaitlistButton": "Unisciti alla Lista d'Attesa",
+
+    // Theme
+    "theme.switchToLight": "Passa al tema chiaro",
+    "theme.switchToDark": "Passa al tema scuro",
+    "theme.system": "Usa tema di sistema",
+
+    // About Page
+    "about.title": "Chi Siamo",
+    "about.subtitle":
+      "Scopri il team dietro Mytaskly e la nostra missione di rendere la gestione delle attività semplice, bella ed efficace per tutti.",
+    "about.story.title": "La Nostra Storia",
+    "about.story.description":
+      "Mytaskly è nato dalla frustrazione del nostro fondatore con le app di produttività esistenti - troppo complesse, troppo disordinate o semplicemente non abbastanza belle da usare quotidianamente.",
+    "about.story.idea.title": "L'Idea",
+    "about.story.idea.description":
+      "Tutto è iniziato come un semplice schizzo in un quaderno. La visione di uno sviluppatore: un'app todo minimalista per declutterare la vita.",
+    "about.story.team.title": "Il Team (2024)",
+    "about.story.team.description":
+      "Gabriele ha progettato e sviluppato da solo un'app di gestione attività con una visione chiara: creare lo strumento definitivo che le persone amerebbero usare ogni giorno.",
+    "about.story.today.title": "Oggi",
+    "about.story.today.description":
+      "Mytaskly viene sviluppato incessantemente dal nostro team con dedizione e pazienza, per garantire la migliore esperienza per te",
+    "about.mission.title": "La Nostra Missione",
+    "about.mission.description":
+      "In Mytaskly, crediamo che la tecnologia dovrebbe semplificare la vita, non complicarla. La nostra missione è creare strumenti che aiutino le persone a organizzare le loro vite con il minimo sforzo e la massima gioia.",
+    "about.mission.userCentric.title": "Design Centrato sull'Utente",
+    "about.mission.userCentric.description":
+      "Ogni funzionalità, ogni pixel, ogni interazione in Mytaskly è progettata con l'esperienza utente in mente. Crediamo che il software dovrebbe essere una gioia da usare.",
+    "about.mission.simplicity.title": "Semplicità con Potenza",
+    "about.mission.simplicity.description":
+      "Rifiutiamo l'idea che le app potenti debbano essere complesse. Mytaskly offre funzionalità avanzate in un'interfaccia intuitiva che non ti rallenta mai.",
+    "about.mission.accessibility.title": "Accessibilità per Tutti",
+    "about.mission.accessibility.description":
+      "Crediamo che ottimi strumenti di produttività dovrebbero essere accessibili a tutti. Lavoriamo continuamente per rendere Mytaskly utilizzabile da persone con diverse abilità.",
+    "about.mission.innovation.title": "Innovazione Continua",
+    "about.mission.innovation.description":
+      "Non ci accontentiamo mai dello status quo. Il nostro team è costantemente alla ricerca di modi per migliorare Mytaskly, incorporando nuove tecnologie e idee.",
+    "about.team.title": "Il Nostro Team",
+    "about.team.description":
+      "Sono Gabriele, fondatore di Mytaskly: designer, sviluppatore e ossessionato dall'ottimizzazione del tempo. Lavorare da solo mi permette di:" +
+      "✔ mantenere una visione chiara e coerente – Nessun compromesso, solo l'app che ho sempre sognato." +
+      "✔ Muovermi con agilità – Implemento nuove funzionalità in ore, non mesi." +
+      "✔ Ascoltarti direttamente – Tutto il feedback arriva a me, senza filtri." +
+      "" +
+      "Il risultato? Un'app interamente costruita con precisione maniacale, dove ogni pixel e ogni riga di codice riflette un'unica ossessione: la tua produttività.",
+    "about.team.member1.name": "Gabriele Cipriani",
+    "about.team.member1.role": "CEO e Fondatore",
+    "about.team.member1.bio":
+      "Gabriele ha fondato Mytaskly con la visione di creare un'app di produttività che fosse sia potente che bella da usare.",
+    "about.team.member2.name": "Sofia Bianchi",
+    "about.team.member2.role": "Chief Design Officer",
+    "about.team.member2.bio":
+      "Sofia guida il team di design, assicurando che ogni pixel di Mytaskly sia perfettamente allineato con la nostra filosofia di design.",
+    "about.team.member3.name": "Luca Verdi",
+    "about.team.member3.role": "CTO",
+    "about.team.member3.bio":
+      "Luca supervisiona lo sviluppo tecnico di Mytaskly, costruendo un'architettura robusta che supporta milioni di utenti.",
+    "about.team.member4.name": "Giulia Marino",
+    "about.team.member4.role": "Responsabile Esperienza Cliente",
+    "about.team.member4.bio":
+      "Giulia assicura che ogni interazione con Mytaskly sia intuitiva e piacevole, dalla prima installazione all'uso quotidiano.",
+    "about.joinUs.title": "Unisciti a Noi",
+    "about.joinUs.description":
+      "Siamo sempre alla ricerca di persone talentuose appassionate di produttività e design. Se ti piace creare prodotti che le persone amano usare, potremmo essere il posto giusto per te.",
+    "about.joinUs.openPositions": "Visualizza Posizioni Aperte",
+    "about.joinUs.contactUs": "Contattaci",
+
+    // Blog
+    "blog.section.title": "Dal Nostro Blog",
+    "blog.card.readMore": "Leggi di Più",
+    "blog.posts.welcome.title": "Benvenuto nel Blog di Mytaskly",
+    "blog.posts.welcome.description":
+      "Suggerimenti, notizie e approfondimenti per aiutarti a rimanere produttivo.",
+    "blog.posts.tips.title": "5 Consigli di Produttività che Devi Conoscere",
+    "blog.posts.tips.description":
+      "Aumenta la tua efficienza con queste semplici tecniche.",
+    "blog.posts.design.title": "La Nostra Filosofia di Design",
+    "blog.posts.design.description":
+      "Come abbiamo realizzato l'interfaccia minimalista e funzionale di Mytaskly.",
+    "blog.page.title": "Blog",
+    "blog.page.description":
+      "Esplora articoli, suggerimenti e aggiornamenti dal team di Mytaskly.",
+
+    // Features Blog Contents
+    "features.blog.author": "Gabriele Cipriani",
+    "features.blog.readTime": "5 min di lettura",
+    "features.blog.tocTitle": "Indice",
+    "features.blog.taskManagement.section1.title":
+      "Introduzione alla Gestione Attività",
+    "features.blog.taskManagement.section1.p1":
+      "La gestione delle attività è il cuore di ogni routine produttiva. In Mytaskly puoi creare, organizzare e completare attività con facilità.",
+    "features.blog.taskManagement.section1.p2":
+      "Usa formattazione ricca, allegati e sottoattività per suddividere progetti complessi in passaggi gestibili.",
+    "features.blog.taskManagement.section1.p3":
+      "Grazie a drag & drop e gesti rapidi, adattare l'ordine delle tue attività è più intuitivo che mai.",
+    "features.blog.taskManagement.section2.title": "Funzionalità Principali",
+    "features.blog.taskManagement.section2.p1":
+      "Liste intelligenti che raggruppano automaticamente le attività di oggi, domani e completate.",
+    "features.blog.taskManagement.section2.p2":
+      "Promemoria personalizzabili per non perdere mai una scadenza importante.",
+    "features.blog.taskManagement.section2.p3":
+      "Sincronizzazione in tempo reale su tutti i dispositivi, da mobile a desktop.",
+    "features.blog.taskManagement.section3.title": "Best Practice e Suggerimenti",
+    "features.blog.taskManagement.section3.p1":
+      "Pianifica la tua giornata la sera prima per iniziare con chiarezza mentale.",
+    "features.blog.taskManagement.section3.p2":
+      "Limita la tua lista giornaliera a 5 attività chiave per mantenere il focus.",
+    "features.blog.taskManagement.section3.p3":
+      "Rivedi settimanalmente le attività completate per celebrare i progressi e identificare opportunità di miglioramento.",
+
+    "features.blog.smartLists.section1.title": "Introduzione alle Liste Intelligenti",
+    "features.blog.smartLists.section1.p1":
+      "Le Liste Intelligenti organizzano automaticamente le tue attività in base a data di scadenza, priorità e tag.",
+    "features.blog.smartLists.section1.p2":
+      "Accedi alle viste Oggi, In Arrivo e Completate con un solo clic.",
+    "features.blog.smartLists.section1.p3":
+      "Personalizza le regole per creare liste su misura per progetti specifici.",
+    "features.blog.smartLists.section2.title": "Configurazione e Uso",
+    "features.blog.smartLists.section2.p1":
+      "Crea tag e filtri per segmentare le attività subito dopo averle create.",
+    "features.blog.smartLists.section2.p2":
+      "Imposta parametri di filtro avanzati per evidenziare attività urgenti.",
+    "features.blog.smartLists.section2.p3":
+      "Salva viste personalizzate per tornare rapidamente alle attività prioritarie.",
+    "features.blog.smartLists.section3.title": "Vantaggi delle Liste Intelligenti",
+    "features.blog.smartLists.section3.p1":
+      "Risparmio di tempo: non devi più spostare manualmente le attività.",
+    "features.blog.smartLists.section3.p2":
+      "Maggiore chiarezza: vedi immediatamente cosa richiede attenzione a breve termine.",
+    "features.blog.smartLists.section3.p3":
+      "Flessibilità: modifica le regole in qualsiasi momento in base alle esigenze del tuo flusso di lavoro.",
+
+    // Privacy Policy Page
+    "privacy.title": "Informativa sulla Privacy",
+    "privacy.lastUpdated": "Ultimo Aggiornamento",
+    "privacy.intro":
+      'Questa Informativa sulla Privacy descrive come MyTaskly ("noi", "nostro" o "l\'app") gestisce le informazioni quando utilizzi la nostra applicazione mobile.',
+
+    "privacy.section1.title": "1. INFORMAZIONI CHE RACCOGLIAMO",
+    "privacy.section1.content":
+      "MyTaskly può richiedere l'accesso al microfono del tuo dispositivo per abilitare la funzione di registrazione vocale per creare attività e note. Le registrazioni audio vengono salvate localmente sul tuo dispositivo.",
+
+    "privacy.section2.title": "2. COME UTILIZZIAMO LE TUE INFORMAZIONI",
+    "privacy.section2.item1":
+      "Le registrazioni audio vengono utilizzate esclusivamente per creare note vocali all'interno dell'app",
+    "privacy.section2.item2": "Tutti i dati vengono salvati localmente sul tuo dispositivo",
+    "privacy.section2.item3":
+      "Non trasmettiamo, condividiamo o vendiamo i tuoi dati audio a terze parti",
+
+    "privacy.section3.title": "3. ARCHIVIAZIONE E SICUREZZA DEI DATI",
+    "privacy.section3.item1": "Tutte le registrazioni audio rimangono sul tuo dispositivo",
+    "privacy.section3.item2":
+      "Hai il pieno controllo per eliminare le registrazioni in qualsiasi momento",
+    "privacy.section3.item3": "Non abbiamo accesso alle tue registrazioni",
+
+    "privacy.section4.title": "4. PERMESSI",
+    "privacy.section4.permission1": "Per registrare note vocali per attività",
+    "privacy.section4.permission2": "Per regolare le impostazioni audio durante la registrazione",
+
+    "privacy.section5.title": "5. PRIVACY DEI MINORI",
+    "privacy.section5.content":
+      "La nostra app non raccoglie consapevolmente informazioni da bambini di età inferiore ai 13 anni.",
+
+    "privacy.section6.title": "6. MODIFICHE A QUESTA INFORMATIVA SULLA PRIVACY",
+    "privacy.section6.content":
+      "Potremmo aggiornare questa Informativa sulla Privacy di tanto in tanto. Le modifiche saranno pubblicate all'interno dell'app.",
+
+    "privacy.section7.title": "7. CONTATTACI",
+    "privacy.section7.content":
+      "Per domande su questa Informativa sulla Privacy, contattaci a:",
+
+    "privacy.cta.title": "La Tua Privacy Conta",
+    "privacy.cta.description":
+      "Ci impegniamo a proteggere la tua privacy e garantire che i tuoi dati rimangano sicuri.",
+
+    // Members Page
+    "members.login.title": "Unisciti o accedi all'Area Membri",
+    "members.login.description":
+      "Inserisci la tua email per unirti alla lista d'attesa e accedere allo spazio beta riservato.",
+    "members.login.emailLabel": "Email",
+    "members.login.emailPlaceholder": "la-tua-email@esempio.com",
+    "members.login.errorInvalid":
+      "Email non valida. Controlla il formato dell'email.",
+    "members.login.errorGeneric": "Errore durante il login. Riprova.",
+    "members.login.buttonLoading": "Login in corso...",
+    "members.login.button": "Accedi o Registrati",
+
+    "members.header.title": "Area Membri",
+    "members.header.subtitle": "Contenuti esclusivi per i membri della lista d'attesa",
+    "members.header.logout": "Esci",
+
+    "members.welcome.title": "Benvenuto nella comunità esclusiva!",
+    "members.welcome.description":
+      "Grazie per esserti unito alla lista d'attesa di MyTaskly. Ecco cosa puoi fare qui:",
+
+    "members.card.betaPreview.title": "Anteprima Beta",
+    "members.card.betaPreview.description":
+      "Ottieni accesso anticipato alle funzionalità beta di MyTaskly",
+    "members.card.betaPreview.button": "Accedi all'Accesso Anticipato",
+
+    "members.card.community.title": "Comunità",
+    "members.card.community.description":
+      "Unisciti alle discussioni con altri early adopter",
+    "members.card.community.badge": "Prossimamente",
+
+    "members.card.feedback.title": "Feedback",
+    "members.updates.preLaunch.title": "Pre-Lancio e Preparazione",
+    "members.updates.preLaunch.description":
+      "Completamento periodo di testing obbligatorio (14 giorni), raccolta feedback, preparazione marketing e setup social media.",
+    "members.updates.preLaunch.badge": "Dicembre 2024",
+
+    "members.updates.androidLaunch.title": "Lancio Pubblico Android",
+    "members.updates.androidLaunch.description":
+      "Versione ufficiale disponibile pubblicamente su Google Play Store dopo aver completato tutti i requisiti e ottimizzazioni basate sul feedback della beta.",
+    "members.updates.androidLaunch.badge":
+      "Fine Dicembre 2024 / Inizio Gennaio 2025",
+
+    "members.updates.marketingExpansion.title": "Espansione Marketing",
+    "members.updates.marketingExpansion.description":
+      "Lancio su Product Hunt, campagne social media e outreach a influencer e community tech.",
+    "members.updates.marketingExpansion.badge": "Gennaio 2025",
+
+    "members.updates.chatgptIntegration.title": "ChatGPT Apps Integration",
+    "members.updates.chatgptIntegration.description":
+      "Sfruttare il vantaggio first-mover per integrare MyTaskly come ChatGPT App, raggiungendo potenzialmente 800M+ utenti della piattaforma.",
+    "members.updates.chatgptIntegration.badge": "Q1 2025 (Gennaio-Marzo)",
+
+    "members.updates.advancedVoiceChat.title": "Chat Vocale Avanzata",
+    "members.updates.advancedVoiceChat.description":
+      "Perfezionamento dell'esperienza di chat vocale con IA e ottimizzazioni basate sui dati d'uso reali.",
+    "members.updates.advancedVoiceChat.badge": "Q1 2025",
+
+    "members.updates.iosLaunch.title": "Lancio iOS App Store",
+    "members.updates.iosLaunch.description":
+      "Pubblicazione su App Store Apple dopo aver validato il prodotto su Android e raccolto feedback per ottimizzare l'esperienza iOS.",
+    "members.updates.iosLaunch.badge": "Q2 2025 (Aprile-Giugno)",
+
+    // Early Access Page
+    "earlyAccess.login.title": "Accesso Early Access",
+    "earlyAccess.login.description":
+      "Inserisci la tua email per accedere all'early access di MyTaskly",
+    "earlyAccess.login.emailLabel": "Email",
+    "earlyAccess.login.emailPlaceholder": "la-tua-email@esempio.com",
+    "earlyAccess.login.errorNotFound":
+      "Email non trovata nella waitlist. Registrati prima di accedere.",
+    "earlyAccess.login.errorGeneric": "Errore durante il login. Riprova.",
+    "earlyAccess.login.buttonLoading": "Verifica in corso...",
+    "earlyAccess.login.button": "Accedi",
+
+    "earlyAccess.backButton": "Area Membri",
+    "earlyAccess.badge": "Early Access Esclusivo",
+    "earlyAccess.hero.title": "Il Futuro della Produttività è Qui",
+    "earlyAccess.hero.description":
+      "Scopri in anteprima le funzionalità rivoluzionarie di MyTaskly prima del lancio ufficiale",
+
+    "earlyAccess.progress.title": "Stato dello Sviluppo",
+    "earlyAccess.progress.description":
+      "Segui i progressi in tempo reale dello sviluppo di MyTaskly",
+    "earlyAccess.progress.phase1": "Concept e Design",
+    "earlyAccess.progress.phase2": "Funzionalità Core",
+    "earlyAccess.progress.phase3": "Integrazione AI",
+    "earlyAccess.progress.phase4": "Beta Testing",
+    "earlyAccess.progress.phase5": "Revisione App Store",
+
+    "earlyAccess.features.title": "Anteprima Funzionalità Esclusive",
+    "earlyAccess.features.ai.title": "Assistente AI Personale",
+    "earlyAccess.features.ai.description":
+      "Un assistente IA che impara dalle tue abitudini e suggerisce automaticamente come organizzare al meglio la tua giornata.",
+    "earlyAccess.features.ai.badge": "In Sviluppo",
+
+    "earlyAccess.features.privacy.title": "Privacy Avanzata",
+    "earlyAccess.features.privacy.description":
+      "Crittografia end-to-end e controllo completo sui tuoi dati e sincronizzazione sicura.",
+    "earlyAccess.features.privacy.badge": "Completato",
+
+    "earlyAccess.features.sync.title": "Sync Cross-Platform",
+    "earlyAccess.features.sync.description":
+      "Sincronizzazione istantanea tra tutti i tuoi dispositivi con supporto offline e conflitti risolti automaticamente.",
+    "earlyAccess.features.sync.badge": "Completato",
+
+    "earlyAccess.beta.title": "Accesso Beta Esclusivo",
+    "earlyAccess.beta.description":
+      "Sei tra i primi ad avere accesso alla versione beta di MyTaskly!",
+    "earlyAccess.beta.stat1.value": "2025",
+    "earlyAccess.beta.stat1.label": "Anno di Lancio",
+    "earlyAccess.beta.stat2.value": "11",
+    "earlyAccess.beta.stat2.label": "Mesi di Sviluppo",
+    "earlyAccess.beta.stat3.value": "50+",
+    "earlyAccess.beta.stat3.label": "Funzionalità",
+    "earlyAccess.beta.available":
+      "L'app non è ancora disponibile per il download. Iscriviti alla lista d'attesa per ricevere una notifica al lancio.",
+    "earlyAccess.beta.button1": "Unisciti alla Waitlist",
+    "earlyAccess.beta.button2": "Unisciti alla Waitlist",
+
+    "earlyAccess.guide.title": "Come Accedere alla Beta",
+    "earlyAccess.guide.step1":
+      'Unisciti al Google Group e clicca sul pulsante "Unisciti al gruppo" in alto a sinistra',
+    "earlyAccess.guide.step2":
+      'Clicca su "Accetta l\'invito per tester" per diventare tester sul Play Store',
+    "earlyAccess.guide.step3": "Installa l'app MyTaskly sul tuo dispositivo",
+    "earlyAccess.guide.step4":
+      "Registrati con la tua email per creare un account",
+    "earlyAccess.guide.step5":
+      "Inizia ad usare la beta e goditi tutte le funzionalità! 🎉",
+
+    // Open Source Page
+    "openSource.hero.badge": "Open Source senza compromessi",
+    "openSource.hero.badgeSubtitle": "Creata da un 16enne in 11 mesi",
+    "openSource.hero.pretitle": "Mytaskly è aperta a tutti",
+    "openSource.hero.title":
+      "MyTaskly è open source, sviluppata in 11 mesi da un ragazzo di 16 anni e pronta per essere migliorata da chiunque.",
+    "openSource.hero.description":
+      "Abbiamo scelto l'open source per rendere trasparente ogni scelta tecnologica e invitare la community a costruire insieme la migliore esperienza di produttività vocale. Ogni commit racconta la determinazione di chi ha dedicato quasi un anno per portare questa visione alla vita.",
+    "openSource.hero.ctaRepositories": "Esplora le repository",
+    "openSource.hero.ctaMCP": "Scopri l'MCP ufficiale",
+    "openSource.hero.whyTitle": "Trasparenza, fiducia e integrazione ovunque",
+    "openSource.hero.whyDescription":
+      "MyTaskly nasce come progetto personale di un sedicenne e diventa una piattaforma aperta: questo garantisce revisione pubblica, miglioramenti continui e la libertà di integrare l'assistente vocale nei tuoi flussi.",
+    "openSource.hero.tag1": "Community-first",
+    "openSource.hero.tag2": "Licenza aperta",
+    "openSource.hero.tag3": "MCP incluso",
+
+    "openSource.advantages.pretitle": "Vantaggi reali",
+    "openSource.advantages.title": "Perché MyTaskly è open source",
+    "openSource.advantages.description":
+      "Rendere pubblica la base di codice è la scelta più coerente con la nostra missione: offrire un assistente vocale di produttività etico, controllabile e potenziato dalla forza della community.",
+    "openSource.advantages.transparency.title": "Trasparenza totale",
+    "openSource.advantages.transparency.description":
+      "Codice aperto e consultabile da chiunque: sai sempre come vengono gestiti dati, algoritmi e modelli IA, senza segreti nascosti.",
+    "openSource.advantages.community.title": "Affidabilità di comunità",
+    "openSource.advantages.community.description":
+      "Chiunque può proporre miglioramenti, segnalare bug e contribuire con nuove idee: MyTaskly cresce più velocemente grazie a contributi reali.",
+    "openSource.advantages.customization.title": "Personalizzazione libera",
+    "openSource.advantages.customization.description":
+      "Forka, adatta e distribuisci la tua versione: l'open source ti permette di creare esattamente l'esperienza di produttività che cerchi.",
+
+    "openSource.mcp.badge": "MCP ufficiale",
+    "openSource.mcp.title": "Integra MyTaskly ovunque grazie all'MCP",
+    "openSource.mcp.description":
+      "L'MCP di MyTaskly rende l'assistente accessibile da agent, workflow personalizzati e tool interni. È open source, documentato e pronto per essere adattato a qualsiasi stack, dal tuo CRM alle automazioni no-code.",
+    "openSource.mcp.feature1Title": "Integrazione immediata",
+    "openSource.mcp.feature1Description":
+      "Endpoint chiari e esempi già pronti per collegare MyTaskly a bot, dashboard e flussi vocali.",
+    "openSource.mcp.feature2Title": "Contributi benvenuti",
+    "openSource.mcp.feature2Description":
+      "Issue, PR e proposte di nuove capability MCP sono incoraggiate: la community guida la roadmap.",
+    "openSource.mcp.highlight": "Dal codice al tuo ecosistema",
+    "openSource.mcp.highlightSubtitle":
+      "Open source significa libertà di integrare senza barriere",
+    "openSource.mcp.benefit1":
+      "SDK e esempi pronti all'uso per agent AI e workflow vocali.",
+    "openSource.mcp.benefit2":
+      "Documentazione aperta e migliorabile via PR dalla community.",
+    "openSource.mcp.benefit3":
+      "Compatibilità pensata per cloud, self-hosting e tool no-code.",
+    "openSource.mcp.button": "Vai al repository MCP",
+
+    "openSource.mcp.comingSoon.badge": "In arrivo",
+    "openSource.mcp.comingSoon.title":
+      "L'MCP ufficiale di MyTaskly è quasi pronto",
+    "openSource.mcp.comingSoon.description":
+      "Stiamo ultimando gli ultimi dettagli del nostro Model Context Protocol ufficiale per renderlo il più potente e facile da integrare possibile. Presto potrai usare MyTaskly in agent IA, automazioni e workflow personalizzati senza limitazioni.",
+    "openSource.mcp.comingSoon.feature1Title": "Endpoint reali",
+    "openSource.mcp.comingSoon.feature1Subtitle": "Documentazione API",
+    "openSource.mcp.comingSoon.feature2Title": "SDK multi-linguaggio",
+    "openSource.mcp.comingSoon.feature2Subtitle": "Python, JS, Go",
+    "openSource.mcp.comingSoon.feature3Title": "Esempi pronti",
+    "openSource.mcp.comingSoon.feature3Subtitle": "Deploy in 5 minuti",
+    "openSource.mcp.comingSoon.cta":
+      "Iscriviti per ricevere una notifica appena sarà disponibile",
+
+    "openSource.repos.pretitle": "Repository pubbliche",
+    "openSource.repos.title": "Contribuisci, studia, integra",
+    "openSource.repos.description":
+      "Troverai il codice aperto su repository dedicate: sostituisci i link placeholder con quelli ufficiali e inizia a contribuire. Ogni issue o PR aiuta un giovane founder di 16 anni a crescere insieme al progetto.",
+    "openSource.repos.badge": "Repo aperta",
+    "openSource.repos.repo1Title": "Repository principale di MyTaskly",
+    "openSource.repos.repo1Description":
+      "Il cuore dell'app, pronta per essere studiata, forkata e migliorata dalla community.",
+    "openSource.repos.repo2Title": "Interfaccia web e landing",
+    "openSource.repos.repo2Description":
+      "La base del sito e dell'esperienza web: perfetta per contribuire a UI, accessibilità e performance.",
+    "openSource.repos.repo3Title": "MCP di MyTaskly",
+    "openSource.repos.repo3Description":
+      "Il connettore ufficiale per integrare MyTaskly in automazioni, agent e strumenti personalizzati.",
+    "openSource.repos.buttonText": "Apri la repository",
+    "openSource.repos.footerTitle":
+      "MyTaskly nasce dalla passione di un sedicenne",
+    "openSource.repos.footerDescription":
+      "Dopo 11 mesi di lavoro costante, il codice è aperto per permettere a chiunque di verificarlo, migliorarlo e integrarlo. Se ami la produttività open source, questo è il momento di unirti.",
+  },
 };
 
 // Provider component
@@ -1154,7 +2256,11 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
 
   // Translation function
   const t = (key: string): string => {
-    return translations[language][key] || key;
+    const languageTranslations = translations[language];
+    if (!languageTranslations) {
+      return key;
+    }
+    return languageTranslations[key] || key;
   };
 
   return (
