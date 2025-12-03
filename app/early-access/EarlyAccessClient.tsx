@@ -2,7 +2,13 @@
 
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
@@ -80,7 +86,9 @@ export default function EarlyAccessClient() {
           <CardContent>
             <form onSubmit={handleLogin} className="space-y-4">
               <div className="space-y-2">
-                <Label htmlFor="email">{t("earlyAccess.login.emailLabel")}</Label>
+                <Label htmlFor="email">
+                  {t("earlyAccess.login.emailLabel")}
+                </Label>
                 <Input
                   id="email"
                   type="email"
@@ -99,7 +107,9 @@ export default function EarlyAccessClient() {
                 className="w-full"
                 disabled={loginLoading || !email.trim()}
               >
-                {loginLoading ? t("earlyAccess.login.buttonLoading") : t("earlyAccess.login.button")}
+                {loginLoading
+                  ? t("earlyAccess.login.buttonLoading")
+                  : t("earlyAccess.login.button")}
               </Button>
             </form>
           </CardContent>
@@ -121,7 +131,11 @@ export default function EarlyAccessClient() {
       {/* Hero Section */}
       <section className="container mx-auto px-4 py-16">
         <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-12">
-          <Button variant="outline" onClick={() => router.push('/members')} className="gap-2 mb-6 md:mb-0 md:mr-4 self-start">
+          <Button
+            variant="outline"
+            onClick={() => router.push("/members")}
+            className="gap-2 mb-6 md:mb-0 md:mr-4 self-start"
+          >
             <ArrowRight className="h-4 w-4 rotate-180" />
             {t("earlyAccess.backButton")}
           </Button>
@@ -160,7 +174,13 @@ export default function EarlyAccessClient() {
                     ) : (
                       <Clock className="h-5 w-5 text-muted-foreground" />
                     )}
-                    <span className={phase.completed ? "text-foreground" : "text-muted-foreground"}>
+                    <span
+                      className={
+                        phase.completed
+                          ? "text-foreground"
+                          : "text-muted-foreground"
+                      }
+                    >
                       {phase.phase}
                     </span>
                   </div>
@@ -187,7 +207,9 @@ export default function EarlyAccessClient() {
               <p className="text-muted-foreground mb-4">
                 {t("earlyAccess.features.ai.description")}
               </p>
-              <Badge variant="outline">{t("earlyAccess.features.ai.badge")}</Badge>
+              <Badge variant="outline">
+                {t("earlyAccess.features.ai.badge")}
+              </Badge>
             </CardContent>
           </Card>
 
@@ -202,7 +224,9 @@ export default function EarlyAccessClient() {
               <p className="text-muted-foreground mb-4">
                 {t("earlyAccess.features.privacy.description")}
               </p>
-              <Badge variant="outline">{t("earlyAccess.features.privacy.badge")}</Badge>
+              <Badge variant="outline">
+                {t("earlyAccess.features.privacy.badge")}
+              </Badge>
             </CardContent>
           </Card>
 
@@ -217,7 +241,9 @@ export default function EarlyAccessClient() {
               <p className="text-muted-foreground mb-4">
                 {t("earlyAccess.features.sync.description")}
               </p>
-              <Badge variant="outline">{t("earlyAccess.features.sync.badge")}</Badge>
+              <Badge variant="outline">
+                {t("earlyAccess.features.sync.badge")}
+              </Badge>
             </CardContent>
           </Card>
         </div>
@@ -225,7 +251,9 @@ export default function EarlyAccessClient() {
         {/* Beta Access Section */}
         <Card className="bg-gradient-to-r from-primary/10 to-secondary/10 border-primary/20">
           <CardHeader className="text-center">
-            <CardTitle className="text-2xl">{t("earlyAccess.beta.title")}</CardTitle>
+            <CardTitle className="text-2xl">
+              {t("earlyAccess.beta.title")}
+            </CardTitle>
             <CardDescription>
               {t("earlyAccess.beta.description")}
             </CardDescription>
@@ -233,65 +261,36 @@ export default function EarlyAccessClient() {
           <CardContent className="text-center space-y-6">
             <div className="grid md:grid-cols-3 gap-4 text-center">
               <div className="space-y-2">
-                <div className="text-3xl font-bold text-primary">{t("earlyAccess.beta.stat1.value")}</div>
-                <div className="text-sm text-muted-foreground">{t("earlyAccess.beta.stat1.label")}</div>
+                <div className="text-3xl font-bold text-primary">
+                  {t("earlyAccess.beta.stat1.value")}
+                </div>
+                <div className="text-sm text-muted-foreground">
+                  {t("earlyAccess.beta.stat1.label")}
+                </div>
               </div>
               <div className="space-y-2">
-                <div className="text-3xl font-bold text-primary">{t("earlyAccess.beta.stat2.value")}</div>
-                <div className="text-sm text-muted-foreground">{t("earlyAccess.beta.stat2.label")}</div>
+                <div className="text-3xl font-bold text-primary">
+                  {t("earlyAccess.beta.stat2.value")}
+                </div>
+                <div className="text-sm text-muted-foreground">
+                  {t("earlyAccess.beta.stat2.label")}
+                </div>
               </div>
               <div className="space-y-2">
-                <div className="text-3xl font-bold text-primary">{t("earlyAccess.beta.stat3.value")}</div>
-                <div className="text-sm text-muted-foreground">{t("earlyAccess.beta.stat3.label")}</div>
+                <div className="text-3xl font-bold text-primary">
+                  {t("earlyAccess.beta.stat3.value")}
+                </div>
+                <div className="text-sm text-muted-foreground">
+                  {t("earlyAccess.beta.stat3.label")}
+                </div>
               </div>
             </div>
 
             <div className="space-y-4">
-              <p className="text-lg">
-                {t("earlyAccess.beta.available")}
-              </p>
-
-              <div className="flex flex-col sm:flex-row gap-3 justify-center">
-                <Button
-                  size="lg"
-                  className="gap-2"
-                  onClick={() => window.open('https://groups.google.com/g/mytaskly-testers', '_blank')}
-                >
-                  <Sparkles className="h-5 w-5" />
-                  Unisciti al Google Group
-                </Button>
-                <Button
-                  size="lg"
-                  variant="outline"
-                  className="gap-2"
-                  onClick={() => window.open('https://play.google.com/store/apps/details?id=com.Gabry848Studio.Mytaskly', '_blank')}
-                >
-                  <Smartphone className="h-5 w-5" />
-                  Scarica dal Play Store
-                </Button>
-              </div>
-
-              {/* Installation Guide */}
-              <div className="mt-6 p-4 bg-background/60 rounded-lg border border-border/50">
-                <h3 className="text-lg font-semibold mb-3 flex items-center gap-2">
-                  <Smartphone className="h-5 w-5" />
-                  {t("earlyAccess.guide.title")}
-                </h3>
-                <ol className="text-sm text-muted-foreground space-y-2 text-left max-w-md mx-auto">
-                  <li className="flex items-start gap-2">
-                    <span className="bg-primary text-primary-foreground rounded-full w-5 h-5 flex items-center justify-center text-xs font-medium flex-shrink-0 mt-0.5">1</span>
-                    <span>Clicca su "Unisciti al Google Group" e nella pagina clicca sul pulsante "Unisciti al gruppo" in alto a sinistra</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="bg-primary text-primary-foreground rounded-full w-5 h-5 flex items-center justify-center text-xs font-medium flex-shrink-0 mt-0.5">2</span>
-                    <span>Clicca su "Scarica dal Play Store" per installare l'app MyTaskly sul tuo dispositivo Android</span>
-                  </li>
-                </ol>
-              </div>
+              <p className="text-lg">{t("earlyAccess.beta.available")}</p>
             </div>
           </CardContent>
         </Card>
-
       </section>
     </div>
   );

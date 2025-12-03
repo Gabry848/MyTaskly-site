@@ -100,32 +100,31 @@ export default function DownloadPage() {
 
               <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row sm:gap-6">
                 <Button className="rounded-full px-8" size="lg" asChild>
-                  <a
-                    href="https://play.google.com/store/apps/details?id=com.Gabry848Studio.Mytaskly&hl=en-US&ah=A0Ml8z3VsRUmRFkINxQ1zi8Pj68"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    {t("download.buttons.playStore")}
-                  </a>
+                  <a href="#waitlist">{t("download.buttons.playStore")}</a>
                 </Button>
-                <Button className="rounded-full px-8" size="lg" variant="outline" asChild>
-                  <a href="/early-access">
-                    {t("download.buttons.progress")}
-                  </a>
+                <Button
+                  className="rounded-full px-8"
+                  size="lg"
+                  variant="outline"
+                  asChild
+                >
+                  <a href="/early-access">{t("download.buttons.progress")}</a>
                 </Button>
               </div>
 
               <p className="mt-6 text-sm text-muted-foreground">
                 {t("download.comingSoonAppStore")}
               </p>
-
             </div>
           </ScrollAnimationWrapper>
         </div>
       </div>
 
       {/* Information Section */}
-      <div className="bg-gradient-to-b from-background to-primary/5 py-16">
+      <div
+        id="waitlist"
+        className="bg-gradient-to-b from-background to-primary/5 py-16"
+      >
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <ScrollAnimationWrapper>
             <div className="mx-auto max-w-2xl text-center">
@@ -140,48 +139,6 @@ export default function DownloadPage() {
           </ScrollAnimationWrapper>
 
           <div className="mt-16 grid gap-6">
-            {/* <ScrollAnimationWrapper>
-              <div className="relative rounded-xl bg-background p-8 shadow-lg border border-border">
-                <div className="space-y-6">
-                  <div className="flex items-center gap-3">
-                    <Rocket className="h-6 w-6 text-primary" />
-                    <h3 className="text-xl font-semibold leading-8 text-foreground">
-                      {t("download.buttons.playStore")}
-                    </h3>
-                  </div>
-                  <p className="text-base leading-7 text-muted-foreground">
-                    {t("download.subtitle")}
-                  </p>
-                  <ol className="space-y-3 text-sm leading-6 text-muted-foreground list-decimal list-inside">
-                    <li>{t("earlyAccess.guide.step1")}</li>
-                    <li>{t("earlyAccess.guide.step2")}</li>
-                    <li>{t("earlyAccess.guide.step3")}</li>
-                    <li>{t("earlyAccess.guide.step4")}</li>
-                  </ol>
-                  <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
-                    <Button className="rounded-full px-6" asChild>
-                      <a
-                        href="https://play.google.com/apps/internaltest/4701407835802258178"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        {t("earlyAccess.beta.button1")}
-                      </a>
-                    </Button>
-                    <Button className="rounded-full px-6" variant="outline" asChild>
-                      <a
-                        href="https://play.google.com/store/apps/details?id=com.Gabry848Studio.Mytaskly&hl=en-US&ah=A0Ml8z3VsRUmRFkINxQ1zi8Pj68"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        {t("earlyAccess.beta.button2")}
-                      </a>
-                    </Button>
-                  </div>
-                </div>
-              </div>
-            </ScrollAnimationWrapper> */}
-
             <ScrollAnimationWrapper delay={0.1}>
               <div className="relative rounded-xl bg-background p-8 shadow-lg border border-border">
                 <div className="space-y-6">
@@ -198,7 +155,9 @@ export default function DownloadPage() {
                   <form onSubmit={handleSubmit} className="space-y-4">
                     <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
                       <div className="space-y-2">
-                        <Label htmlFor="fullName">{t("download.form.name")}</Label>
+                        <Label htmlFor="fullName">
+                          {t("download.form.name")}
+                        </Label>
                         <Input
                           id="fullName"
                           value={fullName}
@@ -209,7 +168,9 @@ export default function DownloadPage() {
                         />
                       </div>
                       <div className="space-y-2">
-                        <Label htmlFor="email">{t("download.form.email")}</Label>
+                        <Label htmlFor="email">
+                          {t("download.form.email")}
+                        </Label>
                         <Input
                           id="email"
                           type="email"
@@ -224,19 +185,27 @@ export default function DownloadPage() {
 
                     <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
                       <div className="space-y-2">
-                        <Label htmlFor="platform">{t("download.form.platform")}</Label>
+                        <Label htmlFor="platform">
+                          {t("download.form.platform")}
+                        </Label>
                         <Select
                           value={platform}
                           onValueChange={setPlatform}
                           defaultValue="android"
                         >
                           <SelectTrigger id="platform" className="w-full">
-                            <SelectValue placeholder={t("download.form.platformPlaceholder")} />
+                            <SelectValue
+                              placeholder={t(
+                                "download.form.platformPlaceholder"
+                              )}
+                            />
                           </SelectTrigger>
                           <SelectContent>
                             <SelectItem value="android">Android</SelectItem>
                             <SelectItem value="ios">iOS</SelectItem>
-                            <SelectItem value="both">{t("download.form.both")}</SelectItem>
+                            <SelectItem value="both">
+                              {t("download.form.both")}
+                            </SelectItem>
                           </SelectContent>
                         </Select>
                       </div>
@@ -296,7 +265,10 @@ export default function DownloadPage() {
             </DialogDescription>
           </DialogHeader>
           <DialogFooter className="sm:justify-center">
-            <Button onClick={() => setShowConfirmation(false)} className="w-full sm:w-auto">
+            <Button
+              onClick={() => setShowConfirmation(false)}
+              className="w-full sm:w-auto"
+            >
               {t("download.waitlist.confirmationButton")}
             </Button>
           </DialogFooter>
@@ -312,7 +284,8 @@ export default function DownloadPage() {
                 Funzionalità Disponibili
               </h2>
               <p className="mt-6 text-lg leading-8 text-muted-foreground">
-                MyTaskly offre già un set completo di funzionalità per gestire al meglio le tue attività
+                MyTaskly offre già un set completo di funzionalità per gestire
+                al meglio le tue attività
               </p>
             </div>
           </ScrollAnimationWrapper>
@@ -324,7 +297,9 @@ export default function DownloadPage() {
                   <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10">
                     <Mic className="h-5 w-5 text-primary" />
                   </div>
-                  <h3 className="text-lg font-semibold text-foreground">Voice & Audio</h3>
+                  <h3 className="text-lg font-semibold text-foreground">
+                    Voice & Audio
+                  </h3>
                 </div>
                 <ul className="space-y-2 text-sm text-muted-foreground">
                   <li className="flex items-start gap-2">
@@ -349,7 +324,9 @@ export default function DownloadPage() {
                   <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10">
                     <Bell className="h-5 w-5 text-primary" />
                   </div>
-                  <h3 className="text-lg font-semibold text-foreground">Notifiche & Promemoria</h3>
+                  <h3 className="text-lg font-semibold text-foreground">
+                    Notifiche & Promemoria
+                  </h3>
                 </div>
                 <ul className="space-y-2 text-sm text-muted-foreground">
                   <li className="flex items-start gap-2">
@@ -374,7 +351,9 @@ export default function DownloadPage() {
                   <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10">
                     <Calendar className="h-5 w-5 text-primary" />
                   </div>
-                  <h3 className="text-lg font-semibold text-foreground">Calendario</h3>
+                  <h3 className="text-lg font-semibold text-foreground">
+                    Calendario
+                  </h3>
                 </div>
                 <ul className="space-y-2 text-sm text-muted-foreground">
                   <li className="flex items-start gap-2">
@@ -399,7 +378,9 @@ export default function DownloadPage() {
                   <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10">
                     <ListChecks className="h-5 w-5 text-primary" />
                   </div>
-                  <h3 className="text-lg font-semibold text-foreground">Gestione Task</h3>
+                  <h3 className="text-lg font-semibold text-foreground">
+                    Gestione Task
+                  </h3>
                 </div>
                 <ul className="space-y-2 text-sm text-muted-foreground">
                   <li className="flex items-start gap-2">
@@ -412,7 +393,9 @@ export default function DownloadPage() {
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="h-4 w-4 text-primary flex-shrink-0 mt-0.5" />
-                    <span>Filtraggio avanzato per status, priorità, categoria</span>
+                    <span>
+                      Filtraggio avanzato per status, priorità, categoria
+                    </span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="h-4 w-4 text-primary flex-shrink-0 mt-0.5" />
@@ -428,7 +411,9 @@ export default function DownloadPage() {
                   <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10">
                     <Cloud className="h-5 w-5 text-primary" />
                   </div>
-                  <h3 className="text-lg font-semibold text-foreground">Sincronizzazione</h3>
+                  <h3 className="text-lg font-semibold text-foreground">
+                    Sincronizzazione
+                  </h3>
                 </div>
                 <ul className="space-y-2 text-sm text-muted-foreground">
                   <li className="flex items-start gap-2">
@@ -457,7 +442,9 @@ export default function DownloadPage() {
                   <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10">
                     <Shield className="h-5 w-5 text-primary" />
                   </div>
-                  <h3 className="text-lg font-semibold text-foreground">Sicurezza & Altro</h3>
+                  <h3 className="text-lg font-semibold text-foreground">
+                    Sicurezza & Altro
+                  </h3>
                 </div>
                 <ul className="space-y-2 text-sm text-muted-foreground">
                   <li className="flex items-start gap-2">
@@ -508,9 +495,14 @@ export default function DownloadPage() {
                   <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/5">
                     <Calendar className="h-5 w-5 text-primary/70" />
                   </div>
-                  <h3 className="text-lg font-semibold text-foreground">Calendari Multipli</h3>
+                  <h3 className="text-lg font-semibold text-foreground">
+                    Calendari Multipli
+                  </h3>
                 </div>
-                <p className="text-sm text-muted-foreground">Gestisci più calendari contemporaneamente con sincronizzazione avanzata</p>
+                <p className="text-sm text-muted-foreground">
+                  Gestisci più calendari contemporaneamente con sincronizzazione
+                  avanzata
+                </p>
               </div>
             </ScrollAnimationWrapper>
 
@@ -520,9 +512,14 @@ export default function DownloadPage() {
                   <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/5">
                     <Clock className="h-5 w-5 text-primary/70" />
                   </div>
-                  <h3 className="text-lg font-semibold text-foreground">Task Ricorrenti</h3>
+                  <h3 className="text-lg font-semibold text-foreground">
+                    Task Ricorrenti
+                  </h3>
                 </div>
-                <p className="text-sm text-muted-foreground">Crea attività che si ripetono automaticamente con frequenze personalizzabili</p>
+                <p className="text-sm text-muted-foreground">
+                  Crea attività che si ripetono automaticamente con frequenze
+                  personalizzabili
+                </p>
               </div>
             </ScrollAnimationWrapper>
 
@@ -532,9 +529,14 @@ export default function DownloadPage() {
                   <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/5">
                     <ListChecks className="h-5 w-5 text-primary/70" />
                   </div>
-                  <h3 className="text-lg font-semibold text-foreground">Subtask</h3>
+                  <h3 className="text-lg font-semibold text-foreground">
+                    Subtask
+                  </h3>
                 </div>
-                <p className="text-sm text-muted-foreground">Suddividi le attività complesse in sotto-attività più gestibili</p>
+                <p className="text-sm text-muted-foreground">
+                  Suddividi le attività complesse in sotto-attività più
+                  gestibili
+                </p>
               </div>
             </ScrollAnimationWrapper>
 
@@ -544,9 +546,14 @@ export default function DownloadPage() {
                   <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/5">
                     <Sparkles className="h-5 w-5 text-primary/70" />
                   </div>
-                  <h3 className="text-lg font-semibold text-foreground">AI Categorization</h3>
+                  <h3 className="text-lg font-semibold text-foreground">
+                    AI Categorization
+                  </h3>
                 </div>
-                <p className="text-sm text-muted-foreground">Categorizzazione automatica dei task tramite intelligenza artificiale</p>
+                <p className="text-sm text-muted-foreground">
+                  Categorizzazione automatica dei task tramite intelligenza
+                  artificiale
+                </p>
               </div>
             </ScrollAnimationWrapper>
 
@@ -556,9 +563,14 @@ export default function DownloadPage() {
                   <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/5">
                     <Sparkles className="h-5 w-5 text-primary/70" />
                   </div>
-                  <h3 className="text-lg font-semibold text-foreground">Smart Suggestions</h3>
+                  <h3 className="text-lg font-semibold text-foreground">
+                    Smart Suggestions
+                  </h3>
                 </div>
-                <p className="text-sm text-muted-foreground">Suggerimenti intelligenti basati sulle tue abitudini e preferenze</p>
+                <p className="text-sm text-muted-foreground">
+                  Suggerimenti intelligenti basati sulle tue abitudini e
+                  preferenze
+                </p>
               </div>
             </ScrollAnimationWrapper>
 
@@ -568,9 +580,14 @@ export default function DownloadPage() {
                   <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/5">
                     <Shield className="h-5 w-5 text-primary/70" />
                   </div>
-                  <h3 className="text-lg font-semibold text-foreground">2FA & Pattern Learning</h3>
+                  <h3 className="text-lg font-semibold text-foreground">
+                    2FA & Pattern Learning
+                  </h3>
                 </div>
-                <p className="text-sm text-muted-foreground">Autenticazione a due fattori e apprendimento dei pattern comportamentali</p>
+                <p className="text-sm text-muted-foreground">
+                  Autenticazione a due fattori e apprendimento dei pattern
+                  comportamentali
+                </p>
               </div>
             </ScrollAnimationWrapper>
           </div>
@@ -631,7 +648,10 @@ export default function DownloadPage() {
                 <div className="flex flex-col">
                   <dt className="text-base font-semibold leading-7 text-foreground">
                     <div className="mb-6 flex h-10 w-10 items-center justify-center rounded-lg bg-primary">
-                      <CalendarClock className="h-6 w-6 text-white" aria-hidden="true" />
+                      <CalendarClock
+                        className="h-6 w-6 text-white"
+                        aria-hidden="true"
+                      />
                     </div>
                     {t("download.benefits.exclusiveFeatures.title")}
                   </dt>
@@ -709,12 +729,12 @@ export default function DownloadPage() {
                 {t("download.cta.description")}
               </p>
               <div className="mt-10 flex items-center justify-center gap-x-6">
-                <Button
-                  className="rounded-full px-8"
-                  size="lg"
-                  asChild
-                >
-                  <a href="https://play.google.com/store/apps/details?id=com.Gabry848Studio.Mytaskly&hl=en-US&ah=A0Ml8z3VsRUmRFkINxQ1zi8Pj68" target="_blank" rel="noopener noreferrer">
+                <Button className="rounded-full px-8" size="lg" asChild>
+                  <a
+                    href="https://play.google.com/store/apps/details?id=com.Gabry848Studio.Mytaskly&hl=en-US&ah=A0Ml8z3VsRUmRFkINxQ1zi8Pj68"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     {t("download.cta.button")}
                   </a>
                 </Button>
@@ -723,7 +743,6 @@ export default function DownloadPage() {
           </ScrollAnimationWrapper>
         </div>
       </div>
-
     </div>
   );
 }
