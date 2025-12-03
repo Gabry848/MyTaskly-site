@@ -947,59 +947,59 @@ const translations: Record<Language, Record<string, string>> = {
     "members.updates.betaRelease.title": "Internal Beta Release",
     "members.updates.betaRelease.description":
       "Beta version successfully released on Google Play Store. Mandatory 14-day testing phase with 12+ testers to meet Google requirements.",
-    "members.updates.betaRelease.badge": "Completed - December 2, 2024",
+    "members.updates.betaRelease.badge": "Completed - December 2, 2025",
 
     "members.updates.preLaunch.title": "Pre-Launch and Preparation",
     "members.updates.preLaunch.description":
       "Completion of mandatory testing period (14 days), beta tester feedback collection and optimizations, preparation of marketing materials (demo video, screenshots, copy), social media setup and community building, Product Hunt launch preparation.",
-    "members.updates.preLaunch.badge": "December 2024",
+    "members.updates.preLaunch.badge": "December 2025",
 
     "members.updates.androidLaunch.title": "Public Android Launch",
     "members.updates.androidLaunch.description":
       "Official version publicly available on Google Play Store after completing all requirements and optimizations based on beta feedback.",
     "members.updates.androidLaunch.badge":
-      "Late December 2024 / Early January 2025",
+      "Late December 2025 / Early January 2026",
 
     "members.updates.marketingExpansion.title": "Marketing Expansion",
     "members.updates.marketingExpansion.description":
       "Product Hunt launch, social media campaign (TikTok, Instagram, LinkedIn), outreach to tech influencers and tech communities, first collection of active user metrics and retention.",
-    "members.updates.marketingExpansion.badge": "January 2025",
+    "members.updates.marketingExpansion.badge": "January 2026",
 
     "members.updates.chatgptIntegration.title": "ChatGPT Apps Integration",
     "members.updates.chatgptIntegration.description":
       "Leverage the first-mover advantage to integrate MyTaskly as a ChatGPT App, potentially reaching 800M+ platform users.",
-    "members.updates.chatgptIntegration.badge": "Q1 2025 (January-March)",
+    "members.updates.chatgptIntegration.badge": "Q1 2026 (January-March)",
 
     "members.updates.advancedVoiceChat.title": "Advanced Voice Chat",
     "members.updates.advancedVoiceChat.description":
       "Refinement of the AI voice chat experience and optimizations based on real usage data.",
-    "members.updates.advancedVoiceChat.badge": "Q1 2025",
+    "members.updates.advancedVoiceChat.badge": "Q1 2026",
 
     "members.updates.iosLaunch.title": "iOS App Store Launch",
     "members.updates.iosLaunch.description":
       "Publication on Apple App Store after validating the product on Android and collecting feedback to optimize the iOS experience.",
-    "members.updates.iosLaunch.badge": "Q2 2025 (April-June)",
+    "members.updates.iosLaunch.badge": "Q2 2026 (April-June)",
 
     // Additional calendar entries
     "members.updates.playStoreBeta.title": "Play Store Beta Release",
     "members.updates.playStoreBeta.description":
       "Beta version released on Google Play Store for internal testing with selected users.",
-    "members.updates.playStoreBeta.badge": "December 2024",
+    "members.updates.playStoreBeta.badge": "December 2025",
 
     "members.updates.voiceChat.title": "Voice Chat Implementation",
     "members.updates.voiceChat.description":
       "Development and integration of advanced voice chat functionality with AI assistant.",
-    "members.updates.voiceChat.badge": "Q1 2025",
+    "members.updates.voiceChat.badge": "Q1 2026",
 
     "members.updates.playStorePublic.title": "Play Store Public Release",
     "members.updates.playStorePublic.description":
       "Official public release on Google Play Store available to all users worldwide.",
-    "members.updates.playStorePublic.badge": "Early 2025",
+    "members.updates.playStorePublic.badge": "Early 2026",
 
     "members.updates.appStore.title": "App Store Release",
     "members.updates.appStore.description":
       "Official release on Apple App Store for iOS users.",
-    "members.updates.appStore.badge": "Q2 2025",
+    "members.updates.appStore.badge": "Q2 2026",
 
     // Members feedback card
     "members.card.feedback.description":
@@ -2091,59 +2091,59 @@ const translations: Record<Language, Record<string, string>> = {
     "members.updates.betaRelease.title": "Release Beta Interna",
     "members.updates.betaRelease.description":
       "La versione beta è stata rilasciata con successo su Google Play Store. Fase di testing obbligatorio di 14 giorni con 12+ tester per soddisfare i requisiti di Google.",
-    "members.updates.betaRelease.badge": "Completato - 2 Dicembre 2024",
+    "members.updates.betaRelease.badge": "Completato - 2 Dicembre 2025",
 
     "members.updates.preLaunch.title": "Pre-Lancio e Preparazione",
     "members.updates.preLaunch.description":
       "Completamento periodo di testing obbligatorio (14 giorni), raccolta feedback dai beta tester e ottimizzazioni, preparazione materiali marketing (video demo, screenshot, copy), setup social media e community building, preparazione lancio Product Hunt.",
-    "members.updates.preLaunch.badge": "Dicembre 2024",
+    "members.updates.preLaunch.badge": "Dicembre 2025",
 
     "members.updates.androidLaunch.title": "Lancio Pubblico Android",
     "members.updates.androidLaunch.description":
       "Versione ufficiale disponibile pubblicamente su Google Play Store dopo aver completato tutti i requisiti e ottimizzazioni basate sul feedback della beta.",
     "members.updates.androidLaunch.badge":
-      "Fine Dicembre 2024 / Inizio Gennaio 2025",
+      "Fine Dicembre 2025 / Inizio Gennaio 2026",
 
     "members.updates.marketingExpansion.title": "Espansione Marketing",
     "members.updates.marketingExpansion.description":
       "Lancio su Product Hunt, campagna social media (TikTok, Instagram, LinkedIn), outreach a tech influencer e tech communities, prima raccolta metriche utenti attivi e retention.",
-    "members.updates.marketingExpansion.badge": "Gennaio 2025",
+    "members.updates.marketingExpansion.badge": "Gennaio 2026",
 
     "members.updates.chatgptIntegration.title": "ChatGPT Apps Integration",
     "members.updates.chatgptIntegration.description":
       "Sfruttare il vantaggio first-mover per integrare MyTaskly come ChatGPT App, raggiungendo potenzialmente 800M+ utenti della piattaforma.",
-    "members.updates.chatgptIntegration.badge": "Q1 2025 (Gennaio-Marzo)",
+    "members.updates.chatgptIntegration.badge": "Q1 2026 (Gennaio-Marzo)",
 
     "members.updates.advancedVoiceChat.title": "Chat Vocale Avanzata",
     "members.updates.advancedVoiceChat.description":
       "Perfezionamento dell'esperienza di chat vocale con IA e ottimizzazioni basate sui dati d'uso reali.",
-    "members.updates.advancedVoiceChat.badge": "Q1 2025",
+    "members.updates.advancedVoiceChat.badge": "Q1 2026",
 
     "members.updates.iosLaunch.title": "Lancio iOS App Store",
     "members.updates.iosLaunch.description":
       "Pubblicazione su App Store Apple dopo aver validato il prodotto su Android e raccolto feedback per ottimizzare l'esperienza iOS.",
-    "members.updates.iosLaunch.badge": "Q2 2025 (Aprile-Giugno)",
+    "members.updates.iosLaunch.badge": "Q2 2026 (Aprile-Giugno)",
 
     // Voci calendario aggiuntive
     "members.updates.playStoreBeta.title": "Release Beta Play Store",
     "members.updates.playStoreBeta.description":
       "Versione beta rilasciata su Google Play Store per testing interno con utenti selezionati.",
-    "members.updates.playStoreBeta.badge": "Dicembre 2024",
+    "members.updates.playStoreBeta.badge": "Dicembre 2025",
 
     "members.updates.voiceChat.title": "Implementazione Chat Vocale",
     "members.updates.voiceChat.description":
       "Sviluppo e integrazione della funzionalità di chat vocale avanzata con assistente AI.",
-    "members.updates.voiceChat.badge": "Q1 2025",
+    "members.updates.voiceChat.badge": "Q1 2026",
 
     "members.updates.playStorePublic.title": "Release Pubblica Play Store",
     "members.updates.playStorePublic.description":
       "Rilascio pubblico ufficiale su Google Play Store disponibile a tutti gli utenti nel mondo.",
-    "members.updates.playStorePublic.badge": "Inizio 2025",
+    "members.updates.playStorePublic.badge": "Inizio 2026",
 
     "members.updates.appStore.title": "Release App Store",
     "members.updates.appStore.description":
       "Rilascio ufficiale su Apple App Store per utenti iOS.",
-    "members.updates.appStore.badge": "Q2 2025",
+    "members.updates.appStore.badge": "Q2 2026",
 
     // Card feedback membri
     "members.card.feedback.description":
